@@ -1,0 +1,39 @@
+/*    iPSP 1.1 CSS   */
+/* (C) 2007 ctcoding */
+
+/* GLOBAL RESET */
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	margin: auto;
+	padding: auto;
+}
+
+/* MAIN STYLES */
+#mainflash {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 272px;
+	width: 480px;
+	z-index: 2;
+}
+#horizontaliframelayer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 272px;
+	width: 480px;
+	z-index: 1;
+}
+#rotateVert {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 272px;
+	width: 480px;
+	z-index: 3;
+	visibility: hidden;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Expedition // by ctcoding</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#txturl {
+	width: 250px;
+}
+#txtbg {
+	background: url(../images/expedition/exp_header_bg.gif) repeat-x;
+}
+-->
+</style></head>
+
+<body>
+<table width="480" border="0" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="174" height="38" valign="top"><img src="../images/expedition/exp_header_1.gif" width="174" height="38" border="0" usemap="#Map" /></td>
+    <td width="258" align="center" valign="middle" id="txtbg"><label>
+      <input name="txturl" type="text" id="txturl" value="http://" />
+    </label></td>
+    <td width="48" valign="top"><img src="../images/expedition/exp_header_go.gif" width="48" height="38" onclick="if(document.getElementById('txturl').value!=''){Content.location.href=document.getElementById('txturl').value}else{alert('Error: No URL!')}"/></td>
+  </tr>
+  <tr>
+    <td height="205" colspan="3" valign="top"><iframe height="100%" width="480" id="Content" name="Content" frameborder="0"></iframe></td>
+  </tr>
+</table>
+
+<map name="Map" id="Map">
+<area shape="rect" coords="1,2,35,37" href="#" onClick="Content.location.href='http://ctcoding.recoding.net/ipsp/home'"/>
+<area shape="rect" coords="35,2,62,36" href="#" onclick="if(document.getElementById('txturl').value!=''){Content.location.href=document.getElementById('txturl').value}else{alert('Error: No URL!')}" /><area shape="rect" coords="61,2,96,36" href="#"onClick="javascript:history.go(-1)" /><area shape="rect" coords="95,1,130,36" href="#" onClick="javascript:history.go(1)"/>
+<area shape="rect" coords="129,2,172,36" href="#" onClick="Content.location.href='file:/PSP/SYSTEM/BROWSER/bookmarks.html'"/></map>
+
+</body>
+</html>

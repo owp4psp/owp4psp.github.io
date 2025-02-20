@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>iPSP // iPhoto</title>
+<style type="text/css">
+<!--
+#themeLayer {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:257px;
+	z-index:1;
+	background: no-repeat;
+}
+#choose {
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:480px;
+	height:257px;
+	z-index:2;
+}
+body,td,th {
+	color: #FFFFFF;
+}
+body {
+	background-color: #000000;
+}
+-->
+</style>
+<br />
+<script>
+function Hide(id) {
+    obj = document.getElementsByTagName("div");
+    if (obj[id].style.visibility == 'hidden'){
+    obj[id].style.visibility = 'hidden';}
+    else {
+    obj[id].style.visibility = 'hidden';
+    }
+}
+function Show(id) {
+    obj = document.getElementsByTagName("div");
+    if (obj[id].style.visibility == 'visible'){
+    obj[id].style.visibility = 'visible';}
+    else {
+    obj[id].style.visibility = 'visible';
+    }
+}
+function slideshow() {
+	Hide("choose");
+	time = 4000;
+	pho1 = 'url(file:' + document.forms.photoform.photo1.value + ')';
+	pho2 = 'url(file:' + document.forms.photoform.photo2.value + ')';
+	pho3 = 'url(file:' + document.forms.photoform.photo3.value + ')';
+	pho4 = 'url(file:' + document.forms.photoform.photo4.value + ')';
+	pho5 = 'url(file:' + document.forms.photoform.photo5.value + ')';
+	pho6 = 'url(file:' + document.forms.photoform.photo6.value + ')';
+	pho7 = 'url(file:' + document.forms.photoform.photo7.value + ')';
+	pho8 = 'url(file:' + document.forms.photoform.photo8.value + ')';
+	pho9 = 'url(file:' + document.forms.photoform.photo9.value + ')';
+	pho10 = 'url(file:' + document.forms.photoform.photo10.value + ')';
+	// fin = 'url(file:' + pho + ')';
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho1;},time);
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho2;},(time*2));
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho3;},(time*3));
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho4;},(time*4));
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho5;},(time*5));
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho6;},(time*6));
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho7;},(time*7));
+    setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho8;},(time*9));
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho9;},(time*9));
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = pho10;},(time*10));
+	setTimeout(function(){document.getElementById("themeLayer").style.backgroundImage = ""},(time*11));
+	setTimeout(function(){Show("choose");},(time*11));
+}
+</script>
+</head>
+
+<body>
+<div id="themeLayer"></div>
+<div id="choose">
+<form id="photoform" name="photoform" enctype="multipart/form-data" method="post" action="">
+Please select up to ten images to play:<br /><br />
+  <label>
+  <input type="file" name="photo1" id="photo1" />
+  <br />
+  <input type="file" name="photo2" id="photo2" />
+  <br />
+  <input type="file" name="photo3" id="photo3" />
+  <br />
+  <input type="file" name="photo4" id="photo4" />
+  <br />
+  <input type="file" name="photo5" id="photo5" />
+  <br />
+  <input type="file" name="photo6" id="photo6" />
+  <br />
+  <input type="file" name="photo7" id="photo7" />
+  <br />
+  <input type="file" name="photo8" id="photo8" />
+  <br />
+  <input type="file" name="photo9" id="photo9" />
+  <br />
+  <input type="file" name="photo10" id="photo10" />
+  <br />
+  <br />
+  <input type="button" name="startshow" id="startshow" value="Start Show" onclick="slideshow()"/>
+  <br />
+  </label>
+</form>
+</div>
+</body>
+</html>

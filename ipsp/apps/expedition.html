@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Expedition // by ctcoding</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#tabOne {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	z-index:1;
+}
+#tabTwo {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	visibility:hidden;
+	z-index:2;
+}
+#tabThree {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	visibility:hidden;
+	z-index:3;
+}
+#browse {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	visibility:hidden;
+	z-index:4;
+}
+#apDiv1 {
+	position:absolute;
+	left:0;
+	top:243px;
+	width:480px;
+	height:14px;
+	z-index:999;
+}
+-->
+</style>
+<script>
+function Hide(id) {
+    obj = document.getElementsByTagName("div");
+    if (obj[id].style.visibility == 'hidden'){
+    obj[id].style.visibility = 'hidden';}
+    else {
+    obj[id].style.visibility = 'hidden';
+    }
+}
+function Show(id) {
+    obj = document.getElementsByTagName("div");
+    if (obj[id].style.visibility == 'visible'){
+    obj[id].style.visibility = 'visible';}
+    else {
+    obj[id].style.visibility = 'visible';
+    }
+}
+function tab(id) {
+	Hide("tabOne");
+	Hide("tabTwo");
+	Hide("tabThree");
+	Hide("browse");
+	Show(id);
+}
+function browse()
+{
+ {window.open(document.forms.browser.file.value,'_self')};
+}
+function browsenew()
+{
+ {window.open(document.forms.browser.file.value,'_blank')};
+}
+</script>
+</head>
+
+<body>
+<div id="tabOne"><iframe frameborder="0" height="243" width="480" src="expeditionInner.html"></iframe></div>
+<div id="tabTwo"><iframe frameborder="0" height="243" width="480" src="expeditionInner.html"></iframe></div>
+<div id="tabThree"><iframe frameborder="0" height="243" width="480" src="expeditionInner.html"></iframe></div>
+<div id="browse">Browse for a File:<br />
+<form name="browser">
+  <br /><input type="file" name="file" rowspan="1" colspan="1">
+  <br /><input name="Button" type="button" value="Same Tab" onClick="browse()">
+			    <input name="Button2" type="button" onClick="browsenew()" value="New Tab">
+			    <br />
+</form></div>
+<div id="apDiv1"><img src="../images/expedition/exp_footer.png" width="480" height="14" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+<area shape="rect" coords="0,-1,21,14" href="javascript:tab('tabOne')" />
+<area shape="rect" coords="20,0,39,15" href="javascript:tab('tabTwo')" />
+<area shape="rect" coords="41,-2,59,17" href="javascript:tab('tabThree')" />
+<area shape="rect" coords="61,-3,81,17" href="javascript:tab('browse')" />
+</map></div>
+</body>
+</html>
