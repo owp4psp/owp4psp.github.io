@@ -1,0 +1,86 @@
+=============================
+Mac OS X Leopard - Changelog
+=============================
+
+v0.95 BETA
+=============================
+- Dock Applications Folder has changed icon.
+- Dock Text Name is popping up above them when hovered.
+- Dock hover icons is already loaded before you hover them (So you don't need to wait for it to load).
+- iPhoto is now possible to start from the dock.
+- Time Machine has been improved (No image background to the text's frame).
+- When starting fullscreen applications or games, your account will log out (to save memory). You will not notice it.
+- You can now restart the Mac from the apple menu without loosing your whole settings.
+- Boot Camp now improved its design (a little).
+- Login page has now a checkbox feature so you can remember the name and password (You don't need to type in them again).
+- In the install page, you must now type in a name to continue.
+
+v0.9 BETA
+=============================
+- Time Machine Added
+- Calendar is now called "iCal", and has been remodeled
+- Mac HD remodeled
+- Preferences remodeled
+- Background changer Remodeled
+- Dashboard added (but not working, right now)
+- iPhoto added(but not working, right now)
+- Games added
+- User Details changer
+- Optimized to be faster than before
+- New taskbar menus
+
+v0.63 BETA
+=============================
+- Calendar App Added
+- Many bug Fixs
+- fixed Problem In finder app
+
+v0.61 BETA
+=============================
+- Fixed a new weather application
+
+v0.6 BETA
+=============================
+- The taskbar and applemenu is now transparent to 75%
+- Trash applications has now been included
+- Some bugs has been fixed
+
+v0.5 BETA
+=============================
+- All new graphics again
+- Whole main code re-done/optimized to make the portal run better
+- 5 New apps added
+- 10 games added
+- 3 total Chatrooms
+- iTunes updated to Bladefinor's version
+- Mac HD-path fixed
+
+v0.4 BETA
+=============================
+- All new graphics
+- New desktop-icon - Boot Camp
+- New dock-icons - iTunes, Preferences, Software Update, Address Book and iChat
+- 4 new apps added
+- iChat added - Hosted by Kr3wsk8r231 
+- 3 total chatrooms
+- iTunes by nickdagamer added
+- Boot Camp added
+- Software Update dock-icon added
+
+v0.3 BETA
+=============================
+- View desktop-icons when you are in Mac HD
+- Safari added
+
+v0.2 BETA
+=============================
+- Change background, only between "space" and "grass", but could not save.
+- Uses "Settings-file" to login with own login-details
+
+v0.1 BETA
+=============================
+- Open Mac HD and look on files from device
+(It didn't used the settings-file, in other words "Cookies/Input History")
+
+============================================================
+(C) bladefinor & Kr3wsk8r231 from Blazebyte.org & DolphinProjects.co.nr

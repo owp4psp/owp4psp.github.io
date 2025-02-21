@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mac OS X Leopard [v0.95 BETA] - By Dolphin Projects</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+-->
+</style>
+<script src="system/js/javascripts.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function loadLeopard(){
+	hideDiv('layer_startup');
+	showDiv('layer_leopard');
+}
+</script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+window.setTimeout("loadLeopard()", 10000);
+</script>
+
+<div id="layer_startup" style="position:absolute; left:0px; top:0px; width:480px; height:272px;">
+  <iframe src="system/startup.html" width="480" height="272" id="startup" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div id="layer_leopard" style="position:absolute; left:0px; top:0px; width:480px; height:272px; visibility:hidden;">
+  <iframe src="/PSP/COMMON/Mac OS X Leopard/system/desktop.html" width="480" height="272" id="leopard" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div id="fullscreen" style="position:absolute; left:0px; top:0px; width:480px; height:272px; visibility:hidden;">
+  <iframe src="system/fullscreen.html" width="480" height="272" frameborder="0" scrolling="No" id="frameFullscreen" name="frameFullscreen"></iframe>
+</div>
+</body>
+</html>

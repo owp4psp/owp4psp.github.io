@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Settings</title>
+<script type="text/javascript" src="../../system/js/javascripts.js"></script>
+</head>
+
+<body onLoad="userCreatedYES(); showWallpaper(); getDesktopNames(); desktopIconNames();">
+<form id="settings" name="settings" method="post" action="">
+  <table width="350" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>Wallpaper</td>
+      <td><input name="sourceWallpaper" type="text" id="sourceWallpaper" /></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><input name="sourceName" type="text" id="sourceName" /></td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><input name="sourcePassword" type="text" id="sourcePassword" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">Other</td>
+    </tr>
+    <tr>
+      <td>User is Created</td>
+      <td><input name="userIsCreated" type="text" id="userIsCreated" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">Desktop Icons</td>
+    </tr>
+    <tr>
+      <td>Mac HD</td>
+      <td><input name="sourceMacHD" type="text" id="sourceMacHD" /></td>
+    </tr>
+    <tr>
+      <td>Boot Camp</td>
+      <td><input name="sourceBootCamp" type="text" id="sourceBootCamp" /></td>
+    </tr>
+    <tr>
+      <td>Software Update</td>
+      <td><input name="sourceUpdate" type="text" id="sourceUpdate" /></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
