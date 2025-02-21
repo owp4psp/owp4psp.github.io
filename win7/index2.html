@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Windows 7 Boot -- (c)Burpman and X-Boy</title>
+<script type="text/javascript">
+function go() {
+if (document.setf.document.us.up.value!=='') {
+window.location='login.html';
+}else{
+window.location='loading_desktop.html';
+}
+}
+</script>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #000000;
+}
+#Layer3 {
+	position:absolute;
+	width:130px;
+	height:12px;
+	z-index:3;
+	left: 345px;
+	top: 252px;
+}
+#Layer {
+	position:absolute;
+	width:36px;
+	height:276px;
+	z-index:3;
+	left: 85px;
+	top: -10px;
+}
+.style1 {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+#Layer2 {	position:absolute;
+	width:100px;
+	height:12px;
+	z-index:3;
+	left: 4px;
+	top: 251px;
+}
+#Layer1 {
+	position:absolute;
+	width:13px;
+	height:10px;
+	z-index:4;
+	left: 4px;
+	top: 273px;
+}
+#setdiv {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:20px;
+	height:22px;
+	z-index:1;
+	visibility: hidden;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</head>
+
+<body onload="timer=setTimeout('go()',3000)">
+<div id="setdiv"><iframe id="setf" name="setf" scrolling=no frameborder=0 src="system/settings/user.html"></iframe></div>
+<img src="system/system_images/boot/background.png" width="480" height="272" />
+<div id="Layer"><img src="system/system_images/boot/orb_animation.gif" width="300" height="272" /></div>
+<div id="Layer1">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="1" height="0">
+    <param name="movie" value="system/system_images/boot/startup.swf" />
+    <param name="quality" value="high" />
+    <embed src="system/system_images/boot/startup.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1" height="0"></embed>
+  </object>
+</div>
+</body>
+</html>

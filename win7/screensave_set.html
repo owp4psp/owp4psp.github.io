@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Windows Vista -- Screensaver settings</title>
+
+<script language=javascript type='text/javascript'>
+function setscreen() {
+if ( selectscreenform.browsescreen.value == selectscreenform.browsescreen.value) {
+screenget.document.screenbgform.screensrc.value = selectwallform.browsescreen.value
+screenget.document.screenbgform.submit()
+}else{
+screenget.document.screenbgform.screensrc.value = selectscreenform.browsescreen.value
+screenget.document.screenbgform.submit()
+}
+}
+</script>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(system/system_images/ctrl_panel_images/screensaver1.png);
+	background-repeat: no-repeat;
+}
+#Layer1 {
+	position:absolute;
+	width:93px;
+	height:16px;
+	z-index:1;
+	left: 21px;
+	top: 207px;
+}
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 15px;
+	top: 69px;
+}
+body,td,th {
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #000000;
+}
+#Layer3 {
+	position:absolute;
+	width:6px;
+	height:15px;
+	z-index:2;
+	left: 22px;
+	top: 15px;
+	visibility: hidden;
+}
+#Layer4 {
+	position:absolute;
+	width:200px;
+	height:17px;
+	z-index:3;
+	left: 16px;
+	top: 242px;
+}
+#Layer5 {
+	position:absolute;
+	width:23px;
+	height:15px;
+	z-index:4;
+	left: 14px;
+	top: 299px;
+}
+#Layer6 {
+	position:absolute;
+	width:34px;
+	height:14px;
+	z-index:5;
+	left: 97px;
+	top: 344px;
+}
+#Layer7 {
+	position:absolute;
+	width:46px;
+	height:18px;
+	z-index:6;
+	left: 11px;
+	top: 343px;
+}
+-->
+</style></head>
+
+<body>
+<form id="selectscreenform" name="selectscreenform" method="post" action="">
+<div id="Layer2">
+  <table width="314" border="0">
+    <tr>
+      <td width="100"><a href="#" onclick="selectscreenform.browsescreen.value = 'system/system_images/screensavers/aurora.gif'"><img src="system/system_images/screensavers/ss_prev/aurora_p.png" width="100" height="57" border="0" /></a></td>
+      <td width="100"><a href="#"  onclick="selectscreenform.browsescreen.value = 'system/system_images/screensavers/vista_energy.gif'"><img src="system/system_images/screensavers/ss_prev/vista_enery_p.png" width="100" height="57" border="0" /></a></td>
+      <td width="207"><a href="#"  onclick="selectscreenform.browsescreen.value = 'system/system_images/screensavers/vista_stoof.gif'"><img src="system/system_images/screensavers/ss_prev/vista_stoof_p.png" width="100" height="56" border="0" /></a></td>
+    </tr>
+    <tr>
+      <td><div align="center">Aurora</div></td>
+      <td><div align="center">Vista Energy </div></td>
+      <td><div align="center">Vista Stoof </div></td>
+    </tr>
+    <tr>
+      <td><a href="#"  onclick="selectscreenform.browsescreen.value = 'system/system_images/screensavers/water.gif'"><img src="system/system_images/screensavers/ss_prev/water_p.png" width="100" height="56" border="0" /></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center">Zen Water </div></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="Layer3">
+<iframe id="screenget" src="getscreen.html"></iframe></div>
+<div id="Layer4">
+  <input name="browsescreen" type="file" id="browsescreen" />
+</div>
+<div id="Layer5">  
+  <input name="usescreen" type="button" id="usescreen" onclick="setscreen()" value="  Ok  " />
+</div>
+<div id="Layer6"> 
+  <input name="exit" type="button" id="exit" onclick="parent.parent.window.location='desktop.html';" value="  Exit  " />
+</div>
+<div id="Layer7">  
+  <input name="preview" type="button" id="preview" onclick="parent.parent.window.location='screensaver.html';" value="  Preview  " />
+</div>
+</form>
+
+</body>
+</html>

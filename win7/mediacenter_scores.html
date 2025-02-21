@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Windows Vista Media Center</title>
+<script type="text/javascript" src="system/scripts.js" name="javascripts"></script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #0000CC;
+}
+#Layer1 {
+	position:absolute;
+	width:11px;
+	height:34px;
+	z-index:1;
+	left: 388px;
+	top: 2px;
+}
+#Layer2 {
+	position:absolute;
+	width:82px;
+	height:23px;
+	z-index:2;
+	left: 301px;
+	top: 11px;
+}
+.style2 {color: #FFFFFF; font-family: Tahoma;}
+#Layer3 {
+	position:absolute;
+	width:47px;
+	height:21px;
+	z-index:3;
+	left: 432px;
+	top: 0px;
+}
+#pics_frame {
+	position:absolute;
+	width:69px;
+	height:42px;
+	z-index:6;
+	left: 201px;
+	top: 133px;
+	visibility: hidden;
+}
+#pics_glass {
+	position:absolute;
+	width:189px;
+	height:115px;
+	z-index:5;
+	left: 179px;
+	top: 114px;
+	visibility: hidden;
+}
+#Layer4 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:6;
+}
+#Layer6 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:6;
+	left: 502px;
+	top: 28px;
+}
+#menu {
+	position:absolute;
+	width:139px;
+	height:115px;
+	z-index:4;
+	left: 201px;
+	top: 59px;
+}
+body,td,th {
+	font-family: Tahoma;
+	color: #4691FF;
+	font-size: 14px;
+}
+#music_frame {
+	position:absolute;
+	width:133px;
+	height:74px;
+	z-index:8;
+	left: 201px;
+	top: 54px;
+	visibility: hidden;
+}
+#music_glass {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:7;
+	left: 180px;
+	top: 36px;
+	visibility: hidden;
+}
+#tv_frame {
+	position:absolute;
+	width:108px;
+	height:64px;
+	z-index:10;
+	left: 202px;
+	top: 79px;
+	visibility: hidden;
+}
+#tv_glass {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:9;
+	left: 180px;
+	top: 60px;
+	visibility: hidden;
+}
+#sports_frame {
+	position:absolute;
+	width:79px;
+	height:53px;
+	z-index:12;
+	left: 202px;
+	top: 105px;
+	visibility: hidden;
+}
+#sports_glass {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:11;
+	left: 181px;
+	top: 86px;
+	visibility: hidden;
+}
+#online_frame {
+	position:absolute;
+	width:108px;
+	height:63px;
+	z-index:14;
+	left: 202px;
+	top: 83px;
+	visibility: hidden;
+}
+#online_glass {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:13;
+	left: 180px;
+	top: 64px;
+	visibility: hidden;
+}
+#task_frame {
+	position:absolute;
+	width:95px;
+	height:58px;
+	z-index:16;
+	left: 202px;
+	top: 109px;
+	visibility: hidden;
+}
+#task_glass {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:15;
+	left: 180px;
+	top: 90px;
+	visibility: hidden;
+}
+#Layer5 {
+	position:absolute;
+	width:81px;
+	height:17px;
+	z-index:17;
+	left: 321px;
+	top: 30px;
+}
+#Layer7 {
+	position:absolute;
+	width:77px;
+	height:29px;
+	z-index:17;
+	left: 390px;
+	top: 43px;
+}
+.style3 {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#Layer8 {
+	position:absolute;
+	width:274px;
+	height:28px;
+	z-index:18;
+	left: 18px;
+	top: 20px;
+}
+#frame {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:19;
+	left: 18px;
+	top: 63px;
+	visibility: hidden;
+}
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('system/system_images/aero_window/close_over.png');dT()">
+<img src="system/system_images/mediacenter_images/media_bg.PNG" width="480" height="272" onclick="MM_showHideLayers('online_frame','','hide','frame','','hide')" />
+<div id="Layer1"><a href="mediacenter.html"><img src="system/system_images/mediacenter_images/cw_menubtn_down.png" width="40" height="40" border="0" /></a></div>
+<div id="Layer2">
+  <div align="left" class="style2">
+  <div align="right"><span class="time_text  style6"  id="tP">Time</span>
+    
+    <script type="text/javascript">
+			function tS(){ x=new Date(); x.setTime(x.getTime()); return x; }
+			function lZ(x){ return (x>9)?x:'0'+x; }
+			function tH(x){ if(x==0){ x=12; } return (x>12)?x-=12:x; }
+			function dE(x){ if(x==1||x==21||x==31){ return 'st'; } if(x==2||x==22){ return 'nd'; } if(x==3||x==23){ return 'rd'; } return 'th'; }
+			function dT(){document.getElementById('tP').innerHTML=eval(oT); setTimeout('dT()',1000); }
+			function aP(x){ return (x>11)?'':''; }
+			function y4(x){ return (x<500)?x+1900:x; }
+			oT="tH(tS().getHours())+':'+lZ(tS().getMinutes())+''+aP(tS().getHours())";
+			if(!document.all){ window.onload=dT; }else{ dT(); }
+			</script>
+  </div>
+</div>
+</div>
+<div id="Layer3"><a href="desktop.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','system/system_images/aero_window/close_over.png',1)"><img src="system/system_images/mediacenter_images/close.png" name="Image3" width="43" height="17" border="0" id="Image3" /></a></div>
+<div class="style3" id="Layer7">scores</div>
+<div id="Layer8">
+  <table width="273" border="0" cellpadding="0">
+    <tr>
+      <td width="67"><div align="left"><a onclick="showDiv('window'); MM_showHideLayers('frame','','show'); frameWindow1.window.location='http://wap.mlb.com/scores/index.jsp'">MLB</a></div></td>
+      <td width="68"><a onclick="showDiv('window'); MM_showHideLayers('frame','','show'); frameWindow1.window.location='http://wap.nba.com/'" >NBA</a></td>
+      <td width="66"><a onclick="showDiv('window'); MM_showHideLayers('frame','','show'); frameWindow1.window.location='http://nhl.com/'">NHL</a></td>
+      <td width="62"> <a onclick="showDiv('window'); MM_showHideLayers('frame','','show'); frameWindow1.window.location='http://nfl.com/'">NFL</a></td>
+    </tr>
+  </table>
+</div>
+<div id="frame">
+<iframe src="null.html" id="frameWindow1" name="frameWindow1" width="350" height="181" frameborder="0" scrolling="No" style="margin: 0px;"></iframe></div>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Photo Gallery</title>
+
+<script type="text/javascript">
+function next(){
+if(document.gfrm.imgnumber.value == ''){
+document.gfrm.imgnumber.value=document.gfrm.imgnumber.value
+}else{
+next1()
+}
+}
+function next1(){
+if(document.gfrm.imgnumber.value == '1'){
+parent.document.gfrm.imgnumber.value = '2'
+document.igallery.refreshform.submit()
+}else{
+next2()
+}
+}
+function next2(){
+if(document.gfrm.imgnumber.value == '2'){
+parent.document.gfrm.imgnumber.value = '3'
+document.igallery.refreshform.submit()
+}else{
+next3()
+}
+}
+function next3(){
+if(document.gfrm.imgnumber.value == '3'){
+parent.document.gfrm.imgnumber.value = '4'
+document.igallery.refreshform.submit()
+}else{
+next4()
+}
+}
+function next4(){
+if(document.gfrm.imgnumber.value == '4'){
+parent.document.gfrm.imgnumber.value = '5'
+document.igallery.refreshform.submit()
+}else{
+next5()
+}
+}
+function next5(){
+if(document.gfrm.imgnumber.value == '5'){
+parent.document.gfrm.imgnumber.value = '6'
+document.igallery.refreshform.submit()
+}else{
+next6()
+}
+}
+function next6(){
+if(document.gfrm.imgnumber.value == '6'){
+parent.document.gfrm.imgnumber.value = '7'
+document.igallery.refreshform.submit()
+}else{
+next7()
+}
+}
+function next7(){
+if(document.gfrm.imgnumber.value == '7'){
+parent.document.gfrm.imgnumber.value = '8'
+document.igallery.refreshform.submit()
+}else{
+next8()
+}
+}
+function next8(){
+if(document.gfrm.imgnumber.value == '8'){
+parent.document.gfrm.imgnumber.value = '9'
+document.igallery.refreshform.submit()
+}else{
+next9()
+}
+}
+function next9(){
+if(document.gfrm.imgnumber.value == '9'){
+parent.document.gfrm.imgnumber.value = '10'
+document.igallery.refreshform.submit()
+}else{
+next10()
+}
+}
+function next10(){
+if(document.gfrm.imgnumber.value == '10'){
+parent.document.gfrm.imgnumber.value = '11'
+document.igallery.refreshform.submit()
+}else{
+next11()
+}
+}
+function next11(){
+if(document.gfrm.imgnumber.value == '11'){
+parent.document.gfrm.imgnumber.value = '1'
+document.igallery.refreshform.submit()
+}else{
+next2()
+}
+}
+</script>
+
+<script type="text/javascript">
+function prev(){
+if(document.gfrm.imgnumber.value == ''){
+document.gfrm.imgnumber.value=document.gfrm.imgnumber.value
+}else{
+prev1()
+}
+}
+function prev1(){
+if(document.gfrm.imgnumber.value == '1'){
+parent.document.gfrm.imgnumber.value = '11'
+document.igallery.refreshform.submit()
+}else{
+prev2()
+}
+}
+function prev2(){
+if(document.gfrm.imgnumber.value == '2'){
+parent.document.gfrm.imgnumber.value = '1'
+document.igallery.refreshform.submit()
+}else{
+prev3()
+}
+}
+function prev3(){
+if(document.gfrm.imgnumber.value == '3'){
+parent.document.gfrm.imgnumber.value = '2'
+document.igallery.refreshform.submit()
+}else{
+prev4()
+}
+}
+function prev4(){
+if(document.gfrm.imgnumber.value == '4'){
+parent.document.gfrm.imgnumber.value = '3'
+document.igallery.refreshform.submit()
+}else{
+prev5()
+}
+}
+function prev5(){
+if(document.gfrm.imgnumber.value == '5'){
+parent.document.gfrm.imgnumber.value = '4'
+document.igallery.refreshform.submit()
+}else{
+prev6()
+}
+}
+function prev6(){
+if(document.gfrm.imgnumber.value == '6'){
+parent.document.gfrm.imgnumber.value = '5'
+document.igallery.refreshform.submit()
+}else{
+prev7()
+}
+}
+function prev7(){
+if(document.gfrm.imgnumber.value == '7'){
+parent.document.gfrm.imgnumber.value = '6'
+document.igallery.refreshform.submit()
+}else{
+prev8()
+}
+}
+function prev8(){
+if(document.gfrm.imgnumber.value == '8'){
+parent.document.gfrm.imgnumber.value = '7'
+document.igallery.refreshform.submit()
+}else{
+prev9()
+}
+}
+function prev9(){
+if(document.gfrm.imgnumber.value == '9'){
+parent.document.gfrm.imgnumber.value = '8'
+document.igallery.refreshform.submit()
+}else{
+prev10()
+}
+}
+function prev10(){
+if(document.gfrm.imgnumber.value == '10'){
+parent.document.gfrm.imgnumber.value = '9'
+document.igallery.refreshform.submit()
+}else{
+prev11()
+}
+}
+function prev11(){
+if(document.gfrm.imgnumber.value == '11'){
+parent.document.gfrm.imgnumber.value = '10'
+document.igallery.refreshform.submit()
+}else{
+prev2()
+}
+}
+</script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #000000;
+}
+#apDiv1 {
+	position:absolute;
+	left:-1px;
+	top:156px;
+	width:429px;
+	height:39px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:442px;
+	height:24px;
+	z-index:2;
+}
+#apDiv3 {
+	position:absolute;
+	left:0px;
+	top:24px;
+	width:445px;
+	height:103px;
+	z-index:3;
+}
+#gogaldiv {
+	position:absolute;
+	left:0px;
+	top:2px;
+	width:112px;
+	height:20px;
+	z-index:4;
+	visibility: hidden;
+}
+#galdiv {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:112px;
+	height:24px;
+	z-index:5;
+}
+#apDiv4 {
+	position:absolute;
+	left:150px;
+	top:48px;
+	width:62px;
+	height:54px;
+	z-index:6;
+	visibility: hidden;
+}
+#settingsdiv {
+	position:absolute;
+	left:0px;
+	top:24px;
+	width:453px;
+	height:171px;
+	z-index:7;
+	visibility: hidden;
+}
+#apDiv5 {
+	position:absolute;
+	left:209px;
+	top:161px;
+	width:44px;
+	height:45px;
+	z-index:8;
+}
+#apDiv6 {
+	position:absolute;
+	left:115px;
+	top:171px;
+	width:27px;
+	height:25px;
+	z-index:9;
+}
+#apDiv7 {
+	position:absolute;
+	left:59px;
+	top:171px;
+	width:37px;
+	height:25px;
+	z-index:10;
+}
+#apDiv8 {
+	position:absolute;
+	left:252px;
+	top:170px;
+	width:51px;
+	height:25px;
+	z-index:11;
+}
+#apDiv9 {
+	position:absolute;
+	left:158px;
+	top:171px;
+	width:51px;
+	height:25px;
+	z-index:12;
+}
+#apDiv10 {
+	position:absolute;
+	left:389px;
+	top:171px;
+	width:25px;
+	height:25px;
+	z-index:13;
+}
+#apDiv11 {
+	position:absolute;
+	left:226px;
+	top:29px;
+	width:202px;
+	height:89px;
+	z-index:14;
+	visibility: hidden;
+}
+#apDiv12 {
+	position:absolute;
+	left:416px;
+	top:2px;
+	width:21px;
+	height:20px;
+	z-index:15;
+}
+#apDiv13 {
+	position:absolute;
+	left:550px;
+	top:114px;
+	width:328px;
+	height:211px;
+	z-index:16;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('system/system_images/photogallery_images/viewimagesover.png','system/system_images/photogallery_images/deleteover.png','system/system_images/photogallery_images/nextover.png','system/system_images/photogallery_images/fullshowover.png','system/system_images/photogallery_images/prevover.png','system/system_images/photogallery_images/fitlargeover.png','system/system_images/photogallery_images/zoomover.png','system/system_images/photogallery_images/backexitover.png','system/system_images/photogallery_images/gogalleryover.png')">
+<div id="apDiv1"><img src="system/system_images/photogallery_images/bottombar2.png" width="462" height="52" /></div>
+<div id="apDiv2"><img src="system/system_images/photogallery_images/topbar2.png" width="462" height="24" /></div>
+<div id="apDiv3">
+<iframe src="gallery.html" id="igallery" name="igallery" height="133" width="462" frameborder="0" scrolling="no"></iframe></div>
+<div id="gogaldiv"><a href="#" onclick="document.igallery.location.href='gallery.html'" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('gogalleryimg','','system/system_images/photogallery_images/gogalleryover.png',1)"><img src="system/system_images/photogallery_images/gogallery.png" name="gogalleryimg" width="112" height="20" border="0" id="gogalleryimg" onclick="MM_showHideLayers('gogaldiv','','hide','galdiv','','show')" /></a></div>
+<div id="galdiv"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('viewimagesimg','','system/system_images/photogallery_images/viewimagesover.png',1)"><img src="system/system_images/photogallery_images/viewimages.png" name="viewimagesimg" width="112" height="24" border="0" id="viewimagesimg" onclick="MM_showHideLayers('gogaldiv','','show','galdiv','','hide');document.igallery.location.href='slideshow.html'" /></a></div>
+<div id="apDiv4">
+  <iframe src="slideshows.html" id="shows" name="shows" scrolling="no" frameborder="0"></iframe>
+</div>
+<div id="settingsdiv">
+  <iframe src="settings.html" id="settingsframe" width="462" height="185" scrolling="no" frameborder="0"></iframe>
+</div>
+<div id="apDiv5"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('fullshowimg','','system/system_images/photogallery_images/fullshowover.png',1)"><img src="system/system_images/photogallery_images/fullshow.png" name="fullshowimg" width="44" height="45" border="0" id="fullshowimg" /></a></div>
+<div id="apDiv6"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','system/system_images/photogallery_images/fitlargeover.png',1)"><img src="system/system_images/photogallery_images/fitlarge.png" name="Image6" width="27" height="25" border="0" id="Image6" /></a></div>
+<div id="apDiv7"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','system/system_images/photogallery_images/zoomover.png',1)"><img src="system/system_images/photogallery_images/zoom.png" name="Image7" width="37" height="25" border="0" id="Image7" /></a></div>
+<div id="apDiv8"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','system/system_images/photogallery_images/nextover.png',1)"><img src="system/system_images/photogallery_images/next.png" name="Image8" width="51" height="25" border="0" id="Image8" onclick="next()" /></a></div>
+<div id="apDiv9"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','system/system_images/photogallery_images/prevover.png',1)"><img src="system/system_images/photogallery_images/prev.png" name="Image9" width="51" height="25" border="0" id="Image9" onclick="prev()" /></a></div>
+<div id="apDiv10"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','system/system_images/photogallery_images/deleteover.png',1)"><img src="system/system_images/photogallery_images/delete.png" name="Image10" width="25" height="25" border="0" id="Image10" /></a></div>
+<div id="apDiv11">
+  <form id="gfrm" name="gfrm" method="post" action="">
+    <label>
+    <input name="imgnumber" type="text" id="imgnumber" />
+    </label>
+  </form>
+</div>
+<div id="apDiv12"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','system/system_images/photogallery_images/backexitover.png',1)"><img src="system/system_images/photogallery_images/backexit.png" name="Image11" width="21" height="20" border="0" id="Image11" onclick="document.location.href='../main.html'" /></a></div>
+</body>
+</html>

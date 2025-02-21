@@ -1,0 +1,859 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #000000;
+}
+#startbut {
+	position:absolute;
+	width:26px;
+	height:29px;
+	z-index:32;
+	left: -1px;
+	top: 235px;
+}
+#taskbar {
+	position:absolute;
+	width:413px;
+	height:3px;
+	z-index:4;
+	left: 0px;
+	top: 238px;
+}
+#computer {
+	position:absolute;
+	width:36px;
+	height:20px;
+	z-index:4;
+	left: 12px;
+	top: 2px;
+}
+#Layer4 {
+	position:absolute;
+	width:80px;
+	height:20px;
+	z-index:7;
+	left: 5px;
+	top: 45px;
+}
+#mediactr {
+	position:absolute;
+	width:17px;
+	height:7px;
+	z-index:9;
+	left: 12px;
+	top: 61px;
+}
+#Layer6 {
+	position:absolute;
+	width:81px;
+	height:21px;
+	z-index:5;
+	left: 5px;
+	top: 104px;
+}
+#messenger_quick {
+	position:absolute;
+	width:20px;
+	height:20px;
+	z-index:8;
+	left: 97px;
+	top: 289px;
+}
+#sidebar {
+	position:absolute;
+	width:59px;
+	height:14px;
+	z-index:6;
+	left: 387px;
+	top: 0px;
+}
+#Layer9 {	position:absolute;
+	width:58px;
+	height:14px;
+	z-index:3;
+	left: 180px;
+	top: 142px;
+}
+#Layer10 {
+	position:absolute;
+	width:72px;
+	height:38px;
+	z-index:6;
+	left: 237px;
+	top: 169px;
+}
+#firefox {
+	position:absolute;
+	width:23px;
+	height:17px;
+	z-index:10;
+	left: 13px;
+	top: 120px;
+}
+#Layer12 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:7;
+}
+#Layer13 {
+	position:absolute;
+	width:81px;
+	height:21px;
+	z-index:11;
+	left: 48px;
+	top: 162px;
+}
+#Layer14 {	position:absolute;
+	width:23px;
+	height:17px;
+	z-index:6;
+	left: 13px;
+	top: 120px;
+}
+#Layer15 {	position:absolute;
+	width:23px;
+	height:17px;
+	z-index:6;
+	left: 13px;
+	top: 120px;
+}
+#gmaps_launch {
+	position:absolute;
+	width:9px;
+	height:7px;
+	z-index:12;
+	left: 120px;
+	top: 292px;
+}
+#Layer17 {
+	position:absolute;
+	width:56px;
+	height:28px;
+	z-index:9;
+	left: 426px;
+	top: 244px;
+}
+#Layer18 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:9;
+	left: 832px;
+	top: 276px;
+}
+#task_clock {
+	position:absolute;
+	width:60px;
+	height:21px;
+	z-index:9;
+	left: 412px;
+	top: 250px;
+}
+#clock_gadget {
+	position:absolute;
+	width:37px;
+	height:41px;
+	z-index:13;
+	left: 457px;
+	top: 311px;
+}
+#startmenu {
+	position:absolute;
+	width:161px;
+	height:115px;
+	z-index:28;
+	left: -2px;
+	top: 5px;
+	visibility: hidden;
+}
+#calendar_gadget {
+	position:absolute;
+	width:67px;
+	height:42px;
+	z-index:36;
+	left: 373px;
+	top: 301px;
+}
+#bubble {
+	position:absolute;
+	width:200px;
+	height:52px;
+	z-index:17;
+	left: 191px;
+	top: 178px;
+	visibility: hidden;
+}
+#bubblecross {
+	position:absolute;
+	width:7px;
+	height:9px;
+	z-index:18;
+	left: 377px;
+	top: 183px;
+	visibility: hidden;
+}
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:16;
+}
+#userimage {
+	position:absolute;
+	width:43px;
+	height:39px;
+	z-index:24;
+	left: 153px;
+	top: -11px;
+	visibility: hidden;
+}
+#sticky_gadget {
+	position:absolute;
+	width:29px;
+	height:53px;
+	z-index:39;
+	left: 514px;
+	top: 298px;
+}
+#sidebarline {
+	position:absolute;
+	width:57px;
+	height:14px;
+	z-index:38;
+	left: 403px;
+	top: 1px;
+}
+#moregadgets {
+	position:absolute;
+	width:82px;
+	height:17px;
+	z-index:40;
+	left: 395px;
+	top: -1px;
+}
+#wordicon {
+	position:absolute;
+	width:45px;
+	height:44px;
+	z-index:15;
+	left: 12px;
+	top: 175px;
+}
+#Layer2 {
+	position:absolute;
+	width:83px;
+	height:21px;
+	z-index:16;
+	left: 1px;
+	top: 219px;
+}
+#aerowin {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:42;
+	left: 26px;
+	top: -6px;
+	visibility: hidden;
+}
+#aerobut {
+	position:absolute;
+	width:101px;
+	height:11px;
+	z-index:44;
+	left: 332px;
+	top: 21px;
+	visibility: visible;
+}
+#aerocontent {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:45;
+	left: 49px;
+	top: 70px;
+	visibility: hidden;
+}
+#aeroback {
+	position:absolute;
+	width:44px;
+	height:20px;
+	z-index:45;
+	left: 516px;
+	top: 73px;
+	visibility: visible;
+}
+#menucontent {
+	position:absolute;
+	width:89px;
+	height:115px;
+	z-index:29;
+	left: 9px;
+	top: 19px;
+	visibility: hidden;
+}
+#menubut {
+	position:absolute;
+	width:59px;
+	height:23px;
+	z-index:30;
+	left: 125px;
+	top: 210px;
+	visibility: hidden;
+}
+#gadgetswin {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:46;
+	left: 30px;
+	top: 5px;
+	visibility: hidden;
+}
+#gadgetsbut {
+	position:absolute;
+	width:95px;
+	height:18px;
+	z-index:47;
+	left: 330px;
+	top: 20px;
+	visibility: visible;
+}
+#Layer3 {
+	position:absolute;
+	width:101px;
+	height:17px;
+	z-index:30;
+	left: 109px;
+	top: 245px;
+}
+#Layer5 {
+	position:absolute;
+	width:22px;
+	height:30px;
+	z-index:30;
+	left: 448px;
+	top: 250px;
+}
+#clock {
+	position:absolute;
+	width:58px;
+	height:21px;
+	z-index:20;
+	left: 397px;
+	top: 240px;
+}
+.style5 {
+	font-family: Tahoma;
+	font-size: 18px;
+	font-weight: bold;
+}
+#calendarsidebar {
+	position:absolute;
+	width:73px;
+	height:64px;
+	z-index:37;
+	left: 398px;
+	top: 167px;
+}
+body,td,th {
+	color: #FFFFFF;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+#sidebararrows {
+	position:absolute;
+	width:28px;
+	height:24px;
+	z-index:41;
+	left: 520px;
+	top: 32px;
+}
+#Layer7 {
+	position:absolute;
+	width:52px;
+	height:39px;
+	z-index:36;
+	left: 405px;
+	top: 97px;
+}
+#gclocktools {
+	position:absolute;
+	width:15px;
+	height:38px;
+	z-index:14;
+	left: 389px;
+	top: 13px;
+	visibility: hidden;
+}
+#stickytool {
+	position:absolute;
+	width:17px;
+	height:24px;
+	z-index:40;
+	left: 384px;
+	top: 81px;
+	visibility: hidden;
+}
+#caltools {
+	position:absolute;
+	width:16px;
+	height:34px;
+	z-index:38;
+	left: 384px;
+	top: 159px;
+	visibility: hidden;
+}
+#thumbnail {
+	position:absolute;
+	width:77px;
+	height:50px;
+	z-index:52;
+	left: 11px;
+	top: 159px;
+	visibility: hidden;
+}
+#tasktab {
+	position:absolute;
+	width:44px;
+	height:17px;
+	z-index:53;
+	left: 44px;
+	top: 239px;
+	visibility: visible;
+}
+#Layer8 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:39;
+}
+#sidebaricon {
+	position:absolute;
+	width:20px;
+	height:10px;
+	z-index:21;
+	left: 372px;
+	top: 247px;
+}
+#Layer11 {
+	position:absolute;
+	width:50px;
+	height:17px;
+	z-index:41;
+	left: 423px;
+	top: 250px;
+}
+.style7 {font-size: 10px}
+#aero_max {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:49;
+	left: 5px;
+	top: 5px;
+	visibility: hidden;
+}
+#max_buttons {
+	position:absolute;
+	width:95px;
+	height:19px;
+	z-index:50;
+	left: 377px;
+	top: 6px;
+	visibility: hidden;
+}
+#max_content {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:51;
+	left: 10px;
+	top: 27px;
+	visibility: hidden;
+}
+#Layer16 {
+	position:absolute;
+	width:54px;
+	height:115px;
+	z-index:46;
+	left: 141px;
+	top: 71px;
+}
+#menu_side {
+	position:absolute;
+	width:75px;
+	height:198px;
+	z-index:31;
+	left: 114px;
+	top: -16px;
+	visibility: hidden;
+}
+.style9 {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+#start_doc {
+	position:absolute;
+	width:51px;
+	height:67px;
+	z-index:26;
+	left: 150px;
+	top: 5px;
+	visibility: hidden;
+}
+#start_pics {
+	position:absolute;
+	width:53px;
+	height:63px;
+	z-index:27;
+	left: 155px;
+	top: 5px;
+	visibility: hidden;
+}
+#start_search {
+	position:absolute;
+	width:57px;
+	height:66px;
+	z-index:28;
+	left: 145px;
+	top: 6px;
+	visibility: hidden;
+}
+#start_comp {
+	position:absolute;
+	width:69px;
+	height:66px;
+	z-index:29;
+	left: 142px;
+	top: 6px;
+	visibility: hidden;
+}
+#start_network {
+	position:absolute;
+	width:69px;
+	height:68px;
+	z-index:30;
+	left: 142px;
+	top: 4px;
+	visibility: hidden;
+}
+#start_ctrl {
+	position:absolute;
+	width:60px;
+	height:65px;
+	z-index:31;
+	left: 150px;
+	top: 5px;
+	visibility: hidden;
+}
+#gadget_content {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:48;
+	left: 48px;
+	top: 91px;
+	visibility: hidden;
+}
+#desktop_icons {
+	position:absolute;
+	width:76px;
+	height:115px;
+	z-index:5;
+	left: -2px;
+	top: -12px;
+}
+#quick_launch {
+	position:absolute;
+	width:43px;
+	height:26px;
+	z-index:9;
+	left: 42px;
+	top: 244px;
+}
+#date_tooltip {
+	position:absolute;
+	width:104px;
+	height:23px;
+	z-index:55;
+	left: 335px;
+	top: 198px;
+	visibility: hidden;
+}
+#tooltip_content {
+	position:absolute;
+	width:59px;
+	height:22px;
+	z-index:56;
+	left: 396px;
+	top: 254px;
+	visibility: visible;
+}
+#user_image {
+	position:absolute;
+	width:16px;
+	height:26px;
+	z-index:25;
+	left: 15px;
+	top: 56px;
+	visibility: visible;
+}
+#Layer19 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 13px;
+	top: 12px;
+}
+#Layer20 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 69px;
+	top: 18px;
+}
+#Layer21 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+}
+#Layer22 {
+	position:absolute;
+	width:67px;
+	height:25px;
+	z-index:56;
+	left: 495px;
+	top: 91px;
+}
+#sidebar_options {
+	position:absolute;
+	width:90px;
+	height:45px;
+	z-index:54;
+	left: 305px;
+	top: 179px;
+	visibility: hidden;
+}
+#titlebar {
+	position:absolute;
+	width:82px;
+	height:0px;
+	z-index:43;
+	left: 126px;
+	top: 44px;
+	visibility: hidden;
+}
+#flip3D {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:57;
+	left: 0px;
+	top: 0px;
+	visibility: hidden;
+}
+#flip_desktop {
+	position:absolute;
+	width:149px;
+	height:115px;
+	z-index:58;
+	left: 180px;
+	top: 83px;
+	visibility: hidden;
+}
+#Layer23 {
+	position:absolute;
+	width:68px;
+	height:8px;
+	z-index:59;
+	left: 320px;
+	top: 245px;
+}
+.style10 {font-size: 11px}
+#tasktab_L {
+	position:absolute;
+	width:29px;
+	height:15px;
+	z-index:60;
+	left: 104px;
+	top: 239px;
+	visibility: visible;
+}
+#thumbnail_L {
+	position:absolute;
+	width:85px;
+	height:79px;
+	z-index:59;
+	left: 103px;
+	top: 166px;
+	visibility: hidden;
+}
+#prev {
+	position:absolute;
+	width:44px;
+	height:36px;
+	z-index:61;
+	left: 24px;
+	top: 173px;
+	visibility: hidden;
+}
+#prev_L {
+	position:absolute;
+	width:35px;
+	height:39px;
+	z-index:62;
+	left: 115px;
+	top: 179px;
+	visibility: hidden;
+}
+#Layer24 {
+	position:absolute;
+	width:200px;
+	height:80px;
+	z-index:1;
+	visibility: hidden;
+	left: 0px;
+	top: 45px;
+}
+#Layer25 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:63;
+}
+#wall1 {
+	position:absolute;
+	width:140px;
+	height:16px;
+	z-index:3;
+	left: 0px;
+	top: 28px;
+	visibility: hidden;
+}
+#Layer26 {
+	position:absolute;
+	width:200px;
+	height:96px;
+	z-index:2;
+	left: 0px;
+	top: 85px;
+	visibility: hidden;
+}
+#startbut_click {
+	position:absolute;
+	width:20px;
+	height:18px;
+	z-index:34;
+	left: -1px;
+	top: 235px;
+	visibility: hidden;
+}
+#tab_text {
+	position:absolute;
+	width:98px;
+	height:20px;
+	z-index:63;
+	left: 4px;
+	top: 3px;
+}
+
+#text{
+	font-size: 1em; /* optional. just to increase the font size. */
+	display: block;
+	line-height: 1em;
+	color: #666; /* shadow color */
+	background-color: transparent;
+	white-space: nowrap; /* wrapping breaks the effect */
+}
+
+#text:before,
+#text:after{
+	content: "text shadow"; /* generated text */
+	display: block;
+}
+
+#text:before{
+	margin-bottom: -1.05em;
+	margin-left: 0.1ex;
+	color: #ccc; /* shadow color */
+	background-color: transparent;
+}
+
+#text:after{
+	margin-top: -1.05em;
+	margin-left: -0.1ex;
+	color: #fff; /* text color */
+	background-color: transparent;
+}
+
+#Layer27 {
+	position:absolute;
+	width:32px;
+	height:31px;
+	z-index:62;
+	left: 160px;
+	top: 20px;
+}
+#Layer28 {
+	position:absolute;
+	width:32px;
+	height:39px;
+	z-index:62;
+	left: 144px;
+	top: 15px;
+}
+#Layer29 {
+	position:absolute;
+	width:69px;
+	height:44px;
+	z-index:62;
+	left: 240px;
+	top: 6px;
+}
+#Layer30 {
+	position:absolute;
+	width:150px;
+	height:32px;
+	z-index:62;
+	left: 200px;
+	top: 78px;
+}
+.style11 {font-size: 12px}
+#gadgets {
+	position:absolute;
+	width:63px;
+	height:115px;
+	z-index:35;
+	left: 398px;
+	top: 4px;
+}
+
+.style12 {font-size: 10}
+#arrow2 {
+	position:absolute;
+	width:15px;
+	height:10px;
+	z-index:27;
+	left: 376px;
+	top: 249px;
+	visibility: hidden;
+}
+#notification {
+	position:absolute;
+	width:64px;
+	height:63px;
+	z-index:41;
+	left: 373px;
+	top: 154px;
+	visibility: hidden;
+}

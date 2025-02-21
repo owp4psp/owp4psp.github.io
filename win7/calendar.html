@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Windows Calendar</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #FFFFFF;
+}
+#Layer1 {
+	position:absolute;
+	width:203px;
+	height:152px;
+	z-index:1;
+	left: 0px;
+	top: 52px;
+	text-align: center;
+}
+#Layer2 {
+	position:absolute;
+	width:207px;
+	height:28px;
+	z-index:2;
+	left: 253px;
+	top: 47px;
+}
+body,td,th {
+	font-family: Tahoma;
+	font-size: 12px;
+}
+#Layer3 {
+	position:absolute;
+	width:159px;
+	height:37px;
+	z-index:3;
+	top: 99px;
+	left: 242px;
+}
+-->
+</style></head>
+
+<body>
+<img src="system/system_images/calendar_images/cal_bg.PNG" width="462" height="206" />
+<div id="Layer1">
+<iframe src="calender_inner.html" id="cal"  name="cal" width="203" height="154" frameborder="0" scrolling="No" style="margin: 0px;"></iframe></div>
+<div id="Layer2">
+
+  <div align="left">
+      <script type="text/javascript">
+
+var d=new Date();var weekday=new Array(7);
+
+weekday[0]="Sunday";
+weekday[1]="Monday";
+weekday[2]="Tuesday";
+weekday[3]="Wednesday";
+weekday[4]="Thursday";
+weekday[5]="Friday";
+weekday[6]="Saturday";
+
+var d=new Date();var month=new Array(12);
+
+month[0]="January";
+month[1]="February";
+month[2]="March";
+month[3]="April";
+month[4]="May";
+month[5]="June";
+month[6]="July";
+month[7]="August";
+month[8]="September";
+month[9]="October";
+month[10]="November";
+month[11]="December";
+
+var d = new Date();
+
+var d = new Date();
+
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+document.write("<div style='position:absolute; top:0px; left:0px; color:black; text-align:center; font-family: tahoma; font-size: 12'>" + weekday[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear() + "</div>");
+    </script>
+    </div>
+</div>
+<div id="Layer3">
+  <form id="form1" name="form1" method="post" action="">
+    <label>
+      <textarea name="textarea"></textarea>
+    </label>
+  </form>
+</div>
+</body>
+</html>

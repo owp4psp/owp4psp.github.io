@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Windows Calendar</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style></head>
+<style type="text/css">
+
+.main {
+border:0px;
+}
+
+.month {
+	background-image:url(system/system_images/calendar_images/topbar.png);
+	font: 12px tahoma;
+	color:#3C4A57;
+	height:38px;
+	vertical-align: text-top;
+	}
+
+.days {
+font-size: 9px;
+font-family:tahoma;
+color:#3C4A57;
+background-image:url(system/system_images/calendar_images/cellbg.png);
+padding: 1px;
+width:27px;
+height:23px;
+}
+
+.days #today{
+color:#F8FDFF;
+vertical-align: text-top;
+}
+
+</style>
+
+
+<script type="text/javascript" src="basiccalendar.js">
+
+/***********************************************
+* Basic Calendar-By Brian Gosselin at http://scriptasylum.com/bgaudiodr/
+* Script featured on Dynamic Drive (http://www.dynamicdrive.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script> 
+<body>
+<script type="text/javascript">
+
+var todaydate=new Date()
+var curmonth=todaydate.getMonth()+1 //get current month (1-12)
+var curyear=todaydate.getFullYear() //get current year
+
+document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 0));
+</script>
+</body>
+</html>

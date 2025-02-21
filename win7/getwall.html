@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script language="javascript" type="text/javascript">	
+function getwall(){
+		if(document.getElementById('wallsrc').value==''){
+		parent.wallpaperbg.src="system/system_images/backgrounds/win7_fish.png";
+	}else{
+		parent.wallpaperbg.src=document.getElementById('wallsrc').value;
+		}
+}
+
+</script>
+
+<style type="text/css">
+<!--
+#wall1 {
+	position:absolute;
+	left:4px;
+	top:0px;
+	width:341px;
+	height:60px;
+	z-index:14;
+	visibility: hidden;
+}
+-->
+</style>
+</head>
+
+<body onload="getwall()">
+<div id="wall1">
+  <form id="wallbgform" name="wallbgform" method="post" action="">
+    <input type="text" name="wallsrc" id="wallsrc" />
+  </form>
+</div>
+</body>
+</html>

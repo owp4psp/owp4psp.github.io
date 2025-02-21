@@ -1,0 +1,477 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Windows 7 -- X-boy &amp; Burpman</title>
+
+<meta http-equiv="refresh" content="300; URL=screensaver.html">
+<script src="system/core/sidebar.js"></script>
+<script type="text/javascript">
+function imageGo() 
+{
+document.windowImg11.src=check.imageLocation.value; 
+document.gadwin.src=check1.imageLocation.value; 
+document.windowImg2.src=check2.imageLocation.value; 
+
+}
+
+</script>
+
+<script src="system/core/tabs.js"></script>
+<script>
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+<script src="system/core/core3D.js"></script>
+
+<script type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+
+<link href="system/core/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="system/core/style1.css" rel="stylesheet">
+<style type="text/css">
+<!--
+#UAC {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:88;
+	left: 80px;
+	top: 54px;
+	visibility: hidden;
+}
+#search {
+	position:absolute;
+	width:68px;
+	height:15px;
+	z-index:58;
+	left: 8px;
+	top: 219px;
+	visibility: hidden;
+}
+#apDiv1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	width:59px;
+	height:55px;
+	z-index:8;
+	left: 408px;
+	top: 93px;
+}
+#launch {
+	position:absolute;
+	width:32px;
+	height:21px;
+	z-index:89;
+	left: 52px;
+	top: 247px;
+}
+-->
+</style>
+</head>
+<body onload= "dT();getwall();imageGo();MM_preloadImages('system/system_images/start_menu/shutdown.over.png','system/system_images/start_menu/lock.button.over.png')">
+
+<!-- Main Taskbar Code -->
+<div id="taskbar"><img src="system/system_images/task_bar/taskbar1.png" width="480" height="33" border="0" usemap="#Map" />
+<map name="Map"><area shape="rect" coords="466,3,481,33" href="desktop.html">
+</map></div>
+<div id="startbut"><img src="system/system_images/task_bar/orb1.png" width="42" height="42" onMouseOver="this.src='system/system_images/task_bar/orb2.png'" onMouseOut="this.src='system/system_images/task_bar/orb1.png'" onClick="showDiv('startmenu'); showDiv('menu_side'); showDiv('startmenu'); showDiv('startbut_click'); showDiv('search');showDiv('menucontent');showDiv('menubut');hideDiv('bubble');hideDiv('bubblecross')"></div>
+<div id="clock">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	  <td width="0"><div align="right" onMouseOver="">
+<span id="tP" class="time_text" style="color: #FFFFFF;">00:00 --</span>
+	<script type="text/javascript">
+			function tS(){ x=new Date(); x.setTime(x.getTime()); return x; }
+			function lZ(x){ return (x>9)?x:'0'+x; }
+			function tH(x){ if(x==0){ x=12; } return (x>12)?x-=12:x; }
+			function dE(x){ if(x==1||x==21||x==31){ return 'st'; } if(x==2||x==22){ return 'nd'; } if(x==3||x==23){ return 'rd'; } return 'th'; }
+			function dT(){document.getElementById('tP').innerHTML=eval(oT); setTimeout('dT()',1000); }
+			function aP(x){ return (x>11)?'PM':'AM'; }
+			function y4(x){ return (x<500)?x+1900:x; }
+			oT="tH(tS().getHours())+':'+lZ(tS().getMinutes())+' '+aP(tS().getHours())";
+			if(!document.all){ }
+			</script>
+		  </div></tr>
+</table></div>
+<div id="arrow_moreicons">
+  <table width="20" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td><a href="#"  onclick="check('network.html','system/system_images/tab_icons/network.png','Network'); frameWindow3.window.location='network.html'; document.form.textfield.value='welcome.html';hideDiv('startmenu');hideDiv('bubble');hideDiv('bubblecross');hideDiv('menucontent');hideDiv('menubut');hideDiv('menu_side');hideDiv('startbut_click');showDiv('startbut')"><img src="system/system_images/task_bar/NOT_CONNECTED.png" width="16" height="16" border="0" /></a></td>
+      <td><a href="ctrl_alt_del.html"><img src="system/system_images/task_bar/task_managericon.PNG" width="16" height="14" border="0" /></a></td>
+    </tr>
+  </table>
+  <area shape="rect" coords="27,22,112,39" href="#" />
+  <area shape="rect" coords="27,0,111,18" href="#" />
+  </map>
+</div>
+<!-- Startmenu -->
+</div>
+<div id="startmenu"><img src="system/system_images/start_menu/start.menu.png" width="187" height="224" border="0" usemap="#Map5" />
+<map name="Map5">
+<area shape="rect" coords="95,202,112,215" href="#" onClick="frameWindow.window.location='startmenu_search.html'">
+</map></div>
+<div id="startbut_click"><img src="system/system_images/task_bar/orb3.png" width="42" height="42" border="0" onClick="showDiv('startbut'); hideDiv('startmenu'); hideDiv('menu_side'); hideDiv('startmenu'); hideDiv('search');hideDiv('menucontent'); hideDiv('startbut_click');hideDiv('menubut')" ></div>
+<div id="menu_side">
+  <table width="78" height="199" border="0">
+    <tr>
+      <td height="74"><div align="center"><img src="system/system_images/start_menu/userframe.png" name="IMAGEBOX" width="56" height="56" id="IMAGEBOX" /></div></td>
+    </tr>
+    <tr>
+      <td><span class="style9" onMouseOver="IMAGEBOX.src='system/system_images/start_menu/rollovers/library1.png'" onMouseOut="IMAGEBOX.src='system/system_images/start_menu/userframe.png'" onClick="check('docs.html','system/system_images/tab_icons/Documents.png','Documents');hideDiv('startbut_click');hideDiv('startmenu');hideDiv('search');hideDiv('startbut_click');showDiv('startbut');hideDiv('menu_side');hideDiv('menubut');hideDiv('menucontent')">Libraries</span></td>
+    </tr>
+    <tr>
+      <td><span class="style9" onMouseOver="IMAGEBOX.src='system/system_images/start_menu/rollovers/pictures.png'" onMouseOut="IMAGEBOX.src='system/system_images/start_menu/userframe.png'" onClick="hideDiv('startbut_click');hideDiv('startmenu');hideDiv('menu_side');hideDiv('menucontent');hideDiv('search'); showDiv('startbut');hideDiv('menubut')">Pictures</span></td>
+    </tr>
+    <tr>
+      <td><span class="style9" onMouseOver="IMAGEBOX.src='system/system_images/start_menu/rollovers/search.png'" onMouseOut="IMAGEBOX.src='system/system_images/start_menu/userframe.png'" onClick="checks('search.html','system/system_images/tab_icons/Search.png','Search');hideDiv('startbut_click');hideDiv('startmenu');hideDiv('search');hideDiv('menu_side');hideDiv('menubut');showDiv('startbut');hideDiv('menucontent')">Search</span></td>
+    </tr>
+    <tr>
+      <td><span class="style9" onMouseOver="IMAGEBOX.src='system/system_images/start_menu/rollovers/documents.png'" onMouseOut="IMAGEBOX.src='system/system_images/start_menu/userframe.png'" onClick="check('network.html','system/system_images/tab_icons/File.png','Network');hideDiv('search');hideDiv('startmenu');hideDiv('startbut_click');hideDiv('menu_side');hideDiv('menubut');showDiv('startbut');hideDiv('menucontent')">Network</span></td>
+    </tr>
+    <tr>
+      <td><span class="style9" onMouseOver="IMAGEBOX.src='system/system_images/start_menu/rollovers/control.png'" onMouseOut="IMAGEBOX.src='system/system_images/start_menu/userframe.png'" onClick="check('ctrlpanel.html','system/system_images/tab_icons/control_panel.png','Control Panel');hideDiv('startmenu');hideDiv('startbut_click');hideDiv('menu_side');hideDiv('menubut');hideDiv('search');showDiv('startbut');hideDiv('menucontent')">Control Panel</span>
+      <td>
+    </tr>
+    <tr>
+      <td><span class="style9" onMouseOver="IMAGEBOX.src='system/system_images/start_menu/rollovers/help.png'" onMouseOut="IMAGEBOX.src='system/system_images/start_menu/userframe.png'" onClick="check('help.html','system/system_images/tab_icons/help.png','Help Center');hideDiv('startmenu');hideDiv('menu_side');hideDiv('menubut');hideDiv('startbut_click');hideDiv('search');showDiv('startbut');hideDiv('menucontent')">Help</span></td>
+    </tr>
+  </table>
+</div>
+<div id="menucontent">
+  <iframe src="startmenu.html" id="frameWindow" name="frameWindow" width="105" height="191" frameborder="0" scrolling="No" style="margin: 0px;"></iframe>
+</div>
+<!-- Max Window 1 -->
+<div id="aero_max1"><img src="system/system_images/aero_window/aero_maximized.png" alt="" name="windowImg1" width="472" height="234" border="0" usemap="#windowImg1Map" id="windowImg1" />
+<map name="windowImg1Map">
+<area shape="rect" coords="371,0,397,17" href="#" onClick="maxhidden()"><area shape="rect" coords="396,1,421,18" href="#">
+<area shape="rect" coords="421,1,461,18" href="#" onClick="maxhide()">
+</map></div>
+<div id="max_content1">
+<iframe name="maxframeone" id="maxframeone" width="462" height="205" frameborder="0" scrolling="no" src=""></iframe></div>
+<div class="style1 style10 style3" id="max_name">Max Window 1</div>
+<div id="max_icon"><img src="" name="windowicon_one1" width="12" height="12" id="windowicon_one1"></div>
+<div id="maxtab"><img src="system/system_images/task_bar/tab.png" name="windowB_img1" width="57" height="33" border="0" onClick="maxshow(); hidden2(); maxhidden2()" onMouseOver="showDiv('thumbnail1');showDiv('framethumb1');MM_swapImage('windowB_img1','','system/system_images/task_bar/tab1.png',0)" onMouseOut="hideDiv('thumbnail1');hideDiv('framethumb1');MM_swapImgRestore()" /></div>
+<div><img src="" name="max_tabicon" width="22" height="22" id="max_tabicon"></div>
+<div class="style1 style10 style11" id="namemaxtab"></div>
+<!-- Window 1 Main  Tab 1 -->
+<div id="window1"><img src="system/system_images/aero_window/vistawindow2.png" alt="" name="windowImg11" width="419" height="265" border="0" usemap="#windowImg11Map" id="windowImg11" />
+<map name="windowImg11Map">
+<area shape="rect" coords="301,9,327,35" onClick="hidden1()" href="#">
+<area shape="rect" coords="328,9,349,37" href="#">
+<area shape="rect" coords="349,9,393,37" onClick="hide1()" href="#">
+<area shape="rect" coords="25,45,48,73" href="#"><area shape="rect" coords="52,45,77,72" href="#"><area shape="rect" coords="79,45,91,72" href="#"><area shape="rect" coords="266,48,288,69" href="#"></map></div>
+<div id="windowSH1"><img src="system/system_images/task_bar/tab.png" name="windowB_img1" width="57" height="33" border="0" onClick="show1();hidden2(); maxhidden()" onDblClick="hideDiv('window1');hideDiv('close_min1');hideDiv(DIVframe1');hideDiv('window_name1');hideDiv('window_icon1')" onMouseOver="showDiv('thumbnail1');showDiv('framethumb1')" onMouseOut="hideDiv('thumbnail1');hideDiv('framethumb2')" /></div>
+<div class="style1 style10 style3" id="window_name1">Window 1 </div>
+<!-- Window 2 Main & Tab 2 -->
+<div id="windowSH2" onClick="show2();hidden1(); maxhidden2()"><a href="#"><img src="system/system_images/task_bar/tab.png" name="tasktab2" width="57" height="33" border="0" id="tasktab2" onMouseOver="MM_swapImage('tasktab2','','system/system_images/task_bar/tab1.png',0);showDiv('thumbnail2');showDiv('framethumb2')" onMouseOut="MM_swapImgRestore();hideDiv('thumbnail2');hideDiv('framethumb2')" onDblClick="hideDiv('window2');hideDiv('close_min2');hideDiv(DIVframe2');hideDiv('window_name2');hideDiv('window_icon2')" /></a></div>
+<div id="window2"><img src="system/system_images/aero_window/vistawindow2.png" alt="" name="windowImg2" width="419" height="265" border="0" usemap="#windowImg2Map" id="windowImg2" />
+<map name="windowImg2Map"><area shape="rect" coords="301,16,327,33" href="#" onClick="hidden2()">
+<area shape="rect" coords="328,16,351,33" href="#"><area shape="rect" coords="352,13,394,35" href="#" onClick="hide2()">
+<area shape="rect" coords="52,46,78,73" href="#"><area shape="rect" coords="24,44,50,73" href="#"><area shape="rect" coords="78,43,90,72" href="#"><area shape="rect" coords="267,46,289,70" href="#"></map></div>
+<div class="style1 style10 style3" id="window_name2">Window 2</div>
+<!-- Tab Program Icons -->
+<div id="Wbottom_icon1"><img src="" name="tabicon_one" width="22" height="22" id="tabicon_one"></div>
+<div id="Wbottom_icon2"><img src="" name="tabicon_two" width="22" height="22" id="tabicon_two"></div>
+<!-- Window Program Icon -->
+<div id="window_icon1"><img src="" name="windowicon_one" width="12" height="12" id="windowicon_one"></div>
+<div id="window_icon2"><img src="" name="windowicon_two" width="12" height="12" id="windowicon_two"></div>
+<!-- Window Frame 1 -->
+<div id="DIVframe1">
+<iframe name="frameone" id="frameone" width="371" height="165" frameborder="0" scrolling="no" src=""></iframe></div>
+<!-- Window Frame 2 -->
+<div id="DIVframe2">
+<iframe name="frametwo" id="frametwo" width="371" height="165" frameborder="0" scrolling="no" src=""></iframe></div>
+<!-- Close, Max and Min 2 -->
+<!-- Task Manager -->
+<div id="system_managerDIV"><img src="system/system_images/desktop_extras/windowtaskmanager_edited1.png" alt="" name="sys_manager" width="300" height="242" id="sys_manager" /></div>
+<div id="sysManagerInfo">
+  <table width="200" height="115" border="0">
+    <tr>
+      <td height="55"><div class="style11 style14" id="process1">No Process Running</div> 
+      <div align="right" class="style1 style11"><a href="#"><img src="system/system_images/desktop_extras/endtask_but.PNG" name="P1" width="78" height="21" border="0" id="P1" onClick="hide1()" /></a></div></td>
+    </tr>
+    <tr>
+      <td><div class="style11 style14" id="process2">No Process Running</div>
+      <div align="right" class="style1 style11"><a href="#"><img src="system/system_images/desktop_extras/endtask_but.PNG" name="P2" width="78" height="21" border="0" id="P2" onClick="hide2()" /></a></div></td>
+    </tr>
+  </table>
+</div>
+<div id="syscloseDIV" onClick="hideSysP()"><a href="#"><img src="system/system_images/aero_window/close.png" alt="" name="sysclose" width="43" height="17" border="0" id="sysclose" /></a></div>
+<!-- Calendar Tools -->
+<div id="caltools"><img src="system/programfiles/sidebar/tools.png" width="15" height="30" border="0" usemap="#Map6" />
+<map name="Map6" id="Map6">
+<area shape="rect" coords="-3,0,15,14" href="#" onClick="hideDiv('calendar_gadget');hideDiv('calendarsidebar');hideDiv('day');hideDiv('month');hideDiv('caltools')" />
+<area shape="rect" coords="2,16,17,32" href="#" onClick="MM_swapImage('calgad','','system/programfiles/sidebar/images/calendar/theme_2.png',0); hideDiv('caltools')" />
+</map></div>
+<!-- DO NOT EDIT, THIS IS NEEDED FOR MULTITASK -->
+<div id="forms">  
+<form id="system" name="system" method="post" action="">
+      <input type="name" id="name" type="text" width="1px" height="1px" id="name" value="" />
+	  <input type="text" id="formone" name="formone" value="1"/>
+      <input type="text" id="formtwo" name="formtwo"  value=""/>
+	  <input type="text" id="address" name="address" value=""/>
+	  <input type="text" id="window_name" name="window_name" value=""/>
+    <input type="text" id="windowicon" name="windowicon" value=""/>
+</form>
+<label></label></div>
+<div id="desktop_icons">
+  <table width="81" border="0" cellspacing="0">
+    <tr>
+      <td><div align="center"><a href="#"><img src="system/system_images/desktop_icons/my.computer.png" border="0" id="My Computer"  onmouseover="hideDiv('gclocktools');hideDiv('stickytool');hideDiv('caltools')" onClick="check('Computer.html','system/system_images/tab_icons/my_computer.png','Computer');hideDiv('bubble');hideDiv('bubblecross')" /></a></div>        
+      <div align="center" class="style13"></div></td>
+    </tr>
+    
+    <tr>
+      <td><div align="center"><a href="wmc_boot.html"><img src="system/system_images/desktop_icons/media.center.png" border="0" id="Windows Media Center" onMouseOver="hideDiv('gclocktools');hideDiv('stickytool');hideDiv('caltools')"/></a></div>
+      <div align="center"></div></td>
+    </tr>
+    
+    <tr>
+      <td><div align="center"><a href="system/programfiles/firefox/firefox.html"><img src="system/system_images/desktop_icons/mozilla.firefox.png" border="0" id="Mozilla Firefox" onMouseOver="hideDiv('gclocktools');hideDiv('stickytool');hideDiv('caltools')" /></a></div>        
+      <div align="center"></div></td>
+    </tr>
+    
+    <tr>
+      <td><div align="center"><a href="system/programfiles/Office/Word_mobile/Word_mobile.html"><img src="system/system_images/desktop_icons/microsoft.word.png" border="0" id="word_icon" onMouseOver="hideDiv('gclocktools');hideDiv('stickytool');hideDiv('caltools')" /></a></div></td>
+    </tr>
+  </table>
+</div>
+<div id="thumbnail1"><img src="system/system_images/task_bar/taskbar_preview1.png" width="121" height="88" /></div>
+<div id="thumbnail2"><img src="system/system_images/task_bar/taskbar_preview1.png" width="121" height="88" /></div>
+<div id="wall1">   
+<iframe width="480" height="100" id="wallframe" frameborder="0" scrolling="no" src="getwall.html"></iframe>
+<p>&nbsp;</p>
+<iframe width="480" height="100" id="wallframe" frameborder="0" scrolling="no" src="imagego.html"></iframe>
+</div>
+<div id="gadgetswin"><img src="system/system_images/aero_window/Gadget Gallery.png" name="gadwin" width="419" height="255" border="0" usemap="#gadwinMap" id="gadwin">
+<map name="gadwinMap"><area shape="rect" coords="350,14,394,32" href="#" onClick="hideDiv('gadgetswin');hideDiv('gadget_content')">
+<area shape="rect" coords="140,49,159,71" href="#"><area shape="rect" coords="26,48,45,69" href="#"><area shape="rect" coords="356,49,391,69" href="#"></map></div>
+<div id="gadget_content">
+<iframe src="gadgets.html" id="frameWindow" name="frameWindow" width="380" height="145" frameborder="0" scrolling="No" style="margin: 0px;"></iframe></div>
+<div id="flip3D"><img src="system/system_images/desktop_extras/mask.png" width="480" height="272" onClick="hideDiv('flip3D');hideDiv('flip_desktop');hideDiv('flipwin1');hideDiv('flipwin2')"></div>
+<div id="flip_desktop"><a href="desktop.html"><img src="system/system_images/desktop_extras/flipmain.png" width="119" height="123" border="0" onMouseOver="showDiv('desktopflipname')" onMouseOut="hideDiv('desktopflipname')"></a></div>
+<div id="menubut">
+  <table width="20" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><a href="shutting.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image52','','system/system_images/start_menu/shutdown.over.png',1)"><img src="system/system_images/start_menu/shutdown.png" name="Image52" width="29" height="20" border="0"></a></td>
+      <td><a href="login.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image53','','system/system_images/start_menu/lock.button.over.png',1)"><img src="system/system_images/start_menu/lock.button.png" name="Image53" width="27" height="20" border="0"></a></td>
+    </tr>
+  </table>
+</div>
+<div id="clock_gadget"><img src="system/programfiles/sidebar/images/clock/theme_2.png" name="clockgad" width="65" height="65" id="clockgad" onMouseOver="showDiv('gclocktools');hideDiv('caltools');hideDiv('stickytool')"></div>
+<div id="sticky_gadget"><img src="system/programfiles/sidebar/images/sticky/theme_1.png" name="stickygad" width="80" height="80" id="stickygad" onMouseOver="hideDiv('gclocktools');showDiv('stickytool');hideDiv('caltools')"></div>
+<div id="calendar_gadget"><img src="system/programfiles/sidebar/images/calendar/theme_1.png" name="calgad" width="80" height="80" id="calgad"></div>
+<div id="calendarsidebar" onClick="MM_showHideLayers('caltools','','hide')" onMouseOver="MM_showHideLayers('caltools','','show','gclocktools','','hide','stickytool','','hide')">
+  <div id="cal2"><body bgcolor="#FFFFFF">
+<div id="border" style="width:80px; height:60px;">
+<span class="style7" id="month" style="position:absolute; top:7px; width:78px; text-align:center; left: 1px;">&nbsp;</span>
+<span class="style5" id="day" style="position:absolute; top:34px; width:70px; text-align:center; height: 21px; left: 5px;">&nbsp;</span></div>
+
+<script language="javascript" type="text/javascript">
+var d = new Date();
+var month = new Array('January','Febuary','March','April','May','June','July','August','September','October','November','December');
+var date = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+setTimeout('initDate()',2000);
+function initDate()
+{
+	document.getElementById('month').firstChild.nodeValue = month[d.getMonth()];
+	document.getElementById('day').firstChild.nodeValue = d.getDate();
+}
+</script></div></div>
+<div id="gclocktools"><img src="system/programfiles/sidebar/tools.png" width="15" height="30" border="0" usemap="#Map8" />
+<map name="Map8" id="Map8">
+<area shape="rect" coords="1,1,17,14" href="#" onClick="clockhide()"/><area shape="rect" coords="1,15,18,27" href="#" onClick="MM_showHideLayers('gclocktools','','hide');MM_swapImage('clockgad','','system/programfiles/sidebar/images/clock/theme_4.png',0)"/>
+</map></div>
+<div id="stickytool"><img src="system/programfiles/sidebar/tools.png" width="15" height="30" border="0" usemap="#Map7" />
+<map name="Map7" id="Map7">
+<area shape="rect" coords="-3,0,14,15" href="#" onClick="notehide()"/><area shape="rect" coords="-6,16,14,39" href="#" onClick="MM_swapImage('stickygad','','system/programfiles/sidebar/images/sticky/theme_2.png',0);MM_showHideLayers('stickytool','','hide')"/>
+</map></div>
+<div id="gadget1">
+<iframe src="system/programfiles/sidebar/gad1_null.html" id="gadWindow1" name="gadWindow1" width="80" height="63" frameborder="0" scrolling="No" style="margin: 0px;"></iframe></div>
+<div id="gadget2">
+<iframe src="system/programfiles/sidebar/gad2_null.html" id="gadWindow2" name="gadWindow2" width="80" height="80" frameborder="0" scrolling="No" style="margin: 0px;"></iframe></div>
+<div id="sidebar_options"><img src="system/system_images/desktop_extras/sidebar_options.png" width="112" height="65" border="0" usemap="#Map2">
+<map name="Map2"><area shape="rect" coords="27,45,115,64" href="#" onClick="hideDiv('gadgets_options');hideDiv('sidebar');hideDiv('gadget1');hideDiv('gadget2');hideDiv('calender_sidebar');hideDiv('calendar_gadget');hideDiv('sticky_gadget');hideDiv('clock_gadget');hideDiv('sidebaricon');hideDiv('gclocktools');hideDiv('stickytool');hideDiv('caltools')">
+</map></div>
+<div id="wallpaper"><img name="wallpaperbg" width="480" height="272" id="wallpaperbg" onClick="hideDiv('startbut_click');hideDiv('sidebar_options');hideDiv('startmenu');hideDiv('search');showDiv('startbut');hideDiv('menu_side');hideDiv('menucontent');hideDiv('menubut')" onMouseOver="hideDiv('framethumb1');hideDiv('framethumb2')"></div>
+</div>
+<div id="maxtab2"><img src="system/system_images/task_bar/tab.png" name="windowB_img2" width="57" height="33" border="0" onClick="maxshow2(); hidden1(); maxhidden()" onMouseOver="MM_swapImage('windowB_img2','','system/system_images/task_bar/tab1.png',0);showDiv('thumbnail12');showDiv('framethumb2')" onMouseOut="hideDiv('thumbnail2');hideDiv('framethumb2');MM_swapImgRestore()" /></div>
+
+   
+<div id="max_content2">
+<iframe name="maxframetwo" id="maxframetwo" width="462" height="205" frameborder="0" scrolling="no" src=""></iframe></div>
+<div id="max_name2"><span class="style1 style10 style3">Max Window 2 </span></div>
+<div id="max_icon2"><img src="" name="windowicon_two" width="12" height="12" id="windowicon_two"></div>
+<div id="aero_max2"><img src="system/system_images/aero_window/aero_maximized.png" alt="" name="windowImg2" width="472" height="234" border="0" usemap="#windowImg2Map2" id="windowImg2" />
+  <map name="windowImg2Map2">
+    <area shape="rect" coords="371,2,396,18" href="#" onClick="maxhidden2()">
+  <area shape="rect" coords="397,2,421,19" href="#">
+  <area shape="rect" coords="421,-1,464,18" href="#" onClick="maxhide2()">
+  </map>
+</div>
+<div id="Layer36"><img src="" name="tabicon_two" width="22" height="22" id="tabicon_two"></div>
+<div id="flipwin1"><a href="#"><img src="system/system_images/desktop_extras/flip1.png" width="119" height="123" border="0" onClick="flip1start()" onMouseOver="showDiv('flip1_name');flip1over()" onMouseOut="hideDiv('flip1_name')"></a></div>
+<div id="flipwin2"><a href="#"><img src="system/system_images/desktop_extras/flip2.png" width="119" height="123" border="0" onClick="flip2start()" onMouseOver="showDiv('flip2_name');flip2over()" onMouseOut="hideDiv('flip2_name')"></a></div>
+<div id="framethumb1">
+<iframe src="null.html" id="framethumbone" name="framethumbone" width="94" height="60" frameborder="0" scrolling="No" style="margin: 0px;"></iframe></div>
+<div id="framethumb2">
+<iframe src="null.html" id="framethumbtwo" name="framethumbtwo" width="94" height="60" frameborder="0" scrolling="No" style="margin: 0px;"></iframe></div>
+<div id="flip1_name">
+  <div align="center">Flip 1 </div>
+</div>
+<div id="flip2_name">
+  <div align="center">Flip 2 </div>
+</div>
+<div id="desktopflipname">
+  <div align="center">Desktop</div>
+</div>
+<div id="UAC"><img src="system/system_images/desktop_extras/UAC.PNG" width="321" height="153" border="0" usemap="#Map3">
+<map name="Map3"><area shape="rect" coords="285,11,310,24" href="#" onClick="hideDiv('UAC');hideDiv('flip3D')">
+<area shape="rect" coords="236,116,310,139" href="#" onClick="hideDiv('UAC');hideDiv('flip3D')">
+<area shape="rect" coords="148,118,232,139" href="#" onClick="check('update.html','system/system_images/tab_icons/windows_update.png','Windows Update');hideDiv('UAC');hideDiv('flip3D')"><area shape="rect" coords="7,59,94,74" href="#"></map></div>
+<div id="search">
+<input name="txturl" type="text" id="txturl" style="width:83px;height:15px; border:0px; background-color:transparent;" value="Start Search" /></div>
+
+<div id="sidebaricon">
+  <table width="28" height="18" border="0">
+    <tr>
+      <td width="16"><a href="#"><img src="system/system_images/task_bar/arrow.PNG" width="16" height="11" border="0" onClick="MM_showHideLayers('sidebaricon','','hide','arrow2','','show','notification','','show')" /></a></td>
+    </tr>
+  </table>
+</div>
+
+<div id="notification"><img src="system/system_images/task_bar/box.png" width="100" height="83" border="0" usemap="#Map3" />
+<map name="Map3" id="Map3"><area shape="rect" coords="8,58,93,76" href="#" /></map></div>
+
+<div id="arrow2"><a href="#"><img src="system/system_images/task_bar/arrow2.PNG" width="16" height="11" border="0" onClick="MM_showHideLayers('sidebaricon','','show','arrow2','','hide','notification','','hide')" /></a></div>
+
+<div id="tooltip_content">
+
+<script type="text/javascript">
+
+var d=new Date();var weekday=new Array(7);
+
+weekday[0]="Sun";
+weekday[1]="Mon";
+weekday[2]="Tues";
+weekday[3]="Wed";
+weekday[4]="Thurs";
+weekday[5]="Fri";
+weekday[6]="Sat";
+
+var d=new Date();var month1=new Array(12);
+
+month1[0]="01";
+month1[1]="02";
+month1[2]="03";
+month1[3]="04";
+month1[4]="05";
+month1[5]="06";
+month1[6]="07";
+month1[7]="08";
+month1[8]="09";
+month1[9]="10";
+month1[10]="11";
+month1[11]="12";
+
+var d = new Date();
+
+var d = new Date();
+
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+document.write("<div style='position:absolute; top:2px; right:1px; color:white; font-family: sans-serif; font-size: x-small'>" + month1[d.getMonth()] + "/ " + d.getDate() + "</div>");
+</script></div>
+
+<div id="launch">
+  <table width="70" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="35px"><div align="center"><a href="#" onClick=checks('messenger.html','system/system_images/tab_icons/Windows_Live_Messenger.png','Messenger');hideDiv('search');hideDiv('startmenu');hideDiv('startbut_click');showDiv('startbut');hideDiv('menu_side');hideDiv('menubut');hideDiv('menucontent')><img src="system/system_images/tab_icons/Windows_Live_Messenger.png" width="22" height="22" border="0"></a></div></td>
+      <td width="35px"><div align="center"><a href="#"><img src="system/system_images/tab_icons/Internet_Explorer.png" width="22" height="22" border="0"></a></div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

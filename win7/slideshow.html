@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Slideshow</title>
+
+<script type="text/javascript">
+function getimage(){
+if(parent.document.gfrm.imgnumber.value == ''){
+parent.document.gfrm.imgnumber.value = '1'
+getimage1()
+}else{
+getimage1()
+}
+}
+function getimage1(){
+if(parent.document.gfrm.imgnumber.value == '1'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s1.value
+}else{
+getimage2()
+}
+}
+function getimage2(){
+if(parent.document.gfrm.imgnumber.value == '2'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s2.value
+}else{
+getimage3()
+}
+}
+function getimage3(){
+if(parent.document.gfrm.imgnumber.value == '3'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s3.value
+}else{
+getimage4()
+}
+}
+function getimage4(){
+if(parent.document.gfrm.imgnumber.value == '4'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s4.value
+}else{
+getimage5()
+}
+}
+function getimage5(){
+if(parent.document.gfrm.imgnumber.value == '5'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s5.value
+}else{
+getimage6()
+}
+}
+function getimage6(){
+if(parent.document.gfrm.imgnumber.value == '6'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s6.value
+}else{
+getimage7()
+}
+}
+function getimage7(){
+if(parent.document.gfrm.imgnumber.value == '7'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s7.value
+}else{
+getimage8()
+}
+}
+function getimage8(){
+if(parent.document.gfrm.imgnumber.value == '8'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s8.value
+}else{
+getimage9()
+}
+}
+function getimage9(){
+if(parent.document.gfrm.imgnumber.value == '9'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s9.value
+}else{
+getimage10()
+}
+}
+function getimage10(){
+if(parent.document.gfrm.imgnumber.value == '10'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s10.value
+}else{
+getimage11()
+}
+}
+function getimage11(){
+if(parent.document.gfrm.imgnumber.value == '11'){
+document.refreshform.theimage.src=parent.document.shows.sfrm.s11.value
+}else{
+parent.document.gfrm.imgnumber.value=parent.document.gfrm.imgnumber.value
+}
+}
+</script>
+
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #000000;
+}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+body,td,th {
+	color: #FFFFFF;
+}
+-->
+</style></head>
+
+<body onload="getimage()">
+<form id="refreshform" name="refreshform" method="post" action=""><div id="apDiv1">
+  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center" valign="middle">
+            
+      <img src="#" name="theimage" id="theimage"/></td>
+    </tr>
+  </table>
+</div></form>
+</body>
+</html>

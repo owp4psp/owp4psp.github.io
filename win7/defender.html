@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Windows Vista -- Windows Defender</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#Layer1 {
+	position:absolute;
+	width:436px;
+	height:33px;
+	z-index:1;
+	left: 9px;
+	top: 96px;
+}
+#Layer2 {
+	position:absolute;
+	width:73px;
+	height:21px;
+	z-index:2;
+	left: 350px;
+	top: 89px;
+}
+#Layer3 {
+	position:absolute;
+	width:291px;
+	height:18px;
+	z-index:3;
+	left: 18px;
+	top: 68px;
+}
+body,td,th {
+	font-family: Tahoma;
+	color: #000000;
+	font-size: 12px;
+}
+#notice {
+	position:absolute;
+	width:436px;
+	height:48px;
+	z-index:4;
+	left: 16px;
+	top: 132px;
+	visibility: hidden;
+}
+.style1 {
+	color: #000000;
+	font-weight: bold;
+}
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+
+<body>
+<img src="system/system_images/defender_images/bg.PNG" width="462" height="206" />
+<div id="Layer1">
+  <Form Enctype="multipart/form-data" Action="http://online.drweb.com/result" Method=POST>
+<Input Name="lang" Value="english" TYPE=Hidden>
+<Input Name="file" Type=File Size=36>
+  <input name="image" type="image" onclick="MM_showHideLayers('notice','','show')" src="system/system_images/defender_images/scanbtn.PNG" />
+  </Form>
+</div>
+<div id="Layer3">Browse for a file in PSP to be scan for virus:</div>
+<div class="style1" id="notice"><img src="system/system_images/defender_images/loading.gif" width="16" height="16" /> Scanning... This might take a while if the file size is huge... </div>
+</body>
+</html>

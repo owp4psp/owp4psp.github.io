@@ -1,0 +1,58 @@
+<script>document.write(parent.Window.LoadApplicationAPI());</script>
+<html>
+  <head>
+    <title>Windows Vista -- Command Prompt</title>
+    <style>
+      body { background-color:#000000;}
+    </style>
+  </head>
+  <body>
+    <script language="javascript" type="text/javascript">
+    var strCmdHistory = "";
+    var strReturn = "";
+
+    function doCmd(){
+      try {
+        eval('strReturn=' + document.getElementById("txtCmd").innerHTML);
+      }
+      
+      catch (e) {
+        strReturn+="<br>"+e.message;
+      }
+
+      writeToHistory(top.Gnextop.User+" &gt; "+document.getElementById("txtCmd").innerHTML+"<br>"+strReturn+"<p>");
+    }
+
+    function showWelcome(){
+      writeToHistory("<style>body{ background-color:#000000; margin:0;} *{font-size:10px; color:#ffffff;}</style><p><br><p><br><p><br><p><br><p><br>Microsoft Windows Vista [Version 6.0.6000] <br /><br>Copyright 2006 Microsoft Corporation.<br><p><br><p>");
+    }
+
+    function writeToHistory(strText){
+      strCmdHistory+=strText;
+      frames["consoleHistory"].document.open();
+      frames["consoleHistory"].document.write(strCmdHistory);
+      frames["consoleHistory"].document.close();
+      setTimeout("terminalScroll()",500);   // OK, really hacky, but it scrolls to the bottom
+    }
+	function terminalScroll() {
+	frames["consoleHistory"].window.scrollTo(0,100000);
+	setTimeout("terminalScroll()",500);   // OK, really hacky, but it scrolls to the bottom
+	}
+    </script>
+    <body onload="showWelcome();">
+    <iframe id="consoleHistory" name="consoleHistory" width="100%" frameborder="0"></iframe>
+    <script>
+    document.write(Control.TextBox.CreateNew("ID=txtCmd","Value=confirm('cheese');","Style=width:184px;"));
+    </script>
+    <br/><br/>
+    <script>
+    document.write(Control.Button.CreateNew("Value=Run","onClick=doCmd();"));
+    </script>
+  </body>
+</html>
+
+<script>
+Me.Title = "Command Prompt";
+Me.Icon = "images/icons/apps/utilities-terminal.png";
+LoadingComplete();
+</script>

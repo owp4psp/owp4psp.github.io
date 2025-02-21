@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Windows Vista -- Window colour and appearance</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:12px;
+	z-index:1;
+	left: 6px;
+	top: 324px;
+}
+#Layer2 {
+	position:absolute;
+	width:39px;
+	height:36px;
+	z-index:2;
+	visibility: visible;
+	left: 2px;
+	top: 3px;
+}
+#Layer3 {
+	position:absolute;
+	width:22px;
+	height:3px;
+	z-index:3;
+	left: 7px;
+	top: 408px;
+}
+#Layer4 {
+	position:absolute;
+	width:200px;
+	height:17px;
+	z-index:4;
+	left: 109px;
+	top: 71px;
+}
+#Layer5 {
+	position:absolute;
+	width:47px;
+	height:46px;
+	z-index:4;
+	left: 1px;
+	top: -1px;
+	visibility: hidden;
+}
+#Layer6 {
+	position:absolute;
+	width:132px;
+	height:14px;
+	z-index:5;
+	left: 120px;
+	top: 58px;
+}
+#Layer7 {
+	position:absolute;
+	width:47px;
+	height:19px;
+	z-index:5;
+	left: 61px;
+	top: 408px;
+}
+#Layer8 {
+	position:absolute;
+	width:318px;
+	height:32px;
+	z-index:6;
+	left: 6px;
+	top: 362px;
+}
+body,td,th {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #0000FF;
+}
+-->
+</style>
+<script type="text/javascript">
+// "imageGo()" is a function which defines the location of the theme/image which is loaded in the image placeholder.
+function imageGo() {
+// windowImg is the name of the image placeholder. 
+imagego.document.windows_S.src=check.imageLocation.value; 
+imagego.document.gadwin.src=check1.imageLocation.value; 
+
+}
+// black() is a function which inputs the image location in the text field and then is loaded via the text field by the function "imageGo()"
+function black() {
+imagego.check.imageLocation.value="system/system_images/aero_window/aero_black.png";
+imagego.check1.imageLocation.value="system/system_images/aero_window/gadget_black.png";
+
+}
+
+function classic() {
+imagego.check.imageLocation.value="system/system_images/classic_window/classic.png";
+imagego.check1.imageLocation.value="system/system_images/classic_window/classic_gadget.png";
+
+}
+
+function teal() {
+imagego.check.imageLocation.value="system/system_images/aero_window/aero_teal.png";
+imagego.check1.imageLocation.value="system/system_images/aero_window/Gadget Gallery.png";
+
+}
+
+function red() {
+imagego.check.imageLocation.value="system/system_images/aero_window/aero_red.png";
+imagego.check1.imageLocation.value="system/system_images/aero_window/gadget_red.png";
+
+}
+
+function pink() {
+imagego.check.imageLocation.value="system/system_images/aero_window/aero_pink.png";
+imagego.check1.imageLocation.value="system/system_images/aero_window/gadget_pink.png";
+
+}
+
+function frost() {
+imagego.check.imageLocation.value="system/system_images/aero_window/aero_frost.png";
+imagego.check1.imageLocation.value="system/system_images/aero_window/Gadget Gallery.png";
+
+}
+
+function main() {
+imagego.check.imageLocation.value="system/system_images/aero_window/vistawindow2.png";
+imagego.check1.imageLocation.value="system/system_images/aero_window/Gadget Gallery.png";
+
+}
+
+function basic() {
+imagego.check.imageLocation.value="system/system_images/basic_window/basic.png";
+imagego.check1.imageLocation.value="system/system_images/basic_window/basic_gadget.png";
+
+}
+// blue() is a function which inputs the image location in the text field and then is loaded via the text field by the function "imageGo()"
+function blue() {
+imagego.check.imageLocation.value='system/system_images/aero_window/aero_blue.png';
+imagego.check1.imageLocation.value="system/system_images/aero_window/gadget_blue.png";
+
+}
+// gray() is a function which inputs the image location in the text field and then is loaded via the text field by the function "imageGo()"
+function orange() {
+imagego.check.imageLocation.value="system/system_images/aero_window/aero_orange.png";
+imagego.check1.imageLocation.value="system/system_images/aero_window/gadget_orange.png";
+
+}
+//"change()" is a function which saves(or in other words submits) the form in which the textfield is located. By this, the image location in the textfield is saved and is the loaded via the "imageGo()"
+function change() {
+imagego.document.check.submit();
+imagego.document.check1.submit();
+
+}
+</script>
+</head>
+
+<body>
+<img src="system/system_images/ctrl_panel_images/colour_selection.PNG" width="371" height="472" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+  <area shape="rect" coords="28,102,94,175" href="#" onclick="main()" /><area shape="rect" coords="28,183,94,256" href="#" onclick="red()" />
+  <area shape="rect" coords="100,179,171,259" onclick="orange()" href="#" />
+<area shape="rect" coords="174,180,237,257" href="#" onclick="pink()" />
+<area shape="rect" coords="245,176,312,257" href="#" onclick="frost()" />
+<area shape="rect" coords="242,102,310,177" href="#" onclick="teal()" /><area shape="rect" coords="172,100,240,175" href="#" onclick="blue()"/><area shape="rect" coords="101,102,168,173" href="#" onclick="black()"/>
+<area shape="rect" coords="5,271,180,286" href="#" onclick="classic()"/><area shape="rect" coords="5,290,193,307" href="#" onclick="basic()"/></map>
+<div id="Layer1">
+<input name="browsetheme" type="file" id="browsetheme" /></div>
+<div id="Layer3">
+  <form id="form1" name="form1" method="post" action="">
+    <label>
+      <input type="submit" name="Submit" value="Save" onclick="change()" />
+    </label>
+  </form>
+</div>
+<div id="Layer5">
+<iframe width="48" height="48" id="imagego" frameborder="0" scrolling="no" src="imagego.html"></iframe></div>
+<div id="Layer7">  
+  <input name="exit" type="button" id="exit" onclick="parent.parent.window.location='desktop.html';" value="  Exit  " />
+</div>
+<div id="Layer8">To apply the changes, click &quot;Save&quot; and click &quot;Exit&quot; to reload desktop. </div>
+</body>
+</html>

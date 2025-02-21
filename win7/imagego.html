@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:2px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:24px;
+	z-index:2;
+	left: 23px;
+	top: 43px;
+}
+-->
+</style>
+<script type="text/javascript">
+// "imageGo()" is a function which defines the location of the theme/image which is loaded in the image placeholder.
+function imageGo() 
+{
+parent.document.windows_S.src=check.imageLocation.value; 
+parent.document.gadwin.src=check1.imageLocation.value; 
+
+}
+
+	
+// black() is a function which inputs the image location in the text field and then is loaded via the text field by the function "imageGo()"
+function black() {
+check.imageLocation.value="system/system_images/aero_window/aero_black.png";
+check1.imageLocation.value="system/system_images/aero_window/gadget_black.png";
+
+}
+
+function main() {
+check.imageLocation.value="system/system_images/aero_window/vistawindow2.png";
+check1.imageLocation.value="system/system_images/aero_window/Gadget Gallery.png";
+
+}
+
+function teal() {
+check.imageLocation.value="system/system_images/aero_window/aero_teal.png";
+check1.imageLocation.value="system/system_images/aero_window/Gadget Gallery.png";
+
+}
+
+function basic() {
+check.imageLocation.value="system/system_images/basic_window/basic.png";
+check1.imageLocation.value="system/system_images/basic_window/basic_gadget.png";
+
+}
+
+function red() {
+check.imageLocation.value="system/system_images/aero_window/aero_red.png";
+check1.imageLocation.value="system/system_images/aero_window/gadget_red.png";
+
+}
+
+function pink() {
+check.imageLocation.value="system/system_images/aero_window/aero_pink.png";
+check1.imageLocation.value="system/system_images/aero_window/gadget_pink.png";
+
+}
+
+function frost() {
+check.imageLocation.value="system/system_images/aero_window/aero_frost.png";
+check1.imageLocation.value="system/system_images/aero_window/Gadget Gallery.png";
+
+}
+// blue() is a function which inputs the image location in the text field and then is loaded via the text field by the function "imageGo()"
+function blue() {
+check.imageLocation.value='system/system_images/aero_window/aero_blue.png';
+check1.imageLocation.value="system/system_images/aero_window/gadget_blue.png";
+
+}
+
+function classic() {
+check.imageLocation.value="system/system_images/classic_window/classic.png";
+check1.imageLocation.value="system/system_images/classic_window/classic_gadget.png";
+
+}
+// gray() is a function which inputs the image location in the text field and then is loaded via the text field by the function "imageGo()"
+function orange() {
+check.imageLocation.value="system/system_images/aero_window/aero_orange.png";
+check1.imageLocation.value="system/system_images/aero_window/gadget_orange.png";
+
+}
+//"change()" is a function which saves(or in other words submits) the form in which the textfield is located. By this, the image location in the textfield is saved and is the loaded via the "imageGo()"
+function change() {
+parent.document.check.submit();
+parent.document.check1.submit();
+
+}
+</script>
+</head>
+<body onload="imageGo()">
+
+<body>
+<div id="Layer1">	
+  <form id="check" name="check" action="" method="post">
+      <input type="text" name="imageLocation" id="imageLocation"/>
+</form></div>
+<div id="Layer2">  
+  <form id="check1" name="check1" action="" method="post">
+      <input type="text" name="imageLocation" id="imageLocation" value=""/>
+</form></div>
+</body>
+</html>
