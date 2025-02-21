@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+<!--
+#BG {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:272px;
+	z-index:1;
+	visibility: visible;
+	background color:#666666;
+	background-color: #333333;
+}
+#topbar {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:21px;
+	z-index:2;
+	visibility: visible;
+}
+#tabbar {
+	position:absolute;
+	left:0px;
+	top:39px;
+	width:480px;
+	height:19px;
+	z-index:1;
+	visibility: visible;
+	background-image: url(Images/Main/tabbar.png);
+}
+#BG2 {
+	position:absolute;
+	left:4px;
+	top:11px;
+	width:59px;
+	height:24px;
+	z-index:3;
+	visibility: visible;
+}
+#back {
+	position:absolute;
+	left:7px;
+	top:8px;
+	width:25px;
+	height:26px;
+	z-index:3;
+	visibility: visible;
+}
+#forward {
+	position:absolute;
+	left:29px;
+	top:13px;
+	width:26px;
+	height:21px;
+	z-index:3;
+	visibility: visible;
+}
+#stop {
+	position:absolute;
+	left:90px;
+	top:12px;
+	width:22px;
+	height:22px;
+	z-index:3;
+	visibility: visible;
+}
+#refresh {
+	position:absolute;
+	left:64px;
+	top:11px;
+	width:22px;
+	height:24px;
+	z-index:3;
+	visibility: visible;
+}
+#home {
+	position:absolute;
+	left:113px;
+	top:13px;
+	width:22px;
+	height:22px;
+	z-index:3;
+	visibility: visible;
+}
+#bar {
+	position:absolute;
+	left:138px;
+	top:12px;
+	width:2px;
+	height:22px;
+	z-index:3;
+	visibility: visible;
+}
+#bookmarks {
+	position:absolute;
+	left:144px;
+	top:12px;
+	width:22px;
+	height:22px;
+	z-index:3;
+	visibility: visible;
+}
+#apDiv1 {
+	position:absolute;
+	left:170px;
+	top:14px;
+	width:120px;
+	height:22px;
+	z-index:3;
+	visibility: visible;
+}
+#ifdiv {
+	position:absolute;
+	left:0px;
+	top:58px;
+	width:480px;
+	height:214px;
+	z-index:1;
+	scoll: auto;
+	visibility: visible;
+	background-image: url(Images/Main/bg.png);
+}
+#go {
+	position:absolute;
+	left:290px;
+	top:18px;
+	width:18px;
+	height:16px;
+	z-index:6;
+	visibility: visible;
+}
+#go2 {
+	position:absolute;
+	left:429px;
+	top:17px;
+	width:15px;
+	height:13px;
+	z-index:6;
+	visibility: visible;
+}
+#apDiv2 {
+	position:absolute;
+	left:337px;
+	top:14px;
+	width:91px;
+	height:24px;
+	z-index:3;
+	visibility: visible;
+}
+-->
+</style>
+<script type="text/javascript">
+function displayunicode(e){
+var unicode=e.keyCode? e.keyCode : e.charCode
+if(unicode==13){
+	frames['frame'].location.href=document.getElementById("url").value
+	}
+}
+
+</script>
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" onLoad="webframe.location.href = StartPage;">
+<div id="BG"></div>
+<!-- Background Bars -->
+<div id="topbar"><img src="Images/Main/topbar2.png" width="480" height="42" /></div>
+<div id="tabbar"><img src="Images/Main/tabbar.png" width="480" height="19" /></div>
+<!-- End Background Bars -->
+<!-- Main Buttons -->
+<div id="BG2"><img src="Images/butttons/forwardback BG.png" width="59" height="24" /></div>
+<div id="back"><img src="Images/butttons/back.png" width="24" height="27" href="#" onclick="javascript:history.go(-1)" /></div>
+<div id="forward"><img src="Images/butttons/forward.png" width="21" height="18" href="#" onclick="javascript:history.forward()" /></div>
+<!-- End Main Buttons -->
+<!-- Secondary Buttons -->
+<div id="refresh"><img src="Images/butttons/refresh.png" width="25" height="21" href="#" onclick="Content.location.reload();" /></div>
+<div id="stop"><img src="Images/butttons/stop.png" width="22" height="20" /></div>
+<div id="home"><img src="Images/butttons/home.png" width="20" height="18" href="#" onclick="gohome()" /></div>
+<div id="bookmarks"><img src="Images/butttons/bookmarks.png" width="20" height="22" href="#" onClick="document.getElementById('Content').location='file:/psp/system/browser/bookmarks.html';" /></div>
+<!-- End Secondary Buttons -->
+<!-- Extra Stuff -->
+<div id="bar"><img src="Images/butttons/line.png" width="2" height="22" /></div>
+<div id="go"><img src="Images/butttons/go.png" width="12" height="12" href="#" onclick="if(document.getElementById('url').value!=''){content.location.href=document.getElementById('url').value}else{alert('Error: Please insert a URL!')}" /></div>
+<div id="go2"><img src="Images/butttons/google.png" width="13" height="14" /></div>
+<!-- End Extra Stuff -->
+<!-- Search bars -->
+<div id="apDiv1">
+<input name="url" type="text" id="url" value="http://" size="15" /> 
+</div>
+<!-- Google -->
+<div id="apDiv2">
+  <input name="q" type="text" value="Google" size="11" />
+</form>
+</div>
+</form>
+<!-- End Google -->
+<!-- End Search bars -->
+<!-- Important Others -->
+<div id="ifdiv">
+  <iframe id="content" name="content" width="480" height="214" frameborder="0" scrolling="auto"><img src="Images/Main/bg.png" /></iframe>
+</div>
+<!-- End Important Others -->
+</body>
+</html>

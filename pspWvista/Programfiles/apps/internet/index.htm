@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IE7</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+#BG {
+	position:absolute;
+	width:453px;
+	height:187px;
+	z-index:1;
+	left: 0px;
+	top: 0px;
+}
+#topbarBG {
+	position:absolute;
+	width:451px;
+	height:31px;
+	z-index:1;
+	left: 1px;
+	top: 2px;
+	background-image: url(iebar2_BG.png);
+}
+#topbar {
+	position:absolute;
+	width:326px;
+	height:24px;
+	z-index:2;
+	left: 0px;
+	top: 0px;
+}
+#apDiv1 {
+	position:absolute;
+	left:2px;
+	top:36px;
+	width:450px;
+	height:151px;
+	z-index:1;
+	visibility: visible;
+}
+#places_off {
+	position:absolute;
+	left:0px;
+	top:76px;
+	width:140px;
+	height:110px;
+	z-index:6;
+	visibility: hidden;
+}
+.style1 {
+	color: #999999;
+	font-weight: bold;
+	font-size: 12px;
+}
+#frame {
+	position:absolute;
+	width:453px;
+	height:155px;
+	z-index:4;
+	left: 0px;
+	top: 32px;
+}
+#back {
+	position:absolute;
+	top:0px;
+	left:7px;
+	width:20px;
+	height:20px;
+	visibility: visible;
+	z-index: 2;
+	background-image: url(design/back.png);
+}
+#forward {
+	position:absolute;
+	top:2px;
+	left:72px;
+	width:380px;
+	height:0px;
+	visibility: visible;
+	z-index: 2;
+	background-image: url(design/forward.png);
+}
+#reload {
+	position:absolute;
+	top:0px;
+	left:53px;
+	width:20px;
+	height:20px;
+	visibility: visible;
+	z-index: 2;
+}
+#stop {
+	position:absolute;
+	top:0px;
+	left:75px;
+	width:16px;
+	height:16px;
+	visibility: visible;
+	z-index: 2;
+}
+#topbar2 {
+	position:absolute;
+	top:0px;
+	left:170px;
+	width:16px;
+	height:16px;
+	visibility: visible;
+	z-index: 1;
+}
+#bottom-bar {
+	position:absolute;
+	top:41px;
+	left:0px;
+	width:476px;
+	height:22px;
+	visibility: visible;
+	z-index: 2;
+	background-image: url(design/menubar-down.png);
+}
+#apDiv2 {
+	position:absolute;
+	left:73px;
+	top:5px;
+	width:215px;
+	height:20px;
+	z-index:2;
+	visibility: visible;
+}
+#go {
+	position:absolute;
+	left:409px;
+	top:10px;
+	width:16px;
+	height:19px;
+	z-index:2;
+}
+.style2 {color: #000000}
+-->
+</style>
+</head>
+</head>
+<script type="text/javascript">
+function displayunicode(e){
+var unicode=e.keyCode? e.keyCode : e.charCode
+if(unicode==13){
+	frames['frame'].location.href=document.getElementById("url").value
+	}
+}
+</script>
+<body>
+<div id="topbarBG"><img src="ieBar2.png" width="391" height="31" border="0" usemap="#Map2" />
+<map name="Map2" id="Map2">
+<area shape="rect" coords="5,4,27,26" target="frame" onClick="frame.window.location='file:/PSP/SYSTEM/BROWSER/bookmarks.html'" />
+<area shape="rect" coords="35,4,61,26" target="frame" onClick="frame.window.location='http://www.blazebyte.org/'" />
+</map></div>
+<iframe src="" width="480" height="175" id="frame" name="frame" frameborder="0" scrolling="no"></iframe>
+<div id="forward" ><img src="tab.PNG" width="370" height="30" /></div>
+</body>
+</html>
