@@ -1,0 +1,92 @@
+
+<html>
+<head>
+
+
+  <title>Nav Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+  <script language="JavaScript" type="text/javascript">
+function getUrl(){
+	document.value=parent.Content.location.href;
+	parent.Content.focus();
+}
+  </script>
+<script>eval(top.frames['idesktop'].setAppProperties());</script>
+</head>
+
+
+
+<body leftmargin="0" topmargin="0">
+
+<a name="a"></a>
+<table background="../../../images/icons/internet/menubar.png" border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 31px;">
+
+
+
+      <tbody>
+    <tr>
+      <td align="left" valign="middle" width="47%">
+      <table style="width: 470px; height: 15px;" align="left" border="0" bordercolor="none" cellpadding="0" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+            <td width="30" align="right" valign="middle">
+            <div align="right" onClick="javascript:history.go(-1);getUrl()"><a href="nav.htm#a"><img alt="" src="../../../images/icons/internet/back.gif" border="0" /></a></div>
+            </td>
+            <td width="30" align="left" valign="middle">
+            <div align="left" onClick="javascript:history.go(1);getUrl()"><a href="nav.htm#a"><img alt="" src="../../../images/icons/internet/forward.gif" border="0" /></a></div>
+            </td>
+       
+
+         <td width="200"><font size="2">
+            <input name="address" type="file" id="address" width="200"/>
+          </font></td>
+
+          
+          <td width="40">
+            <table onClick="parent.Content.location.href=address.value" border="0" cellpadding="0" cellspacing="0" >
+                <tr>
+                <td width="22"><input name="goGet" type="image" class="navButton" value="Go" src="../../../images/icons/internet/go.gif" /></td>
+
+              </tr>
+
+            </table>
+            </td>
+
+<td onClick="javascript:parent.Content.location.reload()" width="20">
+      
+      <div align="center"><a href="#a"><img alt="" src="../../../images/icons/internet/refresh.png" border="0" /></a></div>
+
+
+      </td>
+<td onClick="javascript:parent.Content.location='home.htm';getUrl()" width="20">
+      
+      <div align="center"><a href="#a"><img alt="" src="../../../images/icons/internet/home.png" border="0" /></a></div>
+ 
+
+      </td>
+<td onClick="javascript:parent.Content.location='file:/psp/system/browser/bookmarks.html';getUrl()" width="20">
+      
+      <div align="center"><a href="#a"><img alt="" src="../../../images/icons/internet/bookmarks.png" border="0" /></a></div>
+
+
+      </td>
+<td width="30">
+      
+     
+
+
+      </td>
+<td><img align="right" src="../../../images/icons/google.png" height="16" width="16"></td>
+      
+          <td width="100"><form method="get" action="http://google.com/xhtml" target="parent" id="searchForm"><input align="right" name="q" maxlength="2048" style="width: 50px; height: 15px;" size="1" value="Search" type="text" align="right"><a href="#a"><img src="../../../longhorn/menu/search.gif" alt="" name="btnG" onClick="sendSearchForm();" border="0" align="top"></a><input name="hl" value="en" type="hidden"><input name="lr" value="" type="hidden"><script>drawInput("text","html","","height:18px;width:60px;");</script></form></td>
+
+        </tr>
+
+        </tbody>
+      </table>
+      </td>
+</body>
+</html>

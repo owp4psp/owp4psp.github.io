@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Computer</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+#BG {
+	position:absolute;
+	width:453px;
+	height:187px;
+	z-index:1;
+	left: 0px;
+	top: 0px;
+}
+#topbarBG {
+	position:absolute;
+	width:453px;
+	height:36px;
+	z-index:2;
+	left: 0px;
+	top: 0px;
+}
+#topbar {
+	position:absolute;
+	width:326px;
+	height:24px;
+	z-index:2;
+	left: 126px;
+	top: 35px;
+}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:36px;
+	width:450px;
+	height:151px;
+	z-index:1;
+	visibility: visible;
+}
+#places_off {
+	position:absolute;
+	left:0px;
+	top:76px;
+	width:140px;
+	height:110px;
+	visibility: hidden;
+}
+.style1 {
+	color: #999999;
+	font-weight: bold;
+	font-size: 12px;
+}
+#frame {
+	position:absolute;
+	width:326px;
+	height:128px;
+	z-index:4;
+	left: 127px;
+	top: 59px;
+}
+.style2 {color: #000000}
+-->
+</style></head>
+</head>
+<body>
+<div id="BG"></div>
+<div id="topbarBG"><img src="blueBar.png" width="453" height="36" /></div>
+<div id="apDiv1">
+  <table width="453" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="119" height="16" style="border-right:1px solid #8B8B8B;"><div align="center" class="style1">Favorite Places</div></td>
+    <td width="334" rowspan="6"></td>
+  </tr>
+  <tr>
+    <td width="119" height="20" style="border-right:1px solid #8B8B8B;"><img src="Doc.PNG" width="87" height="18" border="0" /></td>
+  </tr>
+  <tr>
+    <td width="119" height="20" style="border-right:1px solid #8B8B8B;"><img src="pic.PNG" width="69" height="18" />
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%"></td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td width="119" height="20" style="border-right:1px solid #8B8B8B;"><img src="music.PNG" width="58" height="18" /></td>
+  </tr>
+  <tr>
+    <td width="119" height="20" style="border-right:1px solid #8B8B8B; border-bottom:1px solid #8B8B8B;"><img src="folders.PNG" /></td>
+  </tr>
+  <tr>
+    <td width="119" height="50" style="border-right:1px solid #8B8B8B; padding-top:1px;"><img src="places.PNG" width="124" height="53" border="0" usemap="#Map" /></td>
+  </tr>
+</table></div>
+
+<div id="topbar"><img src="topbar.PNG" /></div>
+<iframe name="frame" src="computer.html" width="334px" height="127px" class="style2" id="frame" style="z-index:4; border:none;"></iframe>
+
+<map name="Map" id="Map">
+<area shape="rect" coords="16,-1,106,17" onclick="frame.window.location='computer.html'" />
+<area shape="rect" coords="16,16,106,36" href="#" />
+<area shape="rect" coords="16,35,123,55" href="../controlpanel/index.htm" />
+</map></body>
+</html>
