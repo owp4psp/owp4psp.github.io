@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+<!--
+body {
+	background-image: url();
+}
+#wallpaper {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:272px;
+	z-index:1;
+}
+#create {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:272px;
+	z-index:3;
+	background-image: url(../images/login/create.png);
+}
+-->
+</style>
+
+<script type="text/javascript">
+function createUser(){
+	if(document.loginform.username.value == ""){
+		alert('You must type in a name!');
+	}
+	
+	else{
+		setDetails();
+	}
+}
+
+function setDetails() {
+	if(document.loginform.password.value == document.loginform.repeatpass.value){
+		parent.cCookies.document.settings.sourcePassword.value = document.loginform.password.value;
+		parent.cCookies.document.settings.sourceName.value = document.loginform.username.value;
+		parent.cCookies.document.settings.userIsCreated.value = "yes";
+		document.loginform.submit();
+		parent.cCookies.document.settings.submit();
+		parent.hideDiv('bootOption');
+	}
+	
+	else{
+		alert('Passwords do not match each other!');
+	}
+}
+</script>
+</head>
+
+<body onLoad="document.getElementById('repeatpass').value='Repeat';">
+<div id="BG"><img src="../../user/pictures/wallpaper/space.jpg" id="wallpaper" name="wallpaper" width="480" height="272" /></div><form id="loginform" name="loginform" method="post" action="">
+  <div id="create">
+<table width="480" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="122" colspan="3"></td>
+    </tr>
+  <tr>
+    <td width="198">&nbsp;</td>
+    <td colspan="2" rowspan="3" valign="top">
+      <input name="username" type="text" id="username" style="width:90px" />
+      <br />
+      <br />
+      <input name="password" type="text" id="password" style="width:90px" />
+      <input name="repeatpass" type="text" id="repeatpass" style="width:90px" onClick="this.value=''" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td height="38">&nbsp;</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="130">&nbsp;</td>
+    <td width="152"><a href="#" onClick="createUser();"><img src="../images/login/create-button.png" width="45" height="54" border="0" /></a></td>
+  </tr>
+</table>
+</div></form>
+</body>
+</html>

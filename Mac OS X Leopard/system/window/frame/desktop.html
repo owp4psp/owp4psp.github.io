@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title><style type="text/css">
+<!--
+body,td,th {
+	font-size: 11px;
+}
+a:link {
+	color: #0099FF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0099FF;
+}
+a:hover {
+	text-decoration: none;
+	color: #0066FF;
+}
+a:active {
+	text-decoration: none;
+	color: #0099FF;
+}
+body {
+	background-color: #e8e8e8;
+}
+#macHD {	position:absolute;
+	left:5px;
+	top:5px;
+	width:268px;
+	height:115px;
+	z-index:1;
+}
+-->
+</style>
+
+<script type="text/javascript">
+function getUserID(){
+	document.getElementById('userID').innerHTML = parent.parent.desktopTextUserHD.innerHTML;
+}
+</script>
+
+</head>
+
+<body onLoad="getUserID();">
+<div id="macHD">
+  <table width="240" border="0" cellpadding="0" cellspacing="0">
+     <tr align="center">
+          <td width="60" height="40"><a href="#" onClick="window.location='macHD.html'; parent.parent.document.getElementById('windowName').innerHTML='Mac HD'; parent.document.getElementById('macHD').style.background='url(../images/hover.png)'; parent.document.getElementById('macHD_text').style.color='#FFFFFF'; parent.document.getElementById('desktop').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('desktop_text').style.color='#000000'; parent.document.getElementById('user').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('user_text').style.color='#000000'; parent.document.getElementById('applications').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('applications_text').style.color='#000000'; return false;"><img src="../../images/desktop/icons/macHD.png" width="35" height="35" border="0" /></a></td>
+          <td width="60"><a href="#" onClick="window.location='user.html'; parent.parent.document.getElementById('windowName').innerHTML=parent.parent.desktopTextUserHD.innerHTML + ' HD'; parent.document.getElementById('macHD').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('macHD_text').style.color='#000000'; parent.document.getElementById('desktop').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('desktop_text').style.color='#000000'; parent.document.getElementById('user').style.background='url(../images/hover.png)'; parent.document.getElementById('user_text').style.color='#FFFFFF'; parent.document.getElementById('applications').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('applications_text').style.color='#000000'; return false;"><img src="../../images/desktop/icons/macHD.png" width="35" height="35" border="0" /></a></td>
+          <td width="60"><a href="#" onClick="parent.parent.frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/update/index.html'; parent.parent.document.getElementById('windowName').innerHTML='Software Update';"><img src="../../images/desktop/icons/update.png" width="35" height="35" border="0" /></a></td>
+          <td width="60"><a href="#" onClick="parent.parent.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/bootCamp/index.html';"><img src="../../images/desktop/icons/bootCamp.png" width="35" height="35" border="0" /></a></td>
+     </tr>
+     <tr align="center">
+          <td valign="top"><a href="#" onClick="window.location='macHD.html'; parent.parent.document.getElementById('windowName').innerHTML='Mac HD'; parent.document.getElementById('macHD').style.background='url(../images/hover.png)'; parent.document.getElementById('macHD_text').style.color='#FFFFFF'; parent.document.getElementById('desktop').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('desktop_text').style.color='#000000'; parent.document.getElementById('user').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('user_text').style.color='#000000'; parent.document.getElementById('applications').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('applications_text').style.color='#000000'; return false;">Mac HD</a></td>
+          <td valign="top"><a href="#" onClick="window.location='user.html'; parent.parent.document.getElementById('windowName').innerHTML=parent.parent.desktopTextUserHD.innerHTML; parent.document.getElementById('macHD').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('macHD_text').style.color='#000000'; parent.document.getElementById('desktop').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('desktop_text').style.color='#000000'; parent.document.getElementById('user').style.background='url(../images/hover.png)'; parent.document.getElementById('user_text').style.color='#FFFFFF'; parent.document.getElementById('applications').style.background='url(../images/window/blank_macHD.png)'; parent.document.getElementById('applications_text').style.color='#000000'; return false;"><span id="userID">User</span></a></td>
+          <td valign="top"><a href="#" onClick="parent.parent.frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/update/index.html'; parent.parent.document.getElementById('windowName').innerHTML='Software Update';">Software Update</a></td>
+          <td valign="top"><a href="#" onClick="parent.parent.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/bootCamp/index.html';">Boot Camp</a></td>
+     </tr>
+  </table>
+</div>
+</body>
+
+
+</html>

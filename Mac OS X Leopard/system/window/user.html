@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script language=javascript type='text/javascript'>
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:420px;
+	height:151px;
+	z-index:1;
+	visibility: visible;
+}
+#places_off {
+	position:absolute;
+	left:0px;
+	top:71px;
+	width:116px;
+	height:80px;
+	z-index:6;
+	visibility: hidden;
+}
+body,td,th {
+	font-family: Tahoma;
+	font-size: 10px;
+}
+-->
+</style>
+
+<script type="text/javascript">
+function getUserID(){
+	document.getElementById('user_text').innerHTML = parent.desktopTextUserHD.innerHTML;
+}
+</script>
+
+</head>
+
+<body onLoad="getUserID();">
+<div id="apDiv1">
+  <table width="419" border="0" cellpadding="0" cellspacing="0" style="background:#D6DDE5;">
+  <tr>
+    <td colspan="2"><img src="../images/window/navigation/standard.png" width="420" height="31" /></td>
+  </tr>
+  <tr>
+    <td width="117" height="20" style="padding-left:25px; border-right:1px solid #8B8B8B;"><span style="font-weight:bold; color:#606E80;">DEVICES</span></td>
+    <td width="303" rowspan="6"><iframe src="frame/user.html" width="303" height="120" frameborder="0" style="background-color:#FFFFFF;" id="frame" name="frame" scrolling="Auto" marginwidth="o" marginheight="0"></iframe></td>
+  </tr>
+  <tr>
+    <td width="117" height="20"></td>
+  </tr>
+  <tr>
+    <td width="117" height="20" style="padding-left:5px; border-right:1px solid #8B8B8B;" onClick="javascript:showDiv('places_off');"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="18%"><img src="../images/window/buttons/macHD/placesON_icon.png" /></td>
+    <td width="82%"><span style="font-weight:bold; color:#606E80;">PLACES</span></td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td width="117" height="20"></td>
+  </tr>
+  <tr>
+    <td width="117" height="20"></td>
+  </tr>
+  <tr>
+    <td width="117" height="20"></td>
+  </tr>
+</table></div>
+
+<div id="places_off" style="background:#D6DDE5; border-right:1px solid #8B8B8B;">
+<div style="width:100%; height:20px; padding-left:4px; padding-top:2px;" onClick="javascript:hideDiv('places_off');">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		    <td width="18%"><img src="../images/window/buttons/macHD/placesOFF_icon.png" /></td>
+		    <td width="82%"><span style="font-weight:bold; color:#606E80;">PLACES</span></td>
+		  </tr>
+		</table>
+  </div>
+</div>
+
+<div id="macHD" style="position:absolute; left:0px; top:51px; width:116px; height:20px; background:#D6DDE5; border-right:1px solid #8B8B8B; z-index:5;" onClick="frame.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/frame/macHD.html'; parent.document.getElementById('windowName').innerHTML='Mac HD'; this.style.background='url(../images/hover.png)'; document.getElementById('macHD_text').style.color='#FFFFFF'; document.getElementById('desktop').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('desktop_text').style.color='#000000'; document.getElementById('user').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('user_text').style.color='#000000'; document.getElementById('applications').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('applications_text').style.color='#000000';"><table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="22%" style="padding-left:25px;"><img src="../images/window/buttons/macHD/macHD_icon.png" /></td>
+    <td width="78%" style="padding-left:5px;"><span id="macHD_text" style="color:#000000;">Mac HD</span></td>
+  </tr>
+</table></div>
+
+<div id="desktop" style="position:absolute; left:0px; top:91px; width:116px; height:20px; background:#D6DDE5;; border-right:1px solid #8B8B8B; z-index:5;" onClick="frame.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/frame/desktop.html'; parent.document.getElementById('windowName').innerHTML='Desktop'; this.style.background='url(../images/hover.png)'; document.getElementById('desktop_text').style.color='#FFFFFF'; document.getElementById('macHD').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('macHD_text').style.color='#000000'; document.getElementById('user').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('user_text').style.color='#000000'; document.getElementById('applications').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('applications_text').style.color='#000000';"><table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="22%" style="padding-left:25px;"><img src="../images/window/buttons/macHD/desktop_icon.png" /></td>
+    <td width="78%" style="padding-left:5px;"><span id="desktop_text" style="color:#000000;">Desktop</span></td>
+  </tr>
+</table></div>
+
+<div id="user" style="position:absolute; left:0px; top:111px; width:116px; height:20px; background:url(../images/hover.png); border-right:1px solid #8B8B8B; z-index:5;" onClick="frame.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/frame/user.html'; parent.document.getElementById('windowName').innerHTML=parent.desktopTextUserHD.innerHTML; this.style.background='url(../images/hover.png)'; document.getElementById('user_text').style.color='#FFFFFF'; document.getElementById('desktop').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('desktop_text').style.color='#000000'; document.getElementById('macHD').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('macHD_text').style.color='#000000'; document.getElementById('applications').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('applications_text').style.color='#000000';">
+  <table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="22%" style="padding-left:25px;"><img src="../images/window/buttons/macHD/user_icon.png" /></td>
+    <td width="78%" style="padding-left:5px;"><span id="user_text" style="color:#FFFFFF;">User</span></td>
+  </tr>
+</table></div>
+
+<div id="applications" style="position:absolute; left:0px; top:131px; width:116px; height:20px; background:#D6DDE5; border-right:1px solid #8B8B8B; z-index:5;" onClick="frame.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/applications.html'; parent.document.getElementById('windowName').innerHTML='Applications'; this.style.background='url(../images/hover.png)'; document.getElementById('applications_text').style.color='#FFFFFF'; document.getElementById('desktop').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('desktop_text').style.color='#000000'; document.getElementById('user').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('user_text').style.color='#000000'; document.getElementById('macHD').style.background='url(../images/window/blank_macHD.png)'; document.getElementById('macHD_text').style.color='#000000';"><table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="22%" style="padding-left:25px;"><img src="../images/window/buttons/macHD/applications_icon.png" /></td>
+    <td width="78%" style="padding-left:5px;"><span id="applications_text" style="color:#000000;">Applications</span></td>
+  </tr>
+</table></div>
+
+</body>
+</html>
