@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title></title>
+<style type="text/css">
+<!--
+body,td,th {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+a:link {
+	color: #0099FF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0099FF;
+}
+a:hover {
+	text-decoration: none;
+	color: #0066FF;
+}
+a:active {
+	text-decoration: none;
+	color: #0099FF;
+}
+.style3 {font-size: 11px}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:420px;
+	height:151px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:150px;
+	top:7px;
+	width:120px;
+	height:21px;
+	z-index:2;
+}
+-->
+</style>
+<script language=javascript type='text/javascript'>
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+
+<script type="text/javascript">
+if (event.keyCode == 13)
+{
+event.returnValue=false;
+event.cancelBubble = true;
+frames['frame'].location.href=document.form1.url.value;
+} 
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+function displayunicode(e){
+var unicode=e.keyCode? e.keyCode : e.charCode
+if(unicode==13){
+	frames['frame'].location.href=document.getElementById("url").value
+	}
+}
+</script>
+
+<div id="apDiv1">
+  <table width="419" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2"><img src="../../images/window/navigation/safari.png" width="420" height="31" border="0" usemap="#map" id="urlselect" name="urlselect" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#404040"><iframe src="home.html" width="418" height="120" id="frame" name="frame" frameborder="0" scrolling="no"></iframe></td>
+  </tr>
+</table>
+</div>
+<div id="apDiv2">
+  <table width="120" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><input name="url" type="text" id="url" value="http://" style="width:120px; background-color:transparent; border:none;" onkeyup="displayunicode(event);" onmouseover="document.getElementById('urlselect').src='../../images/window/navigation/safari_urlselect.png'" onmouseout="document.getElementById('urlselect').src='../../images/window/navigation/safari.png'" /></td>
+    </tr>
+  </table>
+</div>
+<map name="map" id="map">
+<area shape="rect" coords="10,4,36,26" onClick="history.go(-1);" />
+<area shape="rect" coords="37,4,63,26" onClick="history.go(+1);" />
+<area shape="rect" coords="71,4,99,26" onClick="document.frames['frame'].location.reload();" />
+<area shape="rect" coords="107,4,138,26" target="frame" onClick="frame.window.location='/PSP/SYSTEM/BROWSER/bookmarks.html'" />
+<area shape="rect" coords="276,4,291,26" onClick="frames['frame'].location.href=document.getElementById('url').value" />
+</map></body>
+</html>

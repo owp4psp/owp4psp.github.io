@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script language=javascript type='text/javascript'>
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:420px;
+	height:151px;
+	z-index:1;
+}
+#places_off {
+	position:absolute;
+	left:0px;
+	top:71px;
+	width:146px;
+	height:80px;
+	z-index:2;
+	visibility: hidden;
+}
+-->
+</style></head>
+
+<body><div id="apDiv1">
+  <table width="419" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2"><img src="../../images/window/navigation_search-bar.png" width="420" height="31" /></td>
+  </tr>
+  <tr>
+    <td width="146"><img src="../../images/window/buttons/main.png" name="devices" width="146" height="20" border="0" id="devices" /></td>
+    <td width="274" rowspan="6" bgcolor="#404040"><iframe src="user.html" width="273" height="120" frameborder="0" style="background-color:#FFFFFF;" id="frame" name="frame" scrolling="Auto"></iframe></td>
+  </tr>
+  <tr>
+    <td><a href="user.html" target="frame" onclick=" document.getElementById('desktop').src='../../images/window/buttons/desktop.png'; document.getElementById('applications').src='../../images/window/buttons/applications.png'; document.getElementById('user').src='../../images/window/buttons/user_on.png'; parent.document.getElementById('name').src='../../images/window/name/user.png'"><img src="../../images/window/buttons/user.png" name="user" width="146" height="20" border="0" id="user" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="appslist.htm" target="frame" onclick=" document.getElementById('desktop').src='../../images/window/buttons/desktop.png'; document.getElementById('user').src='../../images/window/buttons/user.png'; document.getElementById('applications').src='../../images/window/buttons/applications_on.png'; parent.document.getElementById('name').src='../../images/window/name/applications.png'"><img src="../../images/window/buttons/applications.png" name="applications" width="146" height="20" border="0" id="applications" /></a></td>
+    </tr>
+  <tr>
+    <td><a href="gameslist.htm" target="frame" onclick=" document.getElementById('user').src='../../images/window/buttons/user.png'; document.getElementById('applications').src='../../images/window/buttons/applications.png'; document.getElementById('desktop').src='../../images/window/buttons/desktop_on.png'; parent.document.getElementById('name').src='../../images/window/name/games.png'"><img src="../../images/window/buttons/desktop.png" name="desktop" width="146" height="20" border="0" id="desktop" /></a></td>
+  </tr>
+  <tr>
+    <td><img src="../../images/window/buttons/empty.png" name="applications" width="146" height="20" border="0" id="applications" /></td>
+    <tr>
+    <td><img src="../../images/window/buttons/empty.png" name="applications" width="146" height="20" border="0" id="applications" /></td>
+  </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-size: 11px;
+}
+body {
+	background-color: #e8e8e8;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	color: #0099FF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0099FF;
+}
+a:hover {
+	text-decoration: none;
+	color: #0066FF;
+}
+a:active {
+	text-decoration: none;
+	color: #0099FF;
+}
+#warning {
+	position:absolute;
+	left:84px;
+	top:10px;
+	width:250px;
+	height:100px;
+	z-index:1;
+	visibility: hidden;
+}
+.style1 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+-->
+</style>
+<script type="text/javascript">
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+<script type="text/javascript">
+function removeSettings() {
+	parent.parent.cCookies.document.settings.sourceWallpaper.value='';
+	parent.parent.cCookies.document.settings.sourceName.value='';
+	parent.parent.cCookies.document.settings.sourcePassword.value='';
+	parent.parent.cCookies.document.settings.userIsCreated.value='';
+	parent.parent.cCookies.document.settings.sourceMacHD.value='';
+	parent.parent.cCookies.document.settings.sourceBootCamp.value='';
+	parent.parent.cCookies.document.settings.sourceUpdate.value='';
+	
+	parent.parent.cCookies.document.settings.submit();
+	
+	parent.parent.document.location='/PSP/COMMON/Mac OS X Leopard/index.html';
+}
+</script>
+</head>
+<body>
+<div style="background: url(../../images/trash/bgLine.png); width: 100%; height: 23px;">
+  <table width="100%" height="23" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="50%" align="left" style="padding-left: 5px;"><span class="style1">Remove all settings</span></td>
+      <td width="50%" align="right" style="padding-right: 5px;"><img src="../../images/trash/empty_button.png" width="67" height="23" border="0" onClick="showDiv('warning');" /></td>
+    </tr>
+  </table>
+</div>
+<div style="padding-left: 2px; padding-right: 2px;">
+<br />
+The trash is empty...<br />
+<br />
+<br />
+<em>You can remove your Mac's settings, by clicking</em> <strong>Empty</strong> <em>at the top.</em><br />
+</div>
+<div id="warning" style="border: 1px solid #404040; background: #e8e8e8;">
+  <div class="style1" style="background: url(../../images/trash/bgLine.png); height: 24px; padding-left: 5px;">Warning!</div>
+  <div style="padding-left: 5px; padding-right: 5px; height: 50px;">By clicking <strong>Empty</strong>, all your settings will be lost from this Mac. You have to install this Mac again after this. Click &quot;Cancel&quot; if you regret.<br />
+  </div>
+  <div style="position: absolute; bottom: 0px; width: 100%; height: 26px;"><table width="100%" height="26px" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%" align="left" style="padding-left: 5px; padding-bottom: 5px;"><input name="cancel" type="button" value="Cancel" onClick="hideDiv('warning');" /></td>
+    <td width="50%" align="right" style="padding-right: 5px; padding-bottom: 5px;"><input name="empty" type="button" value="Empty" onClick="removeSettings();" /></td>
+  </tr>
+</table></div>
+</div>
+</body>
+</html>

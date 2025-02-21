@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script type="text/javascript">
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+<style type="text/css">
+<!--
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:300px;
+	height:120px;
+	z-index:1;
+}
+body,td,th {
+	font-family: Tahoma;
+	font-size: 10px;
+}
+#pointInfo {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:300px;
+	height:120px;
+	z-index:1;
+	visibility: hidden;
+}
+-->
+</style>
+<script type="text/javascript">
+function showPoint1(){
+	showDiv('pointInfo');
+	hideDiv('apDiv1');
+	document.getElementById('pointNumber').innerHTML = '1';
+	document.getElementById('name').innerHTML = parent.point1.backupName.value;
+	document.getElementById('date').innerHTML = parent.point1.backupDate.value;
+	document.getElementById('message').innerHTML = parent.point1.backupMessage.value;
+}
+
+function showPoint2(){
+	showDiv('pointInfo');
+	hideDiv('apDiv1');
+	document.getElementById('pointNumber').innerHTML = '2';
+	document.getElementById('name').innerHTML = parent.point2.backupName.value;
+	document.getElementById('date').innerHTML = parent.point2.backupDate.value;
+	document.getElementById('message').innerHTML = parent.point2.backupMessage.value;
+}
+
+function showPoint3(){
+	showDiv('pointInfo');
+	hideDiv('apDiv1');
+	document.getElementById('pointNumber').innerHTML = '3';
+	document.getElementById('name').innerHTML = parent.point3.backupName.value;
+	document.getElementById('date').innerHTML = parent.point3.backupDate.value;
+	document.getElementById('message').innerHTML = parent.point3.backupMessage.value;
+}
+
+function showPoint4(){
+	showDiv('pointInfo');
+	hideDiv('apDiv1');
+	document.getElementById('pointNumber').innerHTML = '4';
+	document.getElementById('name').innerHTML = parent.point4.backupName.value;
+	document.getElementById('date').innerHTML = parent.point4.backupDate.value;
+	document.getElementById('message').innerHTML = parent.point4.backupMessage.value;
+}
+
+function showPoint5(){
+	showDiv('pointInfo');
+	hideDiv('apDiv1');
+	document.getElementById('pointNumber').innerHTML = '5';
+	document.getElementById('name').innerHTML = parent.point5.backupName.value;
+	document.getElementById('date').innerHTML = parent.point5.backupDate.value;
+	document.getElementById('message').innerHTML = parent.point5.backupMessage.value;
+}
+
+function loadPoint1(){
+	parent.parent.parent.cCookies.document.settings.sourceWallpaper.value = parent.point1.document.getElementById('sourceWallpaper').value;
+	parent.parent.parent.cCookies.document.settings.sourceName.value = parent.point1.document.getElementById('sourceName').value;
+	parent.parent.parent.cCookies.document.settings.sourcePassword.value = parent.point1.document.getElementById('sourcePassword').value;
+	parent.parent.parent.cCookies.document.settings.userIsCreated.value = parent.point1.document.getElementById('userIsCreated').value;
+	parent.parent.parent.cCookies.document.settings.sourceMacHD.value = parent.point1.document.getElementById('sourceMacHD').value;
+	parent.parent.parent.cCookies.document.settings.sourceBootCamp.value = parent.point1.document.getElementById('sourceBootCamp').value;
+	parent.parent.parent.cCookies.document.settings.sourceUpdate.value = parent.point1.document.getElementById('sourceUpdate').value;
+	parent.parent.parent.cCookies.document.settings.submit();
+}
+
+function loadPoint2(){
+	parent.parent.parent.cCookies.document.settings.sourceWallpaper.value = parent.point2.document.getElementById('sourceWallpaper').value;
+	parent.parent.parent.cCookies.document.settings.sourceName.value = parent.point2.document.getElementById('sourceName').value;
+	parent.parent.parent.cCookies.document.settings.sourcePassword.value = parent.point2.document.getElementById('sourcePassword').value;
+	parent.parent.parent.cCookies.document.settings.userIsCreated.value = parent.point2.document.getElementById('userIsCreated').value;
+	parent.parent.parent.cCookies.document.settings.sourceMacHD.value = parent.point2.document.getElementById('sourceMacHD').value;
+	parent.parent.parent.cCookies.document.settings.sourceBootCamp.value = parent.point2.document.getElementById('sourceBootCamp').value;
+	parent.parent.parent.cCookies.document.settings.sourceUpdate.value = parent.point2.document.getElementById('sourceUpdate').value;
+	parent.parent.parent.cCookies.document.settings.submit();
+}
+
+function loadPoint3(){
+	parent.parent.parent.cCookies.document.settings.sourceWallpaper.value = parent.point3.document.getElementById('sourceWallpaper').value;
+	parent.parent.parent.cCookies.document.settings.sourceName.value = parent.point3.document.getElementById('sourceName').value;
+	parent.parent.parent.cCookies.document.settings.sourcePassword.value = parent.point3.document.getElementById('sourcePassword').value;
+	parent.parent.parent.cCookies.document.settings.userIsCreated.value = parent.point3.document.getElementById('userIsCreated').value;
+	parent.parent.parent.cCookies.document.settings.sourceMacHD.value = parent.point3.document.getElementById('sourceMacHD').value;
+	parent.parent.parent.cCookies.document.settings.sourceBootCamp.value = parent.point3.document.getElementById('sourceBootCamp').value;
+	parent.parent.parent.cCookies.document.settings.sourceUpdate.value = parent.point3.document.getElementById('sourceUpdate').value;
+	parent.parent.parent.cCookies.document.settings.submit();
+}
+
+function loadPoint4(){
+	parent.parent.parent.cCookies.document.settings.sourceWallpaper.value = parent.point4.document.getElementById('sourceWallpaper').value;
+	parent.parent.parent.cCookies.document.settings.sourceName.value = parent.point4.document.getElementById('sourceName').value;
+	parent.parent.parent.cCookies.document.settings.sourcePassword.value = parent.point4.document.getElementById('sourcePassword').value;
+	parent.parent.parent.cCookies.document.settings.userIsCreated.value = parent.point4.document.getElementById('userIsCreated').value;
+	parent.parent.parent.cCookies.document.settings.sourceMacHD.value = parent.point4.document.getElementById('sourceMacHD').value;
+	parent.parent.parent.cCookies.document.settings.sourceBootCamp.value = parent.point4.document.getElementById('sourceBootCamp').value;
+	parent.parent.parent.cCookies.document.settings.sourceUpdate.value = parent.point4.document.getElementById('sourceUpdate').value;
+	parent.parent.parent.cCookies.document.settings.submit();
+}
+
+function loadPoint5(){
+	parent.parent.parent.cCookies.document.settings.sourceWallpaper.value = parent.point5.document.getElementById('sourceWallpaper').value;
+	parent.parent.parent.cCookies.document.settings.sourceName.value = parent.point5.document.getElementById('sourceName').value;
+	parent.parent.parent.cCookies.document.settings.sourcePassword.value = parent.point5.document.getElementById('sourcePassword').value;
+	parent.parent.parent.cCookies.document.settings.userIsCreated.value = parent.point5.document.getElementById('userIsCreated').value;
+	parent.parent.parent.cCookies.document.settings.sourceMacHD.value = parent.point5.document.getElementById('sourceMacHD').value;
+	parent.parent.parent.cCookies.document.settings.sourceBootCamp.value = parent.point5.document.getElementById('sourceBootCamp').value;
+	parent.parent.parent.cCookies.document.settings.sourceUpdate.value = parent.point5.document.getElementById('sourceUpdate').value;
+	parent.parent.parent.cCookies.document.settings.submit();
+}
+
+function checkLoadPoint(){
+	if(document.getElementById('pointNumber').innerHTML == "1"){
+		loadPoint1();
+		top.window.location = '/PSP/COMMON/Mac OS X Leopard/index.html';
+	}
+	if(document.getElementById('pointNumber').innerHTML == "2"){
+		loadPoint2();
+		top.window.location = '/PSP/COMMON/Mac OS X Leopard/index.html';
+	}
+	if(document.getElementById('pointNumber').innerHTML == "3"){
+		loadPoint3();
+		top.window.location = '/PSP/COMMON/Mac OS X Leopard/index.html';
+	}
+	if(document.getElementById('pointNumber').innerHTML == "4"){
+		loadPoint4();
+		top.window.location = '/PSP/COMMON/Mac OS X Leopard/index.html';
+	}
+	if(document.getElementById('pointNumber').innerHTML == "5"){
+		loadPoint5();
+		top.window.location = '/PSP/COMMON/Mac OS X Leopard/index.html';
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="apDiv1">
+  <table width="100%" height="120" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #D4D4D4; background:#E8E8E8; padding-left:2px;">
+    <tr>
+      <td width="70%" colspan="2" valign="top" style="padding-top: 4px;">To load a Restore Point, click on a button below. When you have clicked on a button, it will pop up some information about the backup you have loaded. If it's the correct Restore Point you have chosen, click on <strong>Load Restore Point</strong>.<br />The Mac will reboot after this.<br />
+        <br />
+        <strong>Select Restore Point:<br />
+        <input type="submit" name="point1" id="point1" value="Point #1" onClick="showPoint1();" />
+        <input type="submit" name="point2" id="point2" value="Point #2" onClick="showPoint2();" />
+        <input type="submit" name="point3" id="point3" value="Point #3" onClick="showPoint3();" />
+        <input type="submit" name="point4" id="point4" value="Point #4" onClick="showPoint4();" />
+        <input type="submit" name="point5" id="point5" value="Point #5" onClick="showPoint5();" />
+        </strong></td>
+    </tr>
+  </table>
+</div>
+<div id="pointInfo">
+<div style="position:absolute; left:150px; top:43px; width:139px; height:12px; border: 1px solid #B5B2B5; background:#EFEBEF;">&nbsp;<span id="date">None</span></div>
+  <table width="100%" height="120" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #D4D4D4; background:#E8E8E8; padding-left:2px;">
+    <tr>
+      <td width="70%" colspan="2" valign="top" style="padding-top: 4px;">You have loaded <strong>Restore Point #<span id="pointNumber">?</span></strong>.<br />
+        <br />
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50%" height="14"><strong>Restore Point name</strong></td>
+            <td width="48%" style="border:1px solid #B5B2B5; background:#EFEBEF;">&nbsp;<span id="name">None</span></td>
+            <td colspan="2" rowspan="5">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="50%" height="14"><strong>Date</strong></td>
+            <td width="48%">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Message</strong></td>
+          </tr>
+          <tr>
+            <td height="30" colspan="2" valign="top" style="border:1px solid #B5B2B5; background:#EFEBEF">&nbsp;<span id="message">None</span></td>
+          </tr>
+          <tr>
+            <td width="50%" style="padding-top:1px;"><input type="submit" name="back" id="back" value="Back" onClick="hideDiv('pointInfo'); showDiv('apDiv1');" /></td>
+            <td align="right" style="padding-top:1px;"><input type="submit" name="load" id="load" value="Load Restore Point" onClick="checkLoadPoint();" /></td>
+            <td width="2%">&nbsp;</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

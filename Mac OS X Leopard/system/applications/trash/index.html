@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title></title>
+<style type="text/css">
+<!--
+body,td,th {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+a:link {
+	color: #0099FF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0099FF;
+}
+a:hover {
+	text-decoration: none;
+	color: #0066FF;
+}
+a:active {
+	text-decoration: none;
+	color: #0099FF;
+}
+.style3 {font-size: 11px}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:420px;
+	height:151px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:150px;
+	top:7px;
+	width:120px;
+	height:21px;
+	z-index:2;
+}
+-->
+</style>
+<script language=javascript type='text/javascript'>
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+</head>
+
+<body>
+
+<div id="apDiv1">
+  <table width="419" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2"><img src="../../images/window/navigation/standard.png" width="420" height="31" border="0" usemap="#map" id="urlselect" name="urlselect" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#404040"><iframe src="main.html" width="418" height="120" id="frame" name="frame" frameborder="0" scrolling="no"></iframe></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

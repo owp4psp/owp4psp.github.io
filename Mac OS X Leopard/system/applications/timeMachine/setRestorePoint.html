@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script type="text/javascript">
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Tahoma;
+	font-size: 10px;
+}
+#formLayer {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:300px;
+	height:109px;
+	z-index:1;
+}
+#points {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:300px;
+	height:120px;
+	z-index:1;
+	visibility: hidden;
+}
+-->
+</style>
+<script type="text/javascript">
+function choosePoint(){
+	showDiv('points');
+	hideDiv('formLayer');
+}
+
+function startBackupPoint1(){
+	parent.point1.document.settings.sourceWallpaper.value = parent.parent.parent.cCookies.document.getElementById('sourceWallpaper').value;
+	parent.point1.document.settings.sourceName.value = parent.parent.parent.cCookies.document.getElementById('sourceName').value;
+	parent.point1.document.settings.sourcePassword.value = parent.parent.parent.cCookies.document.getElementById('sourcePassword').value;
+	parent.point1.document.settings.userIsCreated.value = parent.parent.parent.cCookies.document.getElementById('userIsCreated').value;
+	parent.point1.document.settings.sourceMacHD.value = parent.parent.parent.cCookies.document.getElementById('sourceMacHD').value;
+	parent.point1.document.settings.sourceBootCamp.value = parent.parent.parent.cCookies.document.getElementById('sourceBootCamp').value;
+	parent.point1.document.settings.sourceUpdate.value = parent.parent.parent.cCookies.document.getElementById('sourceUpdate').value;
+	parent.point1.document.settings.submit();
+	
+	parent.point1.document.backup.backupName.value = document.getElementById('name').value;
+	parent.point1.document.backup.backupDate.value = document.getElementById('date').value;
+	parent.point1.document.backup.backupMessage.value = document.getElementById('message').value;
+	parent.point1.document.backup.submit();
+	
+	window.location = 'done.html';
+}
+
+function startBackupPoint2(){
+	parent.point2.document.settings.sourceWallpaper.value = parent.parent.parent.cCookies.document.getElementById('sourceWallpaper').value;
+	parent.point2.document.settings.sourceName.value = parent.parent.parent.cCookies.document.getElementById('sourceName').value;
+	parent.point2.document.settings.sourcePassword.value = parent.parent.parent.cCookies.document.getElementById('sourcePassword').value;
+	parent.point2.document.settings.userIsCreated.value = parent.parent.parent.cCookies.document.getElementById('userIsCreated').value;
+	parent.point2.document.settings.sourceMacHD.value = parent.parent.parent.cCookies.document.getElementById('sourceMacHD').value;
+	parent.point2.document.settings.sourceBootCamp.value = parent.parent.parent.cCookies.document.getElementById('sourceBootCamp').value;
+	parent.point2.document.settings.sourceUpdate.value = parent.parent.parent.cCookies.document.getElementById('sourceUpdate').value;
+	parent.point2.document.settings.submit();
+	
+	parent.point2.document.backup.backupName.value = document.getElementById('name').value;
+	parent.point2.document.backup.backupDate.value = document.getElementById('date').value;
+	parent.point2.document.backup.backupMessage.value = document.getElementById('message').value;
+	parent.point2.document.backup.submit();
+	
+	window.location = 'done.html';
+}
+
+function startBackupPoint3(){
+	parent.point3.document.settings.sourceWallpaper.value = parent.parent.parent.cCookies.document.getElementById('sourceWallpaper').value;
+	parent.point3.document.settings.sourceName.value = parent.parent.parent.cCookies.document.getElementById('sourceName').value;
+	parent.point3.document.settings.sourcePassword.value = parent.parent.parent.cCookies.document.getElementById('sourcePassword').value;
+	parent.point3.document.settings.userIsCreated.value = parent.parent.parent.cCookies.document.getElementById('userIsCreated').value;
+	parent.point3.document.settings.sourceMacHD.value = parent.parent.parent.cCookies.document.getElementById('sourceMacHD').value;
+	parent.point3.document.settings.sourceBootCamp.value = parent.parent.parent.cCookies.document.getElementById('sourceBootCamp').value;
+	parent.point3.document.settings.sourceUpdate.value = parent.parent.parent.cCookies.document.getElementById('sourceUpdate').value;
+	parent.point3.document.settings.submit();
+	
+	parent.point3.document.backup.backupName.value = document.getElementById('name').value;
+	parent.point3.document.backup.backupDate.value = document.getElementById('date').value;
+	parent.point3.document.backup.backupMessage.value = document.getElementById('message').value;
+	parent.point3.document.backup.submit();
+	
+	window.location = 'done.html';
+}
+
+function startBackupPoint4(){
+	parent.point4.document.settings.sourceWallpaper.value = parent.parent.parent.cCookies.document.getElementById('sourceWallpaper').value;
+	parent.point4.document.settings.sourceName.value = parent.parent.parent.cCookies.document.getElementById('sourceName').value;
+	parent.point4.document.settings.sourcePassword.value = parent.parent.parent.cCookies.document.getElementById('sourcePassword').value;
+	parent.point4.document.settings.userIsCreated.value = parent.parent.parent.cCookies.document.getElementById('userIsCreated').value;
+	parent.point4.document.settings.sourceMacHD.value = parent.parent.parent.cCookies.document.getElementById('sourceMacHD').value;
+	parent.point4.document.settings.sourceBootCamp.value = parent.parent.parent.cCookies.document.getElementById('sourceBootCamp').value;
+	parent.point4.document.settings.sourceUpdate.value = parent.parent.parent.cCookies.document.getElementById('sourceUpdate').value;
+	parent.point4.document.settings.submit();
+	
+	parent.point4.document.backup.backupName.value = document.getElementById('name').value;
+	parent.point4.document.backup.backupDate.value = document.getElementById('date').value;
+	parent.point4.document.backup.backupMessage.value = document.getElementById('message').value;
+	parent.point4.document.backup.submit();
+	
+	window.location = 'done.html';
+}
+
+function startBackupPoint5(){
+	parent.point5.document.settings.sourceWallpaper.value = parent.parent.parent.cCookies.document.getElementById('sourceWallpaper').value;
+	parent.point5.document.settings.sourceName.value = parent.parent.parent.cCookies.document.getElementById('sourceName').value;
+	parent.point5.document.settings.sourcePassword.value = parent.parent.parent.cCookies.document.getElementById('sourcePassword').value;
+	parent.point5.document.settings.userIsCreated.value = parent.parent.parent.cCookies.document.getElementById('userIsCreated').value;
+	parent.point5.document.settings.sourceMacHD.value = parent.parent.parent.cCookies.document.getElementById('sourceMacHD').value;
+	parent.point5.document.settings.sourceBootCamp.value = parent.parent.parent.cCookies.document.getElementById('sourceBootCamp').value;
+	parent.point5.document.settings.sourceUpdate.value = parent.parent.parent.cCookies.document.getElementById('sourceUpdate').value;
+	parent.point5.document.settings.submit();
+	
+	parent.point5.document.backup.backupName.value = document.getElementById('name').value;
+	parent.point5.document.backup.backupDate.value = document.getElementById('date').value;
+	parent.point5.document.backup.backupMessage.value = document.getElementById('message').value;
+	parent.point5.document.backup.submit();
+	
+	window.location = 'done.html';
+}
+</script>
+</head>
+
+<body>
+<div id="formLayer">
+	<table width="100%" height="120" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #D4D4D4; background:#E8E8E8; padding-left:2px;">
+<tr>
+          <td width="50%"><strong>Restore Point name</strong></td>
+          <td width="50%" align="right" style="padding-right:1px;"><input type="text" name="name" id="name" style="width:150px; height:15px;" /></td>
+      </tr>
+        <tr>
+          <td width="50%"><strong>Date</strong></td>
+          <td width="50%" align="right" style="padding-right:1px;"><input type="text" name="date" id="date" style="width:150px; height:15px;" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Message</strong></td>
+      </tr>
+        <tr>
+          <td height="40" colspan="2"><textarea name="message" rows="3" id="message" style="width:296px;height: 40px;"></textarea></td>
+      </tr>
+        <tr>
+          <td width="50%" valign="bottom" style="padding-bottom:1px;"><input type="submit" name="cancel" id="cancel" value="Cancel" style="width: 50px; height: 15px;" onClick="window.location='main.html'" /></td>
+          <td width="50%" align="right" valign="bottom" style="padding-right:1px; padding-bottom:1px;"><input type="submit" name="set" id="set" value="Set Restore Point" style="width: 130px; height: 15px;" onClick="choosePoint();" /></td>
+        </tr>
+	</table>
+</div>
+
+<div id="points">
+  <table width="100%" height="120" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="69%" colspan="2" valign="top" style="padding-top:2px; padding-left:2px; background:#E8E8E8; border-left:1px solid #D4D4D4;">
+      You can backup 5 different backups at one time, then you need to overwrite someone.<br />
+        <strong>Choose backup number:</strong><br />
+        <label>
+        <input type="submit" name="#1" id="#1" value="Point #1" onClick="startBackupPoint1();" />
+        <input type="submit" name="#2" id="#2" value="Point #2" onClick="startBackupPoint2();" />
+        <input type="submit" name="#3" id="#3" value="Point #3" onClick="startBackupPoint3();" />
+        <input type="submit" name="#4" id="#4" value="Point #4" onClick="startBackupPoint4();" />
+        <input type="submit" name="#5" id="#5" value="Point #5" onClick="startBackupPoint5();" />
+        </label></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

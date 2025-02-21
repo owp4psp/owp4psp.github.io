@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Weather</title>
+<style type="text/css">
+<!--
+#apDiv1 {	position:absolute;
+	left:0px;
+	top:0px;
+	width:420px;
+	height:151px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:17px;
+	top:7px;
+	width:120px;
+	height:21px;
+	z-index:2;
+}
+#apDiv3 {
+	position:absolute;
+	left:247px;
+	top:7px;
+	width:41px;
+	height:39px;
+	z-index:1;
+	visibility: hidden;
+}
+-->
+</style>
+<script src="http://m.live.com/js/11.5.7.12.0001/Basics.js" type="text/javascript"></script>
+</head>
+
+<body onLoad="document.getElementById('url').value='Enter location here';">
+<form method="post" action="http://m.live.com/search/LocationPage.aspx" target="frame" name="form" id="form"><div id="apDiv1">
+  <div id="apDiv3">
+    <input id="q" type="hidden" name="q" value="Weather"/>
+    <input id="d" type="hidden" name="d" value=""/>
+    <input id="dld" type="hidden" name="dld" value="0"/>
+    <input id="a" type="hidden" name="a" value="results"/>
+  </div>
+  <table width="419" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td colspan="2"><img src="../../images/window/navigation/weather.png" width="420" height="31" border="0" usemap="#map" id="urlselect" name="urlselect" /></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" bgcolor="#404040"><iframe src="main.html" width="418" height="120" id="frame" name="frame" frameborder="0" scrolling="No"></iframe></td>
+    </tr>
+  </table>
+</div>
+<map name="map" id="map">
+  <area shape="rect" coords="149,3,237,25" onclick="document.form.submit();" />
+</map>
+<div id="apDiv2">
+  <table width="120" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><input name="url" type="text" id="url" style="width:120px; background-color:transparent; border:none;" onkeyup="window.location='http://www.google.se/';" onmouseover="document.getElementById('urlselect').src='../../images/window/navigation/weather_urlselect.png'" onmouseout="document.getElementById('urlselect').src='../../images/window/navigation/weather.png'" onClick="document.getElementById('url').value='';" /></td>
+    </tr>
+  </table>
+</div></form>
+</body>
+</html>
