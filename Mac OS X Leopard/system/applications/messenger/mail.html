@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Windows Live Mail</title>
+
+<script language=javascript type='text/javascript'>
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+
+<style type="text/css">
+<!--
+a:link {
+	color: #3399FF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #3399FF;
+}
+a:hover {
+	text-decoration: underline;
+	color: #3399FF;
+}
+a:active {
+	text-decoration: none;
+	color: #3399FF;
+}
+-->
+</style></head>
+
+<body>
+<a href="http://mobile.live.com/hm/folder.aspx?sky=y&amp;cr=2000">Click here</a> to start <strong>Windows Live Mail</strong>.
+</body>
+</html>

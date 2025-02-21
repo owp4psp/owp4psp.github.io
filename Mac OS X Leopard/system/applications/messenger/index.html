@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Windows Live Messenger v0.8 BETA - Dolphin Projects</title>
+
+<script language=javascript type='text/javascript'>
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+
+<style type="text/css">
+<!--
+#Layout {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:272px;
+	z-index:2;
+}
+#mail-tab {
+	position:absolute;
+	left:1px;
+	top:103px;
+	width:31px;
+	height:40px;
+	z-index:2;
+}
+#site-messenger {
+	position:absolute;
+	left:32px;
+	top:104px;
+	width:426px;
+	height:136px;
+	z-index:3;
+}
+#site-mail {
+	position:absolute;
+	left:33px;
+	top:104px;
+	width:426px;
+	height:136px;
+	z-index:4;
+	visibility: hidden;
+}
+#options-list {
+	position:absolute;
+	left:311px;
+	top:65px;
+	width:168px;
+	height:101px;
+	z-index:10;
+	visibility: hidden;
+}
+#button-options-list {
+	position:absolute;
+	left:437px;
+	top:35px;
+	width:33px;
+	height:29px;
+	z-index:6;
+	visibility: hidden;
+}
+#messenger-tab-on {
+	position:absolute;
+	left:1px;
+	top:65px;
+	width:31px;
+	height:39px;
+	z-index:7;
+}
+#background {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:272px;
+	z-index:1;
+	background-image: url(images/theme/standard.png);
+}
+#tab-messenger {
+	position:absolute;
+	left:1px;
+	top:65px;
+	width:31px;
+	height:39px;
+	z-index:8;
+	visibility: hidden;
+}
+#mail-tab-on {
+	position:absolute;
+	left:1px;
+	top:103px;
+	width:31px;
+	height:39px;
+	z-index:9;
+	visibility: hidden;
+}
+#about {
+	position:absolute;
+	left:69px;
+	top:18px;
+	width:342px;
+	height:237px;
+	z-index:11;
+	visibility: hidden;
+}
+#news {
+	position:absolute;
+	left:56px;
+	top:73px;
+	width:393px;
+	height:20px;
+	z-index:5;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="background"></div>
+<div id="Layout">
+  <table width="100%" height="272" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="20" colspan="3" valign="middle"><a href="#" onclick="javascript:showDiv('about')"><img src="images/logo.png" width="143" height="16" hspace="2" border="0" /></a></td>
+      <td colspan="2">&nbsp;</td>
+      <td width="8%">&nbsp;</td>
+      <td width="2%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="3%" height="44" valign="bottom">&nbsp;</td>
+      <td width="5%" valign="bottom"><a href="#" onclick="javascript:showDiv('site-mail'); javascript:showDiv('mail-tab-on'); javascript:hideDiv('tab-mail'); javascript:hideDiv('site-messenger'); javascript:hideDiv('messenger-tab-on'); javascript:showDiv('tab-messenger')"><img src="images/mail.png" width="22" height="29" border="0" /></a></td>
+      <td width="29%" valign="bottom">&nbsp;</td>
+      <td width="48%">&nbsp;</td>
+      <td width="5%" align="right" valign="bottom">&nbsp;</td>
+      <td align="right" valign="bottom"><a href="#" onclick="javascript:showDiv('options-list'); javascript:showDiv('button-options-list')"><img src="images/options.png" width="33" height="29" border="0" /></a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="39" colspan="3">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="3">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="3">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="3">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="mail-tab"><a href="#" onclick="javascript:showDiv('site-mail'); javascript:showDiv('mail-tab-on'); javascript:hideDiv('tab-mail'); javascript:hideDiv('site-messenger'); javascript:hideDiv('messenger-tab-on'); javascript:showDiv('tab-messenger')"><img src="images/mail-tab.png" width="31" height="40" border="0" /></a></div>
+<div id="site-messenger">
+<iframe src="messenger.html" width="100%" height="100%" id="iframe-site-messenger" frameborder="0"></iframe></div>
+<div id="site-mail">
+  <iframe src="mail.html" width="100%" height="100%" id="iframe-site-mail" frameborder="0" style="background-color:#FFFFFF"></iframe>
+</div>
+<div id="button-options-list"><a href="#" onclick="javascript:hideDiv('options-list'); javascript:hideDiv('button-options-list')"><img src="images/options.png" width="33" height="29" border="0" /></a></div>
+<div id="messenger-tab-on"><img src="images/messenger-tab-on.png" width="31" height="39" border="0" /></div>
+<div id="tab-messenger"><a href="#" onclick="javascript:showDiv('site-messenger'); javascript:showDiv('messenger-tab-on'); javascript:hideDiv('tab-messenger'); javascript:hideDiv('site-mail'); javascript:hideDiv('mail-tab-on'); javascript:showDiv('tab-mail')"><img src="images/messenger-tab.png" width="31" height="39" border="0" /></a></div>
+<div id="mail-tab-on"><img src="images/mail-tab-on.png" width="31" height="40" border="0" /></div>
+<div id="news">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><strong>News</strong> </td>
+    <td><iframe src="http://fpspvista.recoding.net/portals/live%20messenger/news.html" width="350" height="20" marginwidth="0px" marginheight="0px" id="iframe-news" style="border: 1px solid #656565;"></iframe></td>
+  </tr>
+</table>
+</div>
+<div id="options-list">
+<iframe src="options-list.html" width="100%" height="100%" id="iframe-options-list" frameborder="0" scrolling="no"></iframe>
+</div>
+<div id="about">
+<iframe src="about.html" width="100%" height="100%" id="iframe-about" frameborder="0" scrolling="no"></iframe></div>
+</body>
+</html>

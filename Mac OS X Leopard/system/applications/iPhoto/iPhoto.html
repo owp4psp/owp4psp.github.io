@@ -1,0 +1,198 @@
+<html>
+<head>
+<title>StartmenuMenu</title>
+<link href="images/style.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+#box {
+	position:absolute;
+	left:92px;
+	top:31px;
+	width:328px;
+	height:120px;
+	z-index:1;
+}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:420px;
+	height:151px;
+	z-index:1;
+}
+#top {
+	position:absolute;
+	left:0px;
+	top:31px;
+	width:92px;
+	height:120px;
+	z-index:1;
+	background-image: url(../../images/window/left-bar2.png);
+	visibility: visible;
+}
+#divApplications2 {
+	position:absolute;
+	left:24px;
+	top:3px;
+	width:69px;
+	height:20px;
+	z-index:1;
+}
+#divGames2 {
+	position:absolute;
+	left:23px;
+	top:53px;
+	width:69px;
+	height:20px;
+	z-index:1;
+}
+#divApplications {
+	position:absolute;
+	left:24px;
+	top:3px;
+	width:69px;
+	height:20px;
+	z-index:1;
+}
+#divGames {
+	position:absolute;
+	left:24px;
+	top:29px;
+	width:69px;
+	height:20px;
+	z-index:1;
+}
+#User_extended {
+	position:absolute;
+	left:0px;
+	top:31px;
+	width:92px;
+	height:120px;
+	z-index:1;
+	background-image: url(../../images/window/left-bar2.png);
+	visibility: hidden;
+}
+#Mac_extended {
+	position:absolute;
+	left:0px;
+	top:31px;
+	width:92px;
+	height:120px;
+	z-index:1;
+	background-image: url(../../images/window/left-bar2.png);
+	visibility: hidden;
+}
+.style2 {font-size: 12px}
+.style5 {font-size: x-small}
+-->
+</style>
+</head>
+
+<body>
+<div id="apDiv1">
+  <table width="419" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2"><img src="../../images/window/navigation_search-bar.png" width="420" height="31" /></td>
+  </tr>
+  </table>
+</div>
+    <div id="box">
+    <td width="328" rowspan="5" bgcolor="#404040"><iframe src="" width="328" height="120" frameborder="0" style="background-color:#404040;" id="frame" name="frame" scrolling="Auto" align="right"></iframe></td>
+  </tr>
+</table>
+</div>
+<div id="top">
+  <table width="93" height="43" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td onClick="window.location='usercore.html'" onMouseOut="applications.src='../images/iPhoto/pictures_folder.png'" onMouseOver="applications.src='../images/iPhoto/pictures_folder.png'">
+<div id="divApplications">
+  <table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+          <td><span class="style2" id="textApplications">User Pics</span></td>
+    </tr>
+  </table>
+</div><img src="../../images/iPhoto/pictures_folder.png" name="applications" width="23" height="23" border="0" id="applications" onClick="window.location='usercore.html'" /></td>
+    </tr>
+    <tr>
+      <td onClick="window.location='maccore.html'" onMouseOut="games.src='../images/iPhoto/pictures_folder.png'" onMouseOver="games.src='../images/iPhoto/pictures_folder.png'">
+<div id="divGames">
+  <table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+      <td><span class="style2">Mac Pics</span></td>
+    </tr>
+  </table>
+</div><img src="../../images/iPhoto/pictures_folder.png" name="games" width="23" height="23" border="0" id="games" onClick="window.location='maccore.html'" /></td>
+    </tr>
+   </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+    <div id="User_extended">
+  <table width="93" height="43" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td onClick="showDiv=('User_extended'); hideDiv-('top'); hideDiv-('Mac_extended');'" onMouseOut="applications.src='../images/iPhoto/pictures_folder.png'" onMouseOver="applications.src='../images/iPhoto/pictures_folder.png'">
+<div id="divApplications">
+  <table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+          <td><span class="style2" id="textApplications">User Pics</span></td>
+    </tr>
+  </table>
+</div><a href="#" onClick="javascript:showDiv('User_extended');"><img src="../../images/iPhoto/pictures_folder.png" width="23" height="23" border="0" /></a></td>
+    </tr>
+    <tr>
+      <td onClick="window.location='coremac.html'" onMouseOut="games.src='../images/iPhoto/pictures_folder.png'" onMouseOver="games.src='../images/iPhoto/pictures_folder.png'">
+<div id="divGames">
+  <table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+      <td><span class="style2">Mac Pics</span></td>
+    </tr>
+  </table>
+</div><img src="../../images/iPhoto/pictures_folder.png" name="games" width="23" height="23" border="0" id="games" /></td>
+    </tr>
+    </tr>
+    <tr>
+      <td style="padding-left: 24px;"><span class="style5">Backgrounds</span></td>
+    </tr>
+     <tr>
+      <td style="padding-left: 24px;"><span class="style5">Other</span></td>
+    </tr>
+    <tr>
+      <td><div align="left"> </div></td>
+    </tr>
+  </table>
+</div>
+    <div id="Mac_extended">
+  <table width="93" height="43" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td onClick="window.location='coreuser.html'" onMouseOut="applications.src='../images/iPhoto/pictures_folder.png'" onMouseOver="applications.src='../images/iPhoto/pictures_folder.png'">
+<div id="divApplications">
+  <table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+          <td><span class="style2" id="textApplications">User Pics</span></td>
+    </tr>
+  </table>
+</div><img src="../../images/iPhoto/pictures_folder.png" name="applications" width="23" height="23" border="0" id="applications" /></td>
+    </tr>
+        <tr>
+      <td style="padding-left: 24px;"><span class="style5">Album 1</span></td>
+    </tr>
+     <tr>
+      <td style="padding-left: 24px;"><span class="style5">Album 2</span></td>
+    </tr>
+    <tr>
+      <td onClick="window.location='coremac.html'" onMouseOut="games.src='../images/iPhoto/pictures_folder.png'" onMouseOver="games.src='../images/iPhoto/pictures_folder.png'">
+<div id="divGames">
+  <table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+      <td><span class="style2">Mac Pics</span></td>
+    </tr>
+  </table>
+</div><img src="../../images/iPhoto/pictures_folder.png" name="games" width="23" height="23" border="0" id="games" /></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
