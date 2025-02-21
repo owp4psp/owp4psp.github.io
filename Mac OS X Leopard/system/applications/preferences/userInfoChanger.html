@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Tahoma;
+	font-size: 10px;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+-->
+</style></head>
+<script type="text/javascript">
+function setPasswordDetails() {
+if(document.form.password.value == document.form.repeatpass.value){
+	parent.parent.cCookies.document.settings.sourcePassword.value = document.form.password.value;
+	parent.parent.cCookies.document.settings.submit();
+	}
+	else{
+	alert('Passwords do not match eachother!')
+	}
+}
+
+function setNameDetails() {
+	parent.parent.cCookies.document.settings.sourceName.value = document.form.name.value;
+	parent.parent.cCookies.document.settings.submit();
+}
+</script>
+<body>
+
+<div style="position:absolute; left:0px; top:0px; width:420px; height:8px; border-top:1px solid #404040; background:#E8E8E8;"></div>
+
+<div style="position:absolute; left:0px; top:9px; width:410px; height:141px; background:#E1E1E1; border-top:1px solid #CECECE; padding-left:10px;">
+
+<b>Change Account Details</b>
+<br />
+<br />
+<form id="form" name="form" method="post" action="">
+<span>Name</span>
+<br />
+<input name="user" type="text" id="name" style="width:90px" />
+<br />
+<span>Password</span>
+<br />
+<input name="password" type="text" id="password" style="width:90px" />
+<input name="repeatpass" type="text" id="repeatpass" style="width:90px" onClick="this.value=''" value="Repeat" />
+</form>
+<input type="button" value="Change Details" onClick="setNameDetails(); setPasswordDetails(); window.location='main.html';" /> 
+</div>  
+
+</body>
+</html>

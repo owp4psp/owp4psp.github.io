@@ -1,0 +1,256 @@
+<html>
+<head>
+<title></title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-size: 10px;
+	font-family: Tahoma;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+#preview {
+	position:absolute;
+	left:52px;
+	top:129px;
+	width:50px;
+	height:50px;
+	z-index:2;
+}
+#select {
+	position:absolute;
+	left:110px;
+	top:5px;
+	width:200px;
+	height:50px;
+	z-index:2;
+	visibility: hidden;
+}
+#save {
+	position:absolute;
+	left:341px;
+	top:5px;
+	width:60px;
+	height:50px;
+	z-index:3;
+	visibility: hidden;
+}
+body {
+	background:#E8E8E8;
+}
+#apDiv1 {
+	position:absolute;
+	left:290px;
+	top:108px;
+	width:406px;
+	height:50px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:143px;
+	top:272px;
+	width:400px;
+	height:50px;
+	z-index:4;
+}
+#Cookies {
+	position:absolute;
+	left:500px;
+	top:128px;
+	width:200px;
+	height:200px;
+	z-index:5;
+}
+#apDiv3 {
+	position:absolute;
+	left:113px;
+	top:7px;
+	width:214px;
+	height:26px;
+	z-index:1;
+	visibility: hidden;
+}
+-->
+</style>
+<script language="javascript" type="text/javascript">
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+
+// Scripts
+function showWallpaperPreview(){
+	if(parent.wallpaper == "/PSP/COMMON/Mac OS X Leopard/user/pictures/wallpaper/space.jpg"){
+		imgPreview.src = 'images/wallpaper/space.png';
+		showDiv('layer_preview');
+	}
+	if(parent.wallpaper == "/PSP/COMMON/Mac OS X Leopard/user/pictures/wallpaper/grass.jpg"){
+		imgPreview.src = 'images/wallpaper/grass.png';
+		showDiv('layer_preview');
+	}
+	if(parent.wallpaper == "/PSP/COMMON/Mac OS X Leopard/user/pictures/wallpaper/abstract.jpg"){
+		imgPreview.src = 'images/wallpaper/abstract.png';
+		showDiv('layer_preview');
+	}
+}
+
+function showWallpaperName(){
+	if(imgPreview.src == "images/wallpaper/space.png"){
+		previewName.innerHTML = 'Space';
+	}
+	if(imgPreview == "images/wallpaper/grass.png"){
+		previewName.innerHTML = 'Grass';
+	}
+	if(imgPreview == "images/wallpaper/abstract.png"){
+		previewName.innerHTML = 'Abstract';
+	}
+	else{	
+		previewName.innerHTML = parent.cCookies.document.getElementById('sourceWallpaper').value;
+		hideDiv('layer_preview');
+		previewLoading.innerHTML = 'Own wallpapers cannot be previewed...';
+	}
+}
+
+function save(){
+	parent.parent.cCookies.document.settings.sourceWallpaper.value=file.value;
+	parent.parent.cCookies.document.settings.submit();
+	window.location='changeWallpaper.html';
+}
+function wSpace(){
+	file.value='/PSP/COMMON/Mac OS X Leopard/user/pictures/wallpaper/space.jpg';
+}
+function wGrass(){
+	file.value='/PSP/COMMON/Mac OS X Leopard/user/pictures/wallpaper/grass.jpg';
+}
+function wAbstract(){
+	file.value='/PSP/COMMON/Mac OS X Leopard/user/pictures/wallpaper/abstract.jpg';
+}
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+</head>
+<body>
+<script type="text/javascript">
+window.setTimeout("showWallpaperPreview(); showWallpaperName();", 2000);
+</script>
+
+<div style="position:absolute; left:0px; top:0px; width:420px; height:1px; background:#404040;"></div>
+
+<div style="position:absolute; left:0px; top:9px; width:420px; height:141px; background:#E1E1E1; border-top:1px solid #CECECE;">
+  <div style="position:absolute; left:0px; top:-7px; width:420px; text-align:center">
+  <input type="button" value="Desktop" style="height:15px;" onClick="window.location='changeWallpaper.html';">
+  <input type="button" value="Screen Saver" style="height:15px;" disabled onClick="window.location='changeScreenSaver.html';">
+  </div>
+  
+  <div style="position:absolute; left:6px; top:15px; width:100px; height:50px; background:#FFFFFF; border:1px solid #CECECE;">
+    <table width="100" height="50" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="middle"><span id="previewLoading">Loading...</span></td>
+  </tr>
+</table>
+  <div id="layer_preview" style="position:absolute; left:2px; top:2px; visibility:hidden;"><img src="" name="imgPreview" width="98" height="48" border="0" id="imgPreview" /></div>
+  </div>
+  
+  <div style="position:absolute; left:115px; top:15px; width:100px; height:50px;">
+  <table width="100" height="50" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top"><span id="previewName">&nbsp;</span></td>
+  </tr>
+  </table>
+  </div>
+  
+  <form id="form1" name="form1" method="post">
+  <div style="position:absolute; left:265px; top:15px; width:147px; height:50px; background:#FFFFFF; border:1px solid #CECECE;">
+  <table width="100%" height="52" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>&nbsp;Load your own wallpaper:</td>
+      </tr>
+      <tr>
+        <td height="19" style="padding-left:1px;"><input name="ownWallpaper" type="file" id="ownWallpaper" style="width:145px; height:15px;" onChange="document.getElementById('file').value=this.value; previewLoading.innerHTML='Own wallpapers cannot be previewed...'; hideDiv('layer_preview'); document.getElementById('previewName').innerHTML=this.value;" /></td>
+      </tr>
+      <tr>
+        <td valign="top" style="padding-left:1px; padding-right:1px;"><input type="button" value="Save Wallpaper" style="width:145px; height:15px;" onClick="save();" /></td>
+      </tr>
+    </table>
+  </div>
+  </form>
+  
+  <div style="position:absolute; left:6px; top:73px; width:100px; height:60px; background:#FFFFFF; border:1px solid #CECECE;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="20">Apple</td>
+  </tr>
+  <tr>
+    <td height="20"><table width="100%" height="20" border="0" cellspacing="0" cellpadding="0" style="background:#5D8CDA;">
+      <tr>
+        <td width="23"><img src="images/standard_folder.png" width="20" height="16"></td>
+        <td style="color:#FFFFFF;">Nature</td>
+      </tr>
+    </table></td>
+    </tr>
+  <tr>
+    <td height="20"><table width="100%" height="20" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="23"><img src="images/pictures_folder.png" width="20" height="16"></td>
+        <td>Pictures Folder</td>
+      </tr>
+    </table></td>
+    </tr>
+</table>
+  </div>
+  
+  <div style="position:absolute; left:114px; top:73px; width:298px; height:60px; background:#FFFFFF; border:1px solid #CECECE;">
+  <iframe src="natureWallpapers.html" width="283" height="60" frameborder="0" scrolling="no"></iframe>
+  <div style="position:absolute; left:284px; top:1px;"><img src="images/scroll.png" width="15" height="60"></div>
+  </div>
+  
+</div>
+
+
+<div style="position:absolute; visibility:hidden;">
+  <input type="text" name="file" id="file">
+</div>
+
+</body>
+</html>
