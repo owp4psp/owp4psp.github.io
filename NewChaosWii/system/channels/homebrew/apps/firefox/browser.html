@@ -1,0 +1,127 @@
+<html>
+
+<head>
+<meta name="description" content="">
+<meta name="author" content="Sven Nobis (psp@crystalxp.de)">
+<meta name="generator" content="http://psp.crytalxp.de">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Language" content="en">
+
+<title>Mozilla Firefox v1.0 - Dolphin Projects</title>
+
+<script language=javascript type='text/javascript'>
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+
+<script src="conf.js" type="text/javascript"></script>
+<script src="scripts.js" type="text/javascript"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+body {
+	background-image: url();
+}
+#menubar-down {
+	position:absolute;
+	left:0px;
+	top:248px;
+	width:480px;
+	height:24px;
+	z-index:1;
+	background-image: url(design/menubar-down.png);
+}
+#logo {
+	position:absolute;
+	left:367px;
+	top:0px;
+	width:113px;
+	height:20px;
+	z-index:2;
+}
+#about {
+	position:absolute;
+	left:0px;
+	top:249px;
+	width:370px;
+	height:22px;
+	z-index:3;
+	visibility: hidden;
+}
+#scroll-square {
+	position:absolute;
+	left:463px;
+	top:231px;
+	width:17px;
+	height:17px;
+	z-index:4;
+	background-image: url(design/scroll-square.png);
+}
+#scroll-lr {
+	position:absolute;
+	left:0px;
+	top:231px;
+	width:463px;
+	height:17px;
+	z-index:5;
+	background-image: url(design/scroll-lr.png);
+}
+#scroll-du {
+	position:absolute;
+	left:463px;
+	top:57px;
+	width:17px;
+	height:174px;
+	z-index:6;
+	background-image: url(design/scroll-du.png);
+}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:249px;
+	width:346px;
+	height:24px;
+	z-index:7;
+}
+-->
+</style></head>
+<body marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" onLoad="webframe.location.href = StartPage;">
+<div id="menubar-down"></div>
+<div id="logo"><a href="#" onClick="javascript:showDiv('about');"><img src="design/logo.png" width="113" height="20" border="0"></a></div>
+<div id="scroll-square"></div>
+<div id="scroll-lr"></div>
+<div id="scroll-du"></div>
+<div id="about">This is a modified portal of &quot;Fullscreen Browser&quot;, v1.0 <a href="javascript:hideDiv('about');"><img src="design/close.png" width="14" height="14" vspace="0" border="0"></a></div>
+<script type="text/javascript">
+WriteMenu(480);
+WriteFrames(480);
+</script>
+</body>
+</html>
