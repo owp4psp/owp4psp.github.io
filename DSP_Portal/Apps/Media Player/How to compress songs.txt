@@ -1,0 +1,36 @@
+How to compress your own songs:
+
+I will give you all a couple of links to obtain some freeware MP3 compression software....
+You can use these to get small MP3 files to use with the newly released PSPTunes app by bigbondfan at this website.
+
+You must download both files, then put them together to use.
+Kind of complicated getting it all set up...but works just as good as the Goldwave (Not Freeware) app that I use...
+Can get you small size 16kbit 11.025kHz stereo MP3s that work great on the PSP.
+
+1. Lame encoder:
+http://mitiok.cjb.net/
+Get the 3.96.1 stable version from this page
+
+2. Razorlame - a frontend GUI for the lame encoder:
+http://www.dors.de/razorlame/index.php
+Get the latest 1.1.5a release
+
+These are both zip packages. Unzip each...and combine them together in one folder on your Windows PC.
+Start up RazorLame.exe to begin.
+Then...go to Edit - Options and make sure the path to lame.exe is defined...can browse to it...
+Note - (you had earlier combined lame.exe in this same folder as RazorLame.exe)
+Press OK when ready.
+
+Then, go to Edit - LAME Options and move the Bitrate slider to 16 kbit
+Select a Mode of "Stereo"
+Define an Output directory that you wish....do not make it the same as the input directory.
+Now, go to the Audio processing tab.
+Select an Output sampling frequency of 11.025 kHz
+Press OK when ready.
+
+Now you are all set up...just use the Add button to add your MP3 files.
+Then use the Encode button to begin processing.
+(Note - Make sure your Output directory you chose in the LAME options
+above is not the same as the directory where your original MP3 file was located.)
+
+
