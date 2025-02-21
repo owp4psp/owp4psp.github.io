@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Media Page</title>
+
+<style type="text/css">
+<!--
+body {
+	background-color: #EBE9ED;
+}
+-->
+</style>
+
+<script language="JavaScript" type="text/javascript">
+function ChangeSettings(){
+	top.icookies.document.settings.chkPSPTunesTab.value=document.getElementById('chkTunes').checked;
+        top.icookies.document.settings.chkPlaySounds.value=document.getElementById('sounds').checked;
+	top.icookies.document.settings.submit();
+	top.ApplySettings();
+}
+</script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<center>
+<p>
+    <label><input name="chkTunes" type="checkbox" id="chkTunes" value="1" checked>Open PSPTunes in separate tab (memory saving)</label>
+</p>
+<p>
+<label><input name="sounds" type="checkbox" id="sounds" value="1" checked>Use system sounds</label>
+</p>
+<p>
+<p>
+    <input name="OK" type="button" id="OK2" onClick="location='personalize.html';ChangeSettings();" value="OK" style="width:60">
+    <input name="Cancel2" type="button" id="Cancel22" onClick="location='personalize.html';" value="Cancel" style="width:60">
+</p>
+</center>
+				<script language="javascript" type="text/javascript">
+	if(top.document.icookies.document.getElementById('chkPSPTunesTab').value=="false"){
+		chkTunes.checked=false;
+	}else{
+		chkTunes.checked=true;
+	}
+        if(top.document.icookies.document.getElementById('chkPlaySounds').value=='false'){
+		sounds.checked=false;
+	}else{
+		sounds.checked=true;
+	}
+				</script>
+</body>
+</html>

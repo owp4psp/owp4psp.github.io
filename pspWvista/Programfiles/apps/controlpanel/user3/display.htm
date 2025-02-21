@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  
+
+
+  
+  <title>Display Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+  
+  <meta http-equiv="Content-Style-Type" content="text/css">
+
+
+  
+  <style type="text/css">
+<!--
+#lColor {
+position:absolute;
+left:317px;
+top:141px;
+width:100px;
+height:78px;
+z-index:1;
+background-color: #FFFFFF;
+visibility: hidden;
+}
+body {
+background-color: #FFFFFF;
+}
+-->
+  </style>
+  
+  <script language="JavaScript" type="text/javascript">
+function ChangeSettings(){
+top.icookies.document.settings.chkbg.value=document.getElementById('chkBGImage').checked;
+top.icookies.document.settings.bg3.value=document.getElementById('File').value;
+top.icookies.document.settings.submit();
+parent.ApplySettings();
+}
+function themebgload(){
+if(top.document.icookies.document.getElementById('themeDir3').value==''){
+File.value='../../../images/desktop.jpg';
+}else{
+File.value='../../../'+top.document.icookies.document.getElementById('themeDir3').value+'/desktop.jpg';imgPreview.src=File.value;
+}
+}
+  </script>
+</head>
+
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<table style="position: absolute; top: 0px; left: 0px; width: 140px; height: 253px;" >
+
+<td><img src="side.jpg" width="140" height="284" /></td>
+</tr>
+</table>
+<table style="position: absolute; top: 1px; left: 4px; width:473px; height: 213px;" border="0" cellpadding="0" cellspacing="0" >
+  <tbody>
+    <tr>
+      <td><div align="center">
+        <table style="text-align: left; margin-left: auto; margin-right: auto; width: 455px; height: 242px;" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td align="center" style="text-align: right;">
+                <table background="none" border="0" cellpadding="0" cellspacing="0" height="219" width="321">
+                    <tbody>
+                      <tr>
+                          <td width="101" height="8" colspan="1" rowspan="1" align="center">&nbsp;</td>
+                        <td colspan="1" rowspan="1" align="center"><strong>Preview:&nbsp;</strong></td>
+                        <td width="4" align="center"></td>
+                       
+                      </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr>
+                          <td height="70" colspan="1" align="center"></td>
+                          <td width="141" height="70" colspan="1" align="center"><img alt="" name="imgPreview" id="imgPreview" height="61" style="visibility:hidden;" width="100"></td>
+                          <td height="70" align="center">&nbsp;</td>
+                      </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr> </tr>
+                        <tr>
+                          <td colspan="1" align="center"></td>
+                          <td colspan="1" align="center"></td>
+                          <td align="center"></td>
+                          <td align="center"></td>
+                      </tr>
+                        <tr>
+                          <td colspan="1" onClick="document.getElementById('File').value= document.getElementById('dsk').src;" align="center"><img src="../../../../images/wallpapers/Canyon%20Drive.jpg" alt="" width="82" height="46" id="dsk" style="border: 0px solid ; top: 161px; left: 236px; width: 101px; height: 57px;"></td>
+                          <td colspan="1" onClick="document.getElementById('File').value= document.getElementById('dska').src;" align="center"><img src="../../../../images/wallpapers/Beach%20Tree.jpg" alt="" width="90" height="50" id="dska" style="border: 0px solid ; top: 161px; left: 236px; width: 101px; height: 57px;"></td>
+                          <td align="center" onClick="document.getElementById('File').value= document.getElementById('dskb').src;"><img src="../../../../images/wallpapers/Bliss.jpg" alt="" width="87" height="49" id="dskb" style="border: 0px solid ; top: 161px; left: 236px; width: 101px; height: 57px;"> </td>
+                      </tr>
+                        <tr>
+                          <td onClick="document.getElementById('File').value= document.getElementById('dskb').src;imgPreview.src='wallpapers/Bliss.jpg'" align="center">&nbsp;</td>
+                          <td onClick="document.getElementById('File').value= document.getElementById('dskc').src;imgPreview.src='wallpapers/Beach%20Tree.jpg'" align="center">&nbsp;</td>
+                      </tr>
+                      </tbody>
+                  </table></td>
+            </tr>
+          </tbody>
+        </table>
+      </div></td>
+    </tr>
+    <tr>
+      <td><table border="0" cellpadding="1" cellspacing="1" style="position: absolute; top: 180px; left: 161px; width: 246px; height: 110px;" >
+        <tbody>
+          <tr>
+            <td width="218" height="66" valign="top"><p align="center"><font size="2">
+              <label>
+                <input name="chkBGImage" id="chkBGImage" value="1" checked="checked" type="checkbox">
+                Background image:</label>
+              <br>
+              </font>
+                      <input name="File" id="File" onChange="chkBGImage.checked=true;" type="file">
+              &nbsp;</p></td>
+          </tr>
+          <tr>
+            <td valign="top" width="218"><input name="OK" id="OK2" onClick="location='personalize.html';ChangeSettings();" value="OK" style="width: 60px;" type="button">
+                  <input name="Cancel" id="Cancel3" onClick="location='personalize.html';" value="Cancel" style="width: 60px;" type="button">
+                  <input name="Cancel2" id="Cancel22" onClick="ChangeSettings();" value="Apply" style="width: 60px;" type="button">
+            </td>
+            <script language="javascript" type="text/javascript">
+txtcolor.value=top.document.icookies.document.getElementById('bgcolor').value;
+document.getElementById('activecolor').style.background=txtcolor.value;
+if(top.document.icookies.document.getElementById('chkbg').value=="true"){
+chkBGImage.checked=true;
+}else{
+chkBGImage.checked=false;
+}
+File.value=top.document.icookies.document.getElementById('bg3').value;
+if(top.document.icookies.document.getElementById('desktopicons').value=="true"){
+chkIcons.checked=true;
+}else{
+chkIcons.checked=false;
+}
+            </script>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+  </tbody>
+</table>
+-
+</body>
+</html>

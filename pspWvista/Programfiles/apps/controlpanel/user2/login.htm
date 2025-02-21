@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Login Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+  <meta http-equiv="Content-Style-Type" content="text/css"> 
+  <style type="text/css">
+<!--
+#lColor {
+	position:absolute;
+	left:397px;
+	top:130px;
+	width:100px;
+	height:78px;
+	z-index:1;
+	background-color: #FFFFFF;
+	visibility: hidden;
+}
+-->
+  </style>
+ <script language="JavaScript" type="text/javascript">
+function ChangeSettings(){
+	if(document.getElementById('txtOldPassword').value==top.icookies.document.getElementById('thepassword2').value){
+		if(document.getElementById('txtNew1').value==document.getElementById('txtNew2').value){
+			top.icookies.document.settings.thepassword2.value=txtNew1.value;
+			top.icookies.document.settings.loginshow.value=document.getElementById('chkShow').checked
+			top.icookies.document.settings.submit();
+	alert('pspWvista will need to be restarted for changes to take effect.');
+		}else{
+			alert("The new passwords do not match.");
+		}
+	}else{
+		alert("Incorrect Password.");
+	}
+
+	function GetSettings(){
+		document.getElementById('chkShow').checked=top.icookies.document.getElementById('loginshow').value;
+	}
+}
+function themeulload(){
+	if(top.document.icookies.document.getElementById('themeDir2').value==''){
+		File.value='../../../images/wallpapers/userloginchess.png';imgPreview.src=File.value;
+	}else{
+			File.value='../../../'+top.document.icookies.document.getElementById('themeDir2').value+'/userlogin.png';imgPreview.src=File.value;
+		}
+}	
+  </script>
+</head>
+
+
+<body leftmargin="0" topmargin="0" onLoad="GetSettings();" bgcolor="#FFFFFF" marginheight="0" marginwidth="0">
+<table style="position: absolute; top: -3px; left: 0px; width: 140px; height: 253px;" >
+<tr>
+  <td><img src="side.jpg" width="140" height="427"/>
+</table>   
+<div align="right">
+<table style="position: absolute; left: 145px; height: 248px; width: 311px; top: -3px;" border="0" cellpadding="0" cellspacing="0">
+
+
+    <tbody>
+
+    <tr>
+
+
+        <td style="text-align: center;" colspan="2" rowspan="1"><font size="+2">Login:</font></td>
+      <td></td>
+  
+      <td rowspan="5"></td>
+      </tr>
+
+
+      <tr>
+
+
+        <td width="133">Old Password: </td>
+
+
+        <td width="194"><input name="txtOldPassword" id="txtOldPassword" size="10" type="password"></td>
+      <td></td>
+      <td></td>
+      <td colspan="4" rowspan="4"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+        <td>New Password: </td>
+        <td><input name="txtNew1" id="txtNew1" size="10" type="password"></td>
+
+        <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+        <td>Confirm Password: </td>
+        <td><input name="txtNew2" id="txtNew2" size="10" type="password"></td>
+
+        <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+
+
+        <td style="visibility:hidden"><label>
+          <input visibility="hidden" name="chkShow" value="" id="chkShow" type="checkbox" checked="checked">
+         </label></td>
+
+
+        <td>&nbsp;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+
+
+        <td colspan="12"><label>
+        <input name="OK" id="OK2" onClick="ChangeSettings();location='index.htm';" value="OK" style="width: 60px;" type="button">
+        <input name="Cancel" id="Cancel3" onClick="location='index.htm';" value="Cancel" style="width: 60px;" type="button">
+        </label></td>
+      </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp; <br>
+<br>
+&nbsp;<br>
+
+
+</div>
+
+<script language="javascript" type="text/javascript">
+	if(top.document.icookies.document.getElementById('chkul').value=="true"){
+		chkULImage.checked=true;
+	}else{
+		chkULImage.checked=false;
+	}
+	File.value=top.document.icookies.document.getElementById('ul2').value;
+	imgPreview.src=File.value;
+	if(top.document.icookies.document.getElementById('loginshow').value=="true"){
+		chkShow.checked=true;
+	}else{
+		chkShow.checked=false;
+	}
+	if(top.document.icookies.document.getElementById('chkwlan').value=="true"){
+		chkwlanPOP.checked=true;
+	}else{
+		chkwlanPOP.checked=false;
+	}			
+	if(top.document.icookies.document.getElementById('chkcenter').value=="true"){
+		chkcenterOpen.checked=true;
+	}else{
+		chkcenterOpen.checked=false;
+	}			</script>
+</body>
+</html>

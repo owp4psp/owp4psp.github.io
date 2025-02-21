@@ -1,0 +1,335 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>Setup Wizard</title>
+
+
+  <meta name="GENERATOR" content="OpenOffice.org 2.2 (Linux)">
+
+  <meta name="CREATED" content="20070703;15383700">
+
+  <meta name="CHANGED" content="20070703;15460400">
+
+  <script language="JavaScript">
+function ChangeSettings(){
+if(document.getElementById('themeDir').value=='desktop-b.htm'){
+top.top.icookies.document.settings.winThemeDir3.value='../images/basic/window/window.png';
+alert('Windows Basic');
+	}else{
+top.top.icookies.document.settings.winThemeDir3.value='../images/window/window.png';
+alert('Windows Areo');
+		}
+	if(document.getElementById('txtOldPassword').value==top.icookies.document.getElementById('thepassword3').value){
+		if(document.getElementById('txtNew1').value==document.getElementById('txtNew2').value){
+			top.icookies.document.settings.thepassword3.value=txtNew1.value;
+			top.icookies.document.settings.loginshow.value=document.getElementById('chkShow').checked;
+					top.top.icookies.document.settings.themeDir3.value=document.getElementById('themeDir').value;
+	                top.icookies.document.settings.chkul.value=document.getElementById('chkULImage').checked;
+	                top.icookies.document.settings.ul3.value=document.getElementById('File').value;
+					top.icookies.document.settings.un3.value=document.getElementById('UserName').value;
+					top.top.icookies.document.settings.bg3.value='wallpapers/Beach Tree.jpg';
+			top.icookies.document.settings.submit();
+	alert('pspWvista will need to be restarted.');
+		}else{
+			alert("The new passwords do not match.");
+		}
+	}else{
+		alert("Incorrect Password.");
+	}
+
+	function GetSettings(){
+		document.getElementById('chkShow').checked=top.icookies.document.getElementById('loginshow').value;
+	}
+}
+function themeulload(){
+	if(top.document.icookies.document.getElementById('themeDir3').value==''){
+		File.value='../../../images/wallpapers/userloginchess.png';imgPreview.src=File.value;
+	}else{
+			File.value='../../../'+top.document.icookies.document.getElementById('themeDir3').value+'/userlogin.png';imgPreview.src=File.value;
+		}
+}	
+setTimeout("preview();",3000); function preview(){
+if(icookies.document.getElementById('themeDir').value==''){
+imgPreview.src="../images/desktop.jpg";
+}else{
+imgPreview.src="../"+icookies.document.getElementById('themeDir3').value+"/desktop.jpg";
+}
+}
+function delayer(){
+window.location = "setupnav.html"
+}
+//-->
+function showHideLayer(layerName,showHide){
+frames[layerName].style.visibility=showHide;
+}
+function pass(){
+document.getElementById("OK").disabled = (document.getElementById("chkstart").checked==false)
+}
+  </script>
+</head>
+
+
+<body style="direction: ltr; background-color: rgb(0, 0, 0);" lang="en-US">
+
+<p align="left"></p>
+
+<p align="left"><br>
+
+</p>
+
+<p><font color="#ffffff"> </font></p>
+
+
+
+<br>
+
+.
+<p></p>
+
+<table background="../../../../images/setup.jpg" style="visibility: visible; z-index: 28; position: absolute; top: 0px; left: 0px; width: 479px; height: 272px; background-image: ../../../../images/setup.jpg; layer-background-image: url(../images/setup.jpg); border: 1px none #000000;" border="0" cellpadding="4" cellspacing="3">
+
+  <col width="146"> <tbody>
+
+    <tr>
+
+      <td width="163">
+      <p></p>
+      <p align="left"></p>
+      <p align="left">&nbsp;</p></td>
+
+      <td colspan="1" rowspan="2" width="291">
+      
+<div id="lie" align="right" visibility="hidden">
+<table style="position: absolute; left: 7px; height: 122px; width: 283px; top: 71px; z-index: 4;" border="0" cellpadding="0" cellspacing="0">
+
+
+    <tbody>
+
+    <tr>
+
+
+        <td style="text-align: center;" colspan="2" rowspan="1"><font size="+1" color="white">Password</font></td>
+      <td></td>
+  
+      <td rowspan="5"></td>
+      </tr>
+
+
+      <tr>
+
+
+        <td width="133" style="visibility:hidden"></td>
+
+
+        <td width="194" style="visibility:hidden"><input visibility="hidden" name="txtOldPassword" id="txtOldPassword" size="10" type="password"></td>
+      <td></td>
+      <td></td>
+      <td colspan="4" rowspan="4"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+        <td><font color="white">Password:</font> </td>
+        <td><input name="txtNew1" id="txtNew1" size="10" type="password"></td>
+
+        <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+        <td><font color="white">Confirm Password:</font> </td>
+        <td><input name="txtNew2" id="txtNew2" size="10" type="password"></td>
+
+        <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+
+
+        <td style="visibility:hidden"><label>
+          <input visibility="hidden" name="chkShow" value="" id="chkShow" type="checkbox" checked="checked">
+         </label></td>
+
+
+        <td>&nbsp;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+
+
+        <td colspan="12"><label></label></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+<div id="Prev" name="Prev" style="position:absolute; left: 261px; top:102px; width:; height:; z-index:10; visibility: visible;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center"><div align="left"></div>
+				<table width="243" height="93" border="0" cellpadding="0" cellspacing="0" background="../../../images/controlpanel/preview.jpg">
+					<tr>
+						<td width="52" height="8"></td>
+						<td width="140" height="8"></td>
+						<td width="51" height="8"></td>
+					</tr>
+					<tr>
+						<td height="70"></td>
+						<td width="140" height="70">&nbsp;</td>
+					  <td height="70"></td>
+					</tr>
+					<tr>
+						<td width="52"></td>
+					  <td width="140" height="15">Theme</td>
+					  <td width="51"></td>
+					</tr>
+	  </table></td>
+	</tr>
+</table>
+<p>
+    <select name="themeDir" id="themeDir">
+<script language="javascript" type="text/javascript" src="../../../../user/themes.js"></script>
+		</select>
+	<input type="submit" name="Submit" value="Info" onClick="alert('This theme can be found under the file named '+themeDir.value+'.');">
+</p>
+</div>
+
+<div id="warn" name="warn"  visibility="visible">
+      <table style="position: absolute; top: 71px; left: 249px; width: 209px; height: 132px; visibility:visible; border: 1px none #000000; z-index: 25;" border="0" cellpadding="0" cellspacing="0" background="">
+
+
+
+  <tbody>
+    <tr>
+
+
+            <td align="right"></td>
+      <td colspan="3" rowspan="1">&nbsp;<img alt="" name="imgPreview" id="imgPreview" height="49" width="49"><br>
+      
+
+
+</td>
+      <td colspan="8" rowspan="2" style="visibility:hidden">  <input visibility="hidden" name="chkULImage" id="chkULImage" checked="checked" type="checkbox">      </td>
+    </tr>
+
+
+
+ <tr>
+
+
+
+      <td onClick="document.getElementById('File').value= document.getElementById('log').src;imgPreview.src='../../../../images/wallpapers/userloginball.PNG'">&nbsp; &nbsp;<img id="log" style="border: 0px solid ; top: 161px; left: 236px; width: 44px; height: 44px;" alt="" src="../../../../images/wallpapers/userloginball.PNG" align="middle"></td>
+
+      <td align="center" onClick="document.getElementById('File').value= document.getElementById('loga').src;imgPreview.src='../../../../images/wallpapers/userloginflower.PNG'">&nbsp; &nbsp;<img src="../../../../images/wallpapers/userloginflower.PNG" alt="" style="border: 0px solid ; top: 161px; left: 236px; width: 44px; height: 44px;" id="loga" align="middle"></td>
+
+      <td align="center" onClick="document.getElementById('File').value= document.getElementById('logb').src;imgPreview.src='../../../../images/wallpapers/userloginrobot.PNG'">&nbsp; <img src="../../../../images/wallpapers/userloginrobot.PNG" alt="" name="logb" align="middle" id="logb" style="border: 0px solid ; top: 161px; left: 236px; width: 44px; height: 44px;"></td>
+
+      <td align="center" onClick="document.getElementById('File').value= document.getElementById('logc').src;imgPreview.src='../../../../images/wallpapers/userloginchess.PNG'">&nbsp; <img id="logc" style="border: 0px solid ; top: 161px; left: 236px; width: 44px; height: 44px;" alt="" src="../../../../images/wallpapers/userloginchess.PNG"></td>
+    </tr>
+
+
+     <tr>
+
+      <td colspan="4" rowspan="1" style="visibility:hidden"><input visibility="hidden" name="File" id="File" onChange="imgPreview.src=File.value;chkULImage.checked=true;" type="file"><br>
+&nbsp;&nbsp;&nbsp;</td>
+      
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<font size="+1" color="white"> Please set a password and choose a user image.
+</font>
+  
+
+     
+
+       <br>
+
+      <br>
+
+      <br>
+
+      <br> 
+
+      <br>
+
+      <br>
+ <br> <br> <br>  <br> <br>
+<div style="position:absolute; left: 5px; top:170px; width: 253px; height: 75px;">
+<table>
+<tr>
+<td><font color="white">User name</font></td>
+<td><input name="UserName" id="UserName" type="text">
+</td>
+</tr>
+</table>
+</div>
+
+      
+
+    
+
+      <div id="agree"  name="agree"><span style="color: rgb(253, 253, 253);">
+        <input name="OK" id="OK2" onClick="ChangeSettings();location='../index.htm';" value="OK" style="width: 60px;" type="button">
+      </span></div>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+<script language="javascript" type="text/javascript">
+	if(top.document.icookies.document.getElementById('chkul').value=="true"){
+		chkULImage.checked=true;
+	}else{
+		chkULImage.checked=false;
+	}
+    UserName.value=top.document.icookies.document.getElementById('un3').value;
+	File.value=top.document.icookies.document.getElementById('ul3').value;
+	imgPreview.src=File.value;
+	if(top.document.icookies.document.getElementById('loginshow').value=="true"){
+		chkShow.checked=true;
+	}else{
+		chkShow.checked=false;
+	}
+	if(top.document.icookies.document.getElementById('chkwlan').value=="true"){
+		chkwlanPOP.checked=true;
+	}else{
+		chkwlanPOP.checked=false;
+	}			
+	if(top.document.icookies.document.getElementById('chkcenter').value=="true"){
+		chkcenterOpen.checked=true;
+	}else{
+		chkcenterOpen.checked=false;
+	}			</script>
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
