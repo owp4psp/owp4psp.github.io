@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>DSP Boot</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url();
+	background-repeat: no-repeat;
+	margin-left: 1px;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+#Layer1 {
+	position:absolute;
+	width:31px;
+	height:33px;
+	z-index:1;
+	left: 7px;
+	top: 8px;
+}
+#Layer2 {
+	position:absolute;
+	width:4px;
+	height:6px;
+	z-index:1;
+	left: 4px;
+	top: 275px;
+}
+#Layer3 {
+	position:absolute;
+	width:9px;
+	height:9px;
+	z-index:1;
+	left: 9px;
+	top: 285px;
+}
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_controlSound(x, _sndObj, sndFile) { //v3.0
+  var i, method = "", sndObj = eval(_sndObj);
+  if (sndObj != null) {
+    if (navigator.appName == 'Netscape') method = "play";
+    else {
+      if (window.MM_WMP == null) {
+        window.MM_WMP = false;
+        for(i in sndObj) if (i == "ActiveMovie") {
+          window.MM_WMP = true; break;
+      } }
+      if (window.MM_WMP) method = "play";
+      else if (sndObj.FileName) method = "run";
+  } }
+  if (method) eval(_sndObj+"."+method+"()");
+  else window.location = sndFile;
+}
+//-->
+</script>
+</head>
+
+<body>
+<a href="index2.html"><img src="images/DS_template.PNG" width="480" height="272" border="0" align="texttop" onclick="MM_controlSound('play','document.CS1198652064781','NintendoDS.mp3')" /></a>
+<div id="Layer3">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="8" height="8">
+    <param name="movie" value="NintendoDS_1.swf" />
+    <param name="quality" value="high" />
+    <param name="LOOP" value="false" />
+    <embed src="NintendoDS_1.swf" width="8" height="8" loop="false" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+  </object>
+</div>
+</body>
+</html>

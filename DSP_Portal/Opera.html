@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DSP -- Opera Browser</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#tabOne {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:251px;
+	z-index:1;
+}
+#tabTwo {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	visibility:hidden;
+	z-index:2;
+}
+#tabThree {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	visibility:hidden;
+	z-index:3;
+}
+#browse {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	visibility:hidden;
+	z-index:4;
+}
+#apDiv1 {
+	position:absolute;
+	left:13px;
+	top:299px;
+	width:480px;
+	height:14px;
+	z-index:999;
+}
+#Layer1 {
+	position:absolute;
+	width:479px;
+	height:25px;
+	z-index:1000;
+	left: 1px;
+	top: 253px;
+}
+-->
+</style>
+<script>
+function Hide(id) {
+    obj = document.getElementsByTagName("div");
+    if (obj[id].style.visibility == 'hidden'){
+    obj[id].style.visibility = 'hidden';}
+    else {
+    obj[id].style.visibility = 'hidden';
+    }
+}
+function Show(id) {
+    obj = document.getElementsByTagName("div");
+    if (obj[id].style.visibility == 'visible'){
+    obj[id].style.visibility = 'visible';}
+    else {
+    obj[id].style.visibility = 'visible';
+    }
+}
+function tab(id) {
+	Hide("tabOne");
+	Hide("tabTwo");
+	Hide("tabThree");
+	Hide("browse");
+	Show(id);
+}
+</script>
+</head>
+
+<body>
+<div id="tabOne">
+<iframe frameborder="0" height="250" width="480" src="OperaInner.html"></iframe></div>
+<div id="tabTwo"><iframe frameborder="0" height="250" width="480" src="OperaInner.html"></iframe></div>
+<div id="tabThree"><iframe frameborder="0" height="250" width="480" src="OperaInner.html"></iframe></div>
+<div id="browse">BROWSING...</div>
+<div id="Layer1"><img src="images/Opera/opera_footer.PNG" alt="Footer" width="480" height="17" border="0" usemap="#Map2" />
+<map name="Map2" id="Map2">
+  <area shape="rect" coords="442,1,460,14" href="index2.html" />
+<area shape="rect" coords="423,2,438,15" href="opera_help.html" />
+  <area shape="rect" coords="420,2,421,6" href="#" /><area shape="rect" coords="322,3,341,15" href="#" onClick="javascript:history.go(-1)"/>
+<area shape="rect" coords="343,2,358,15" href="#" onClick="javascript:history.go(1)" />
+<area shape="rect" coords="360,3,379,15" href="#" onclick="if(document.getElementById('txturl').value!=''){Content.location.href=document.getElementById('txturl').value}else{alert('Error: No URL!')}" />
+<area shape="rect" coords="377,1,379,5" href="#" /><area shape="rect" coords="377,1,378,4" href="#" /><area shape="rect" coords="372,3,373,9" href="#" /><area shape="rect" coords="10,4,25,16" href="javascript:tab('tabOne')" />
+<area shape="rect" coords="30,4,44,15" href="javascript:tab('tabTwo')" />
+<area shape="rect" coords="48,4,65,15" href="javascript:tab('tabThree')" />
+</map></div>
+</body>
+</html>

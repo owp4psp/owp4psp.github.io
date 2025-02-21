@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DSP -- Photo viewer</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#tabOne {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:251px;
+	z-index:1;
+}
+#tabTwo {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	visibility:hidden;
+	z-index:2;
+}
+#tabThree {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	visibility:hidden;
+	z-index:3;
+}
+#browse {
+	position:absolute;
+	left:0;
+	top:0;
+	width:480px;
+	height:243px;
+	visibility:hidden;
+	z-index:4;
+}
+#apDiv1 {
+	position:absolute;
+	left:13px;
+	top:299px;
+	width:480px;
+	height:14px;
+	z-index:999;
+}
+#Layer1 {
+	position:absolute;
+	width:479px;
+	height:25px;
+	z-index:1000;
+	left: 342px;
+	top: 361px;
+}
+#Layer2 {
+	position:absolute;
+	width:478px;
+	height:23px;
+	z-index:5;
+	left: 1px;
+	top: 247px;
+}
+#Layer3 {
+	position:absolute;
+	width:33px;
+	height:18px;
+	z-index:6;
+	left: 441px;
+	top: 249px;
+}
+-->
+</style>
+<script>
+function Hide(id) {
+    obj = document.getElementsByTagName("div");
+    if (obj[id].style.visibility == 'hidden'){
+    obj[id].style.visibility = 'hidden';}
+    else {
+    obj[id].style.visibility = 'hidden';
+    }
+}
+function Show(id) {
+    obj = document.getElementsByTagName("div");
+    if (obj[id].style.visibility == 'visible'){
+    obj[id].style.visibility = 'visible';}
+    else {
+    obj[id].style.visibility = 'visible';
+    }
+}
+function tab(id) {
+	Hide("tabOne");
+	Hide("tabTwo");
+	Hide("tabThree");
+	Hide("browse");
+	Show(id);
+}
+</script>
+</head>
+
+<body>
+<div id="tabOne">
+<iframe frameborder="0" height="250" width="480" src="apps/imageflow/index2.html"></iframe></div>
+
+<div id="browse">BROWSING...</div>
+<div id="Layer2"><img src="images/bottom_bar.PNG" width="480" height="24" border="0" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="143,3,222,21" href="index2.html" />
+</map></div>
+<div id="Layer3"><a href="photo_help.html"><img src="images/help_but.PNG" width="33" height="18" border="0" /></a></div>
+</body>
+</html>

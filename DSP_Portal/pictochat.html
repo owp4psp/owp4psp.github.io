@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>DSP -- PictoChat</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 1px;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+#Layer1 {
+	position:absolute;
+	width:57px;
+	height:1px;
+	z-index:1;
+	left: 577px;
+	top: 107px;
+}
+-->
+</style></head>
+
+<body>
+<img src="images/DS_pictochat.PNG" alt="Pictochat" width="480" height="272" border="0" usemap="#Map" />
+<div id="Taskbar" style="position:absolute; left:296px; top:4px; width:70px; height:18px; z-index:1; visibility: visible;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	  <td width="0"><div align="right"><font size="1" color="white"><span  id="tP" class="time_text">Time</span></font>
+
+		  <script type="text/javascript">
+			function tS(){ x=new Date(); x.setTime(x.getTime()); return x; }
+			function lZ(x){ return (x>9)?x:'0'+x; }
+			function tH(x){ if(x==0){ x=12; } return (x>12)?x-=12:x; }
+			function dE(x){ if(x==1||x==21||x==31){ return 'st'; } if(x==2||x==22){ return 'nd'; } if(x==3||x==23){ return 'rd'; } return 'th'; }
+			function dT(){document.getElementById('tP').innerHTML=eval(oT); setTimeout('dT()',1000); }
+			function aP(x){ return (x>11)?'':''; }
+			function y4(x){ return (x<500)?x+1900:x; }
+			oT="tH(tS().getHours())+': '+lZ(tS().getMinutes())+' '+aP(tS().getHours())";
+			if(!document.all){ window.onload=dT; }else{ dT(); }
+			</script>
+		  </div></tr>
+  </table>
+</div>
+<map name="Map" id="Map">
+  <area shape="rect" coords="137,253,216,271" href="index2.html" />
+</map>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>DSP -- Console Link</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+body {
+	margin-left: 1px;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+#Layer1 {
+	position:absolute;
+	width:360px;
+	height:31px;
+	z-index:1;
+	left: 63px;
+	top: 37px;
+}
+.style1 {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+-->
+</style></head>
+
+<body>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function whatFile() {
+window.location= 'file://' + document.form1.cmuds.value;
+}
+//  End -->
+</script>
+<div style='position:absolute; top:78px; left:84px; color:white; font-family: sans-serif;'>
+<form name=form1>
+<input type=file name="cmuds">
+<input type=button onClick="whatFile()" value="Open File">
+</form>
+</div>
+
+<img src="images/DS_console_link.PNG" width="480" height="588" border="0" usemap="#Map">
+<map name="Map"><area shape="rect" coords="14,173,204,217" href="file:/psp/common/XBOX 360 PSP/index.html">
+<area shape="rect" coords="251,173,438,218" href="file:/psp/common/iPSP/index.html">
+<area shape="rect" coords="14,231,203,275" href="file:/wii/warning.html">
+<area shape="rect" coords="248,230,439,274" href="file:/PSP/COMMON/BlaSp/index.html">
+<area shape="rect" coords="15,286,206,330" href="file:/PSP/COMMON/HTC Touch Cube/index.html">
+</map>
+<div class="style1" id="Layer1">
+  <div align="center">Open any file which is not listed in Console Link using the Console Link file browser below. </div>
+</div>
+</body>
+</html>

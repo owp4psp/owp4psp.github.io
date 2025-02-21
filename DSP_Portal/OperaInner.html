@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DSP -- Opera</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#txturl {
+	width: 250px;
+}
+#txtbg {
+	background: url(../PSP/iPSP Download/iPSP/images/expedition/exp_header_bg.gif) repeat-x;
+}
+#Layer1 {
+	position:absolute;
+	width:476px;
+	height:23px;
+	z-index:1;
+	left: 1px;
+	top: 2px;
+}
+#Layer8 {
+	position:absolute;
+	width:35px;
+	height:23px;
+	z-index:2;
+	left: 446px;
+	top: 2px;
+}
+#Layer3 {
+	position:absolute;
+	width:35px;
+	height:27px;
+	z-index:3;
+	left: 596px;
+	top: 80px;
+}
+#Layer2 {
+	position:absolute;
+	width:219px;
+	height:23px;
+	z-index:1;
+	left: 11px;
+	top: 2px;
+}
+#Layer4 {
+	position:absolute;
+	width:28px;
+	height:18px;
+	z-index:2;
+	left: 448px;
+	top: 5px;
+}
+-->
+</style></head>
+
+<body>
+<table width="480" height="250" border="0" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  <tr>
+    <td height="26" valign="top"><label></label></td>
+  </tr>
+  <tr>
+    <td height="224" valign="top"><iframe height="100%" width="480" src="opera_home.html" id="Content" name="Content" frameborder="0"></iframe></td>
+  </tr>
+</table>
+
+<div id="Layer1"><img src="images/Opera/opera_header.PNG" alt="Header" width="478" height="26" border="0" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="413,5,433,20" href="keyboard.html" />
+</map></div>
+<div id="Layer2">
+  <input name="txturl" type="text" id="txturl" value="http://" />
+</div>
+<div id="Layer4"><img src="images/Opera/opera_header_go.PNG" alt="Go" width="27" height="17" onclick="if(document.getElementById('txturl').value!=''){Content.location.href=document.getElementById('txturl').value}else{alert('Error: No URL!')}" /></div>
+</body>
+</html>

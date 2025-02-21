@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>DSP -- Home</title>
+<style type="text/css">
+<!--
+body 
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#Layer1 {
+	position:absolute;
+	width:188px;
+	height:46px;
+	z-index:1;
+	left: 569px;
+	top: 94px;
+}
+#Layer2 {
+	position:absolute;
+	width:188px;
+	height:46px;
+	z-index:2;
+	left: 552px;
+	top: 137px;
+}
+#Layer3 {
+	position:absolute;
+	width:188px;
+	height:42px;
+	z-index:3;
+	left: 575px;
+	top: 227px;
+}
+#Layer4 {
+	position:absolute;
+	width:95px;
+	height:48px;
+	z-index:4;
+	left: 586px;
+	top: 155px;
+}
+#Layer5 {
+	position:absolute;
+	width:22px;
+	height:22px;
+	z-index:5;
+	left: 636px;
+	top: 222px;
+}
+#Layer6 {
+	position:absolute;
+	width:21px;
+	height:19px;
+	z-index:6;
+	left: 523px;
+	top: 265px;
+}
+#Layer7 {
+	position:absolute;
+	width:114px;
+	height:115px;
+	z-index:7;
+	left: 352px;
+	top: 90px;
+}
+#Layer8 {
+	position:absolute;
+	width:95px;
+	height:47px;
+	z-index:7;
+	left: 549px;
+	top: 211px;
+}
+#Layer9 {
+	position:absolute;
+	width:95px;
+	height:48px;
+	z-index:1;
+	left: 609px;
+	top: 188px;
+}
+#Layer10 {
+	position:absolute;
+	width:95px;
+	height:47px;
+	z-index:2;
+	left: 613px;
+	top: 133px;
+}
+#Layer11 {
+	position:absolute;
+	width:190px;
+	height:44px;
+	z-index:3;
+	left: 586px;
+	top: 205px;
+}
+#Layer12 {
+	position:absolute;
+	width:191px;
+	height:46px;
+	z-index:4;
+	left: 497px;
+	top: 150px;
+}
+#Layer13 {
+	position:absolute;
+	width:188px;
+	height:46px;
+	z-index:5;
+	left: 551px;
+	top: 63px;
+}
+.style2 {font-size: 9px}
+#Layer14 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:6;
+}
+#Layer15 {
+	position:absolute;
+	width:182px;
+	height:41px;
+	z-index:6;
+	left: 512px;
+	top: 41px;
+}
+#Layer16 {
+	position:absolute;
+	width:92px;
+	height:16px;
+	z-index:6;
+	left: 532px;
+	top: 106px;
+}
+#Layer17 {
+	position:absolute;
+	width:189px;
+	height:46px;
+	z-index:6;
+	left: 33px;
+	top: 42px;
+}
+#Layer18 {
+	position:absolute;
+	width:188px;
+	height:39px;
+	z-index:7;
+	left: 33px;
+	top: 89px;
+}
+#Layer19 {
+	position:absolute;
+	width:188px;
+	height:44px;
+	z-index:8;
+	left: 33px;
+	top: 184px;
+}
+#Layer20 {
+	position:absolute;
+	width:95px;
+	height:46px;
+	z-index:9;
+	left: 33px;
+	top: 138px;
+}
+#Layer21 {
+	position:absolute;
+	width:95px;
+	height:47px;
+	z-index:10;
+	left: 129px;
+	top: 138px;
+}
+#Layer22 {
+	position:absolute;
+	width:22px;
+	height:21px;
+	z-index:11;
+	top: 241px;
+	left: 239px;
+}
+#Layer23 {
+	position:absolute;
+	width:200px;
+	height:99px;
+	z-index:12;
+	left: 443px;
+	top: 367px;
+}
+#Layer24 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:12;
+	left: 129px;
+	top: 378px;
+}
+#Layer25 {
+	position:absolute;
+	width:200px;
+	height:101px;
+	z-index:12;
+	left: 3px;
+	top: 64px;
+}
+#Layer26 {
+	position:absolute;
+	width:21px;
+	height:21px;
+	z-index:13;
+	left: 4px;
+	top: 1px;
+}
+#Layer27 {
+	position:absolute;
+	width:100px;
+	height:101px;
+	z-index:14;
+	left: 243px;
+	top: 85px;
+}
+-->
+</style>
+
+<script language="javascript" type="text/javascript">	
+function getwall(){
+		if(wallframe.document.getElementById('wallsrc').value==''){
+		wallpaperbg.src="Themes/wallpaper/DS_index.png";
+	}else{
+		wallpaperbg.src=wallframe.document.getElementById('wallsrc').value;
+		}
+}
+
+</script>
+
+<script type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/system_but_1.png','images/small_but_1.png')">
+
+
+<div id="BG"><img name="wallpaperbg" width="480" height="272" id="wallpaperbg" onload="MM_showHideLayers('Layer25','','hide')" />
+  <div id="Layer25">
+    <iframe width="480" height="100" id="wallframe" frameborder="0" scrolling="no" src="getwall.html"></iframe>
+  </div>
+  <div id="Layer26"><a href="locked.html"><img src="images/lock.png" width="19" height="21" border="0" /></a></div>
+</div>
+<div id="wall2"></div>
+
+
+
+<div id="Taskbar" style="position:absolute; left:297px; top:4px; width:69px; height:18px; z-index:1; visibility: visible;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="0"><div align="right"><font size="1" color="white"><span  id="tP" class="time_text">Time</span></font>
+              <script type="text/javascript">
+			function tS(){ x=new Date(); x.setTime(x.getTime()); return x; }
+			function lZ(x){ return (x>9)?x:'0'+x; }
+			function tH(x){ if(x==0){ x=12; } return (x>12)?x-=12:x; }
+			function dE(x){ if(x==1||x==21||x==31){ return 'st'; } if(x==2||x==22){ return 'nd'; } if(x==3||x==23){ return 'rd'; } return 'th'; }
+			function dT(){document.getElementById('tP').innerHTML=eval(oT); setTimeout('dT()',1000); }
+			function aP(x){ return (x>11)?'':''; }
+			function y4(x){ return (x<500)?x+1900:x; }
+			oT="tH(tS().getHours())+': '+lZ(tS().getMinutes())+' '+aP(tS().getHours())";
+			if(!document.all){ window.onload=dT; }else{ dT(); }
+			</script>
+      </div></td>
+    </tr>
+  </table>
+</div>
+
+
+
+</script>
+<div id="normal" style="visibility: visible; position: absolute; left: 352px; top: 83px; width: 115px; height: 106px;">
+  <iframe src="calender.html" width="113" height="113" marginheight=0 marginwidth=0 frameborder=0 name="calendar" scrolling="no"></iframe>
+</div>
+
+<div id="Layer17"><a href="apps_frame.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','images/system_but_1.png',1)"><img src="images/system_but.png" name="Image7" width="188" height="45" border="0" id="Image7" /></a></div>
+<div id="Layer18"><a href="games_frame.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','images/system_but_1.png',1)"><img src="images/system_but.png" name="Image8" width="188" height="45" border="0" id="Image8" /></a></div>
+<div id="Layer20"><a href="pictochat.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','images/small_but_1.png',1)"><img src="images/small_but.png" name="Image10" width="94" height="47" border="0" id="Image10" /></a></div>
+<div id="Layer21"><a href="download_frame.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','images/small_but_1.png',1)"><img src="images/small_but.png" name="Image11" width="94" height="47" border="0" id="Image11" /></a></div>
+<div id="Layer22"><a href="settings_frame.html"><img src="images/settings_but.PNG" width="21" height="21" border="0" /></a></div>
+<div id="Layer19"><a href="Opera.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','images/system_but_1.png',1)"><img src="images/system_but.png" name="Image9" width="188" height="45" border="0" id="Image9" /></a></div>
+
+</body>
+</html>

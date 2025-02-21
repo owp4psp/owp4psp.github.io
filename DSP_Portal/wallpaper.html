@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DSP -- Theme Station</title>
+
+<script language=javascript type='text/javascript'>
+function setwallpaper() {
+if (selectwallform.browsewall.value == selectwallform.browsewall.value) {
+wallget.document.wallbgform.wallsrc.value = selectwallform.browsewall.value
+wallget.document.wallbgform.submit()
+}else{
+wallget.document.wallbgform.wallsrc.value = selectwallform.browsewall.value
+wallget.document.wallbgform.submit()
+}
+}
+</script>
+
+<style type="text/css">
+<!--
+body,td,th {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+	color: #0099FF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0099FF;
+}
+a:hover {
+	text-decoration: none;
+	color: #0066FF;
+}
+a:active {
+	text-decoration: none;
+	color: #0099FF;
+}
+.style3 {font-size: 11px}
+body {
+	background-color: #e8e8e8;
+	margin-top: 0px;
+	background-image: url(Themes/Misc/background.PNG);
+}
+#apDiv1 {
+	position:absolute;
+	left:233px;
+	top:106px;
+	width:69px;
+	height:72px;
+	z-index:1;
+	visibility: hidden;
+}
+.style5 {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+#Layer1 {
+	position:absolute;
+	width:359px;
+	height:41px;
+	z-index:2;
+	left: 12px;
+	top: 328px;
+}
+.style6 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #0000FF;
+}
+-->
+</style></head>
+
+<body>
+<form id="selectwallform" name="selectwallform" method="post" action="">
+<div id="apDiv1">
+  <iframe id="wallget" src="getwall.html"></iframe></div>
+<p><span class="style5">Click on the themes you want to use below.</span>
+<table width="404" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="101" height="19"><span class="style3"><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_Ubuntu.png'"><img src="Themes/dspubuntu-prev.png" width="100" height="50" border="0" /></a></span></td>
+    <td width="101"><span class="style3"><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_PSP.png'"><img src="Themes/pspdsp-prev.png" width="100" height="50" border="0" /></a></span></td>
+    <td width="101"><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_GlassVista.png'"><img src="Themes/glass_prev.png" width="100" height="50" border="0" /></a></td>
+    <td width="101"><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_index.png'"><img src="Themes/default_prev.png" width="100" height="50" border="0" /></a></td>
+    </tr>
+  <tr>
+    <td width="101" height="18"><div align="center">DSP Ubuntu</div></td>
+    <td width="101"><div align="center">DSP PSP</div></td>
+    <td><div align="center">DSP Glass Vista </div></td>
+    <td><div align="center">DSP Classic </div></td>
+  </tr>
+  <tr>
+    <td height="18"><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_Mac.png'"><img src="Themes/mac_prev.png" width="100" height="50" border="0" /></a></td>
+    <td><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_NT.png'"><img src="Themes/nt_prev.png" width="100" height="50" border="0" /></a></td>
+    <td><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_Ubuntian.jpg'"><img src="Themes/ubuntian_prev.png" width="100" height="50" border="0" /></a></td>
+    <td><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_Flamer.png'"><img src="Themes/flamer_prev.png" width="100" height="50" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td height="18"><div align="center">DSP Mac </div></td>
+    <td><div align="center">DSP Windows NT </div></td>
+    <td><div align="center">DSP Ubuntian </div></td>
+    <td><div align="center">DSP Flamer </div></td>
+  </tr>
+  <tr>
+    <td height="18"><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_OceanBlue.png'"><img src="Themes/ocean_prev.png" width="100" height="50" border="0" /></a></td>
+    <td><a href="#" onclick="selectwallform.browsewall.value = 'Themes/wallpaper/DS_iphone.png'"><img src="Themes/iphone_prev.png" width="100" height="50" border="0" /></a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="18"><div align="center">DSP Ocean Blue </div></td>
+    <td><div align="center">DSP iPhone </div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+  <br />
+  <span class="style3"><strong>Or browse for your own installed themes:<br />
+  </strong></span>
+  
+  <input name="browsewall" type="file" id="browsewall" />
+  <br />
+  <strong>Use the selected theme?<br />
+    <label>
+    <input name="usewall" type="button" id="usewall" onclick="setwallpaper()" value="Set Theme" />
+    </label>
+  </strong>
+  <div class="style6" id="Layer1">Press the &quot;Quit&quot; button below in order for the new settings to take effect. </div>
+  <p>&nbsp;</p>
+  <strong>
+  <label></label>
+  </strong>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
