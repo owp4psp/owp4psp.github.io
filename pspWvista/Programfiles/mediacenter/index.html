@@ -1,0 +1,228 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>pspWvista:Media Center</title>
+<script language="javascript" type="text/javascript">
+function theClock() {
+	if (!document.all&&!document.getElementById) 
+return 
+thelement=document.getElementById? document.getElementById("tP"): document.all.tP 
+var Digital=new Date() 
+var hours=Digital.getHours() 
+var minutes=Digital.getMinutes() 
+var dn="P.M." 
+if (hours<12) 
+dn="A.M." 
+if (hours>12) 
+hours=hours-12 
+if (hours==0) 
+hours=12 
+if (minutes<=9) 
+minutes="0"+minutes 
+var ctime=hours+":"+minutes+" "+dn 
+thelement.innerHTML=""+ctime+"" 
+} 
+window.onload=theClock 
+function hideall(){
+document.getElementById('radiolist').style.visibility='hidden';
+document.getElementById('play').style.visibility='hidden';
+document.getElementById('stop').style.visibility='hidden';
+document.getElementById('musicvisual').style.visibility = 'hidden';
+document.getElementById('resume').style.visibility='hidden';
+document.getElementById('mainframe').style.visibility='hidden';
+document.getElementById('exit').style.visibility='hidden';
+}
+var loc = 1;
+var locd = 1;
+function move(){
+if(loc == 1){
+document.getElementById('Picture').style.top="52px";
+document.getElementById('Music').style.top="68px";
+document.getElementById('Musiclogo').style.visibility='visible';
+document.getElementById('TV+Movies').style.top="132px";
+document.getElementById('OnlineMedia').style.top="148px";
+document.getElementById('Tasks').style.top="166px";
+document.getElementById('radio').style.visibility='visible';
+document.getElementById('video').style.visibility='hidden';
+document.getElementById('shutdown').style.visibility='hidden';
+document.getElementById('program').style.visibility='hidden';
+document.getElementById('tv').style.visibility='hidden';
+}else if( loc == 2){
+document.getElementById('Picture').style.top="166px";
+document.getElementById('Music').style.top="52px";
+document.getElementById('TV+Movies').style.top="68px";
+document.getElementById('tv').style.visibility='visible';
+document.getElementById('OnlineMedia').style.top="132px";
+document.getElementById('Tasks').style.top="148px";
+document.getElementById('radio').style.visibility='hidden';
+document.getElementById('Musiclogo').style.visibility='hidden';
+document.getElementById('video').style.visibility='hidden';
+document.getElementById('shutdown').style.visibility='hidden';
+document.getElementById('program').style.visibility='hidden';
+locd=4;
+}else if( loc == 3){
+document.getElementById('Picture').style.top="148px";
+document.getElementById('Music').style.top="166px";
+document.getElementById('TV+Movies').style.top="52px";
+document.getElementById('OnlineMedia').style.top="68px";
+document.getElementById('program').style.visibility='visible';
+document.getElementById('Tasks').style.top="132px";
+document.getElementById('radio').style.visibility='hidden';
+document.getElementById('Musiclogo').style.visibility='hidden';
+document.getElementById('video').style.visibility='hidden';
+document.getElementById('shutdown').style.visibility='hidden';
+document.getElementById('tv').style.visibility='hidden';
+locd=3;
+}else if( loc == 4){
+document.getElementById('Picture').style.top="132px";
+document.getElementById('Music').style.top="148px";
+document.getElementById('TV+Movies').style.top="166px";
+document.getElementById('OnlineMedia').style.top="52px";
+document.getElementById('Tasks').style.top="68px";
+document.getElementById('shutdown').style.visibility='visible';
+document.getElementById('radio').style.visibility='hidden';
+document.getElementById('Musiclogo').style.visibility='hidden';
+document.getElementById('video').style.visibility='hidden';
+document.getElementById('program').style.visibility='hidden';
+document.getElementById('tv').style.visibility='hidden';
+locd=2;
+}else if( loc == 5){
+document.getElementById('Picture').style.top="68px";
+document.getElementById('video').style.visibility='visible';
+document.getElementById('Music').style.top="132px";
+document.getElementById('TV+Movies').style.top="148px";
+document.getElementById('OnlineMedia').style.top="166px";
+document.getElementById('Tasks').style.top="52px";
+document.getElementById('radio').style.visibility='hidden';
+document.getElementById('Musiclogo').style.visibility='hidden';
+document.getElementById('shutdown').style.visibility='hidden';
+document.getElementById('program').style.visibility='hidden';
+document.getElementById('tv').style.visibility='hidden';
+locd=1;
+}else if( loc == 6){
+loc = 1;
+locd = 0;
+move();
+}
+}
+function down(){
+if(locd == 5){
+loc=1;
+move();
+}else if( locd == 4){
+loc=2;
+move();
+}else if( locd == 3){
+loc=3;
+move();
+}else if( locd == 2){
+loc=4;
+move();
+}else if( locd == 1 ){
+loc=5;
+move();
+}else if(locd == 6){
+locd = 0;
+loc=1;
+move();
+}
+}
+function left(){
+if(loc == 1){
+document.getElementById('Musiclogo').style.left="27px";
+document.getElementById('radio').style.left="127px";
+}else if( loc == 2){
+
+}else if( loc == 3){
+
+}else if( loc == 4){
+
+}else if( loc == 5){
+
+}
+}
+function right(){
+if(loc == 1){
+document.getElementById('Musiclogo').style.left="127px";
+document.getElementById('radio').style.left="223px";
+}else if( loc == 2){
+
+}else if( loc == 3){
+
+}else if( loc == 4){
+
+}else if( loc == 5){
+
+}
+}
+</script>
+</head>
+
+<body marginheight="0" marginwidth="0" >
+<div id="bg" style="position:absolute; left:0; right:0; width:453px;">
+<img src="bg.jpg" width="453" height="187" border="0" usemap="#Map" /></div>
+<div id="fadeover" style="position:absolute; left:0; right:0; width:453px; z-index:25"><img src="fade over.png" width="453" height="187" border="0" usemap="#Map" /></div>
+<div id="Music" style="position:absolute; left:129px; right:0; width:31px; z-index:20; top: 68px;">
+<img src="Music.png" width="31" height="9" border="0" usemap="#Map" /></div>
+<div id="Picture" style="position:absolute; left:129px; top: 52px; right:0; width:31px; z-index:20; ">
+<img src="Picture and video.png" width="85" height="8" border="0" usemap="#Map" /></div>
+<div id="TV+Movies" style="position:absolute; left:129px; right:0; width:31px; z-index:20; top: 132px;">
+<img src="TV+Movies.png" width="61" height="8" border="0" usemap="#Map" /></div>
+<div id="OnlineMedia" style="position:absolute; left:129px; right:0; width:31px; z-index:20; top: 148px;">
+<img src="onlinemedia.png" width="65" height="8" border="0" usemap="#Map" /></div>
+<div id="Tasks" style="position:absolute; left:129px; right:0; width:31px; z-index:20; top: 166px;">
+<img src="tasks.png" width="25" height="8" border="0" usemap="#Map" /></div>
+<div id="Musiclogo" style="position:absolute; left:127px; right:0; width:31px; z-index:30; top: 79px; ">
+<img id="musicimg" src="musiclogo.png" width="87" height="48" border="0" usemap="#Map" /></div>
+<div id="radio" style="position:absolute; left:223px; right:0; width:31px; z-index:25; top: 79px; ">
+<img id="radioimg" src="radio.png" width="87" height="48" border="0" onClick="document.getElementById('radiolist').style.visibility='visible';document.getElementById('exit').style.visibility='visible';document.getElementById('play').style.visibility='visible';document.getElementById('stop').style.visibility='visible';document.getElementById('musicvisual').style.visibility = 'visible';document.getElementById('resume').style.visibility='visible';document.getElementById('MCorb').style.visibility='visible';document.getElementById('MCorb2').style.visibility='hidden';document.getElementById('sClock').style.visibility='visible';" /></div>
+<div id="video" style="position:absolute; left:127px; right:0; width:31px; z-index:35; top: 79px; visibility:hidden;">
+<img src="video.png" width="87" height="48" border="0" usemap="#Map" /></div>
+<div id="shutdown" style="position:absolute; left:127px; right:0; width:31px; z-index:35; top: 79px; visibility:hidden;">
+<img src="shutdown.png" width="87" height="48" border="0" usemap="#Map" /></div>
+<div id="program" style="position:absolute; left:127px; right:0; width:31px; z-index:35; top: 79px; visibility:hidden;">
+<img src="program.png" width="87" height="48" border="0" onClick="document.getElementById('exit').style.visibility='visible';
+document.getElementById('mainframe').style.visibility='visible';
+frames['mainframe'].location='http://www.blazebyte.org/community/index.php?action=mediacenter';document.getElementById('resume').style.visibility='visible';" /></div>
+<div id="tv" style="position:absolute; left:127px; right:0; width:31px; z-index:30; top: 79px; visibility:hidden;">
+<img src="tv.png" width="87" height="48" border="0" usemap="#Map" /></div>
+<div id="Right" style="position:absolute; left:65px; right:0; width:22px; z-index:35; top: 131px;">
+<img src="Right.png" width="22" height="25" border="0" usemap="#Map" onClick="left();" /></div>
+<div id="Left" style="position:absolute; left:19px; right:0; width:22px; z-index:35; top: 131px;">
+<img src="left.png" width="22" height="25" border="0" usemap="#Map"  onClick="right();"/></div>
+<div id="up" style="position:absolute; left:41px; right:0; width:22px; z-index:35; top: 108px;">
+<img src="up.png" width="25" height="22" border="0" usemap="#Map"  onclick="locd=locd+1;down();"/></div>
+<div id="down" style="position:absolute; left:41px; right:0; width:22px; z-index:35; top: 156px;">
+<img src="down.png" width="25" height="22" border="0" usemap="#Map" onClick="loc=loc+1;move();"/></div>
+<div id="MCorb" style="position:absolute; left:14px; right:0; width:20px; top: 3px; visibility:hidden; z-index:30;"><img src="Windows Media Center.png" width="26" height="26"onMouseOver="document.getElementById('MCorb').style.visibility='hidden';document.getElementById('MCorb2').style.visibility='visible';document.getElementById('sClock').style.visibility='visible';"/></div>
+<div id="MCorb2" style="position:absolute; left:417px; right:0; width:20px; top: 3px; z-index:30;"><img src="Windows Media Center.png" alt="" width="26" height="26" onMouseOver="document.getElementById('MCorb').style.visibility='visible';document.getElementById('MCorb2').style.visibility='hidden';document.getElementById('sClock').style.visibility='hidden';"/></div>
+
+<div id="radiolist" style="position: absolute; left: 352px; top: 45px; z-index:30; width: 79px; visibility:hidden">
+<form id="RadioForm" name="RadioForm">
+  <select id="RadioStation" name="RadioStation" style="width:80px;" >
+    <option selected value="http://205.188.215.229:8004">.977 80's</option>
+    <option value="http://scfire-chi-aa04.stream.aol.com:80/stream/1039">Chronix A</option>
+    <option value="http://89.149.217.214:80">TechnoBase</option>
+    <option value="http://scfire-dll-aa02.stream.aol.com:80/stream/1048">Radio-Par..</option>
+    <option value="http://208.53.158.213:80">idobi</option>
+    <option value="http://64.27.6.16:8080">BCN </option>
+    <option value=""></option>
+  </select>
+</form>
+</div>
+<div style="position:absolute; left: 390px; top: 137px; z-index:31; visibility:hidden" id="play"><img src="radio_play.png" onClick="tune(document.RadioForm.RadioStation[document.RadioForm.RadioStation.selectedIndex].value,1);psp.sysRadioPlayEffectSound();"></div>
+<div  id="stop" style="position:absolute; left: 358px; top: 137px; z-index:31; visibility:hidden"><img src="radio_stop.png" onClick="stopRadio();"><br>
+</div>
+<div id="musicvisual" style="position:absolute; z-index:30; left: 80px; top: 11px; visibility:hidden;">
+<img src="twist.gif" width="260" height="147" id="visual"></div>
+<div id="resume" style="position:absolute; left:0; top:0; visibility:hidden; z-index:27; width:480; height:272;" ><img width="453" height="187" id="splash" name="splash" src="shade3.png" onClick="hideall();document.getElementById('resume').style.visibility='hidden';"></div>
+<div id="exit" style="position:absolute; z-index:32; visibility: hidden;left: 411px; top: 1px;">
+<img src="exit.png" onClick="hideall();" onMouseOver="this.src='exit_over.png';" onMouseOut="this.src='exit.png';"></div>
+
+<div id="sClock" align="center" valign="right" height="20" style="position:absolute; top:8px; left:361px; visibility:visible; z-index:30; width: 57px; height: 26px;"><font color="#FFFFFF"><small><span id="tP" >00:00</span></small></font>
+<script type="text/javascript">setTimeout('theClock();',250);</script></div>
+</div>
+  <iframe id="mainframe" frameborder="0" width="400" height="150" style="position:absolute; left: 19px; top: 27px; width: 408px; z-index:37; visibility:hidden;"/>
+
+</body>
+</html>

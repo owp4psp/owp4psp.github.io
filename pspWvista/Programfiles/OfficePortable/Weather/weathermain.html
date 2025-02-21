@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Office Weather</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:250px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:0px;
+	top:250px;
+	width:480px;
+	height:22px;
+	z-index:2;
+}
+-->
+</style></head>
+
+<body>
+<div id="apDiv1"><iframe id="iweather" name="iweather" src="weather.html" width="480" height="250" scrolling="no" frameborder="0"></iframe></div>
+<div id="apDiv2"><img src="images/bottombar.png" width="480" height="22" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+<area shape="rect" coords="5,2,25,22" href="../main.html" />
+<area shape="rect" coords="218,1,261,22" href="weather.html" target=iweather />
+</map></div>
+<div id="Taskbar" style="position:absolute; left:407px; top:254px; width:69px; height:18px; z-index:5; visibility: visible;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="0"><div align="right"><font size="1" color="white"><span  id="tP" class="time_text">Time</span></font>
+              <script type="text/javascript">
+			function tS(){ x=new Date(); x.setTime(x.getTime()); return x; }
+			function lZ(x){ return (x>9)?x:'0'+x; }
+			function tH(x){ if(x==0){ x=12; } return (x>12)?x-=12:x; }
+			function dE(x){ if(x==1||x==21||x==31){ return 'st'; } if(x==2||x==22){ return 'nd'; } if(x==3||x==23){ return 'rd'; } return 'th'; }
+			function dT(){document.getElementById('tP').innerHTML=eval(oT); setTimeout('dT()',1000); }
+			function aP(x){ return (x>11)?'':''; }
+			function y4(x){ return (x<500)?x+1900:x; }
+			oT="tH(tS().getHours())+': '+lZ(tS().getMinutes())+' '+aP(tS().getHours())";
+			if(!document.all){ window.onload=dT; }else{ dT(); }
+			</script>
+      </div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

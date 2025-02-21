@@ -1,0 +1,2273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Text Pad</title>
+<!-- Hand-coded by Aresinferno of BlazeByte.net 2008 -->
+<!-- thanks to mooncricket12, TimW or Fuzzie for the document.write code -->
+<!-- Please do not steal, this was designed for use with DSP Portal and Windows Mobile 7 by Burmpman of Blazebyte -->
+
+<script type="text/javascript">
+function hrule(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [hr] "
+document.mainform.note2.value += " [hr] "
+document.mainform.note3.value += " [hr] "
+document.mainform.note4.value += " [hr] "
+document.mainform.note5.value += " [hr] "
+document.mainform.note6.value += " [hr] "
+document.mainform.note7.value += " [hr] "
+document.mainform.note8.value += " [hr] "
+}else{
+document.mainform.note1.value += " [hr] "
+document.mainform.note2.value += " [hr] "
+document.mainform.note3.value += " [hr] "
+document.mainform.note4.value += " [hr] "
+document.mainform.note5.value += " [hr] "
+document.mainform.note6.value += " [hr] "
+document.mainform.note7.value += " [hr] "
+document.mainform.note8.value += " [hr] "
+}
+}
+</script>
+<script type="text/javascript">
+function black(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=black] "
+document.mainform.note2.value += " [color=black] "
+document.mainform.note3.value += " [color=black] "
+document.mainform.note4.value += " [color=black] "
+document.mainform.note5.value += " [color=black] "
+document.mainform.note6.value += " [color=black] "
+document.mainform.note7.value += " [color=black] "
+document.mainform.note8.value += " [color=black] "
+}else{
+document.mainform.note1.value += " [color=black] "
+document.mainform.note2.value += " [color=black] "
+document.mainform.note3.value += " [color=black] "
+document.mainform.note4.value += " [color=black] "
+document.mainform.note5.value += " [color=black] "
+document.mainform.note6.value += " [color=black] "
+document.mainform.note7.value += " [color=black] "
+document.mainform.note8.value += " [color=black] "
+}
+}
+</script>
+<script type="text/javascript">
+function purple(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=purple] "
+document.mainform.note2.value += " [color=purple] "
+document.mainform.note3.value += " [color=purple] "
+document.mainform.note4.value += " [color=purple] "
+document.mainform.note5.value += " [color=purple] "
+document.mainform.note6.value += " [color=purple] "
+document.mainform.note7.value += " [color=purple] "
+document.mainform.note8.value += " [color=purple] "
+}else{
+document.mainform.note1.value += " [color=purple] "
+document.mainform.note2.value += " [color=purple] "
+document.mainform.note3.value += " [color=purple] "
+document.mainform.note4.value += " [color=purple] "
+document.mainform.note5.value += " [color=purple] "
+document.mainform.note6.value += " [color=purple] "
+document.mainform.note7.value += " [color=purple] "
+document.mainform.note8.value += " [color=purple] "
+}
+}
+</script>
+<script type="text/javascript">
+function darkblue(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=darkblue] "
+document.mainform.note2.value += " [color=darkblue] "
+document.mainform.note3.value += " [color=darkblue] "
+document.mainform.note4.value += " [color=darkblue] "
+document.mainform.note5.value += " [color=darkblue] "
+document.mainform.note6.value += " [color=darkblue] "
+document.mainform.note7.value += " [color=darkblue] "
+document.mainform.note8.value += " [color=darkblue] "
+}else{
+document.mainform.note1.value += " [color=darkblue] "
+document.mainform.note2.value += " [color=darkblue] "
+document.mainform.note3.value += " [color=darkblue] "
+document.mainform.note4.value += " [color=darkblue] "
+document.mainform.note5.value += " [color=darkblue] "
+document.mainform.note6.value += " [color=darkblue] "
+document.mainform.note7.value += " [color=darkblue] "
+document.mainform.note8.value += " [color=darkblue] "
+}
+}
+</script>
+<script type="text/javascript">
+function blue(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=blue] "
+document.mainform.note2.value += " [color=blue] "
+document.mainform.note3.value += " [color=blue] "
+document.mainform.note4.value += " [color=blue] "
+document.mainform.note5.value += " [color=blue] "
+document.mainform.note6.value += " [color=blue] "
+document.mainform.note7.value += " [color=blue] "
+document.mainform.note8.value += " [color=blue] "
+}else{
+document.mainform.note1.value += " [color=blue] "
+document.mainform.note2.value += " [color=blue] "
+document.mainform.note3.value += " [color=blue] "
+document.mainform.note4.value += " [color=blue] "
+document.mainform.note5.value += " [color=blue] "
+document.mainform.note6.value += " [color=blue] "
+document.mainform.note7.value += " [color=blue] "
+document.mainform.note8.value += " [color=blue] "
+}
+}
+</script>
+<script type="text/javascript">
+function paleblue(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=paleblue] "
+document.mainform.note2.value += " [color=paleblue] "
+document.mainform.note3.value += " [color=paleblue] "
+document.mainform.note4.value += " [color=paleblue] "
+document.mainform.note5.value += " [color=paleblue] "
+document.mainform.note6.value += " [color=paleblue] "
+document.mainform.note7.value += " [color=paleblue] "
+document.mainform.note8.value += " [color=paleblue] "
+}else{
+document.mainform.note1.value += " [color=paleblue] "
+document.mainform.note2.value += " [color=paleblue] "
+document.mainform.note3.value += " [color=paleblue] "
+document.mainform.note4.value += " [color=paleblue] "
+document.mainform.note5.value += " [color=paleblue] "
+document.mainform.note6.value += " [color=paleblue] "
+document.mainform.note7.value += " [color=paleblue] "
+document.mainform.note8.value += " [color=paleblue] "
+}
+}
+</script>
+<script type="text/javascript">
+function green(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=green] "
+document.mainform.note2.value += " [color=green] "
+document.mainform.note3.value += " [color=green] "
+document.mainform.note4.value += " [color=green] "
+document.mainform.note5.value += " [color=green] "
+document.mainform.note6.value += " [color=green] "
+document.mainform.note7.value += " [color=green] "
+document.mainform.note8.value += " [color=green] "
+}else{
+document.mainform.note1.value += " [color=green] "
+document.mainform.note2.value += " [color=green] "
+document.mainform.note3.value += " [color=green] "
+document.mainform.note4.value += " [color=green] "
+document.mainform.note5.value += " [color=green] "
+document.mainform.note6.value += " [color=green] "
+document.mainform.note7.value += " [color=green] "
+document.mainform.note8.value += " [color=green] "
+}
+}
+</script>
+<script type="text/javascript">
+function lightgreen(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=lightgreen] "
+document.mainform.note2.value += " [color=lightgreen] "
+document.mainform.note3.value += " [color=lightgreen] "
+document.mainform.note4.value += " [color=lightgreen] "
+document.mainform.note5.value += " [color=lightgreen] "
+document.mainform.note6.value += " [color=lightgreen] "
+document.mainform.note7.value += " [color=lightgreen] "
+document.mainform.note8.value += " [color=lightgreen] "
+}else{
+document.mainform.note1.value += " [color=lightgreen] "
+document.mainform.note2.value += " [color=lightgreen] "
+document.mainform.note3.value += " [color=lightgreen] "
+document.mainform.note4.value += " [color=lightgreen] "
+document.mainform.note5.value += " [color=lightgreen] "
+document.mainform.note6.value += " [color=lightgreen] "
+document.mainform.note7.value += " [color=lightgreen] "
+document.mainform.note8.value += " [color=lightgreen] "
+}
+}
+</script>
+<script type="text/javascript">
+function yellow(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=yellow] "
+document.mainform.note2.value += " [color=yellow] "
+document.mainform.note3.value += " [color=yellow] "
+document.mainform.note4.value += " [color=yellow] "
+document.mainform.note5.value += " [color=yellow] "
+document.mainform.note6.value += " [color=yellow] "
+document.mainform.note7.value += " [color=yellow] "
+document.mainform.note8.value += " [color=yellow] "
+}else{
+document.mainform.note1.value += " [color=yellow] "
+document.mainform.note2.value += " [color=yellow] "
+document.mainform.note3.value += " [color=yellow] "
+document.mainform.note4.value += " [color=yellow] "
+document.mainform.note5.value += " [color=yellow] "
+document.mainform.note6.value += " [color=yellow] "
+document.mainform.note7.value += " [color=yellow] "
+document.mainform.note8.value += " [color=yellow] "
+}
+}
+</script>
+<script type="text/javascript">
+function orange(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=orange] "
+document.mainform.note2.value += " [color=orange] "
+document.mainform.note3.value += " [color=orange] "
+document.mainform.note4.value += " [color=orange] "
+document.mainform.note5.value += " [color=orange] "
+document.mainform.note6.value += " [color=orange] "
+document.mainform.note7.value += " [color=orange] "
+document.mainform.note8.value += " [color=orange] "
+}else{
+document.mainform.note1.value += " [color=orange] "
+document.mainform.note2.value += " [color=orange] "
+document.mainform.note3.value += " [color=orange] "
+document.mainform.note4.value += " [color=orange] "
+document.mainform.note5.value += " [color=orange] "
+document.mainform.note6.value += " [color=orange] "
+document.mainform.note7.value += " [color=orange] "
+document.mainform.note8.value += " [color=orange] "
+}
+}
+</script>
+<script type="text/javascript">
+function darkred(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=darkred] "
+document.mainform.note2.value += " [color=darkred] "
+document.mainform.note3.value += " [color=darkred] "
+document.mainform.note4.value += " [color=darkred] "
+document.mainform.note5.value += " [color=darkred] "
+document.mainform.note6.value += " [color=darkred] "
+document.mainform.note7.value += " [color=darkred] "
+document.mainform.note8.value += " [color=darkred] "
+}else{
+document.mainform.note1.value += " [color=darkred] "
+document.mainform.note2.value += " [color=darkred] "
+document.mainform.note3.value += " [color=darkred] "
+document.mainform.note4.value += " [color=darkred] "
+document.mainform.note5.value += " [color=darkred] "
+document.mainform.note6.value += " [color=darkred] "
+document.mainform.note7.value += " [color=darkred] "
+document.mainform.note8.value += " [color=darkred] "
+}
+}
+</script>
+<script type="text/javascript">
+function red(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [color=red] "
+document.mainform.note2.value += " [color=red] "
+document.mainform.note3.value += " [color=red] "
+document.mainform.note4.value += " [color=red] "
+document.mainform.note5.value += " [color=red] "
+document.mainform.note6.value += " [color=red] "
+document.mainform.note7.value += " [color=red] "
+document.mainform.note8.value += " [color=red] "
+}else{
+document.mainform.note1.value += " [color=red] "
+document.mainform.note2.value += " [color=red] "
+document.mainform.note3.value += " [color=red] "
+document.mainform.note4.value += " [color=red] "
+document.mainform.note5.value += " [color=red] "
+document.mainform.note6.value += " [color=red] "
+document.mainform.note7.value += " [color=red] "
+document.mainform.note8.value += " [color=red] "
+}
+}
+</script>
+<script type="text/javascript">
+function endfontclr(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [/color] "
+document.mainform.note2.value += " [/color] "
+document.mainform.note3.value += " [/color] "
+document.mainform.note4.value += " [/color] "
+document.mainform.note5.value += " [/color] "
+document.mainform.note6.value += " [/color] "
+document.mainform.note7.value += " [/color] "
+document.mainform.note8.value += " [/color] "
+}else{
+document.mainform.note1.value += " [/color] "
+document.mainform.note2.value += " [/color] "
+document.mainform.note3.value += " [/color] "
+document.mainform.note4.value += " [/color] "
+document.mainform.note5.value += " [/color] "
+document.mainform.note6.value += " [/color] "
+document.mainform.note7.value += " [/color] "
+document.mainform.note8.value += " [/color] "
+}
+}
+</script>
+
+<script type="text/javascript">
+function aligncenter(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [align=center] "
+document.mainform.note2.value += " [align=center] "
+document.mainform.note3.value += " [align=center] "
+document.mainform.note4.value += " [align=center] "
+document.mainform.note5.value += " [align=center] "
+document.mainform.note6.value += " [align=center] "
+document.mainform.note7.value += " [align=center] "
+document.mainform.note8.value += " [align=center] "
+}else{
+document.mainform.note1.value += " [align=center] "
+document.mainform.note2.value += " [align=center] "
+document.mainform.note3.value += " [align=center] "
+document.mainform.note4.value += " [align=center] "
+document.mainform.note5.value += " [align=center] "
+document.mainform.note6.value += " [align=center] "
+document.mainform.note7.value += " [align=center] "
+document.mainform.note8.value += " [align=center] "
+}
+}
+</script>
+<script type="text/javascript">
+function alignright(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [align=right] "
+document.mainform.note2.value += " [align=right] "
+document.mainform.note3.value += " [align=right] "
+document.mainform.note4.value += " [align=right] "
+document.mainform.note5.value += " [align=right] "
+document.mainform.note6.value += " [align=right] "
+document.mainform.note7.value += " [align=right] "
+document.mainform.note8.value += " [align=right] "
+}else{
+document.mainform.note1.value += " [align=right] "
+document.mainform.note2.value += " [align=right] "
+document.mainform.note3.value += " [align=right] "
+document.mainform.note4.value += " [align=right] "
+document.mainform.note5.value += " [align=right] "
+document.mainform.note6.value += " [align=right] "
+document.mainform.note7.value += " [align=right] "
+document.mainform.note8.value += " [align=right] "
+}
+}
+</script>
+<script type="text/javascript">
+function alignleft(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [align=left] "
+document.mainform.note2.value += " [align=left] "
+document.mainform.note3.value += " [align=left] "
+document.mainform.note4.value += " [align=left] "
+document.mainform.note5.value += " [align=left] "
+document.mainform.note6.value += " [align=left] "
+document.mainform.note7.value += " [align=left] "
+document.mainform.note8.value += " [align=left] "
+}else{
+document.mainform.note1.value += " [align=left] "
+document.mainform.note2.value += " [align=left] "
+document.mainform.note3.value += " [align=left] "
+document.mainform.note4.value += " [align=left] "
+document.mainform.note5.value += " [align=left] "
+document.mainform.note6.value += " [align=left] "
+document.mainform.note7.value += " [align=left] "
+document.mainform.note8.value += " [align=left] "
+}
+}
+</script>
+<script type="text/javascript">
+function endalign(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [/align] "
+document.mainform.note2.value += " [/align] "
+document.mainform.note3.value += " [/align] "
+document.mainform.note4.value += " [/align] "
+document.mainform.note5.value += " [/align] "
+document.mainform.note6.value += " [/align] "
+document.mainform.note7.value += " [/align] "
+document.mainform.note8.value += " [/align] "
+}else{
+document.mainform.note1.value += " [/align] "
+document.mainform.note2.value += " [/align] "
+document.mainform.note3.value += " [/align] "
+document.mainform.note4.value += " [/align] "
+document.mainform.note5.value += " [/align] "
+document.mainform.note6.value += " [/align] "
+document.mainform.note7.value += " [/align] "
+document.mainform.note8.value += " [/align] "
+}
+}
+</script>
+
+<script type="text/javascript">
+function bold1(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [b] "
+document.mainform.note2.value += " [b] "
+document.mainform.note3.value += " [b] "
+document.mainform.note4.value += " [b] "
+document.mainform.note5.value += " [b] "
+document.mainform.note6.value += " [b] "
+document.mainform.note7.value += " [b] "
+document.mainform.note8.value += " [b] "
+}else{
+document.mainform.note1.value += " [b] "
+document.mainform.note2.value += " [b] "
+document.mainform.note3.value += " [b] "
+document.mainform.note4.value += " [b] "
+document.mainform.note5.value += " [b] "
+document.mainform.note6.value += " [b] "
+document.mainform.note7.value += " [b] "
+document.mainform.note8.value += " [b] "
+}
+}
+</script>
+<script type="text/javascript">
+function bold2(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [/b] "
+document.mainform.note2.value += " [/b] "
+document.mainform.note3.value += " [/b] "
+document.mainform.note4.value += " [/b] "
+document.mainform.note5.value += " [/b] "
+document.mainform.note6.value += " [/b] "
+document.mainform.note7.value += " [/b] "
+document.mainform.note8.value += " [/b] "
+}else{
+document.mainform.note1.value += " [/b] "
+document.mainform.note2.value += " [/b] "
+document.mainform.note3.value += " [/b] "
+document.mainform.note4.value += " [/b] "
+document.mainform.note5.value += " [/b] "
+document.mainform.note6.value += " [/b] "
+document.mainform.note7.value += " [/b] "
+document.mainform.note8.value += " [/b] "
+}
+}
+</script>
+
+<script type="text/javascript">
+function strike1(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [s] "
+document.mainform.note2.value += " [s] "
+document.mainform.note3.value += " [s] "
+document.mainform.note4.value += " [s] "
+document.mainform.note5.value += " [s] "
+document.mainform.note6.value += " [s] "
+document.mainform.note7.value += " [s] "
+document.mainform.note8.value += " [s] "
+}else{
+document.mainform.note1.value += " [s] "
+document.mainform.note2.value += " [s] "
+document.mainform.note3.value += " [s] "
+document.mainform.note4.value += " [s] "
+document.mainform.note5.value += " [s] "
+document.mainform.note6.value += " [s] "
+document.mainform.note7.value += " [s] "
+document.mainform.note8.value += " [s] "
+}
+}
+</script>
+<script type="text/javascript">
+function strike2(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [/s] "
+document.mainform.note2.value += " [/s] "
+document.mainform.note3.value += " [/s] "
+document.mainform.note4.value += " [/s] "
+document.mainform.note5.value += " [/s] "
+document.mainform.note6.value += " [/s] "
+document.mainform.note7.value += " [/s] "
+document.mainform.note8.value += " [/s] "
+}else{
+document.mainform.note1.value += " [/s] "
+document.mainform.note2.value += " [/s] "
+document.mainform.note3.value += " [/s] "
+document.mainform.note4.value += " [/s] "
+document.mainform.note5.value += " [/s] "
+document.mainform.note6.value += " [/s] "
+document.mainform.note7.value += " [/s] "
+document.mainform.note8.value += " [/s] "
+}
+}
+</script>
+
+<script type="text/javascript">
+function italics1(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [i] "
+document.mainform.note2.value += " [i] "
+document.mainform.note3.value += " [i] "
+document.mainform.note4.value += " [i] "
+document.mainform.note5.value += " [i] "
+document.mainform.note6.value += " [i] "
+document.mainform.note7.value += " [i] "
+document.mainform.note8.value += " [i] "
+}else{
+document.mainform.note1.value += " [i] "
+document.mainform.note2.value += " [i] "
+document.mainform.note3.value += " [i] "
+document.mainform.note4.value += " [i] "
+document.mainform.note5.value += " [i] "
+document.mainform.note6.value += " [i] "
+document.mainform.note7.value += " [i] "
+document.mainform.note8.value += " [i] "
+}
+}
+</script>
+<script type="text/javascript">
+function italics2(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [/i] "
+document.mainform.note2.value += " [/i] "
+document.mainform.note3.value += " [/i] "
+document.mainform.note4.value += " [/i] "
+document.mainform.note5.value += " [/i] "
+document.mainform.note6.value += " [/i] "
+document.mainform.note7.value += " [/i] "
+document.mainform.note8.value += " [/i] "
+}else{
+document.mainform.note1.value += " [/i] "
+document.mainform.note2.value += " [/i] "
+document.mainform.note3.value += " [/i] "
+document.mainform.note4.value += " [/i] "
+document.mainform.note5.value += " [/i] "
+document.mainform.note6.value += " [/i] "
+document.mainform.note7.value += " [/i] "
+document.mainform.note8.value += " [/i] "
+}
+}
+</script>
+
+<script type="text/javascript">
+function enlarge1(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [big] "
+document.mainform.note2.value += " [big] "
+document.mainform.note3.value += " [big] "
+document.mainform.note4.value += " [big] "
+document.mainform.note5.value += " [big] "
+document.mainform.note6.value += " [big] "
+document.mainform.note7.value += " [big] "
+document.mainform.note8.value += " [big] "
+}else{
+document.mainform.note1.value += " [big] "
+document.mainform.note2.value += " [big] "
+document.mainform.note3.value += " [big] "
+document.mainform.note4.value += " [big] "
+document.mainform.note5.value += " [big] "
+document.mainform.note6.value += " [big] "
+document.mainform.note7.value += " [big] "
+document.mainform.note8.value += " [big] "
+}
+}
+</script>
+<script type="text/javascript">
+function enlarge2(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [/big] "
+document.mainform.note2.value += " [/big] "
+document.mainform.note3.value += " [/big] "
+document.mainform.note4.value += " [/big] "
+document.mainform.note5.value += " [/big] "
+document.mainform.note6.value += " [/big] "
+document.mainform.note7.value += " [/big] "
+document.mainform.note8.value += " [/big] "
+}else{
+document.mainform.note1.value += " [/big] "
+document.mainform.note2.value += " [/big] "
+document.mainform.note3.value += " [/big] "
+document.mainform.note4.value += " [/big] "
+document.mainform.note5.value += " [/big] "
+document.mainform.note6.value += " [/big] "
+document.mainform.note7.value += " [/big] "
+document.mainform.note8.value += " [/big] "
+}
+}
+</script>
+
+<script type="text/javascript">
+function underline1(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [u] "
+document.mainform.note2.value += " [u] "
+document.mainform.note3.value += " [u] "
+document.mainform.note4.value += " [u] "
+document.mainform.note5.value += " [u] "
+document.mainform.note6.value += " [u] "
+document.mainform.note7.value += " [u] "
+document.mainform.note8.value += " [u] "
+}else{
+document.mainform.note1.value += " [u] "
+document.mainform.note2.value += " [u] "
+document.mainform.note3.value += " [u] "
+document.mainform.note4.value += " [u] "
+document.mainform.note5.value += " [u] "
+document.mainform.note6.value += " [u] "
+document.mainform.note7.value += " [u] "
+document.mainform.note8.value += " [u] "
+}
+}
+</script>
+<script type="text/javascript">
+function underline2(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [/u] "
+document.mainform.note2.value += " [/u] "
+document.mainform.note3.value += " [/u] "
+document.mainform.note4.value += " [/u] "
+document.mainform.note5.value += " [/u] "
+document.mainform.note6.value += " [/u] "
+document.mainform.note7.value += " [/u] "
+document.mainform.note8.value += " [/u] "
+}else{
+document.mainform.note1.value += " [/u] "
+document.mainform.note2.value += " [/u] "
+document.mainform.note3.value += " [/u] "
+document.mainform.note4.value += " [/u] "
+document.mainform.note5.value += " [/u] "
+document.mainform.note6.value += " [/u] "
+document.mainform.note7.value += " [/u] "
+document.mainform.note8.value += " [/u] "
+}
+}
+</script>
+
+<script type="text/javascript">
+function break1(){
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value += " [br] "
+document.mainform.note2.value += " [br] "
+document.mainform.note3.value += " [br] "
+document.mainform.note4.value += " [br] "
+document.mainform.note5.value += " [br] "
+document.mainform.note6.value += " [br] "
+document.mainform.note7.value += " [br] "
+document.mainform.note8.value += " [br] "
+}else{
+document.mainform.note1.value += " [br] "
+document.mainform.note2.value += " [br] "
+document.mainform.note3.value += " [br] "
+document.mainform.note4.value += " [br] "
+document.mainform.note5.value += " [br] "
+document.mainform.note6.value += " [br] "
+document.mainform.note7.value += " [br] "
+document.mainform.note8.value += " [br] "
+}
+}
+</script>
+
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+
+<script type="text/javascript">
+function lockpad()
+if(document.storeform.store10.value == document.storeform.store10.value){
+document.storeform.store10.value = "1"
+document.storeform.submit()
+}else{
+document.storeform.store10.value = "1"
+document.storeform.submit()
+}
+}
+</script>
+
+<script type="text/javascript">
+function unlockpad()
+if(document.passpad.passpadbox.value == parent.passuserframe.document.loginform.passstore.value){
+document.storeform.store10.value = ""
+document.storeform.submit()
+}else{
+The Text Pad is Locked. Enter the correct password.
+}
+}
+</script>
+
+
+
+<script type="text/javascript" language="javascript">
+function setvalue() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.mainform.note1.value = document.storeform.store1.value
+document.mainform.note2.value = document.storeform.store2.value
+document.mainform.note3.value = document.storeform.store3.value
+document.mainform.note4.value = document.storeform.store4.value
+document.mainform.note5.value = document.storeform.store5.value
+document.mainform.note6.value = document.storeform.store6.value
+document.mainform.note7.value = document.storeform.store7.value
+document.mainform.note8.value = document.storeform.store8.value
+}else{
+document.mainform.note1.value = document.storeform.store1.value
+document.mainform.note2.value = document.storeform.store2.value
+document.mainform.note3.value = document.storeform.store3.value
+document.mainform.note4.value = document.storeform.store4.value
+document.mainform.note5.value = document.storeform.store5.value
+document.mainform.note6.value = document.storeform.store6.value
+document.mainform.note7.value = document.storeform.store7.value
+document.mainform.note8.value = document.storeform.store8.value
+}
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+function edit1() {
+if(document.storeform.store11.value == "1"){
+MM_showHideLayers('note1edit','','show')
+MM_showHideLayers('note1view','','hide')
+}else{
+	edit2()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function edit2() {
+if(document.storeform.store11.value == "2"){
+MM_showHideLayers('note2edit','','show')
+MM_showHideLayers('note2view','','hide')
+}else{
+	edit3()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function edit3() {
+if(document.storeform.store11.value == "3"){
+MM_showHideLayers('note3edit','','show')
+MM_showHideLayers('note3view','','hide')
+}else{
+	edit4()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function edit4() {
+if(document.storeform.store11.value == "4"){
+MM_showHideLayers('note4edit','','show')
+MM_showHideLayers('note4view','','hide')
+}else{
+	edit5()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function edit5() {
+if(document.storeform.store11.value == "5"){
+MM_showHideLayers('note5edit','','show')
+MM_showHideLayers('note5view','','hide')
+}else{
+	edit6()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function edit6() {
+if(document.storeform.store11.value == "6"){
+MM_showHideLayers('note6edit','','show')
+MM_showHideLayers('note6view','','hide')
+}else{
+	edit7()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function edit7() {
+if(document.storeform.store11.value == "7"){
+MM_showHideLayers('note7edit','','show')
+MM_showHideLayers('note7view','','hide')
+}else{
+	edit8()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function edit8() {
+if(document.storeform.store11.value == "8"){
+MM_showHideLayers('note8edit','','show')
+MM_showHideLayers('note8view','','hide')
+}else{
+
+}
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+function save1() {
+if(document.storeform.store11.value == "1"){
+document.storeform.store1.value = document.mainform.note1.value
+document.storeform.submit()
+}else{
+	save2()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function save2() {
+if(document.storeform.store11.value == "2"){
+document.storeform.store2.value = document.mainform.note2.value
+document.storeform.submit()
+}else{
+	save3()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function save3() {
+if(document.storeform.store11.value == "3"){
+document.storeform.store3.value = document.mainform.note3.value
+document.storeform.submit()
+}else{
+	save4()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function save4() {
+if(document.storeform.store11.value == "4"){
+document.storeform.store4.value = document.mainform.note4.value
+document.storeform.submit()
+}else{
+	save5()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function save5() {
+if(document.storeform.store11.value == "5"){
+document.storeform.store5.value = document.mainform.note5.value
+document.storeform.submit()
+}else{
+	save6()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function save6() {
+if(document.storeform.store11.value == "6"){
+document.storeform.store6.value = document.mainform.note6.value
+document.storeform.submit()
+}else{
+	save7()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function save7() {
+if(document.storeform.store11.value == "7"){
+document.storeform.store7.value = document.mainform.note7.value
+document.storeform.submit()
+}else{
+	save8()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function save8() {
+if(document.storeform.store11.value == "8"){
+document.storeform.store8.value = document.mainform.note8.value
+document.storeform.submit()
+}else{
+
+}
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+function erase() {
+if(document.storeform.store10.value == "1"){
+
+}else{
+	erase1()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function erase1() {
+if(document.storeform.store11.value == "1"){
+document.storeform.store1.value = ""
+document.storeform.submit()
+}else{
+	erase2()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function erase2() {
+if(document.storeform.store11.value == "2"){
+document.storeform.store2.value = ""
+document.storeform.submit()
+}else{
+	erase3()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function erase3() {
+if(document.storeform.store11.value == "3"){
+document.storeform.store3.value = ""
+document.storeform.submit()
+}else{
+	erase4()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function erase4() {
+if(document.storeform.store11.value == "4"){
+document.storeform.store4.value = ""
+document.storeform.submit()
+}else{
+	erase5()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function erase5() {
+if(document.storeform.store11.value == "5"){
+document.storeform.store5.value = ""
+document.storeform.submit()
+}else{
+	erase6()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function erase6() {
+if(document.storeform.store11.value == "6"){
+document.storeform.store6.value = ""
+document.storeform.submit()
+}else{
+	erase7()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function erase7() {
+if(document.storeform.store11.value == "7"){
+document.storeform.store7.value = ""
+document.storeform.submit()
+}else{
+	erase8()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function erase8() {
+if(document.storeform.store11.value == "8"){
+document.storeform.store8.value = ""
+document.storeform.submit()
+}else{
+
+}
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+function trashnotes() {
+if(document.storeform.store10.value == "1"){
+
+}else{
+trashnotes1()
+}
+}
+
+function trashnotes1() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.storeform.store1.value = ""
+document.storeform.store2.value = ""
+document.storeform.store3.value = ""
+document.storeform.store4.value = ""
+document.storeform.store5.value = ""
+document.storeform.store6.value = ""
+document.storeform.store7.value = ""
+document.storeform.store8.value = ""
+document.storeform.store9.value = ""
+document.storeform.store10.value = ""
+document.storeform.store11.value = "1"
+document.storeform.submit()
+}else{
+document.storeform.store1.value = ""
+document.storeform.store2.value = ""
+document.storeform.store3.value = ""
+document.storeform.store4.value = ""
+document.storeform.store5.value = ""
+document.storeform.store6.value = ""
+document.storeform.store7.value = ""
+document.storeform.store8.value = ""
+document.storeform.store9.value = ""
+document.storeform.store10.value = ""
+document.storeform.store11.value = "1"
+document.storeform.submit()
+}
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+function storeswitch1() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.storeform.store11.value = "1"
+parent.document.fnform.filename.value = "document 1.doc"
+}else{
+document.storeform.store11.value = "1"
+parent.document.fnform.filename.value = "document 1.doc"
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storeswitch2() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.storeform.store11.value = "2"
+parent.document.fnform.filename.value = "document 2.doc"
+}else{
+document.storeform.store11.value = "2"
+parent.document.fnform.filename.value = "document 2.doc"
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storeswitch3() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.storeform.store11.value = "3"
+parent.document.fnform.filename.value = "document 3.doc"
+}else{
+document.storeform.store11.value = "3"
+parent.document.fnform.filename.value = "document 3.doc"
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storeswitch4() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.storeform.store11.value = "4"
+parent.document.fnform.filename.value = "document 4.doc"
+}else{
+document.storeform.store11.value = "4"
+parent.document.fnform.filename.value = "document 4.doc"
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storeswitch5() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.storeform.store11.value = "5"
+parent.document.fnform.filename.value = "document 5.doc"
+}else{
+document.storeform.store11.value = "5"
+parent.document.fnform.filename.value = "document 5.doc"
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storeswitch6() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.storeform.store11.value = "6"
+parent.document.fnform.filename.value = "document 6.doc"
+}else{
+document.storeform.store11.value = "6"
+parent.document.fnform.filename.value = "document 6.doc"
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storeswitch7() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.storeform.store11.value = "7"
+parent.document.fnform.filename.value = "document 7.doc"
+}else{
+document.storeform.store11.value = "7"
+parent.document.fnform.filename.value = "document 7.doc"
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storeswitch8() {
+if(document.storeform.store11.value == document.storeform.store11.value){
+document.storeform.store11.value = "8"
+parent.document.fnform.filename.value = "document 8.doc"
+}else{
+document.storeform.store11.value = "8"
+parent.document.fnform.filename.value = "document 8.doc"
+}
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+function storehistorya() {
+if(document.storeform.store10.value == "1"){
+MM_showHideLayers('loadingdiv','','hide')
+MM_showHideLayers('lockpaddiv','','show')
+}else{
+	storehistory()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storehistory() {
+if(document.storeform.store11.value == ""){
+	storehistory1()
+}else{
+	storehistory1()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storehistory1() {
+if(document.storeform.store11.value == "1"){
+MM_showHideLayers('note1view','','show')
+MM_showHideLayers('note1edit','','hide')
+MM_showHideLayers('loadingdiv','','hide')
+}else{
+	storehistory2()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storehistory2() {
+if(document.storeform.store11.value == "2"){
+MM_showHideLayers('note2view','','show')
+MM_showHideLayers('loadingdiv','','hide')
+}else{
+	storehistory3()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storehistory3() {
+if(document.storeform.store11.value == "3"){
+MM_showHideLayers('note3view','','show')
+MM_showHideLayers('loadingdiv','','hide')
+}else{
+	storehistory4()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storehistory4() {
+if(document.storeform.store11.value == "4"){
+MM_showHideLayers('note4view','','show')
+MM_showHideLayers('loadingdiv','','hide')
+}else{
+	storehistory5()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storehistory5() {
+if(document.storeform.store11.value == "5"){
+MM_showHideLayers('note5view','','show')
+MM_showHideLayers('loadingdiv','','hide')
+}else{
+	storehistory6()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storehistory6() {
+if(document.storeform.store11.value == "6"){
+MM_showHideLayers('note6view','','show')
+MM_showHideLayers('loadingdiv','','hide')
+}else{
+	storehistory7()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storehistory7() {
+if(document.storeform.store11.value == "7"){
+MM_showHideLayers('note7view','','show')
+MM_showHideLayers('loadingdiv','','hide')
+}else{
+	storehistory8()
+}
+}
+</script>
+<script type="text/javascript" language="javascript">
+function storehistory8() {
+if(document.storeform.store11.value == "8"){
+MM_showHideLayers('note8view','','show')
+MM_showHideLayers('loadingdiv','','hide')
+}else{
+
+}
+}
+</script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url();
+}
+#loadingdiv {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:1;
+}
+#note1edit {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note2edit {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note3edit {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note4edit {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note5edit {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note6edit {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note7edit {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note8edit {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#apDiv10 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:1;
+	visibility: hidden;
+}
+#note1view {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+.style1 {color: #000000}
+#note2view {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note3view {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note4view {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note6view {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note5view {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note7view {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#note8view {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:2;
+	visibility: hidden;
+}
+#lockpaddiv {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:151px;
+	z-index:3;
+	visibility: hidden;
+}
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:466px;
+	height:280px;
+	z-index:4;
+}
+body,td,th {
+	color: #000000;
+}
+.style2 {color: #CCCCCC}
+-->
+</style></head>
+
+<body onload="storehistorya();setvalue()">
+<div id="apDiv10">
+  <div align="center">
+    <form id="storeform" name="storeform" method="post" action="">
+      <label>
+      <input name="store1" type="text" id="store1" />
+      </label>
+      <input name="store2" type="text" id="store2" readonly="readonly"/>
+      <input name="store3" type="text" id="store3" readonly="readonly"/>
+      <input type="text" name="store4" id="store4" readonly="readonly"/>
+      <input type="text" name="store5" id="store5" readonly="readonly"/>
+      <input type="text" name="store6" id="store6" readonly="readonly"/>
+      <input type="text" name="store7" id="store7" readonly="readonly"/>
+      <input type="text" name="store8" id="store8" readonly="readonly"/>
+      <input type="text" name="store9" id="store9" readonly="readonly"/>
+      <input type="text" name="store10" id="store10" readonly="readonly"/>
+      <input name="store11" type="text" id="store11" readonly="readonly"/>
+      <label></label>
+      <br />
+      <label></label>
+    </form>
+  </div>
+</div>
+<div id="lockpaddiv">
+  <table width="466" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="151" colspan="3" align="center" valign="middle">The Text Pad has been locked. <br />
+        Enter your password (from login) to continue to use the Text Pad. Notes can't be deleted when the Text Pad is locked.<br />
+      <br />
+      <form id="passpad" name="passpad" method="post" action="">
+        <label>
+          <input type="password" name="passpadbox" id="passpadbox" />
+          </label>
+        <label>
+        <input type="button" name="passpadbutton" id="passpadbutton" value="Button" onclick="unlockpad()"/>
+        </label>
+      </form>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="apDiv1"><img src="images/blankcover.png" width="466" height="280" onclick="edit1()"/></div>
+<form id="mainform" name="mainform" method="post" action="">
+<div id="loadingdiv">
+  <div align="center">
+    <p><br />
+      <br />
+        <br />
+        <span class="style1">Loading...Please wait.      </span></p>
+  </div>
+  <label></label>
+</div>
+<div id="note1edit">
+  <label></label>
+  <div align="center"><span class="style2">Document 1</span><br />
+      <label>
+        <textarea name="note1" cols="50" rows="7" id="note1"></textarea>
+      </label>
+    <br />
+  </div>
+  <label></label>
+</div>
+<div id="note2edit">
+  <label></label>
+  <div align="center"><span class="style2">Document 2</span><br />
+      <label>
+      <textarea name="note2" cols="50" rows="7" id="note2"></textarea>
+      </label>
+      <br />
+  </div>
+  <label></label>
+</div>
+<div id="note3edit">
+  <label></label>
+  <div align="center"><span class="style2">Document 3</span><br />
+      <label>
+      <textarea name="note3" cols="50" rows="7" id="note3"></textarea>
+      </label>
+      <br />
+  </div>
+  <label></label>
+</div>
+<div id="note4edit">
+  <label></label>
+  <div align="center"><span class="style2">Document 4</span><br />
+      <label>
+      <textarea name="note4" cols="50" rows="7" id="note4"></textarea>
+      </label>
+      <br />
+  </div>
+  <label></label>
+</div>
+<div id="note5edit">
+  <label></label>
+  <div align="center"><span class="style2">Document 5</span><br />
+      <label>
+      <textarea name="note5" cols="50" rows="7" id="note5"></textarea>
+      </label>
+      <br />
+  </div>
+  <label></label>
+</div>
+<div id="note6edit">
+  <label></label>
+  <div align="center"><span class="style2">Document 6</span><br />
+      <label>
+      <textarea name="note6" cols="50" rows="7" id="note6"></textarea>
+      </label>
+      <br />
+  </div>
+  <label></label>
+</div>
+<div id="note7edit">
+  <label></label>
+  <div align="center"><span class="style2">Document 7</span><br />
+      <label>
+      <textarea name="note7" cols="50" rows="7" id="note7"></textarea>
+      </label>
+      <br />
+  </div>
+  <label></label>
+</div>
+<div id="note8edit">
+  <label></label>
+  <div align="center"><span class="style2">Document 8</span><br />
+      <label>
+      <textarea name="note8" cols="50" rows="7" id="note8"></textarea>
+      </label>
+      <br />
+  </div>
+  <label></label>
+</div>
+
+<div id="note1view">
+  <table width="466" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="3"><div align="center" class="style2">Document 1</div></td>
+    </tr>
+    
+    <tr>
+      <td width="5"></td>
+      <td><a name="slot1view" class="style1"></a>
+<script type="text/javascript">
+
+var toSplit1 = document.storeform.store1.value
+var save1Array = toSplit1.split(" ");
+var flagArray = new Array()
+i1 = 0
+i2 = 1
+document.write("")
+while(i1 < save1Array.length){
+if(save1Array[i1] != undefined && save1Array[i1] != "[br]"  && save1Array[i1] != "[b]"  && save1Array[i1] != "[/b]"  && save1Array[i1] != "[i]"  && save1Array[i1] != "[/i]"  && save1Array[i1] != "[big]"  && save1Array[i1] != "[/big]" && save1Array[i1] != "[img]" && save1Array[i1] != "[u]" && save1Array[i1] != "[/u]" && save1Array[i1] != "[s]" && save1Array[i1] != "[/s]" && save1Array[i1] != "[a]" && save1Array[i1] != "[align=center]" && save1Array[i1] != "[/align]" && save1Array[i1] != "[align=right]" && save1Array[i1] != "[align=left]" && save1Array[i1] != "[hr]" && save1Array[i1] != "[color=black]" && save1Array[i1] != "[color=darkred]" && save1Array[i1] != "[color=red]" && save1Array[i1] != "[color=orange]" && save1Array[i1] != "[color=yellow]" && save1Array[i1] != "[color=lightgreen]" && save1Array[i1] != "[color=green]" && save1Array[i1] != "[color=paleblue]" && save1Array[i1] != "[color=blue]" && save1Array[i1] != "[color=darkblue]" && save1Array[i1] != "[color=purple]" && save1Array[i1] != "[/color]"
+ && flagArray[i1] != "false"){
+document.write(save1Array[i1]+" ");
+}else{
+
+if(save1Array[i1] == "[br]"){
+document.write("<br>");
+}
+if(save1Array[i1] == "[b]"){
+document.write("<b>");
+}
+if(save1Array[i1] == "[/b]"){
+document.write("</b>");
+}
+if(save1Array[i1] == "[i]"){
+document.write("<i>");
+}
+if(save1Array[i1] == "[/i]"){
+document.write("</i>");
+}
+if(save1Array[i1] == "[big]"){
+document.write("<font size=\"7\">");
+}
+if(save1Array[i1] == "[/big]"){
+document.write("</font>");
+}
+if(save1Array[i1] == "[img]"){
+document.write("<img src=\"" +save1Array[i2]+ "\">");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[a]"){
+document.write("<a href=\"javascript:top.document.location.replace(\'" +save1Array[i2]+ "\')\">Link</a> ");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[u]"){
+document.write("<u>");
+}
+if(save1Array[i1] == "[/u]"){
+document.write("</u>");
+}
+if(save1Array[i1] == "[s]"){
+document.write("<strike>");
+}
+if(save1Array[i1] == "[/s]"){
+document.write("</strike>");
+}
+if(save1Array[i1] == "[align=center]"){
+document.write("<div align=\"center\">");
+}
+if(save1Array[i1] == "[/align]"){
+document.write("</div>");
+}
+if(save1Array[i1] == "[align=right]"){
+document.write("<div align=\"right\">");
+}
+if(save1Array[i1] == "[align=left]"){
+document.write("<div align=\"left\">");
+}
+if(save1Array[i1] == "[hr]"){
+document.write("<hr>");
+}
+if(save1Array[i1] == "[color=black]"){
+document.write("<font color=\"#000000\">");
+}
+if(save1Array[i1] == "[color=darkred]"){
+document.write("<font color=\"#C00000\">");
+}
+if(save1Array[i1] == "[color=red]"){
+document.write("<font color=\"#FF0000\">");
+}
+if(save1Array[i1] == "[color=orange]"){
+document.write("<font color=\"#FFC000\">");
+}
+if(save1Array[i1] == "[color=yellow]"){
+document.write("<font color=\"#FFFF00\">");
+}
+if(save1Array[i1] == "[color=lightgreen]"){
+document.write("<font color=\"#92D050\">");
+}
+if(save1Array[i1] == "[color=green]"){
+document.write("<font color=\"#00B050\">");
+}
+if(save1Array[i1] == "[color=paleblue]"){
+document.write("<font color=\"#00B0F0\">");
+}
+if(save1Array[i1] == "[color=blue]"){
+document.write("<font color=\"#0070C0\">");
+}
+if(save1Array[i1] == "[color=darkblue]"){
+document.write("<font color=\"#002060\">");
+}
+if(save1Array[i1] == "[color=purple]"){
+document.write("<font color=\"#7030A0\">");
+}
+if(save1Array[i1] == "[/color]"){
+document.write("</font>");
+}
+}
+
+
+i1 += 1
+i2 += 1
+}
+document.write("<br>")
+
+</script></td>
+      <td width="5">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="note2view">
+  <table width="466" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="3"><div align="center" class="style2">Document 2</div></td>
+    </tr>
+    <tr>
+      <td width="5"></td>
+      <td><a name="slot1view" class="style1" id="slot2view"></a>
+        <script type="text/javascript">
+
+var toSplit1 = document.storeform.store2.value
+var save1Array = toSplit1.split(" ");
+var flagArray = new Array()
+i1 = 0
+i2 = 1
+document.write("")
+while(i1 < save1Array.length){
+if(save1Array[i1] != undefined && save1Array[i1] != "[br]"  && save1Array[i1] != "[b]"  && save1Array[i1] != "[/b]"  && save1Array[i1] != "[i]"  && save1Array[i1] != "[/i]"  && save1Array[i1] != "[big]"  && save1Array[i1] != "[/big]" && save1Array[i1] != "[img]" && save1Array[i1] != "[u]" && save1Array[i1] != "[/u]" && save1Array[i1] != "[s]" && save1Array[i1] != "[/s]" && save1Array[i1] != "[a]" && save1Array[i1] != "[align=center]" && save1Array[i1] != "[/align]" && save1Array[i1] != "[align=right]" && save1Array[i1] != "[align=left]" && flagArray[i1] != "false"){
+document.write(save1Array[i1]+" ");
+}else{
+
+if(save1Array[i1] == "[br]"){
+document.write("<br>");
+}
+if(save1Array[i1] == "[b]"){
+document.write("<b>");
+}
+if(save1Array[i1] == "[/b]"){
+document.write("</b>");
+}
+if(save1Array[i1] == "[i]"){
+document.write("<i>");
+}
+if(save1Array[i1] == "[/i]"){
+document.write("</i>");
+}
+if(save1Array[i1] == "[big]"){
+document.write("<font size=\"7\">");
+}
+if(save1Array[i1] == "[/big]"){
+document.write("</font>");
+}
+if(save1Array[i1] == "[img]"){
+document.write("<img src=\"" +save1Array[i2]+ "\">");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[a]"){
+document.write("<a href=\"javascript:top.document.location.replace(\'" +save1Array[i2]+ "\')\">Link</a> ");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[u]"){
+document.write("<u>");
+}
+if(save1Array[i1] == "[/u]"){
+document.write("</u>");
+}
+if(save1Array[i1] == "[s]"){
+document.write("<strike>");
+}
+if(save1Array[i1] == "[/s]"){
+document.write("</strike>");
+}
+if(save1Array[i1] == "[align=center]"){
+document.write("<div align=\"center\">");
+}
+if(save1Array[i1] == "[/align]"){
+document.write("</div>");
+}
+}
+
+
+
+i1 += 1
+i2 += 1
+}
+document.write("<br>")
+
+</script></td>
+      <td width="5">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="note3view">
+  <table width="466" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="3"><div align="center" class="style2">Document 3</div></td>
+    </tr>
+    <tr>
+      <td width="5"></td>
+      <td><a name="slot3view" class="style1" id="slot3view"></a>
+        <script type="text/javascript">
+
+var toSplit1 = document.storeform.store3.value
+var save1Array = toSplit1.split(" ");
+var flagArray = new Array()
+i1 = 0
+i2 = 1
+document.write("")
+while(i1 < save1Array.length){
+if(save1Array[i1] != undefined && save1Array[i1] != "[br]"  && save1Array[i1] != "[b]"  && save1Array[i1] != "[/b]"  && save1Array[i1] != "[i]"  && save1Array[i1] != "[/i]"  && save1Array[i1] != "[big]"  && save1Array[i1] != "[/big]" && save1Array[i1] != "[img]" && save1Array[i1] != "[u]" && save1Array[i1] != "[/u]" && save1Array[i1] != "[s]" && save1Array[i1] != "[/s]" && save1Array[i1] != "[a]" && save1Array[i1] != "[align=center]" && save1Array[i1] != "[/align]" && save1Array[i1] != "[align=right]" && save1Array[i1] != "[align=left]" && flagArray[i1] != "false"){
+document.write(save1Array[i1]+" ");
+}else{
+
+if(save1Array[i1] == "[br]"){
+document.write("<br>");
+}
+if(save1Array[i1] == "[b]"){
+document.write("<b>");
+}
+if(save1Array[i1] == "[/b]"){
+document.write("</b>");
+}
+if(save1Array[i1] == "[i]"){
+document.write("<i>");
+}
+if(save1Array[i1] == "[/i]"){
+document.write("</i>");
+}
+if(save1Array[i1] == "[big]"){
+document.write("<font size=\"7\">");
+}
+if(save1Array[i1] == "[/big]"){
+document.write("</font>");
+}
+if(save1Array[i1] == "[img]"){
+document.write("<img src=\"" +save1Array[i2]+ "\">");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[a]"){
+document.write("<a href=\"javascript:top.document.location.replace(\'" +save1Array[i2]+ "\')\">Link</a> ");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[u]"){
+document.write("<u>");
+}
+if(save1Array[i1] == "[/u]"){
+document.write("</u>");
+}
+if(save1Array[i1] == "[s]"){
+document.write("<strike>");
+}
+if(save1Array[i1] == "[/s]"){
+document.write("</strike>");
+}
+if(save1Array[i1] == "[align=center]"){
+document.write("<div align=\"center\">");
+}
+if(save1Array[i1] == "[/align]"){
+document.write("</div>");
+}
+if(save1Array[i1] == "[align=right]"){
+document.write("<div align=\"right\">");
+}
+if(save1Array[i1] == "[align=left]"){
+document.write("<div align=\"left\">");
+}
+}
+
+
+
+i1 += 1
+i2 += 1
+}
+document.write("<br>")
+
+</script></td>
+      <td width="5">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="note4view">
+  <table width="466" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="3"><div align="center" class="style2">Document 4</div></td>
+    </tr>
+    <tr>
+      <td width="5"></td>
+      <td><a name="slot1view" class="style1" id="slot1view2"></a>
+        <script type="text/javascript">
+
+var toSplit1 = document.storeform.store4.value
+var save1Array = toSplit1.split(" ");
+var flagArray = new Array()
+i1 = 0
+i2 = 1
+document.write("")
+while(i1 < save1Array.length){
+if(save1Array[i1] != undefined && save1Array[i1] != "[br]"  && save1Array[i1] != "[b]"  && save1Array[i1] != "[/b]"  && save1Array[i1] != "[i]"  && save1Array[i1] != "[/i]"  && save1Array[i1] != "[big]"  && save1Array[i1] != "[/big]" && save1Array[i1] != "[img]" && save1Array[i1] != "[u]" && save1Array[i1] != "[/u]" && save1Array[i1] != "[s]" && save1Array[i1] != "[/s]" && save1Array[i1] != "[a]" && save1Array[i1] != "[align=center]" && save1Array[i1] != "[/align]" && save1Array[i1] != "[align=right]" && save1Array[i1] != "[align=left]" && flagArray[i1] != "false"){
+document.write(save1Array[i1]+" ");
+}else{
+
+if(save1Array[i1] == "[br]"){
+document.write("<br>");
+}
+if(save1Array[i1] == "[b]"){
+document.write("<b>");
+}
+if(save1Array[i1] == "[/b]"){
+document.write("</b>");
+}
+if(save1Array[i1] == "[i]"){
+document.write("<i>");
+}
+if(save1Array[i1] == "[/i]"){
+document.write("</i>");
+}
+if(save1Array[i1] == "[big]"){
+document.write("<font size=\"7\">");
+}
+if(save1Array[i1] == "[/big]"){
+document.write("</font>");
+}
+if(save1Array[i1] == "[img]"){
+document.write("<img src=\"" +save1Array[i2]+ "\">");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[a]"){
+document.write("<a href=\"javascript:top.document.location.replace(\'" +save1Array[i2]+ "\')\">Link</a> ");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[u]"){
+document.write("<u>");
+}
+if(save1Array[i1] == "[/u]"){
+document.write("</u>");
+}
+if(save1Array[i1] == "[s]"){
+document.write("<strike>");
+}
+if(save1Array[i1] == "[/s]"){
+document.write("</strike>");
+}
+if(save1Array[i1] == "[align=center]"){
+document.write("<div align=\"center\">");
+}
+if(save1Array[i1] == "[/align]"){
+document.write("</div>");
+}
+if(save1Array[i1] == "[align=right]"){
+document.write("<div align=\"right\">");
+}
+if(save1Array[i1] == "[align=left]"){
+document.write("<div align=\"left\">");
+}
+}
+
+
+
+i1 += 1
+i2 += 1
+}
+document.write("<br>")
+
+</script></td>
+      <td width="5">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="note6view">
+  <table width="466" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="3"><div align="center" class="style2">Document 6</div></td>
+    </tr>
+    <tr>
+      <td width="5"></td>
+      <td><a name="slot1view" class="style1" id="slot1view"></a>
+        <script type="text/javascript">
+
+var toSplit1 = document.storeform.store6.value
+var save1Array = toSplit1.split(" ");
+var flagArray = new Array()
+i1 = 0
+i2 = 1
+document.write("")
+while(i1 < save1Array.length){
+if(save1Array[i1] != undefined && save1Array[i1] != "[br]"  && save1Array[i1] != "[b]"  && save1Array[i1] != "[/b]"  && save1Array[i1] != "[i]"  && save1Array[i1] != "[/i]"  && save1Array[i1] != "[big]"  && save1Array[i1] != "[/big]" && save1Array[i1] != "[img]" && save1Array[i1] != "[u]" && save1Array[i1] != "[/u]" && save1Array[i1] != "[s]" && save1Array[i1] != "[/s]" && save1Array[i1] != "[a]" && save1Array[i1] != "[align=center]" && save1Array[i1] != "[/align]" && save1Array[i1] != "[align=right]" && save1Array[i1] != "[align=left]" && flagArray[i1] != "false"){
+document.write(save1Array[i1]+" ");
+}else{
+
+if(save1Array[i1] == "[br]"){
+document.write("<br>");
+}
+if(save1Array[i1] == "[b]"){
+document.write("<b>");
+}
+if(save1Array[i1] == "[/b]"){
+document.write("</b>");
+}
+if(save1Array[i1] == "[i]"){
+document.write("<i>");
+}
+if(save1Array[i1] == "[/i]"){
+document.write("</i>");
+}
+if(save1Array[i1] == "[big]"){
+document.write("<font size=\"7\">");
+}
+if(save1Array[i1] == "[/big]"){
+document.write("</font>");
+}
+if(save1Array[i1] == "[img]"){
+document.write("<img src=\"" +save1Array[i2]+ "\">");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[a]"){
+document.write("<a href=\"javascript:top.document.location.replace(\'" +save1Array[i2]+ "\')\">Link</a> ");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[u]"){
+document.write("<u>");
+}
+if(save1Array[i1] == "[/u]"){
+document.write("</u>");
+}
+if(save1Array[i1] == "[s]"){
+document.write("<strike>");
+}
+if(save1Array[i1] == "[/s]"){
+document.write("</strike>");
+}
+if(save1Array[i1] == "[align=center]"){
+document.write("<div align=\"center\">");
+}
+if(save1Array[i1] == "[/align]"){
+document.write("</div>");
+}
+if(save1Array[i1] == "[align=right]"){
+document.write("<div align=\"right\">");
+}
+if(save1Array[i1] == "[align=left]"){
+document.write("<div align=\"left\">");
+}
+}
+
+
+
+i1 += 1
+i2 += 1
+}
+document.write("<br>")
+
+</script></td>
+      <td width="5">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="note5view">
+  <table width="466" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="3"><div align="center" class="style2">Document 5</div></td>
+    </tr>
+    <tr>
+      <td width="5"></td>
+      <td><a name="slot3view" class="style1" id="slot3view2"></a>
+        <script type="text/javascript">
+
+var toSplit1 = document.storeform.store5.value
+var save1Array = toSplit1.split(" ");
+var flagArray = new Array()
+i1 = 0
+i2 = 1
+document.write("")
+while(i1 < save1Array.length){
+if(save1Array[i1] != undefined && save1Array[i1] != "[br]"  && save1Array[i1] != "[b]"  && save1Array[i1] != "[/b]"  && save1Array[i1] != "[i]"  && save1Array[i1] != "[/i]"  && save1Array[i1] != "[big]"  && save1Array[i1] != "[/big]" && save1Array[i1] != "[img]" && save1Array[i1] != "[u]" && save1Array[i1] != "[/u]" && save1Array[i1] != "[s]" && save1Array[i1] != "[/s]" && save1Array[i1] != "[a]" && save1Array[i1] != "[align=center]" && save1Array[i1] != "[/align]" && save1Array[i1] != "[align=right]" && save1Array[i1] != "[align=left]" && flagArray[i1] != "false"){
+document.write(save1Array[i1]+" ");
+}else{
+
+if(save1Array[i1] == "[br]"){
+document.write("<br>");
+}
+if(save1Array[i1] == "[b]"){
+document.write("<b>");
+}
+if(save1Array[i1] == "[/b]"){
+document.write("</b>");
+}
+if(save1Array[i1] == "[i]"){
+document.write("<i>");
+}
+if(save1Array[i1] == "[/i]"){
+document.write("</i>");
+}
+if(save1Array[i1] == "[big]"){
+document.write("<font size=\"7\">");
+}
+if(save1Array[i1] == "[/big]"){
+document.write("</font>");
+}
+if(save1Array[i1] == "[img]"){
+document.write("<img src=\"" +save1Array[i2]+ "\">");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[a]"){
+document.write("<a href=\"javascript:top.document.location.replace(\'" +save1Array[i2]+ "\')\">Link</a> ");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[u]"){
+document.write("<u>");
+}
+if(save1Array[i1] == "[/u]"){
+document.write("</u>");
+}
+if(save1Array[i1] == "[s]"){
+document.write("<strike>");
+}
+if(save1Array[i1] == "[/s]"){
+document.write("</strike>");
+}
+if(save1Array[i1] == "[align=center]"){
+document.write("<div align=\"center\">");
+}
+if(save1Array[i1] == "[/align]"){
+document.write("</div>");
+}
+if(save1Array[i1] == "[align=right]"){
+document.write("<div align=\"right\">");
+}
+if(save1Array[i1] == "[align=left]"){
+document.write("<div align=\"left\">");
+}
+}
+
+
+
+i1 += 1
+i2 += 1
+}
+document.write("<br>")
+
+</script></td>
+      <td width="5">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="note7view">
+  <table width="466" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="3"><div align="center" class="style2">Document 7</div></td>
+    </tr>
+    <tr>
+      <td width="5"></td>
+      <td><a name="slot3view" class="style1" id="slot3view3"></a>
+        <script type="text/javascript">
+
+var toSplit1 = document.storeform.store7.value
+var save1Array = toSplit1.split(" ");
+var flagArray = new Array()
+i1 = 0
+i2 = 1
+document.write("")
+while(i1 < save1Array.length){
+if(save1Array[i1] != undefined && save1Array[i1] != "[br]"  && save1Array[i1] != "[b]"  && save1Array[i1] != "[/b]"  && save1Array[i1] != "[i]"  && save1Array[i1] != "[/i]"  && save1Array[i1] != "[big]"  && save1Array[i1] != "[/big]" && save1Array[i1] != "[img]" && save1Array[i1] != "[u]" && save1Array[i1] != "[/u]" && save1Array[i1] != "[s]" && save1Array[i1] != "[/s]" && save1Array[i1] != "[a]" && save1Array[i1] != "[align=center]" && save1Array[i1] != "[/align]" && save1Array[i1] != "[align=right]" && save1Array[i1] != "[align=left]" && flagArray[i1] != "false"){
+document.write(save1Array[i1]+" ");
+}else{
+
+if(save1Array[i1] == "[br]"){
+document.write("<br>");
+}
+if(save1Array[i1] == "[b]"){
+document.write("<b>");
+}
+if(save1Array[i1] == "[/b]"){
+document.write("</b>");
+}
+if(save1Array[i1] == "[i]"){
+document.write("<i>");
+}
+if(save1Array[i1] == "[/i]"){
+document.write("</i>");
+}
+if(save1Array[i1] == "[big]"){
+document.write("<font size=\"7\">");
+}
+if(save1Array[i1] == "[/big]"){
+document.write("</font>");
+}
+if(save1Array[i1] == "[img]"){
+document.write("<img src=\"" +save1Array[i2]+ "\">");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[a]"){
+document.write("<a href=\"javascript:top.document.location.replace(\'" +save1Array[i2]+ "\')\">Link</a> ");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[u]"){
+document.write("<u>");
+}
+if(save1Array[i1] == "[/u]"){
+document.write("</u>");
+}
+if(save1Array[i1] == "[s]"){
+document.write("<strike>");
+}
+if(save1Array[i1] == "[/s]"){
+document.write("</strike>");
+}
+if(save1Array[i1] == "[align=center]"){
+document.write("<div align=\"center\">");
+}
+if(save1Array[i1] == "[/align]"){
+document.write("</div>");
+}
+if(save1Array[i1] == "[align=right]"){
+document.write("<div align=\"right\">");
+}
+if(save1Array[i1] == "[align=left]"){
+document.write("<div align=\"left\">");
+}
+}
+
+
+
+i1 += 1
+i2 += 1
+}
+document.write("<br>")
+
+</script></td>
+      <td width="5">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="note8view">
+  <table width="466" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="3"><div align="center" class="style2">Document 8</div></td>
+    </tr>
+    <tr>
+      <td width="5"></td>
+      <td><a name="slot1view" class="style1" id="slot1view3"></a>
+        <script type="text/javascript">
+
+var toSplit1 = document.storeform.store8.value
+var save1Array = toSplit1.split(" ");
+var flagArray = new Array()
+i1 = 0
+i2 = 1
+document.write("")
+while(i1 < save1Array.length){
+if(save1Array[i1] != undefined && save1Array[i1] != "[br]"  && save1Array[i1] != "[b]"  && save1Array[i1] != "[/b]"  && save1Array[i1] != "[i]"  && save1Array[i1] != "[/i]"  && save1Array[i1] != "[big]"  && save1Array[i1] != "[/big]" && save1Array[i1] != "[img]" && save1Array[i1] != "[u]" && save1Array[i1] != "[/u]" && save1Array[i1] != "[s]" && save1Array[i1] != "[/s]" && save1Array[i1] != "[a]" && save1Array[i1] != "[align=center]" && save1Array[i1] != "[/align]" && save1Array[i1] != "[align=right]" && save1Array[i1] != "[align=left]" && flagArray[i1] != "false"){
+document.write(save1Array[i1]+" ");
+}else{
+
+if(save1Array[i1] == "[br]"){
+document.write("<br>");
+}
+if(save1Array[i1] == "[b]"){
+document.write("<b>");
+}
+if(save1Array[i1] == "[/b]"){
+document.write("</b>");
+}
+if(save1Array[i1] == "[i]"){
+document.write("<i>");
+}
+if(save1Array[i1] == "[/i]"){
+document.write("</i>");
+}
+if(save1Array[i1] == "[big]"){
+document.write("<font size=\"7\">");
+}
+if(save1Array[i1] == "[/big]"){
+document.write("</font>");
+}
+if(save1Array[i1] == "[img]"){
+document.write("<img src=\"" +save1Array[i2]+ "\">");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[a]"){
+document.write("<a href=\"javascript:top.document.location.replace(\'" +save1Array[i2]+ "\')\">Link</a> ");
+flagArray[i2] = "false"
+}
+if(save1Array[i1] == "[u]"){
+document.write("<u>");
+}
+if(save1Array[i1] == "[/u]"){
+document.write("</u>");
+}
+if(save1Array[i1] == "[s]"){
+document.write("<strike>");
+}
+if(save1Array[i1] == "[/s]"){
+document.write("</strike>");
+}
+if(save1Array[i1] == "[align=center]"){
+document.write("<div align=\"center\">");
+}
+if(save1Array[i1] == "[/align]"){
+document.write("</div>");
+}
+if(save1Array[i1] == "[align=right]"){
+document.write("<div align=\"right\">");
+}
+if(save1Array[i1] == "[align=left]"){
+document.write("<div align=\"left\">");
+}
+}
+
+
+
+i1 += 1
+i2 += 1
+}
+document.write("<br>")
+
+</script></td>
+      <td width="5">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+
+</form>
+
+</body>
+</html>
