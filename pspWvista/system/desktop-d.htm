@@ -1,0 +1,933 @@
+<html>
+<head>
+<title>Desktop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css">
+@import url(style.css);
+</style>
+<script language="javascript" type="text/javascript" src="javascripts/script.js"></script>
+<script language="javascript" type="text/javascript" src="javascripts/script2.js" ></script>
+<script language="javascript" src="javascripts/welcome.js"></script>
+<script language="javascript" type="text/javascript" src="updateversion.js"></script>
+<script language="JavaScript" type="text/javascript">
+function Update(u){
+if (u > updateLocalVersion){
+Connect(2);
+  } 
+}
+
+function SideBarHide(){
+document.getElementById('date').style.visibility='hidden';
+document.getElementById('googleit').style.visibility='hidden';
+document.getElementById('radiolist').style.visibility='hidden';
+document.getElementById('play').style.visibility='hidden';
+document.getElementById('stop').style.visibility='hidden';
+}
+function SideBarShow(){
+document.getElementById('date').style.visibility='visible';
+document.getElementById('googleit').style.visibility='visible';
+document.getElementById('radiolist').style.visibility='visible';
+document.getElementById('play').style.visibility='visible';
+document.getElementById('stop').style.visibility='visible';
+}
+
+function ChangeSettings(){
+	top.icookies.document.settings.welcomehide.value=document.getElementById('chkwelcome').checked;
+	top.icookies.document.settings.submit();
+}
+
+function removeSettings(){
+var answer = confirm ("Warning this will reset settings!");
+if (answer){
+		deletesettings();
+	}
+	else{
+		alert("Settings will not be deleted")
+	}
+
+}
+function flipthreed(){
+hideMenu;
+document.getElementById('resume').style.visibility='visible';
+document.getElementById('splash').src='../images/shade3.png';
+windowMin('');windowMin(2);windowMin(3);
+document.getElementById('3dwin1').style.visibility='visible';
+if (tab.style.visibility=='visible'){
+	document.getElementById('3dwin2').style.visibility='visible';
+	document.getElementById('3d2').src = document.getElementById('tI').src;
+	showHideLayer('imgwin','hidden');showHideLayer('whitebox','hidden');showHideLayer('forward','hidden'); showHideLayer('backward','hidden');
+	}
+	
+if (tab2.style.visibility=='visible'){
+    document.getElementById('3dwinthree').style.visibility='visible';
+	document.getElementById('3d3').src = document.getElementById('tI2').src;
+	showHideLayer('imgwin','hidden');showHideLayer('whitebox','hidden');showHideLayer('forward','hidden'); showHideLayer('backward','hidden');showHideLayer('imgwin2','hidden');showHideLayer('whitebox2','hidden');showHideLayer('forward2','hidden'); showHideLayer('backward2','hidden');
+	}
+	
+if (tab3.style.visibility=='visible'){
+	document.getElementById('3dwin4').style.visibility='visible';
+	document.getElementById('3d4').src = document.getElementById('tI3').src;
+	showHideLayer('imgwin','hidden');showHideLayer('whitebox','hidden');showHideLayer('forward','hidden'); showHideLayer('backward','hidden');showHideLayer('imgwin2','hidden');showHideLayer('whitebox2','hidden');showHideLayer('forward2','hidden'); showHideLayer('backward2','hidden');showHideLayer('imgwin3','hidden');showHideLayer('whitebox3','hidden');showHideLayer('forward3','hidden'); showHideLayer('backward3','hidden');
+	}
+}
+function deletesettings(){
+if(top.icookies.document.getElementById('user').value='1'){ 
+  top.icookies.document.settings.un.value='';
+  top.icookies.document.settings.un2.value='';
+  top.icookies.document.settings.un3.value='';
+  top.icookies.document.settings.themeDir.value='';
+  top.icookies.document.settings.themeDir2.value='';
+  top.icookies.document.settings.themeDir3.value='';
+  top.icookies.document.settings.welcomehide.value='';
+  top.icookies.document.settings.welcomehide2.value='';
+  top.icookies.document.settings.welcomehide3.value='';
+  top.icookies.document.settings.winThemeDir.value='../images/window/window.png';
+  top.icookies.document.settings.winThemeDir2.value='../images/window/window.png';
+  top.icookies.document.settings.winThemeDir3.value='../images/window/window.png';
+  top.icookies.document.settings.bg.value='../images/wallpapers/Beach Tree.jpg';
+  top.icookies.document.settings.bg2.value='../images/wallpapers/Beach Tree.jpg';
+  top.icookies.document.settings.bg3.value='../images/wallpapers/Beach Tree.jpg';      
+  top.icookies.document.settings.submit();
+  ApplySettings ();
+  UpdateCan ();
+     alert ('Settings Erased');
+
+}else{
+alert ('Only the Admin (User 1) can reset settings!'); 
+  }
+}
+
+function Connect( c ){
+if ( c == 1){
+frames['connect'].location='http://hunteronhika.googlepages.com/blank.htm';
+Connect();
+}
+if ( c == 2 && top.icookies.document.getElementById('bgcolor').value=='Connected' ){
+document.getElementById('updatemini').style.visibility='visible';
+splittab.style.left="370px";
+document.getElementById('popup2').style.visibility='visible';
+}
+if ( c == 2 && top.icookies.document.getElementById('bgcolor').value=='' ){
+document.getElementById('updatemini').style.visibility='visible';
+document.getElementById('updatemini').style.left="20px";
+splittab.style.left="370px";
+document.getElementById('popup2').style.visibility='visible';
+}
+if(top.icookies.document.getElementById('bgcolor').value=='' && c != 2){
+  wificonnect.src='../images/icons/internet/wifi.png';
+  splittab.style.left="400px";
+  wifiicon.style.visibility='hidden';
+  document.getElementById('updatemini').style.visibility='hidden';
+  document.getElementById('popup2').style.visibility='hidden';
+  }else if(top.icookies.document.getElementById('bgcolor').value=='Connected' && c != 2){
+  popup.style.visibility='hidden';
+  wificonnect.src='../images/icons/internet/wificonnect.png';
+  wifiicon.style.visibility='visible';
+  splittab.style.left="385px";
+  Update();
+ }
+}
+function WGC(){
+if(top.icookies.document.getElementById('chkstart').value==''){
+setTimeout("window.location='desktop.htm'",200);
+}
+}
+WGC();
+</script>
+</head>
+<body style="margin: 0; padding: 0; height:272px; width:480px;" bgcolor="#999999">
+<div id="3dwin4" style="visibility:hidden; position:absolute; top:10px; left: 40px; width:150px; height:90px ; visibility: hidden; z-index:39;">
+<table width="150" height="90" background="../images/window/3dpreview.png" >
+<tr>
+<td align="center">
+<a href="#">
+<img id="3d4" src="" width="85" height="85"  onClick="hideMenu;document.getElementById('3dwin1').style.visibility='hidden';document.getElementById('3dwin2').style.visibility='hidden';document.getElementById('3dwinthree').style.visibility='hidden';document.getElementById('3dwin4').style.visibility='hidden';document.getElementById('resume').style.visibility='hidden';document.getElementById('splash').src='';openTab('3');"></a>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="3dwinthree" style="position:absolute; top:50; left:100; width:150; height:90; visibility:hidden; z-index:39;">
+<table width="150" height="90" background="../images/window/3dpreview.png" >
+<tr>
+<td align="center">
+<a href="#"><img id="3d3" src="" width="85" height="85"   onClick="hideMenu;document.getElementById('3dwin1').style.visibility='hidden';document.getElementById('3dwin2').style.visibility='hidden';document.getElementById('3dwinthree').style.visibility='hidden';document.getElementById('3dwin4').style.visibility='hidden';document.getElementById('resume').style.visibility='hidden';document.getElementById('splash').src='';openTab('2');"></a>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="3dwin2" style="position:absolute; top:90; left:160; width:150; height:90; visibility:hidden; z-index:39;">
+<table width="150" height="90" background="../images/window/3dpreview.png" >
+<tr>
+<td align="center">
+<a href="#"><img id="3d2" src="" width="85" height="85"   onClick="hideMenu;document.getElementById('3dwin1').style.visibility='hidden';document.getElementById('3dwin2').style.visibility='hidden';document.getElementById('3dwinthree').style.visibility='hidden';document.getElementById('3dwin4').style.visibility='hidden';document.getElementById('resume').style.visibility='hidden';document.getElementById('splash').src='';openTab('');"></a>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="3dwin1" style="position:absolute; top:130; left:220; width:150; height:90; z-index:39; visibility:hidden;" >
+<table width="150" height="90" background="../images/window/3dpreview.png" >
+<tr>
+<td align="center" ><a href="#"><img id="3d1" src="../images/window/flipdesktop.jpg" width="145" height="82"   onClick="hideMenu;document.getElementById('3dwin1').style.visibility='hidden';document.getElementById('3dwin2').style.visibility='hidden';document.getElementById('3dwinthree').style.visibility='hidden';document.getElementById('3dwin4').style.visibility='hidden';document.getElementById('resume').style.visibility='hidden';document.getElementById('splash').src='';"></a>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="lock"  name="lock" style="position: absolute; left: 141px; top: 90px; width: 200; height: 83px; z-index: 45; visibility:hidden;">
+<table width="" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><div id="userimage" style="position:absolute; left: 63px; top: -8px;" ><img src="../images/wallpapers/userface.png"/></div>
+      <img width="56" height="56" id="imgUserlogin" src="../images/menu/blank.gif"></td>
+  </tr>
+  <tr>
+    <td width="57%" align="center" class="login_pass"><img id="passpic" src="../images/password.png" height="20" width="65">
+    <input name="txtPassword" type="password" id="txtPassword" style="height:18">    
+    </td>
+  </tr>
+  <tr>
+    <td width="24">
+    <div id="gouser" style="position:absolute; left: 177px; top: 73px; visibility: hidden; z-index:39;" width="22" height="22"><img src="../images/icons/internet/foward.gif" alt=""  width="22" height="22" border="0" onClick="if(document.getElementById('txtPassword').value==top.icookies.document.getElementById('thepassword').value){ document.getElementById('resume').style.visibility='hidden';document.getElementById('lock').style.visibility='hidden';document.getElementById('gouser').style.visibility='hidden';document.getElementById('splash').src='';}else{alert('Incorrect Password');}"></div>
+     <div id="gouser2" style="position:absolute; left: 177px; top: 73px; visibility: hidden; z-index:39;" width="22" height="22"><img src="../images/icons/internet/foward.gif" alt=""  width="22" height="22" border="0" onClick="if(document.getElementById('txtPassword').value==top.icookies.document.getElementById('thepassword2').value){ document.getElementById('resume').style.visibility='hidden';document.getElementById('lock').style.visibility='hidden';document.getElementById('gouser').style.visibility='hidden';document.getElementById('splash').src='';}else{alert('Incorrect Password');}"></div>
+      <div id="gouser3" style="position:absolute; left: 177px; top: 73px;  visibility: hidden; z-index:39;" width="22" height="22"><img src="../images/icons/internet/foward.gif" alt=""  width="22" height="22" border="0" onClick="if(document.getElementById('txtPassword').value==top.icookies.document.getElementById('thepassword3').value){ document.getElementById('resume').style.visibility='hidden';document.getElementById('lock').style.visibility='hidden';document.getElementById('gouser').style.visibility='hidden';document.getElementById('splash').src='';}else{alert('Incorrect Password');}"></div>
+      </td>
+  </tr>
+</table>
+</div>
+
+<div id="UAC" style="position:absolute; left: 153px; top: 80px; visibility:hidden; z-index:47; height: 100px;">
+<table background="../images/window/UAC.jpg" width="200" height="111">
+<tr>
+<td width="30" height="31"></td>
+</tr>
+<tr>
+<td height="44"><img id="uacimg" src="" width="30" height="30"></td>
+<td width="158"><div align="left"><span id="UA" class="welcome_icon">.</span></div></td>
+</tr>
+<tr>
+<td>
+</td>
+<td height="18"> &nbsp; &nbsp;  &nbsp;  &nbsp; 
+  <input style="width: 60px; height:10px;" name="OK" id="OK" onClick="uac('1');" value="Continue"  align="right" type="button">
+  <input style="width: 60px; height:10px;" name="cancel" id="cancel" onClick="document.getElementById('resume').style.visibility='hidden';document.getElementById('splash').src='';document.getElementById('UA').innerHTML='';document.getElementById('uacimg').src='';document.getElementById('UAC').style.visibility='hidden';" value="Cancel"  align="right" type="button"></td>
+</tr>
+</table>
+</div>
+
+<div id="resume" style="position:absolute; left:0; top:0; visibility:hidden; z-index:38; width:480px; height:272px;" ><img src="" name="splash" width="480" height="272" border="0" onClick="if(document.getElementById('lock').style.visibility=='hidden'){document.getElementById('resume').style.visibility='hidden';document.getElementById('splash').src='';};" id="splash">
+<div id="preload" style="visibility:hidden; width:460px; height:272; position:absolute; top:0; left:0;">
+<iframe src="connect.html" width="1" height="1" scrolling="no" frameborder="0" style="visibility:hidden;"></iframe>
+<iframe src="" width="1" height="1" id="connect" scrolling="no" frameborder="0" style="visibility:hidden;"></iframe>
+<div id="welcomecheckbox" style="visibility:hidden; position:absolute; top:0; left:0;">
+<label><input type="checkbox" name="chkwelcome" id="chkwelcome" value=""></label>
+</div>
+</div>
+</div>
+<div id="tabWarn" style="position:absolute; left: 181px; top: 96px; z-index:38; visibility:hidden; width: 99px; height: 71px;">
+ <img src="../images/task.png" width="100" height="70" onClick="tabWarn.style.visibility='hidden'"/> </div>
+ 
+<div id="desktopimg" style="position:absolute; top:0; left:0; width: 480px; height:272px;" >
+<img alt="" src="" width="480" height="272" id="imgDesktop">
+<script language="javascript" type="text/javascript">
+setTimeout('ApplySettings();',500);
+setTimeout("showHideLayer('sidebar','visible');document.getElementById('resume').style.visibility='hidden';showHideLayer('Taskbar','visible');document.getElementById('splash').src='';", 1000);
+setTimeout('UpdateCan();',2000);
+setTimeout("userwelcomecenter();",5000);
+</script>
+</div>
+
+<div id="tab" style="position:absolute; left:84px; top:254px; width:100px; height:16; z-index:22; visibility: hidden;" onClick="openTab('');showHideLayer('imgwin','visible');showHideLayer('forward','visible'); showHideLayer('backward','visible');"><img alt="" src="../images/window/tab_down.png" name="imgTab" width="100" height="18" id="imgTab">
+
+<div id="tabinfo" style="position:absolute; left:0; top:0; width:100; height:18; z-index:35; visibility: hidden;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="18" style="z-index:30;" align="center" valign="middle"><img alt="" src="" width="14" height="14" id="tI"></td>
+<td width="82" style="z-index:30;" onMouseover="imgTab.src='../images/window/tab_over.png';document.getElementById('prevew1').style.visibility='visible';document.getElementById('taskpreview1').src=document.getElementById('tI').src;" onMouseout="imgTab.src='../images/window/tab_down.png';prevew1.style.visibility='hidden';"><font class="tab_font" size="2"><span id="tT">&nbsp;</span></font></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div id="tab2" style="position:absolute; left:187px; top:254px; width:100px; height:16; z-index:30; visibility: hidden;" onClick="openTab(2);showHideLayer('imgwin2','visible');showHideLayer('forward2','visible'); showHideLayer('backward2','visible');"><img alt="" src="../images/window/tab_down.png" name="imgTab2" width="100" height="18" id="imgTab2">
+<div id="tabinfo2" style="position:absolute; left:0; top:0; width:100; height:18; z-index:35; visibility: hidden;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="18" align="center" valign="middle"><img alt="" src="" width="14" height="14" id="tI2"></td>
+<td width="82" onMouseover="imgTab2.src='../images/window/tab_over.png';document.getElementById('taskpreview2').style.left=document.getElementById('tab2').style.left;document.getElementById('taskpreview2').src=document.getElementById('tI2').src;document.getElementById('prevew2').style.visibility='visible';" onMouseout="imgTab2.src='../images/window/tab_down.png';prevew2.style.visibility='hidden';"><font class="tab_font" size="2"><span id="tT2">&nbsp;</span></font></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div id="tab3" style="position:absolute; left:290px; top:254px; width:100px; height:16; z-index:22; visibility: hidden;" onClick="openTab(3);showHideLayer('imgwin3','visible');showHideLayer('forward3','visible'); showHideLayer('backward3','visible');"><img alt="" src="../images/window/tab_down.png" name="imgTab3" width="100" height="18" id="imgTab3">
+<div id="tabinfo3" style="position:absolute; left:0; top:0; width:100; height:16; z-index:30; visibility: hidden;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+<tr>
+<td width="18" align="center" valign="middle"><img alt="" src="" width="14" height="14" id="tI3"></td>
+<td width="82" onMouseover="imgTab3.src='../images/window/tab_over.png';document.getElementById('taskpreview3').src=document.getElementById('tI3').src;document.getElementById('prevew3').style.visibility='visible';" onMouseout="imgTab3.src='../images/window/tab_down.png';prevew3.style.visibility='hidden';"><font class="tab_font" size="2"><span id="tT3">&nbsp;</span></font></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div id="prevew1" style="position:absolute; left:84px; top:194px; visibility:hidden; z-index:40;" > 
+<table width="100" height="60" background="../images/window/windowpreview.png">
+<tr>
+<td align="center">
+<img id="taskpreview1" width="50" height="50" src="">
+</td>
+</tr>
+</table>
+</div>
+
+<div id="prevew2" style="position:absolute; left:187px; top:194px; visibility:hidden; z-index:40;" > 
+<table width="100" height="60" background="../images/window/windowpreview.png">
+<tr>
+<td align="center">
+<img id="taskpreview2" width="50" height="50" src="">
+</td>
+</tr>
+</table>
+</div>
+
+<div id="prevew3" style="position:absolute; left:290px; top:194px; visibility:hidden; z-index:40;" > 
+<table width="100" height="60" background="../images/window/windowpreview.png">
+<tr>
+<td align="center">
+<img id="taskpreview3" width="50" height="50" src="">
+</td>
+</tr>
+</table>
+</div>
+
+
+<div id="ietaskbar" style="position:absolute; left:35px; top:255px; width:15px; height:15px; z-index:27; visibility: visible;"><a href="#a" onClick="setTitle('1','Windows Internet Explorer','../programfiles/apps/internet/index.htm','../images/icons/internet.png');" >
+<img alt="" src="../images/icons/menu/apps/ie.png" width="15" height="15" border="0"></a></div>
+
+<div id="Desktop" style="position:absolute; left:52px; top:257px; width:15px; height:15px; z-index:27; visibility: visible;"><a href="#a" onClick="hideMenu;document.getElementById('resume').style.visibility='hidden';document.getElementById('3dwin1').style.visibility='hidden';document.getElementById('3dwin2').style.visibility='hidden';document.getElementById('3dwin3').style.visibility='hidden';document.getElementById('3dwin4').style.visibility='hidden';windowMin('3');windowMin('2');windowMin('');showHideLayer('sidebari','hidden');showHideLayer('sidebar','hidden');SideBarHide();document.getElementById('mlinks').style.visibility='hidden';document.getElementById('recent').style.visibility='hidden';" >
+<img alt="" src="../images/icons/Desktop/showdesktop.jpg" width="13" height="10" border="0"></a></div>
+
+<div id="Showalltaskbar" style="position:absolute; left:68px; top:257px; width:15px; height:15px; z-index:27; visibility: visible;"><a href="#a" onClick="flipthreed();" >
+<img alt="" src='../images/icons/Desktop/flip3d.jpg' width="13" height="10" border="0"></a></div>
+
+<div id="startoff" style="position:absolute; left:0px; top:248px; width:0px; height:18px; z-index:33; visibility: visible;"><a href="javascript:;" onClick="ApplySettings();showHideLayer('menu','visible');showHideLayer('frameone','visible');showHideLayer('allprograms','visible');windowMin('');windowMin(2);windowMin(3);showHideLayer('startoff','hidden');showHideLayer('menuback','hidden');showHideLayer('winbak','hidden');showHideLayer('frametwo','hidden');deScr();"><img alt="" src="../images/sbutton.gif" name="imgstartbutton2" border=0 id="imgstartbutton2" onMouseOver="document.getElementById('imgstartbutton2').src='../images/sbutton_over.gif';" onMouseOut="document.getElementById('imgstartbutton2').src='../images/sbutton.gif';"></a></div>
+
+<div id="orb" style="position:absolute; top:248px; left:0px; z-index:32;"><a href="javascript:;" onClick="hideMenu();"><img alt="" src="../images/sbuttondown.gif" name="imgstartbutton" border="0" id="imgstartbutton"></a></div>
+
+
+<div id="Taskbar" style="position: absolute; left:0px; top:248px; width:480px; height:1px; z-index:8; visibility: visible;" onClick="document.getElementById('progMax').style.visibility='hidden';">
+<table width="480" height="24" valign="top" background="../images/start.png">
+<tr>
+<td>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div id="splittab" valign="bottom" style="position:absolute; top:247px; left:415px; width:10; height:21px; visibility: visible; z-index:37;">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td valign="middle" width="0" onClick="showHideLayer('splittab2','visible');showHideLayer('splittab','hidden');wifiicon.style.visibility='visible';document.getElementById('updatemini').style.visibility='visible';">
+<img src="../images/taskbar_split.PNG" border="0"></td>
+</tr>
+</table>
+</div>
+
+
+<div id="splittab2" style="position: absolute; top:247px; left:364px; width:90; height:24; visibility: hidden; z-index:38;"> 
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="center" valign="middle" width="10" onClick="showHideLayer('splittab','visible');showHideLayer('splittab2','hidden');document.getElementById('updatemini').style.visibility='hidden';">
+<img src="../images/taskbar_split2.PNG" border="0"></td>
+<td width="80" height="18">
+<div style="position:absolute; top:7px; left:9px; width:15; height:15;">
+<a href="javascript:;" onClick="setTitle('1','Antivirus','../programfiles/apps/antivirus/index.html','../images/icons/menu/apps/antivirus.png');"><img alt="" src="../images/icons/menu/apps/antivirus.png" width="15" height="15" border="0"></a></div>
+
+<div id="wifiicon" style="position:absolute; top:7px; left:37px; width:15; height:15;">
+<a href="javascript:;" ><img id="wificonnect" alt="" onClick="Connect(1);" src="../images/icons/internet/wifi.png" width="15" height="15" border="0"></a></div>
+<div id="updatemini" style="position: absolute; top:7px; left:24px; width:15; height:15;">
+<a href="javascript:;" onClick="setTitle('25','Update','../programfiles/apps/controlpanel/updates.htm','../images/icons/menu/apps/updates.png');"><img alt="" src="../images/icons/menu/apps/updates.png" width="15" height="15" border="0"></a></div></td>
+</tr>
+</table>
+</div>
+
+
+<div id="sClock" align="center" valign="right" height="20" style="position:absolute; top:251px; left:423px; z-index:38; border:thick; border:#000000;"><small><span id="tP" class="time_text">00:00</span></small>
+<script type="text/javascript">setTimeout('theClock();',250);</script></div>
+
+<div id="welcomecenter" style="position:absolute; left:40px; top:20px; width:400px; height:200px; z-index:2; visibility: hidden;">
+<table width="400" height="200" border="0" cellpadding="0" cellspacing="0" background="../programfiles/apps/welcomecenter/bg.png">
+ <tr>
+  <td CLASS="login_title" COLSPAN="2" HEIGHT="15" valign="bottom">Playstation Portable</td>
+ </tr>
+ <tr>
+  <td CLASS="menu_text" HEIGHT="65" WIDTH="78"></td>
+  <td CLASS="menu_text">
+	pspWvista Windows Vista 1.0 
+	<br>MIPS R4000 32 bit Core (System clock frequency 1~333MHz)
+	<br>4MB embedded eDRAM 
+	<br>IEEE 802.11b (WiFi)
+  </td>
+ </tr>
+ <tr>
+  <td COLSPAN="2">
+	<table border="0" cellpadding="2" cellspacing="2">
+	 <tr>
+	  <td><img src="../programfiles/apps/welcomecenter/details.png" border="0"></td>
+	  <td><a CLASS="welcome_icon" href="#a" onClick="setTitle('1','System Info','../programfiles/apps/controlpanel/system.htm','../images/icons/menu/apps/systeminfo.gif');">Computer details</a></td>
+	
+	  <td><img src="../programfiles/apps/welcomecenter/controlpanel.png" border="0"></td>
+	  <td><a CLASS="welcome_icon" href="#a" onClick="setTitle('0','Control Panel','../programfiles/apps/controlpanel/index.htm','../images/icons/menu/controlpanel.png');">Control panel</a></td>
+	 </tr>
+	 <tr>
+	  <td><img src="../programfiles/apps/welcomecenter/internet.png" border="0"></td>
+	  <td><a CLASS="welcome_icon" href="#a" onClick="Connect(1);">Connect to the internet</a></td>
+	
+	  <td><img src="../programfiles/apps/welcomecenter/whatsnew.png" border="0"></td>
+	  <td><a CLASS="welcome_icon" href="#a" onClick="setTitle('25','Update','../programfiles/apps/controlpanel/update/index.htm','../images/icons/menu/apps/update.png');">Whats new in windows vista</a></td>
+	 </tr>
+	 <tr>
+	  <td><img src="../programfiles/apps/welcomecenter/learn.png" border="0"></td>
+	  <td><a CLASS="welcome_icon" href="#a" onClick="openInBrowser('http://www.blazebyte.org/community/');">Go online to learn about BlazeByte</a></td>
+	
+	  <td><img src="../programfiles/apps/welcomecenter/market.png" border="0"></td>
+	  <td><a CLASS="welcome_icon" href="#a" onClick="openInBrowser('http://www.blazebyte.net/downloads/');">Go to the marketplace</a></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td COLSPAN="2" CLASS="welcome_icon">
+	
+  </td>
+ </tr>
+</table>
+</div>
+<div id="welcomecenterexit" style="position:absolute; left:405px; top:22px; z-index:22; visibility: hidden;"><a href="#a" onClick="showHideLayer('welcomecenter','hidden');showHideLayer('welcomecenterexit','hidden');hidden();"><img src="../images/window/exit.png" border="0" onMouseover="this.src='../images/window/exit_over.png';" onMouseOut="this.src='../images/window/exit.png';"></a>
+</div>
+
+<div id="Desktopicons" style="position:absolute; left:0px; top:0px; width:470px; height:269px; z-index:1; visibility: visible;" onMouseover="showHideLayer('splittab2','hidden');showHideLayer('splittab','visible');">      
+<table width="480" height="250" border="0" cellpadding="0" cellspacing="0" onClick="hideMenu();" id="desktop2">
+<tr>
+<td width="480">
+<div id="lSelectIcons" style="position:absolute; left:0px; top:0px; width:160; height:260px; z-index:2; visibility: visible;">
+<div id="select1" style="position:absolute; left:8px; top:9px; background:none;" >
+<img id="selecticon1" src="../images/menu/blank.gif" width="54" height="54"/></div>
+<div id="select2" style="position:absolute; left:8px; top:63px; background:none;" >
+<img id="selecticon2" src="../images/menu/blank.gif" width="54" height="54"/></div>
+<div id="select3" style="position:absolute; left:8px; top:117px; background:none;" >
+<img id="selecticon3" src="../images/menu/blank.gif" width="54" height="54"/></div>
+<div id="select4" style="position:absolute; left:8px; top:171px; background:none;" >
+<img id="selecticon4" src="../images/menu/blank.gif" width="54" height="54"/></div>
+<div id="select5" style="position:absolute; left:64px; top:9px; background:none;" >
+<img id="selecticon5" src="../images/menu/blank.gif" width="54" height="54"/></div>
+<div id="select6" style="position:absolute; left:64px; top:63px; background:none;" >
+<img id="selecticon6" src="../images/menu/blank.gif" width="54" height="54"/></div>
+<div id="select7" style="position:absolute; left:64px; top:117px; background:none;" >
+<img id="selecticon7" src="../images/menu/blank.gif" width="54" height="54"/></div>
+<div id="select8" style="position:absolute; left:64px; top:171px; background:none;" >
+<img id="selecticon8" src="../images/menu/blank.gif" width="54" height="54"/></div>
+<div id="select9" style="position:absolute; left:335px; top:9px; background:none;" >
+<img id="selecticon9" src="../images/menu/blank.gif" width="54" height="54"/></div>
+</div>
+<div id="lIcons" style="position:absolute; left:0px; top:0px; width:160; height:260px; z-index:4; visibility: visible;">
+<div id="testicon" style="position:absolute; left:8px; top:9px; background:none;" >
+<a href="#a"><img src="../images/icons/Desktop/internet.png" width="54" height="54" 
+onMouseOver="document.getElementById('selecticon1').src='../images/icons/desktop/select.png';" 
+onMouseOut="if(clickx==1){document.getElementById('selecticon1').src='../images/icons/desktop/select.png';}else{document.getElementById('selecticon1').src='../images/menu/blank.gif';clickx=0;}" 
+onClick="clickx++;if(clickx==1){document.getElementById('selecticon1').src='../images/icons/desktop/select.png';}else if(clickx==2){setTitle('1','Windows Internet Explorer','../programfiles/apps/internet/index.htm','../images/icons/internet.png');clickx=0;}"/></a></div>
+
+<div id="testicon2" style="position:absolute; left:8px; top:63px;">
+<a href="#a"><img src="../images/icons/Desktop/txtedit.png"  
+onMouseOver="document.getElementById('selecticon2').src='../images/icons/desktop/select.png';" 
+onMouseOut="if(clickx2==1){document.getElementById('selecticon2').src='../images/icons/desktop/select.png';}else{document.getElementById('selecticon2').src='../images/menu/blank.gif';}" 
+onClick="clickx2++;if(clickx2==1){document.getElementById('selecticon2').src='../images/icons/desktop/select.png';}else if(clickx2==2){clickx2=0;setTitle('1','Word Pad','../programfiles/apps/texteditor/textedit.htm','../images/icons/txtedit.png');}"/></a></div>
+
+<div id="testicon3" style="position:absolute; left:8px; top:117px;">
+<a href="#a"><img src="../images/icons/Desktop/calc.png"  
+onMouseOver="document.getElementById('selecticon3').src='../images/icons/desktop/select.png';" 
+onMouseOut="if(clickx3==1){document.getElementById('selecticon3').src='../images/icons/desktop/select.png';}else{document.getElementById('selecticon3').src='../images/menu/blank.gif';}" 
+onClick="clickx3++;if(clickx3==1){document.getElementById('selecticon3').src='../images/icons/desktop/select.png';}else if(clickx3==2){clickx3=0;setTitle('1','Calculator','../programfiles/apps/basiccalculator.htm','../images/icons/calc.png');}"/></a></div>
+
+<div id="testicon4" style="position:absolute; left:8px; top:171px;">
+<a href="#a"><img src="../images/icons/Desktop/antivirus.png"  
+onMouseOver="document.getElementById('selecticon4').src='../images/icons/desktop/select.png';" 
+onMouseOut="if(clickx4==1){document.getElementById('selecticon4').src='../images/icons/desktop/select.png';}else{document.getElementById('selecticon4').src='../images/menu/blank.gif';}" 
+onClick="clickx4++;if(clickx4==1){document.getElementById('selecticon4').src='../images/icons/desktop/select.png';}else if(clickx4==2){clickx4=0;setTitle('1','Antivirus','../programfiles/apps/antivirus/index.html','../images/icons/menu/apps/antivirus.png');}"></a></div>
+
+<div id="testicon5" style="position:absolute; left:64px; top:9px;">
+<a href="#a"><img src="../images/icons/Desktop/games.png"  
+onMouseOver="document.getElementById('selecticon5').src='../images/icons/desktop/select.png';" 
+onMouseOut="if(clickx5==1){document.getElementById('selecticon5').src='../images/icons/desktop/select.png';}else{document.getElementById('selecticon5').src='../images/menu/blank.gif';}" 
+onClick="clickx5++;if(clickx5==1){document.getElementById('selecticon5').src='../images/icons/desktop/select.png';}else if(clickx5==2){clickx5=0;setTitle('1','Games','../user/menus/games.html','../images/icons/games.png','1');}"/></a></div>
+
+<div id="testicon6" style="position:absolute; left:64px; top:63px;">
+<a href="#a"><img src="../images/icons/Desktop/icon.png" 
+onMouseOver="document.getElementById('selecticon6').src='../images/icons/desktop/select.png';" 
+onMouseOut="if(clickx6==1){document.getElementById('selecticon6').src='../images/icons/desktop/select.png';}else{document.getElementById('selecticon6').src='../images/menu/blank.gif';}"
+onClick="clickx6++;if(clickx6==1){document.getElementById('selecticon6').src='../images/icons/desktop/select.png';}else if(clickx6==2){clickx6=0;alert('Please go to the radio player to use Media Center');}"/></a></div>
+
+<div id="testicon7" style="position:absolute; left:64px; top:117px;">
+<a href="#a"><img src="../images/icons/Desktop/psptunes.png"  
+onMouseOver="document.getElementById('selecticon7').src='../images/icons/desktop/select.png';" 
+onMouseOut="if(clickx7==1){document.getElementById('selecticon7').src='../images/icons/desktop/select.png';}else{document.getElementById('selecticon7').src='../images/menu/blank.gif';}" 
+onClick="clickx7++;if(clickx7==1){document.getElementById('selecticon7').src='../images/icons/desktop/select.png';}else if(clickx7==2){clickx7=0;setTitle('1','Windows Media Player ','../programfiles/apps/WMP/index.html','../images/icons/psptunes.png');}"/></a></div>
+
+<div id="testicon8" style="position:absolute; left:64px; top:171px;">
+<a href="#a"><img src="../images/icons/Desktop/mypsp.png"  
+onMouseOver="document.getElementById('selecticon8').src='../images/icons/desktop/select.png';"
+onMouseOut="if(clickx8==1){document.getElementById('selecticon8').src='../images/icons/desktop/select.png';}else{document.getElementById('selecticon8').src='../images/menu/blank.gif';}"
+onClick="clickx8++;if(clickx8==1){document.getElementById('selecticon8').src='../images/icons/desktop/select.png';}else if(clickx8==2){clickx8=0;document.getElementById('welcomecenter').style.visibility='visible';document.getElementById('welcomecenterexit').style.visibility='visible';}"/></a></div>
+
+<div id="recycle" style="position:absolute; left:335px; top:9px;">
+<a href="#a"><img id="bin" src="../images/icons/Recycle Bin Empty.png"  
+onMouseOver="document.getElementById('selecticon9').src='../images/icons/desktop/select.png';" 
+onMouseOut="if(clickx9==1){document.getElementById('selecticon9').src='../images/icons/desktop/select.png';}else{document.getElementById('selecticon9').src='../images/menu/blank.gif';}document.getElementById('selecticon9').src='../images/menu/blank.gif';" 
+onClick="clickx9++;if(clickx9==1){document.getElementById('selecticon9').src='../images/icons/desktop/select.png';}else if(clickx9==2){clickx9=0;removeSettings();}"/></a></div>
+</div>
+<div align="right">
+<div id="sidehide"  style="position:absolute; left:439px; top:3px; width:15px; height:15px; z-index:24; visibility: visible;"><a href="#a">
+<img alt="" src="../images/Menu/sideshow.png" width="15" height="19" border="0" onClick="showHideLayer('sidebari','visible');showHideLayer('sidebar','visible');SideBarShow();"/></a></div>
+<div id="sidehide"  style="position:absolute; left:454px; top:3px; width:15px; height:15px; z-index:24; visibility: visible;"><a href="#a">
+<img alt="" src="../images/Menu/sidehide.png" width="15" height="19" border="0" onClick="showHideLayer('sidebari','hidden');showHideLayer('sidebar','hidden');SideBarHide();"/></a></div>
+<div id="popup2" style="text-align: left; width: 180px; height: 70px; position: absolute; left:230px; top:180px; visibility: hidden; z-index: 15;">
+<table background="../images/check-update.png"  border="0" cellpadding="0" cellspacing="0" width="180" height="70">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="2" align="left"
+ valign="middle" ><a href="#a"><img onClick="setTitle('1','Update','../programfiles/apps/controlpanel/updates.htm','../images/icons/menu/apps/updates.png');"  src="../images/menu/blank.gif" width="149" height="50" border="0"></a></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 15px; width: 15px; z-index:20;"><div style="position:absolute; left: 158px; top: 6px;"><a href="#a"><img onClick="showHideLayer('popup2','hidden');"   src="../images/close.png" width="17" height="16" border="0" onMouseOver="this.src='../images/close-down.png';" onMouseOut="this.src='../images/close.png';"></a></div></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div id="popup" style="text-align: left; width: 180px; height: 70px; position: absolute; left:230px; top:180px; visibility: visible; z-index: 25;">
+<table  background="../images/check-online.png"  border="0" cellpadding="0" cellspacing="0" width="180" height="70">
+  <tbody>
+    <tr>
+
+      <td colspan="1" rowspan="2" align="left"
+ valign="middle" ><a href="#a"><img onClick="Connect(1);"  src="../images/menu/blank.gif" width="149" height="50" border="0"></a></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 15px; width: 15px; z-index:20;"><div style="position:absolute; left: 158px; top: 6px;"><a href="#a"><img onClick="showHideLayer('popup','hidden');"   src="../images/close.png" width="17" height="16" border="0" onMouseOver="this.src='../images/close-down.png';" onMouseOut="this.src='../images/close.png';"></a></div></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div id="sidebars" name="sidebars" align="right" valign="top"  style="z-index:9; visibility: hidden;" onMouseOver="sidebarimg.src='../images/menu/sidebar_over.png'; " onMouseOut="sidebarimg.src='../images/menu/sidebar.png';" > 
+ <table id="sidebar" width="70" height="250" border="0" align="top" cellpadding="0" >
+    <tr>
+      <th height="247" scope="row"><div align="center" >   
+<div id="date" style="position:absolute; top: 22px; left: 406px; z-index:10;">
+<table height="75" width="68" border="0" align="top" background="../images/date.png">
+<tr class="sidebar_text">
+<td rowspan="2" align="center" onClick="showHideLayer('datefull','visible');document.getElementById('radiolist').style.visibility='hidden';">
+<script type="text/javascript">
+var d=new Date()
+var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write(monthname[d.getMonth()])
+document.write("<br><font size='8' color='#ffffff'><b>")
+document.write(d.getDate())
+document.write("</font></b>")
+document.write("<br>")
+document.write(weekday[d.getDay()])
+</script></td>
+</tr>
+</table>
+</div>
+<div id="datefull" style="position:absolute; top: 19px; left: 348px; z-index:17; visibility:hidden">
+<table height="141" width="127" border="0" align="top" background="../images/datefull.png">
+<tr class="sidebar_text">
+<td rowspan="2" align="center" onClick="showHideLayer('datefull','Hidden');document.getElementById('radiolist').style.visibility='visible';">
+<script type="text/javascript" src="javascripts/calender.js"></script>
+</td>
+</tr>
+</table>
+</div>
+<div id="loadablegadget" style="position:absolute; top: 105px; left: 410px; z-index:10; width:70; height:70;" >
+<script language="javascript" type="text/javascript" src="gadget.js">
+</script> 
+</div>
+<div id="googleit" style="position:absolute; left: 397px; top: 202px; width: 82px; height: 39px; z-index:10;">
+<div id="googlebak" style="position:absolute; left: 1px; top: 3px; width: 77px; height: 56px; z-index:8;">
+<img src="../images/google.png"></div>
+ <form>
+<input id="search_field" type="text2"  value="Search"  maxlength="2048" width="20" height="8" style="position:absolute; left: 15px; top: 20px;">
+     <input id="search_button"  type="image" value="Search" style="position:absolute; left: 45px; top: 6px; z-index:12;" src="../images/searchbtn720.png" alt="Search" onClick="googlePSP(document.getElementById('search_field').value);" />
+   </form>
+ </div>
+ </div>
+ </th>
+</tr>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="sidebari"  name="sidebari" align="right" valign="top" style="position:absolute; top:0px; left:390px;"><img id="sidebarimg" src="../images/menu/sidebar.png" width="90" height="252" onMouseOver="this.src='../images/menu/sidebar_over.png';" onMouseOut="this.src='../images/menu/sidebar.png';"></div>
+
+
+<div id="menu" style="position:absolute; left:1px; top:52px; width:0px; height:199px; z-index:20; visibility: hidden;">
+<div id="userlogin" style="position:absolute; left:125px; top:-10px; width:30px; height:30px; z-index:25;"><a href="#a"><img name="user1" id="user1" border="0" width="25" height="25" src=""></a></div>
+
+
+<div id="menuimgover" style="position:absolute; left:119px; top:-14px; width:35px; height:35px; z-index:28;" onClick="setTitle('0','User Edit','../programfiles/apps/controlpanel/login.htm','../images/icons/menu/controlpanel.png');"><a href="#a"><img name="userface" id="userface" border="0" src="../images/wallpapers/userface.png" width="35" height="35"></a></div>
+<table style="text-align:left; width:175px; height:200px; z-index:20;" border="0" cellpadding="0" cellspacing="0" background="../images/menu/menu.png">  
+<tbody>
+<tr width="105" class="menu_text" align="right" height="200" valign="middle">
+<td colspan="2" rowspan="9">
+ <div id="frameone" name="frameone" style="position:absolute; top: -3px; height: 185px; left: 2px; width: 95px; visibility: hidden;" >
+   <table width="100" height="168" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table width="100" height="137" border="0" cellpadding="0" cellspacing="0">
+     <tbody>
+       <tr>
+         <td width="4" height="28"></td>
+         <td style="width: 20px;"><img style="width: 90px; height: 20px;" alt="" src="../images/menu/internet_menu.png" onMouseOver="this.src='../images/menu/internet_menu_over.png';" onMouseOut="this.src='../images/menu/internet_menu.png';" onClick="setTitle('1','Internet','../programfiles/apps/internet/index.htm','../images/icons/menu/apps/internet.png');"></td>
+       </tr>
+       <tr>
+         <td width="4" height="22"></td>
+         <td><img style="width: 90px; height: 20px;" alt="" src="../images/menu/email_menu.png" onMouseOver="this.src='../images/menu/email_menu_over.png';" onMouseOut="this.src='../images/menu/email_menu.png';" onClick="setTitle('1','Windows Internet Explorer','../programfiles/apps/internet/index.htm','../images/icons/internet.png');"> </td>
+       </tr>
+       <tr>
+         <td width="4" height="20"></td>
+         <td><img style="width: 90px; height: 20px;" alt="" src="../images/menu/welcome_menu.png" onMouseOver="this.src='../images/menu/welcome_menu_over.png';" onMouseOut="this.src='../images/menu/welcome_menu.png';" onClick="hideMenu();document.getElementById('welcomecenter').style.visibility='visible';document.getElementById('welcomecenterexit').style.visibility='visible';"></td>
+       </tr>
+       <tr>
+         <td width="4" height="20"></td>
+         <td><img style="width: 90px; height: 20px;" alt="" src="../images/menu/itunes_menu.png" onMouseOver="this.src='../images/menu/itunes_menu_over.png';" onMouseOut="this.src='../images/menu/itunes_menu.png';" onClick="setTitle('1','WMP','../programfiles/apps/WMP/index.html','../images/icons/menu/psptunes.png');"></td>
+       </tr>
+       <tr>
+         <td width="4" height="20"></td>
+         <td><img style="width: 90px; height: 20px;" alt="" src="../images/menu/msn_menu.png" onMouseOver="this.src='../images/menu/msn_menu_over.png';" onMouseOut="this.src='../images/menu/msn_menu.png';" onClick="setTitle('1','Windows Live Messanger','../programfiles/apps/msn/index.htm','../images/icons/menu/apps/msnmessenger.png');"></td>
+       </tr>
+       <tr>
+         <td width="4" height="20"></td>
+         <td><img style="width: 90px; height: 20px;" alt="" src="../images/menu/update_menu.png" onMouseOver="this.src='../images/menu/update_menu_over.png';" onMouseOut="this.src='../images/menu/update_menu.png';" onClick="setTitle('25','Update','../programfiles/apps/controlpanel/updates.htm','../images/icons/menu/apps/updates.png');"></td>
+       </tr>
+     </tbody>
+   </table></td>
+</tr>
+ </tbody>
+ </table>
+
+      </div>
+
+      <a href="#a">
+      <div id="menuback" name="menuback" visibility="hidden" style="position: absolute; left: 6px; top: 162px; width: 95px; height: 14px; z-index: 30;"><img alt="Go to lastpage" src="../images/menu/back.gif" onMouseOver="this.src='../images/menu/back_over.gif';" onMouseOut="this.src='../images/menu/back.gif';" onClick="showHideLayer('allprograms','visible');frames['frametwof'].location='../user/menus/menuappslist.htm';showHideLayer('frameone','visible');showHideLayer('frametwo','hidden');showHideLayer('back','hidden');" border="0" height="14" width="95"></div>
+
+      <div id="allprograms" visibility="visible" name="allprograms" style="position: absolute; left: 6px; top: 162px; width: 95px; height: 14px; z-index: 30;"><img alt="Go to lastpage" src="../images/menu/allprograms.gif" onMouseOver="this.src='../images/menu/allprograms_over.gif';" onMouseOut="this.src='../images/menu/allprograms.gif';" onClick="frames['frametwof'].location='../user/menus/menuappslist.htm';showHideLayer('allprograms','hidden');showHideLayer('frameone','hidden');showHideLayer('frametwo','visible');showHideLayer('menuback','visible');" border="0" height="14" width="95"></div>
+
+      </a>
+      <div id="frametwo" name="frametwo"  style="position: absolute; left: 4px; top: 11px; width: 100px; height: 195px; z-index: 23; visibility: hidden;">
+        <iframe id="frametwof" name="frametwof" src="" style="width: 100px; height: 150px;" frameborder="0" ></iframe></div>
+</td>
+</tr>
+<tr class="menu_text"> 
+<td>
+</td>  
+</tr>    
+<tr class="menu_text">
+<td colspan="4" rowspan="1"><div id="docmenu" style="position:absolute; left:110px; top:32px;"><a href="#a"><img src="../images/menu/words/doc.png" onMouseover="this.src='../images/menu/words/doc_over.png';user1.src='../images/icons/folder.png';document.getElementById('userface').src='../images/menu/blank.gif';" onMouseout="this.src='../images/menu/words/doc.png';document.getElementById('userface').src='../images/wallpapers/userface.png';ApplySettings();" onClick="setTitle('1','User Additions','../user/menus/menuappslistuser.htm','../images/icons/menu/run.png');" ></a></div>
+</td>
+</tr>
+<tr class="menu_text">
+<td colspan="4" rowspan="1"><div id="gamemenu" style="position:absolute; left:110px; top:52px;"><a href="#a"><img src="../images/menu/words/Games.png" onMouseover="this.src='../images/menu/words/ga_over.png';user1.src='../images/icons/games.png';document.getElementById('userface').src='../images/menu/blank.gif';" onMouseout="this.src='../images/menu/words/Games.png';document.getElementById('userface').src='../images/wallpapers/userface.png';ApplySettings();" onClick="setTitle('1','Games','../user/menus/games.html','../images/icons/games.png','1');"/></a></div>
+</td>
+</tr>
+<tr class="menu_text"> 
+<td colspan="4" rowspan="1" ><div id="compemenu" style="position:absolute; left:110px; top:93px;"><a href="#a"><img src="../images/menu/words/Mypsp.png" onMouseover="this.src='../images/menu/words/my_over.png';user1.src='../images/icons/mypsp.png';document.getElementById('userface').src='../images/menu/blank.gif';" onMouseout="this.src='../images/menu/words/mypsp.png';document.getElementById('userface').src='../images/wallpapers/userface.png';ApplySettings();"
+onClick="setTitle('1','My PSP','../programfiles/apps/filebrowse/index.htm','../images/icons/mypsp.png');" /></a></div>
+</td>    
+</tr>
+<tr class="menu_text"> 
+<td colspan="4" rowspan="1" >
+<div id="recentbutton" style="position:absolute; left: 110px; top:73px;"><a href="#a"><img src="../images/menu/words/recent.png" onMouseover="this.src='../images/menu/words/recent_over.png';user1.src='../images/icons/mypsp.png';document.getElementById('userface').src='../images/menu/blank.gif';" onMouseout="this.src='../images/menu/words/recent.png';document.getElementById('userface').src='../images/wallpapers/userface.png';ApplySettings();" onClick="document.getElementById('recent').style.visibility='visible';"/></a></div>
+</td>    
+</tr>    
+<tr class="menu_text">      
+<td colspan="4" rowspan="1"><div id="conmenu" style="position:absolute; left:110px; top:114px;"><a href="#a"><img src="../images/menu/words/control.png" onClick="setTitle('0','Control Panel','../programfiles/apps/controlpanel/index.htm','../images/icons/menu/controlpanel.png');" onMouseover="this.src='../images/menu/words/con_over.png';user1.src='../images/icons/menu/controlpanel.png';document.getElementById('userface').src='../images/menu/blank.gif';" onMouseout="this.src='../images/menu/words/control.png';document.getElementById('userface').src='../images/wallpapers/userface.png';ApplySettings();"/></a></div>
+</td>   
+</tr> 
+<tr class="menu_text">
+<td colspan="4" rowspan="1"><div id="forummenu" style="position:absolute; left:110px; top:135px;"><a href="#a"><img src="../images/menu/words/forum.png" onClick="openInBrowser('http://www.blazebyte.org');" onMouseover="this.src='../images/menu/words/for_over.png';user1.src='../images/icons/internet.png';document.getElementById('userface').src='../images/menu/blank.gif';" onMouseout="this.src='../images/menu/words/forum.png';document.getElementById('userface').src='../images/wallpapers/userface.png';ApplySettings();"/></a>
+</div>
+</td>   
+</tr>    
+<tr class="menu_text">
+<td colspan="4" rowspan="1"><div id="helpmenu" style="position:absolute; left:110px; top:155px;"><a href="#a"><img src="../images/menu/words/support.png" onClick="setTitle('1','Help Center','../system/help.htm','../images/icons/menu/help.png');" onMouseover="this.src='../images/menu/words/sup_over.png';user1.src='../images/icons/menu/help.png';document.getElementById('userface').src='../images/menu/blank.gif';" onMouseout="this.src='../images/menu/words/support.png';document.getElementById('userface').src='../images/wallpapers/userface.png';ApplySettings();"/></a></div>
+</td>    
+</tr> 
+<tr>  
+<td onClick="" width="20"><div id="search" style="position:absolute; left:80px; top: 180px;"><img src="../images/menu/search.png" width="26" height="16" onClick="searchone();"/></div></td>
+<td width="4"></td>
+<td align="right" valign="middle" cellpadding="" cellspacing="0">
+<div id="sleep" style="position:absolute; left:111px; top: 187px;"><a class="astart_dark" href="#a"><img src="../images/menu/off.png" width="24" height="10" border="0" onMouseOver="this.src='../images/menu/off_over.png';" onMouseOut="this.src='../images/menu/off.png';" onClick="hideMenu();sw_sleep();"></a></div></td>
+
+<td align="center" valign="middle" cellpadding="0" cellspacing="0">
+<div id="lock" style="position:absolute; left:135px; top: 187px;"><a  href="#a"><img src="../images/menu/logoff.png" width="24" height="10" border="0" onMouseOver="this.src='../images/menu/logoff_over.png';" onMouseOut="this.src='../images/menu/logoff.png';" onClick="if(top.icookies.document.getElementById('user').value=='1'){ document.getElementById('gouser').style.visibility='visible';document.getElementById('splash').src='../images/shade3.png';document.getElementById('resume').style.visibility='visible';document.getElementById('lock').style.visibility='visible';document.getElementById('gouser').style.visibility='visible';} else if(top.icookies.document.getElementById('user').value=='2'){ document.getElementById('gouser2').style.visibility='visible';document.getElementById('splash').src='../images/shade3.png';document.getElementById('resume').style.visibility='visible';document.getElementById('lock').style.visibility='visible';document.getElementById('gouser').style.visibility='visible';} else if(top.icookies.document.getElementById('user').value=='3'){ document.getElementById('gouser3').style.visibility='visible';document.getElementById('splash').src='../images/shade3.png';document.getElementById('resume').style.visibility='visible';document.getElementById('lock').style.visibility='visible';document.getElementById('gouser').style.visibility='visible';};showHideLayer('portalmenu','hidden');showHideLayer('login','visible');hideMenu();" /></a></div>
+</td>
+<td align="left" valign="middle" onClick="showHideLayer('mlinks','visible');" cellpadding="0" cellspacing="0">
+<div id="other" style="position:absolute; left:159px; top: 187px;"><a href="#a"><img src="../images/menu/other.png" width="10" height="10" border="0" onMouseOver="this.src='../images/menu/other_over.png';" onMouseOut="this.src='../images/menu/other.png';"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="searchmenu" style="position:absolute; left: 2px; top: 176px;">
+<table>
+<tr>
+<td width="70" height="20" align="left">
+<form method="get" target="parent" id="searchForm"  >
+  <input name="Searchbox" type="text" id="Searchbox" value="Search" size="10" hspace="0" vspace="0">
+</form>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="mlinks" style="position:absolute; left:169px; top:180px; width:60px; height:60px; z-index:28; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000; visibility: hidden;"  >
+<table width="61" border="0" cellpadding="0" cellspacing="0" height="70" background="../images/menu/words/Action menu.png">
+<tr>
+<td height="11px" id="logoffmenu"><a href="#a"><img src="../images/menu/words/Log Off.png" onMouseOver="this.src='../images/menu/words/log off_over.png';" onMouseOut="this.src='../images/menu/words/Log Off.png';" onClick="window.location='login.htm';"></a></td>
+</tr>
+<tr>
+<td height="11px" id="lockmenu"><a href="#a"><img src="../images/menu/words/lock.png" onMouseOver="this.src='../images/menu/words/lock_over.png';" onMouseOut="this.src='../images/menu/words/lock.png';" onClick="if(top.icookies.document.getElementById('user').value=='1'){ document.getElementById('gouser').style.visibility='visible';document.getElementById('splash').src='../images/shade3.png';document.getElementById('resume').style.visibility='visible';document.getElementById('lock').style.visibility='visible';document.getElementById('gouser').style.visibility='visible';} else if(top.icookies.document.getElementById('user').value=='2'){ document.getElementById('gouser2').style.visibility='visible';document.getElementById('splash').src='../images/shade3.png';document.getElementById('resume').style.visibility='visible';document.getElementById('lock').style.visibility='visible';document.getElementById('gouser').style.visibility='visible';} else if(top.icookies.document.getElementById('user').value=='3'){ document.getElementById('gouser3').style.visibility='visible';document.getElementById('splash').src='../images/shade3.png';document.getElementById('resume').style.visibility='visible';document.getElementById('lock').style.visibility='visible';document.getElementById('gouser').style.visibility='visible';}"></a></td>
+</tr>
+<tr>
+<td height="11px" id="restartmenu"><a href="#a"><img src="../images/menu/words/restart.png" onMouseOver="this.src='../images/menu/words/restart_over.png';" onMouseOut="this.src='../images/menu/words/restart.png';" onClick="javascript:window.location='../index.html';"></a></td>
+</tr>
+<tr>
+<td height="11px" id="sleepmenu"><a href="#a"><img src="../images/menu/words/sleep.png" onMouseOver="this.src='../images/menu/words/sleep_over.png';" onMouseOut="this.src='../images/menu/words/sleep.png';" onClick="hideMenu();sw_sleep();"></a></td>
+</tr>
+<tr>
+<td height="11px" id="shutdownmenu"><a href="#a"><img src="../images/menu/words/Shutdown.png" onMouseOver="this.src='../images/menu/words/Shutdown_over.png';" onMouseOut="this.src='../images/menu/words/Shutdown.png';" onClick="hideMenu();showHideLayer('lIcons','hidden');window.location='shutdown.htm';"></a></td>
+</tr>
+</table>
+</div>
+<div id="recent" name="recent" style="position: absolute; left: 170px; top: 106px; visibility: hidden; z-index:37;">
+<table bgcolor="#ffffff" width="70">
+<script language="javascript" type="text/javascript" src="javascripts/recent.js">
+</script>
+</table> 
+</div>
+<div id="lDetect" style="position:absolute; left:0; top:268px; width:480; height:4px; z-index:0; visibility: hidden;"><img alt="" src="../images/space.gif" width="100%" height="100%"></div>
+<div id="loading" style="position:absolute; left:5; top:5px; width:100; height:30; z-index:19; background-color: none; layer-background-color: none; border: 0px ; background-image: url(../images/loading.gif); layer-background-image: url(../images/loading.gif); visibility: hidden;">
+<table width="100%" height="30" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="10" class="lT_text"><div align="center"><span id="lT">.</span></div></td>
+</tr>
+</table>
+</div>
+
+
+<div id="progwin" style="z-index:39; visibility:hidden;">
+  <div id="imgwin" style="position:absolute; left: 16px; top: 10px; z-index:39; visibility:hidden">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="position:absolute; top:2px; left:0px;">
+<tr>
+<td width="22"><img alt="" src="../images/icons/menu/help.png" id="winicon" width="20" height="20"></td>
+<td valign="middle"><strong><font class="window_font" size="2"><span class="s2" id="aT">&nbsp;</span></font></strong></td>
+</tr>
+</table>
+</div>
+<div id="backward" align="right" style="position:absolute; left: 27px; top: 34px; z-index:39;" ><a href="#a"><img onClick="history.go(-1);" alt="" src="../images/icons/internet/back.gif" border="0" /></a></div>
+<div id="forward" align="left" style="position:absolute; left: 43px; top: 34px; z-index:39;"><a href="#a"><img  onClick="history.go(++);" alt="" src="../images/icons/internet/forward.gif" border="0" /></a></div>
+
+<div id="apDiv2" style="position:absolute; left:68px; top:33px; width:230px; height:20px; z-index:28; visibility: hidden;">
+  <table width="120" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><input name="url" type="text3" id="url" value="http://" style="width:250px; height:16px;"/></td>
+    </tr>
+  </table>
+</div>
+
+<div id="apDivGo" style="position:absolute; left: 318px; top: 34px; visibility:hidden; z-index:40;">
+<img src="../images/icons/internet/go.gif" onClick="frames['progman'].frames['frame'].location.href=document.getElementById('url').value"/></div>
+<div id="apDivGo2" style="position:absolute; left: 318px; top: 34px; visibility:hidden; z-index:40;">
+<img src="../images/icons/internet/go.gif" onClick="frames['progman2'].frames['frame'].location.href=document.getElementById('url').value"/></div>
+<div id="apDivGo3" style="position:absolute; left: 318px; top: 34px; visibility:hidden; z-index:40;">
+<img src="../images/icons/internet/go.gif" onClick="frames['progman3'].frames['frame'].location.href=document.getElementById('url').value"/></div>
+
+<div id="whitebox" style="position:absolute; left: 80px; top: 28px; width: 34px; height: 26px; z-index:39; visibility:hidden;" align="center">
+<table background="../images/whitebox.png">
+<tr>
+<td>
+<font size="3" color="#000000"><span id="location" >&nbsp;</span></font>
+</td>
+<td>
+<a href="#a"><img src="../images/icons/internet/refresh.png" alt="" width="18" height="16"  align="right" border="0" onClick="progman.reload();" /></a>
+</td>
+</tr>
+</table>
+</div>   
+
+<div id="winexitimg" style="position:absolute; left:431px; top:10px; width:41px; height:20px; z-index:31; visibility:hidden">
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0">  
+<tr>
+<td valign="bottom"><div align="center"><a href="javascript:;"><img alt="" src="../images/window/exit.png" name="imgclose" border="0" id="imgclose"></a></div></td>
+</tr>
+</table>
+</div>
+<div id="winmaximg" style="position:absolute; left:415px; top:10px; width:26px; height:20px; z-index:31; visibility:hidden">
+<table width="100%" height="20" border="0" cellpadding="0" cellspacing="0" onClick="windowMax('');" onMouseOver="imgMax.src='../images/window/max_over.png';" onMouseOut="imgMax.src='../images/window/max.png';">
+<tr>
+<td valign="bottom"><div align="center"><img alt="" src="../images/window/max.png" name="imgMax" border="0" id="imgMax"></div></td>
+</tr>
+</table>
+</div>
+<div id="winminimg" style="position:absolute; left:397px; top:10px; width:28px; height:20px; z-index:31; visibility:hidden;">
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0" onClick="windowMin('');" onMouseOver="imgMin.src='../images/window/min_over.png';" onMouseOut="document.getElementById('imgMin').src='../images/window/min.png';">
+<tr>
+<td valign="bottom"><div align="center"><img alt="" src="../images/window/min.png" name="imgMin" border="0" id="imgMin"></div></td>
+</tr>
+</table>
+</div>
+<div id="winexit" style="position:absolute; left:431px; top:10px; width:41px; height:20px; z-index:31; visibility:hidden">
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0" onClick="ApplySettings();windowExit('');showHideLayer('imgwin','hidden');
+showHideLayer('whitebox','hidden');showHideLayer('forward','hidden'); showHideLayer('backward','hidden');" onMouseOver="imgclose.src='../images/window/exit_over.png';" onMouseOut="imgclose.src='../images/window/exit.png';">
+<tr>
+<td valign="bottom"></td>
+</tr>
+</table>
+</div>
+<div align="bottom" id="programs" style="position:absolute; left:13px; top:54px; width:16px; height:16px; z-index:3; layer-background-color: #EBE9ED; border: 1px none #000000; visibility:hidden;">
+  <iframe src="../system/blank.htm" width="453" height="187" id="progman" name="progman" scrolling=yes  frameborder="0" style="z-index: 10;"></iframe>
+</div>
+<div id="winmax" style="position:absolute; left:416px; top:10px; width:26px; height:20px; z-index:31; visibility:hidden">
+<table width="100%" height="20" border="0" cellpadding="0" cellspacing="0" onClick="windowMax('');" onMouseOver="imgMax.src='../images/window/max_over.png';" onMouseOut="imgMax.src='../images/window/max.png';">
+<tr>
+<td valign="bottom"></td>
+</tr>
+</table>
+</div>
+<div id="winmin" style="position:absolute; left:397px; top:10px; width:28px; height:20px; z-index:31; visibility:hidden;">
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0" onClick="windowMin('');showHideLayer('imgwin','hidden');
+showHideLayer('whitebox','hidden');showHideLayer('forward','hidden'); showHideLayer('backward','hidden');" onMouseOver="imgMin.src='../images/window/min_over.png';" onMouseOut="document.getElementById('imgMin').src='../images/window/min.png';">
+<tr>
+<td valign="bottom"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="winbak" style="position:absolute; left:0; top:0; width:480; z-index:28; visibility:hidden;">
+<img id="winimg" width="480" height="256" src="../images/window/window.png" /></div>
+<div id="progwin2" style="z-index:39; visibility:hidden">  
+<div id="imgwin2" style="position:absolute; left: 16px; top: 10px; z-index:39;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="position:absolute; top:2px; left:0px;">
+<tr>
+<td width="22"><img alt="" src="../images/icons/menu/help.png" id="winicon2" width="20" height="20"></td>
+<td valign="middle"><strong><font class="window_font" size="2"><span class="s2" id="aT2">&nbsp;</span></font></strong></td>
+</tr>
+</table>
+</div>
+<div id="backward2" align="right" style="position:absolute; left: 27px; top: 34px; z-index:39;" ><a href="#a"><img onClick="javascript:history.go(-1);" alt="" src="../images/icons/internet/back.gif" border="0" /></a></div>
+<div id="forward2" align="left" style="position:absolute; left: 43px; top: 34px; z-index:39;"><a href="#a"><img  onClick="javascript:history.go(+1);" alt="" src="../images/icons/internet/forward.gif" border="0" /></a></div>
+<div id="whitebox2" style="position:absolute; left: 80px; top: 28px; width: 34px; height: 26px; z-index:39; visibility:hidden;" align="center">
+<table background="../images/whitebox.png">
+<tr>
+<td>
+<font size="3" color="#000000"><span id="location2" >&nbsp;</span></font>
+</td>
+<td>
+<a href="#a"><img src="../images/icons/internet/refresh.png" alt="" width="18" height="16"  align="right" border="0" onClick="progman2.reload();" /></a>
+</td>
+</tr>
+</table>
+</div>   
+<div id="winexit2" style="position:absolute; left:431px; top:10px; width:41px; height:20px; z-index:31; visibility:hidden">
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0" onClick="ApplySettings();windowExit('2');showHideLayer('imgwin2','hidden');
+showHideLayer('whitebox2','hidden');showHideLayer('forward2','hidden'); showHideLayer('backward2','hidden');" onMouseOver="imgclose.src='../images/window/exit_over.png';" onMouseOut="imgclose.src='../images/window/exit.png';">
+<tr>
+<td valign="bottom"></td>
+</tr>
+</table>
+</div>
+<div align="bottom" id="programs2" style="position:absolute; left:13px; top:54px; width:16px; height:16px; z-index:3; layer-background-color: #EBE9ED; border: 1px none #000000; visibility:hidden;">
+  <iframe src="../system/blank.htm" width="453" height="187" id="progman2" name="progman2" scrolling=yes  frameborder="0" style="z-index: 28;"></iframe>
+</div>
+<div id="winmax2" style="position:absolute; left:416px; top:10px; width:26px; height:20px; z-index:31; visibility:hidden">
+<table width="100%" height="20" border="0" cellpadding="0" cellspacing="0" onClick="windowMax('2');" onMouseOver="imgMax.src='../images/window/max_over.png';" onMouseOut="imgMax.src='../images/window/max.png';">
+<tr>
+<td valign="bottom"></td>
+</tr>
+</table>
+</div>
+<div id="winmin2" style="position:absolute; left:397px; top:10px; width:28px; height:20px; z-index:31; visibility:hidden;">
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0" onClick="windowMin('2');showHideLayer('imgwin2','hidden');
+showHideLayer('whitebox2','hidden');showHideLayer('forward2','hidden'); showHideLayer('backward2','hidden');" onMouseOver="imgMin.src='../images/window/min_over.png';" onMouseOut="document.getElementById('imgMin').src='../images/window/min.png';">
+<tr>
+<td valign="bottom"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="progwin3" style="z-index:39; visibility:hidden;">  
+<div id="imgwin3" style="position:absolute; left: 16px; top: 10px; z-index:39;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="position:absolute; top:2px; left:0px;">
+<tr>
+<td width="22"><img alt="" src="../images/icons/menu/help.png" id="winicon3" width="20" height="20"></td>
+<td valign="middle"><strong><font class="window_font" size="2"><span class="s2" id="aT3">&nbsp;</span></font></strong></td>
+</tr>
+</table>
+</div>
+<div id="forward3" align="right" style="position:absolute; left: 27px; top: 34px; z-index:39;" ><a href="#a"><img onClick="javascript:history.go(-1);" alt="" src="../images/icons/internet/back.gif" border="0" /></a></div>
+<div id="backward3" align="left" style="position:absolute; left: 43px; top: 34px; z-index:39;"><a href="#a"><img  onClick="javascript:history.go(1);" alt="" src="../images/icons/internet/forward.gif" border="0" /></a></div>
+<div id="whitebox3" style="position:absolute; left: 80px; top: 28px; width: 34px; height: 26px; z-index:39; visibility:hidden;" align="center">
+<table background="../images/whitebox.png">
+<tr>
+<td>
+<font size="3" color="#000000"><span id="location3" >&nbsp;</span></font>
+</td> 
+<td>
+<a href="#a"><img src="../images/icons/internet/refresh.png" alt="" width="18" height="16"  align="right" border="0" onClick="progman3.location.herf=progman3.location.herf;" /></a>
+</td>
+</tr>
+</table>
+</div>     
+<div id="winexit3" style="position:absolute; left:431px; top:10px; width:41px; height:20px; z-index:31; visibility:hidden">
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0" onClick="ApplySettings();windowExit('3');showHideLayer('imgwin3','hidden');
+showHideLayer('whitebox3','hidden');showHideLayer('forward3','hidden'); showHideLayer('backward3','hidden');" onMouseOver="imgclose.src='../images/window/exit_over.png';" onMouseOut="imgclose.src='../images/window/exit.png';">
+<tr>
+<td valign="bottom"></td>
+</tr>
+</table>
+</div>
+<div align="bottom" id="programs3" style="position:absolute; left:13px; top:54px; width:16px; height:16px; z-index:3; layer-background-color: #EBE9ED; border: 1px none #000000; visibility:hidden;">
+  <iframe src="../system/blank.htm" width="453" height="187" id="progman3" name="progman3" scrolling=yes  frameborder="0" style="z-index: 28;"></iframe>
+</div>
+<div id="winmax3" style="position:absolute; left:416px; top:10px; width:26px; height:20px; z-index:31; visibility:hidden">
+<table width="100%" height="20" border="0" cellpadding="0" cellspacing="0" onClick="windowMax('3');" onMouseOver="imgMax.src='../images/window/max_over.png';" onMouseOut="imgMax.src='../images/window/max.png';">
+<tr>
+<td valign="bottom"></td>
+</tr>
+</table>
+</div>
+<div id="winmin3" style="position:absolute; left:397px; top:10px; width:28px; height:20px; z-index:31; visibility:hidden;">
+<table width="100%" height="19" border="0" cellpadding="0" cellspacing="0" onClick="windowMin('3');showHideLayer('imgwin3','hidden');
+showHideLayer('whitebox3','hidden');showHideLayer('forward3','hidden'); showHideLayer('backward3','hidden');" onMouseOver="imgMin.src='../images/window/min_over.png';" onMouseOut="document.getElementById('imgMin').src='../images/window/min.png';">
+<tr>
+<td valign="bottom"></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div id="progMax" name="progMax" style="position:absolute; left:0px; top:0px; width:480px; height:270px; z-index:40; background-color: #000000; layer-background-color: #000000; visibility: hidden; " onClick="iprogmax.src='../system/appsmax.htm';">    
+<iframe src="../system/appsmax.htm" width=480 height=271 id="iprogMax" name="iprogMax" scrolling=yes  frameborder="0">
+</iframe> 
+</div> 
+
+</body> 
+</html>

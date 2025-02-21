@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>pspWVista : Game Mode</title>
+<script language="javascript">
+setTimeout('goget()', 10000);
+function goget(){
+frames['iGAMEMax'].location=top.icookies.document.getElementById('recentl').value;
+}
+function loadtheme(){
+if(top.icookies.document.getElementById('user').value=='1'){
+  	 window.location=top.icookies.document.getElementById('themeDir').value;
+	}
+if(top.icookies.document.getElementById('user').value=='2'){
+window.location=top.icookies.document.getElementById('themeDir2').value;
+	}
+if(top.icookies.document.getElementById('user').value=='3'){
+window.location=top.icookies.document.getElementById('themeDir3').value;
+	}
+}
+</script>
+</head>
+<body marginheight="0" marginwidth="0">
+<div id="gameframe" style="position:absolute; left:0px; top:0; width:480;">
+<iframe src="javascripts/game.html" width="480px" height="255" id="iGAMEMax" name="iGAMEMax" scrolling=yes  frameborder="0">
+</iframe>
+</div>
+<div id="menubar" style="position:absolute; top:255px; left: -1px; height: 12px; width: 383px;">
+<img src="../images/gamemenu.jpg" border="0" usemap="#Map"  width="480px"/>
+<map name="Map" id="Map"><area shape="rect" coords="171,3,300,20" href="javascript:frames['iGAMEMax'].location='javascripts/game.html';" /></map></div>
+<div id="exit" style="position:absolute; left: 455px; top: 256px;">
+<img src="../images/close.png" onmouseover="this.src='../images/close-down.png'" onmouseout="this.src='../images/close.png'" onclick="loadtheme();" /></div>
+<div id="backward" align="right" style="position:absolute; left: 4px; top: 255px; z-index:39;" ><a href="#a"><img onClick="javascript:history.go(-1);" alt="" src="../images/icons/internet/back.gif" border="0" /></a></div>
+<div id="forward" align="right" style="position:absolute; left: 20px; top: 255px; z-index:39;" ><a href="#a"><img onClick="javascript:history.go(+1);" alt="" src="../images/icons/internet/forward.gif" border="0" /></a></div>
+</body>
+</html>

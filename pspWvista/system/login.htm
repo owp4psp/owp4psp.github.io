@@ -1,0 +1,231 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css">
+@import url(style.css);
+</style>
+<script language="JavaScript" type="text/javascript">
+var username1;
+var username2;
+var username3;
+username1 = top.icookies.document.getElementById('un').value;
+username2 = top.icookies.document.getElementById('un2').value;
+username3 = top.icookies.document.getElementById('un3').value;
+
+function userimage(){
+	if(top.icookies.document.getElementById('ul').value==''){
+		imgUser1login.src="wallpapers/userloginchess.png";
+	}else{
+			document.getElementById('username').innerHTML=username1; 
+			imgUser1login.src=top.icookies.document.getElementById('ul').value;
+			document.getElementById('username').style.visibility="visible";
+		}
+		if(top.icookies.document.getElementById('bg').value==''){
+		top.icookies.document.getElementById('bg').value="wallpapers/beach tree.jpg";
+		
+	}
+if (top.icookies.document.getElementById('thepassword').value==''&&top.icookies.document.getElementById('un2').value==''&&top.icookies.document.getElementById('un3').value==''&&top.icookies.document.getElementById('guest').value==''){
+	window.location=top.icookies.document.getElementById('themeDir').value;
+	top.icookies.document.getElementById('user').value='1';
+	}
+	
+}
+
+function userimage2(){
+	if(top.icookies.document.getElementById('un2').value==''){
+		document.getElementById('user2image').style.visibility="hidden";
+		document.getElementById('userpictwo').style.visibility="hidden";
+		}else{
+		document.getElementById('username2').innerHTML=username2;
+		document.getElementById('username2').style.visibility="visible";
+		}
+	if(top.icookies.document.getElementById('ul2').value==''){
+		document.getElementById('imgUsertwo').src="wallpapers/userloginchess.png";
+	}else{
+			imgUsertwo.src=top.icookies.document.getElementById('ul2').value;
+		}
+	if(top.icookies.document.getElementById('bg2').value==''){
+		top.icookies.document.getElementById('bg2').value=="wallpapers/beach tree.jpg";
+	}
+	if(top.icookies.document.getElementById('guest').value==''){
+		document.getElementById('user4image').style.visibility="hidden";
+		document.getElementById('guest').style.visibility='hidden';
+		}else{
+		document.getElementById('user4image').style.visibility="visible";
+		document.getElementById('guest').style.visibility='visible';
+		document.getElementById('username4').style.visibility="visible";
+		}
+}
+
+function userimage3(){	
+if(top.icookies.document.getElementById('un3').value==''){
+		document.getElementById('user3image').style.visibility="hidden";
+		document.getElementById('userpicthree').style.visibility="hidden";
+		}else{
+		document.getElementById('username3').innerHTML=username3;
+		document.getElementById('username3').style.visibility="visible";
+		}		
+	if(top.icookies.document.getElementById('ul3').value==''){
+		document.getElementById('imgUserthree').src="wallpapers/userloginchess.png";
+	}else{
+			imgUserthree.src=top.icookies.document.getElementById('ul3').value;
+		}
+	if(top.icookies.document.getElementById('bg3').value==''){
+		top.icookies.document.getElementById('bg3').value=="wallpapers/beach tree.jpg";
+	}
+}
+
+function CheckPass(){
+	if(txtPassword.value==top.icookies.document.getElementById('thepassword').value){
+        window.location=top.icookies.document.getElementById('themeDir').value;
+		top.icookies.document.getElementById('user').value='1';	
+	}else{
+		alert("Incorrect Password");
+	}
+}
+function CheckPass2(){
+	if(txtPassword.value==top.icookies.document.getElementById('thepassword2').value){
+        window.location=top.icookies.document.getElementById('themeDir2').value;
+		top.icookies.document.getElementById('user').value='2';	
+		}else{
+		alert("Incorrect Password");
+	}
+}
+function CheckPass3(){
+		if(txtPassword.value==top.icookies.document.getElementById('thepassword3').value){
+        window.location=top.icookies.document.getElementById('themeDir3').value;
+		top.icookies.document.getElementById('user').value='3';	
+	}else{
+		alert("Incorrect Password");
+	}
+}
+function usercheck(){
+if(top.icookies.document.getElementById('un2').value==''&&top.icookies.document.getElementById('un3').value==''&&top.icookies.document.getElementById('guest').value==''){
+	document.getElementById('MUI').style.visibility='hidden';
+	document.getElementById('login').style.visibility='visible';
+	document.getElementById('gouser1').style.visibility='visible';
+	document.getElementById('imgUserlogin').src=document.getElementById('imgUser1login').src;
+	document.getElementById('user2image').style.visibility='hidden';
+	document.getElementById('userpictwo').style.visibility='hidden';
+	document.getElementById('username').style.visibility='hidden';
+	document.getElementById('username2').style.visibility='hidden';
+	document.getElementById('username3').style.visibility='hidden';
+	document.getElementById('username4').style.visibility='hidden';
+		}
+	}
+</script>
+</head>
+<body bgcolor="#000000" style="margin: 0; padding: 0; width: 480;" onLoad="userimage();userimage2();userimage3();usercheck();">
+<!--MUI-->
+<div id="MUI" name="MUI" style="position: absolute; left: 79px; top: 89px; width: 480; height: 100; z-index: 30; visibility: visible;">
+<table>
+<tr>
+<td width="2" align="center" class="login_med"><div id="user1image" style="position:absolute; left: 4px; top: -3px;"><a href="#B" onClick="if(top.icookies.document.getElementById('thepassword').value==''){	window.location=top.icookies.document.getElementById('themeDir').value;top.icookies.document.getElementById('user').value='1';}MUI.style.visibility='hidden';login.style.visibility='visible';gouser1.style.visibility='visible';document.getElementById('imgUserlogin').src= document.getElementById('imgUser1login').src;document.getElementById('user2image').style.visibility='hidden';document.getElementById('userpictwo').style.visibility='hidden';document.getElementById('user3image').style.visibility='hidden';document.getElementById('userpicthree').style.visibility='hidden';document.getElementById('guest').style.visibility='hidden';document.getElementById('username').style.visibility='hidden';document.getElementById('username2').style.visibility='hidden';document.getElementById('username3').style.visibility='hidden';document.getElementById('username4').style.visibility='hidden';document.getElementById('user4image').style.visibility='hidden';document.getElementById('guest').style.visibility='hidden';"><img src="../images/wallpapers/userface.png" /></a></div></td>
+<td width="56" align="center"><img width="56" height="56" id="imgUser1login" src="../images/menu/blank.gif" /></td>
+<td width="7" class="login_med">&nbsp;</td>
+
+<td width="6" align="center" class="login_med"><div id="user2image" name="user2image" style="position:absolute; left: 84px; top: -2px; visibility:visible;" >
+<a href="#B" onClick="if(top.icookies.document.getElementById('thepassword2').value==''){window.location=top.icookies.document.getElementById('themeDir2').value;top.icookies.document.getElementById('user').value='2';}MUI.style.visibility='hidden';login.style.visibility='visible';gouser2.style.visibility='visible';document.getElementById('imgUserlogin').src= document.getElementById('imgUsertwo').src;document.getElementById('user2image').style.visibility='hidden';document.getElementById('userpictwo').style.visibility='hidden';document.getElementById('user3image').style.visibility='hidden';document.getElementById('userpicthree').style.visibility='hidden';document.getElementById('guest').style.visibility='hidden';document.getElementById('username').style.visibility='hidden';document.getElementById('username2').style.visibility='hidden';document.getElementById('username3').style.visibility='hidden';document.getElementById('username4').style.visibility='hidden';		document.getElementById('user4image').style.visibility='hidden';document.getElementById('guest').style.visibility='hidden';"><img src="../images/wallpapers/userface.png" /></a></div></td>
+<td width="56" align="center"><div id="userpictwo" name="userpictwo" style="visibility:visible;"> <img width="56" height="56" id="imgUsertwo" name="imgUsertwo" src=""/></div></td>
+<td width="7" class="login_med">&nbsp;</td>
+
+<td width="6" align="center" class="login_med"><div id="user3image" style="position:absolute; left: 161px; top: -3px;"><a href="#B" onClick="if(top.icookies.document.getElementById('thepassword3').value==''){window.location=top.icookies.document.getElementById('themeDir3').value;top.icookies.document.getElementById('user').value='3';}MUI.style.visibility='hidden';login.style.visibility='visible';gouser3.style.visibility='visible';document.getElementById('imgUserlogin').src= document.getElementById('imgUserthree').src;document.getElementById('user2image').style.visibility='hidden';document.getElementById('userpictwo').style.visibility='hidden';document.getElementById('user3image').style.visibility='hidden';document.getElementById('userpicthree').style.visibility='hidden';document.getElementById('guest').style.visibility='hidden';document.getElementById('username').style.visibility='hidden';document.getElementById('username2').style.visibility='hidden';document.getElementById('username3').style.visibility='hidden';document.getElementById('username4').style.visibility='hidden';document.getElementById('user4image').style.visibility='hidden';document.getElementById('guest').style.visibility='hidden';"><img src="../images/wallpapers/userface.png" /></a></div></td>
+<td width="56" align="center"><div id="userpicthree" name="userpicthree" style="visibility:visible;"> <img id="imgUserthree" width="56" height="56" name="imgUserthree" src="" /></div></td>
+<td width="10" class="login_med">&nbsp;</td>
+
+<td width="2" align="center" class="login_med">
+<div id="user4image" style="position:absolute; left: 242px; top: -3px;"><a href="#B" onClick="top.document.getElementById('icookies').src='blank.htm';top.icookies.document.getElementById('user').value='4';window.location='desktop-d.htm';"><img src="../images/wallpapers/userface.png" /></a></div></td>
+
+<td width="56" align="center"><div id="guest" name="guest" style="visibility:visible;"> <img width="56" height="56" id="imgUser4login" src="../images/wallpapers/userloginguest.png"></div></td>
+<td width="7" class="login_med">&nbsp;</td>
+</tr>
+<table>
+<tr>
+<td width="70" align="center" class="login_med" align="center"> 
+<strong><font size="2"><span style="visibility:hidden" id="username">&nbsp;</span></font></strong>
+</td>
+<td width="3"></td>
+<td width="70" align="center" class="login_med"  align="center">  
+<strong><font size="2"><span style="visibility:hidden" id="username2">&nbsp;</span></font></strong>
+</td>
+<td width="3"></td>
+<td width="70" align="center" class="login_med"  align="center"> 
+<strong><font size="2"><span style="visibility:hidden" id="username3">&nbsp;</span></font></strong>
+</td>
+<td width="3"></td>
+<td width="70" align="center" class="login_med"  align="center"> 
+<strong><font size="2"><span style="visibility:hidden" id="username4">Guest</span></font></strong>
+</td>
+</tr>
+</table>
+</table>
+</div>
+
+<!--Background-->
+<table width="480" height="272" border="0" cellpadding="0" cellspacing="0" bgcolor="#000000" background="../images/login.png">
+<tr>
+<td height="50" colspan="3" class="login_title"></td>
+</tr>
+<tr>
+<td height="172" colspan="3">
+</td>
+</tr>
+</table>
+<div id="login"  name="login" style="position: absolute; left: 160px; top: 80px; width: 200; height: 116px; z-index: 28; visibility: hidden;">
+  <table width="168" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="132" align="center" valign="middle" colspan="2"><table width="" border="0" cellspacing="0" cellpadding="0"><tr><td align="center" class="login_pass"><table width="" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><div id="userimage" style="position:absolute; left: 47px; top: 12px;" ><img src="../images/wallpapers/userface.png"/></div>
+        <img width="56" height="56" id="imgUserlogin" src="../images/menu/blank.gif"></td>
+  </tr>
+  <tr>
+    <td width="57%" align="center" class="login_pass"><img id="passpic" src="../images/password.png" height="20" width="65">      <input name="txtPassword" type="password" id="txtPassword" style="height:18">    </td>
+  </tr>
+  <tr>
+    <td width="24">
+    <div id="gouser1"style="position:absolute; left: 160px; top: 94px; visibility: hidden;" width="22" height="22"> <a href="javascript:CheckPass();icookies.document.getElementById('user').value='1';"><img src="../images/icons/internet/foward.gif" alt="" name="btnG" id="btnG" width="22" height="22" border="0"></a></div>
+        <div id="gouser2"style="position:absolute; left: 160px; top: 94px; visibility: hidden;" width="22" height="22"> <a href="javascript:CheckPass2();"><img src="../images/icons/internet/foward.gif" alt="" name="btnG" id="btnG" width="22" height="22" border="0"></a></div>
+      <div id="gouser3"style="position:absolute; left: 160px; top: 94px;  visibility: hidden;" width="22" height="22"> <a href="javascript:CheckPass3();"><img src="../images/icons/internet/foward.gif" alt="" name="btnG" id="btnG" width="22" height="22" border="0"></a></div></td>
+  </tr>
+</table></td>
+
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="login_small">
+<iframe src="cookies.htm" width="1" height="1" id="icookies" name="icookies" scrolling="yes" frameborder="0" style="visibility:hidden;"></iframe>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</td>
+
+<tr>
+<td width="5%"  height="40"><span class="login_small">
+</span></td>
+
+<td align=left width="5%">
+<div style="position:absolute; left: 21px; top: 241px;" width="20" height="20">
+<span class="login_med">
+<a href="../programfiles/apps/controlpanel/help/ihelp.htm" class="astart_light" target="_blank">
+<img alt="" src="../images/icons/ease.png" width="20" height="20" border="0"></a> </span></div>
+</td>
+
+<td align=center>
+<div style="position:absolute; left: 426px; top: 239px;" width="20"> 
+<span class="login_small">
+<a class="astart_dark" href="#a" onClick="lyShutdown.style.visiblity='visible';lyShutdowndlg.style.visiblity='visible';shutdownFade();"><img src="../images/menu/off2.gif" border="0"></a></span></div>
+</td>
+<div id="lyShutdowndlg" style="position:absolute; left:83px; top:37px; width:314; height:200; z-index:34; visibility: hidden;"><img alt="" src="../images/shutdown.jpg" width="314" height="200" border="0" usemap="#Map">
+<map name="Map">
+<area alt="" shape="rect" coords="38,75,100,138" href="Shutdown.htm" onClick="Shutdown.htm">
+<area alt="" shape="rect" coords="131,76,183,138" href="javascript:;" onClick="javascript:window.location='index.html';">
+<area alt="" shape="rect" coords="217,76,269,139" href="javascript:;" onClick="showHideLayer('txtPassword','visible');showHideLayer('portalmenu','visible');showHideLayer('lyShutdown','hidden');showHideLayer('lyShutdowndlg','hidden');showHideLayer('login','visible');">
+<area alt="" shape="rect" coords="238,163,307,191" href="javascript:;" onClick="if(login.style.visibility=='visible'){showHideLayer('txtPassword','visible');showHideLayer('portalmenu','visible');} showHideLayer('lyShutdown','hidden');showHideLayer('lyShutdowndlg','hidden');imgFade.src='../images/space.gif';"></map></div>
+</body>
+</html>

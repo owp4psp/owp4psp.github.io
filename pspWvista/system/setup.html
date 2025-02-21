@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>Setup Wizard</title>
+
+
+  <meta name="GENERATOR" content="OpenOffice.org 2.2 (Linux)">
+
+  <meta name="CREATED" content="20070703;15383700">
+
+  <meta name="CHANGED" content="20070703;15460400">
+
+
+  <script language="JavaScript">
+function ChangeSettings(){
+top.icookies.document.settings.chkstart.value=document.getElementById('chkstart').checked;
+top.icookies.document.settings.submit();
+top.ApplySettings();
+alert('pspWvista will need to be restarted for changes to take effect.');
+}
+
+function delayer(){
+window.location = "setupcon.html"
+}
+
+function showHideLayer(layerName,showHide){
+frames[layerName].style.visibility=showHide;
+}
+function pass(){
+document.getElementById("OK").disabled = (document.getElementById("chkstart").checked==false)
+}
+  </script>
+</head>
+
+
+<body style="direction: ltr; background-color: rgb(0, 0, 0);" lang="en-US">
+
+<table background="../images/setup1.png" style="visibility: visible; z-index: 28; position: absolute; top: 0px; left: 0px; width: 479px; height: 242px;" border="0" cellpadding="4" cellspacing="3">
+
+  <col width="146"> <tbody>
+
+    <tr>
+
+      <td style="vertical-align: center; width: 120px; height: 157px;">
+      <p></p>
+      <p align="left"></p>
+
+      <p align="left">
+      <div style="position:absolute; left: 12px; top: 43px; width: 194px; height: 174px;"><font color="#000000"><font size="2">pspWvista has detected this as the first time you
+have used pspWvista on this PSP. (or you deleted input history)</font></font>
+        <p></p>
+
+      <p style="margin-bottom: 0in;"><font size="2" color="#000000"> If you have and comments or Concerns
+contact me via PM (Hunter Onhika) at http://www.blazebyte.org or
+Email
+me at hunter_onhika@hotmail.com. <font size="2"> </font></font>
+      </p>
+</div>
+      </td>
+
+      <td colspan="1" rowspan="2" width="250">
+
+
+<div id="lie" name="lie" visibility="hidden">
+      <iframe src="license.html" border="0" visibility="hidden" style="z-index: 5; left: 215px; top: 41px; width: 250px; height: 178px; position: absolute;"></iframe>
+      <br></div>
+
+<div id="warn" name="warn"  visibility="visible">
+      <iframe src="warning.html" border="0" style="z-index: 22; left: 216px; top: 39px; width: 250px; height: 181px; position: absolute;"></iframe>
+      <br></div>
+      <br>
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <br> 
+
+      <br>
+
+      <br>
+ <br> <br> <br>  <br> <br>
+      <br>
+
+      <div style="position:absolute; left: 377px; top: 232px; height: 25px;" id="" visibility="visible" align="">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input name="next" id="next" onClick="Javascript:showHideLayer('agree','visible');Javascript:showHideLayer('next','hidden');Javascript:showHideLayer('warn','hidden');Javascript:showHideLayer('lie','visible');document.getElementById('chkstart').disabled=false;Javascript:pass();document.getElementById('next').disabled = true" value="OK" style="width: 60px;" align="right" type="button"></div>
+
+      <div style="position: absolute; visibility: hidden; left: 177px; top: 232px; width: 288px;" id="agree" visibility="hidden" name="agree">Check if you agree&nbsp;
+        <input name="chkstart" type="checkbox" disabled="disabled" id="chkstart" style="color: rgb(253, 253, 253);" onChange="Javascript:pass();" value="false" align="top" visibility="hidden">
+&nbsp; <input style="width: 60px;" name="OK" id="OK" onClick="setTimeout('delayer()', 300);ChangeSettings();location='index.htm';" value="Next" disabled="disabled" align="right" type="button"> <input style="width: 60px;" name="cancel" id="cancel" onClick="window.location = 'cancel.html';" value="cancel"  align="right" type="button"></div>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td height="107"></td>
+
+      <script language="javascript">
+if(top.document.icookies.document.getElementById('chkstart').value=="false"){
+chkstart.checked=false;
+}else{
+chkstart.checked=true;
+      </script>
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>

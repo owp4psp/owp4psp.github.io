@@ -1,0 +1,38 @@
+a:link,a:active,a:visited { background-color:none; text-decoration:none;}
+a:hover		{ background-color:transparent; text-decoration: underline; color : transparent; }
+a.astart_dark	{color: #000000;}
+a.astart_light	{color: #ffffff;}
+a.aistart_light	{color: #000000;}
+a.aistart_dark	{color: #000000;}
+.start_dark { background-color:#000066;color:#FFFFFF;font-size: 10px;}
+.start_light { background-color:#10377C;color:#FFFFFF;font-size: 10px;}
+.istart_dark { background-color:#FFFFFF;font-size: 10px;}
+.istart_light { background-color:#FFFFFF;font-size: 10px;}
+.time_text {color:#FFFFFF;}
+.menu_text { background-color:none;color:#FFFFFF;font-size: 10px;}
+.Sidebar_text { background-color:none;color:#FFFFFF;font-size: 6px;}
+.welcome_icon { background-color:none;color:#000000;font-size: 10px;}
+.shutdown_text {color:#FFFFFF;}
+.login_small {color:#FFFFFF; font-size:10px;}
+.login_med {color:#FFFFFF; font-size:12px;}
+.login_title {color:#FFFFFF;font-size: 15px;font-weight: bold;}
+.login_pass {color:#FFFFFF; font-size:15px;}
+.login_shutdown_text {color:#FFFFFF;}
+.tab_font {color:#FFFFFF;}
+.menu_edges {border-right:solid; border-right-color:#000000; border-right-width:1px; border-left:solid; border-left-color:#000000; border-left-width:1px;}
+.menu_highlight_edge {border-right:solid; border-right-color:#959FB4; border-right-width:1px;}
+.lT_text {color:#FFFFFF; font-size:10px;}
+.lTA_text {color:#FFFFFF; font-size:10px;}
+.textbox{
+	height:8px;
+	border-bottom:1px solid #b1adab;
+	border-top:1px solid #b1adab;
+	border-right:1px solid #ffffff;
+	border-left:1px solid #b1adab;
+	background-color:#ffffff;
+	overflow:auto;
+	text-align:left;
+}
+input[type="text"] { height: 8px; width: 80px; }
+input[type="text2"] { height: 8px; width: 60px; }
+input[type="text3"] { height: 16px; width: 250px; }

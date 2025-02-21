@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>Setup Wizard</title>
+
+
+  <meta name="GENERATOR" content="OpenOffice.org 2.2 (Linux)">
+
+  <meta name="CREATED" content="20070703;15383700">
+
+  <meta name="CHANGED" content="20070703;15460400">
+
+
+  <script language="JavaScript">
+function ChangeSettings(){
+if(document.getElementById('themeDir').value=='desktop-b.htm'){
+top.icookies.document.settings.winThemeDir.value='../images/basic/window/window.png';
+alert('Windows Basic');
+	}else{
+top.icookies.document.settings.winThemeDir.value='../images/window/window.png';
+alert('Windows Areo');
+		}
+top.icookies.document.settings.themeDir.value=document.getElementById('themeDir').value;
+top.icookies.document.settings.submit();
+alert('Restarting pspWvista');
+window.location='../boot.html';
+}
+setTimeout("preview();",3000);	
+function preview(){
+	if(top.icookies.document.getElementById('themeDir').value==''){
+		imgPreview.src="../images/theme.jpg";
+	}else{
+			imgPreview.src="../"+top.icookies.document.getElementById('themeDir').value+"/theme.jpg";
+		}
+}
+function showHideLayer(layerName,showHide){
+frames[layerName].style.visibility=showHide;
+}
+function pass(){
+document.getElementById("OK").disabled = (document.getElementById("chkstart").checked==false)
+}
+  </script>
+</head>
+
+
+<body style="direction: ltr; background-color: rgb(0, 0, 0);" lang="en-US">
+
+<table background="../images/setup1.png" style="visibility: visible; z-index: 28; position: absolute; top: 0px; left: 0px; width: 479px; height: 242px;" border="0" cellpadding="4" cellspacing="3">
+
+  <col width="146"> <tbody>
+
+    <tr>
+
+      <td style="vertical-align: center; width: 120px; height: 157px;">
+      <p></p>
+      <p align="left"></p>
+
+      <p align="left">
+      <div style="position:absolute; left: 12px; top: 43px; width: 194px; height: 174px;">
+        <p><font color="#000000"><font size="2">Please Select a Theme;</font></font></p>
+        <p><font color="#000000" size="2"> Vista Areo:</font><font color="#000000" size="2"> provides features like Vista Areo, flip 3d, semi tranparency </font></p>
+        <p><font color="#000000" size="2"> Vista Basic: provides a less memory consuming interface to help improve performance.</font></p>
+      </div>
+      </td>
+
+      <td colspan="1" rowspan="2" width="250">
+
+      <br>
+
+      <br>
+
+      <br>
+
+      <div id="Prev" name="Prev" style="position:absolute; left: 204px; top:33px; width:; height:; z-index:23; visibility: visible;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center"><div align="left"></div>
+                <table width="243" height="93" border="0" cellpadding="0" cellspacing="0" background="../images/controlpanel/preview.jpg">
+                  <tr>
+                    <td width="52" height="8"></td>
+                    <td width="140" height="8"></td>
+                    <td width="51" height="8"></td>
+                  </tr>
+                  <tr>
+                    <td height="70"></td>
+                    <td width="140" height="70"><img alt="" width="141" height="87" name="imgPreview" id="imgPreview" src=""></td>
+                    <td height="70"></td>
+                  </tr>
+                  <tr>
+                    <td width="52"></td>
+                    <td width="140" height="15"></td>
+                    <td width="51"></td>
+                  </tr>
+              </table></td>
+          </tr>
+        </table>
+        <p>Select a theme:
+          <select id="themeDir">
+              <script language="javascript" type="text/javascript" src="../user/themes.js"></script>
+            </select>
+          <input name="Preview1" type="button" id="Preview2" onClick="document.getElementById('imgPreview').src='../'+themeDir.value+'/theme.jpg';" value="Preview"> 
+        </p>
+        <p>&nbsp;</p>
+      </div>
+      <br>
+
+      <br> 
+
+      <br>
+
+      <br>
+ <br> <br> <br>  <br> <br>
+      <br>
+
+      <div style="position:absolute; left: 377px; top: 232px; height: 25px;" id="" visibility="visible" align="">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input name="next" id="next" onClick="ChangeSettings();" value="OK" style="width: 60px;" align="right" type="button"></div>
+
+      
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td height="107"></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
+

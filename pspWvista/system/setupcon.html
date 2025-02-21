@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>Setup Wizard</title>
+  <script language="javascript" type="text/javascript" src="javascripts/script.js"></script>
+<script language="javascript" type="text/javascript" src="javascripts/script2.js" ></script>
+<script language="javascript" type="text/javascript" src="javascripts/radioplayer.js"></script>
+<script language="JavaScript">
+function ChangeSettings(){
+	if(document.getElementById('txtOldPassword').value==top.icookies.document.getElementById('thepassword').value){
+		if(document.getElementById('txtNew1').value==document.getElementById('txtNew2').value){
+			top.icookies.document.settings.thepassword.value=txtNew1.value;
+			top.icookies.document.settings.loginshow.value=document.getElementById('chkShow').checked;
+	                top.icookies.document.settings.chkul.value=document.getElementById('chkULImage').checked;
+	                top.icookies.document.settings.ul.value=document.getElementById('File').value;
+					top.icookies.document.settings.un.value=document.getElementById('UserName').value;
+					top.icookies.document.settings.winThemeDir.value='../images/window/window.png';
+					top.icookies.document.settings.bg.value='wallpapers/Beach tree.jpg';
+			top.icookies.document.settings.submit();
+	window.location='setuptheme.html';
+		}else{
+			alert("The new passwords do not match.");
+		}
+	}else{
+		alert("Incorrect Password.");
+	}
+}
+  </script>
+</head>
+
+
+<body style="direction: ltr; background-color: rgb(0, 0, 0);" lang="en-US">
+
+<p align="left"></p>
+
+<p align="left"><br>
+
+</p>
+
+<p><font color="#ffffff"> </font></p>
+
+
+
+<br>
+
+.
+<p></p>
+
+<table background="../images/setup.png" style="visibility: visible; z-index: 28; position: absolute; top: 0px; left: 0px; width: 479px; height: 272px; background-image: ../images/setup.jpg; layer-background-image: url(../images/setup.jpg); border: 1px none #000000;" border="0" cellpadding="4" cellspacing="3">
+
+  <col width="146"> <tbody>
+
+    <tr>
+
+      <td width="163">
+      <p></p>
+      <p align="left"></p>
+      <p align="left">&nbsp;</p></td>
+
+      <td colspan="1" rowspan="2" width="291">
+      
+<div id="lie" align="right" visibility="hidden">
+<table style="position: absolute; left: 61px; height: 70px; width: 287px; top: 107px; z-index: 4;" border="0" cellpadding="0" cellspacing="0">
+
+
+    <tbody>
+
+    <tr>
+
+
+        <td style="text-align: center;" colspan="2" rowspan="1">&nbsp;</td>
+      <td></td>
+  
+      <td rowspan="5"></td>
+      </tr>
+
+
+      <tr>
+
+
+        <td width="133" style="visibility:hidden"></td>
+
+
+        <td width="194" style="visibility:hidden"><input visibility="hidden" name="txtOldPassword" id="txtOldPassword" size="10" type="password"></td>
+      <td></td>
+      <td></td>
+      <td colspan="4" rowspan="4"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+        <td>&nbsp;</td>
+        <td><input name="txtNew1" id="txtNew1" size="10" type="password"></td><td><input name="txtNew2" id="txtNew2" size="10" type="password">
+          </td>
+
+        <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+
+
+        <td style="visibility:hidden"><label>
+          <input visibility="hidden" name="chkShow" value="" id="chkShow" type="checkbox" checked="checked">
+         </label></td>
+
+
+        <td>&nbsp;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+
+
+      <tr>
+
+
+        <td colspan="12"><label></label></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="warn" name="warn"  visibility="visible">
+      <table style="position: absolute; top: 167px; left: 28px; width: 282px; height: 98px; visibility:visible; border: 1px none #000000; z-index: 7;" border="0" cellpadding="0" cellspacing="0" background="">
+
+
+
+  <tbody>
+    <tr>
+
+
+            <td width="61" align="right"></td>
+      <td colspan="3" rowspan="1">&nbsp;<div style="position:absolute; left: 15px; top: -65px;"><img alt="" name="imgPreview" id="imgPreview" height="49" width="49"></div><div id="userfacesetup" style="position:absolute; left: 6px; top: -73px; width: 64px; height: 63px;"><img src="../images/wallpapers/userface.png" width="66" height="66" id="userface"></div>
+      <br>
+      
+
+
+</td>
+    
+    </tr>
+
+
+
+ <tr>
+
+
+
+      <td onClick="document.getElementById('File').value= document.getElementById('log').src;imgPreview.src='../images/wallpapers/userloginball.PNG'">&nbsp; &nbsp;<img id="log" style="border: 0px solid ; top: 161px; left: 236px; width: 44px; height: 44px;" alt="" src="../images/wallpapers/userloginball.PNG" align="middle"></td>
+
+      <td width="48" align="center" onClick="document.getElementById('File').value= document.getElementById('loga').src;imgPreview.src='../images/wallpapers/userloginflower.PNG'">&nbsp;<img src="../images/wallpapers/userloginflower.PNG" alt="" style="border: 0px solid ; top: 161px; left: 236px; width: 44px; height: 44px;" id="loga" align="middle"></td>
+
+      <td width="70" align="center" onClick="document.getElementById('File').value= document.getElementById('logb').src;imgPreview.src='../images/wallpapers/userloginrobot.PNG'"><img src="../images/wallpapers/userloginrobot.PNG" alt="" name="logb" align="middle" id="logb" style="border: 0px solid ; top: 161px; left: 236px; width: 44px; height: 44px;"></td>
+      
+      <td width="44" align="center" onClick="document.getElementById('File').value= document.getElementById('logd').src;imgPreview.src='../images/wallpapers/userloginleaf.PNG';"><img src="../images/wallpapers/userloginleaf.PNG" alt="" name="logb" align="middle" id="logd" style="border: 0px solid ; top: 161px; left: 236px; width: 44px; height: 44px;"></td>
+      
+      <td width="59" align="center" onClick="document.getElementById('File').value= document.getElementById('logc').src;imgPreview.src='../images/wallpapers/userloginchess.PNG'"> <img src="../images/wallpapers/userloginchess.PNG" alt="" name="logb" align="middle" id="logc" style="border: 0px solid ; top: 161px; left: 236px; width: 44px; height: 44px;"></td>
+
+      
+    </tr>
+
+
+     <tr>
+
+      <td colspan="4" rowspan="1" style="visibility:hidden"><input visibility="hidden" name="File" id="File" onChange="imgPreview.src=File.value;chkULImage.checked=true;" type="file"><br>
+&nbsp;&nbsp;&nbsp;</td>
+        <td colspan="8" rowspan="2" style="visibility:hidden">  <input visibility="hidden" name="chkULImage" id="chkULImage" checked="checked" type="checkbox">      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<br>
+
+      <br>
+
+      <br>
+
+      <br> 
+
+      <br>
+
+      <br>
+ <br> <br> <br>  <br> <br>
+<div style="position:absolute; left: 124px; top:94px; width: 155px; height: 33px;">
+<table>
+<tr>
+<td><input name="UserName" id="UserName" type="text" Value="Username">
+</td>
+</tr>
+</table>
+</div>
+
+      
+
+    
+
+      <div id="agree" style="position:absolute; left: 405px; top: 235px;" name="agree"><span style="color: rgb(253, 253, 253);">
+        <input name="OK" id="OK2" onClick="ChangeSettings();" value="Next" style="width: 60px;" type="button">
+      </span></div>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+	
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>

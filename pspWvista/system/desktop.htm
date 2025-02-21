@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Desktop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css">
+@import url(style.css);
+</style>
+<script language="javascript" type="text/javascript" src="script.js"></script>
+<script src="../system/inputfunctions.js"></script>
+<script>eval(top.frames['idesktop'].setAppProperties());</script>
+<script language="JavaScript" type="text/javascript">
+function start(){
+	window.location="setup.html"
+}
+ setTimeout("Radio();", 100);
+</script>
+</head>
+<body 
+ bgcolor="#ffffff" style="margin: 0; padding: 0;" onLoad="start()">
+ <script language="javascript" src="javascripts/radioplayer.js"></script>
+
+<div style="position:absolute; left:0; top:0; width:480px; height:1px; z-index:0; background-color: #CCCCCC; layer-background-color: #CCCCCC; border: 1px none #000000; visibility: Hidden;" id="COOKIES">
+<iframe src="cookies.htm" width="1" height="1" id="icookies" name="icookies" scrolling="yes" frameborder="0"></iframe>
+<iframe src="blank.htm"  width="1" height="1" id="iSound" scrolling="yes" frameborder="0"></iframe>
+<div id="boot" name="boot" style="position:absolute; left:0px; top:0px; width:480px; height:272px; z-index:23; background-color: #000000; visibility: visible;">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="middle"><img alt="" src="../images/boot.gif" ></div>
+<script language="javascript" type="text/javascript">
+setTimeout("LoadedPlaySound();",21000);
+function LoadedPlaySound(){
+loaded=1;
+if(document.getElementById('boot').style.visibility=='visible'&&document.getElementById('login').style.visibility=='hidden'){
+playSound('../system/startsound.htm');
+}
+showHideLayer('boot','hidden');
+}
+</script>
+
+</td>
+</tr>
+</table>
+</div>
+<script language="javascript" type="text/javascript" src="themejs.js"></script>
+<script language="javascript" type="text/javascript">
+function Radio(){
+psp.sysRadioPlayEffectSound();
+window.location="system/boot-r.html";
+}
+</script>
+</body>
+</html>
