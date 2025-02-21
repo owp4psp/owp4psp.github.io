@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>pspWvista...Remember This is free!</title>
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFFFFF;
+}
+body {
+	background-color: #000000;
+}
+a:link {
+	color: #CCCCCC;
+}
+-->
+</style>
+
+</head>
+
+<body>
+<script language="javascript" type="text/javascript" src="system/javascripts/radioplayer.js"></script>
+<div id="Info" name="Info" style="position:absolute; left:0px; top:0px; width:480px; height:272px; z-index:23; background-color: #000000; visibility: visible;">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="middle"><img alt="" src="images/interface.png" onClick="document.location='system/bios.html';"><br>
+<script language="javascript" type="text/javascript">
+setTimeout("interface();",4000);
+setTimeout("Radio();", 100);
+function interface(){
+	if(screen.width!==480){
+		document.getElementById('Info').innerHTML="pspWvista has detected you are not running this on a PSP. <br>PspWvista was designed and will only <br>run on the psp at full functionality. <br>To continue anyway, <a href='system/desktop-d.htm'>click here.</a>";
+	}else{
+			load1();
+	}
+}	
+function load1(){
+	if(top.icookies.document.getElementById('chkstart').value==''){
+		window.location="system/desktop.htm";
+		}
+	if(top.icookies.document.getElementById('chkstart').value=='true'){
+		window.location="system/boot.html";
+		}
+	if(top.icookies.document.getElementById('chkstart').value=='false'){
+		window.location="system/desktop.htm";
+		}
+}
+</script>
+<script language="javascript" type="text/javascript">
+function Radio(){
+psp.sysRadioPlayEffectSound();
+window.location="system/boot-r.html";
+}
+</script>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

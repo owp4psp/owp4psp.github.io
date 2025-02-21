@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>pspWvista menu I List</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="90" height="100" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top">
+<script language="JavaScript" type="text/javascript" src="../abs.js"></script>
+    <script language="JavaScript" type="text/javascript">
+var intlight = 1;
+var strlight
+var strFunction;
+var intColumn
+if(strI.length>12){
+	if(strI.length>80){
+		intColumn=Math.ceil(strI.length/1);
+	}else{
+		intColumn=Math.ceil(strI.length/1);
+	}
+}else{
+	intColumn=strI.length;
+}
+
+
+for (i=0;i<strI.length;i++){
+	if(i==intColumn||i==intColumn*2){
+		document.write("</table></td><td valign='top'><table width='90' cellpadding='0' cellspacing='0' >");
+		intlight=1
+	}
+
+	if(intlight==1){
+		intlight=0;
+		strlight="'istart_light'"
+	}else{
+		intlight=1
+		strlight= "'istart_dark'"
+	}
+
+	strFunction='parent.setTitle("' + intIMinMax[i] + '","' + strI[i] + '","' + intIPath[i] + '","' + strIIconPath[i] + '",0)';
+	document.write("<tr class=");
+	document.write(strlight);
+	document.write("' onClick='");
+	document.write(strFunction);
+	document.write("')><td width='22'><img src='../../");
+	document.write(strIIconPath[i]);
+	document.write("' width='15' height='15' border='0'></td><td><a href='#a' style='text-decoration:none;'><font size='1' color='#000000'>");
+	document.write(strI[i]);
+	document.write("</font></a></td></tr>");
+}
+</script> </td>
+  </tr>
+</table>
+</body>
+</html>
