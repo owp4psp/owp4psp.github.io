@@ -1,0 +1,78 @@
+<!-- saved from url=(0013)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Roobix</title>
+<script language="javascript">
+function sav()
+{
+window.location=location;
+}
+</script>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+-->
+</style></head>
+<body>
+<script language="JavaScript">
+<!--
+var isInternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
+// Handle all the FSCommand messages in a Flash movie.
+function Roobix_DoFSCommand(command, args) {
+	var RoobixObj = isInternetExplorer ? document.all.Roobix : document.Roobix;
+	//
+	// Place your code here.
+	//
+	document.save.cube.value=args;
+	document.save.submit();
+	
+}
+// Hook for Internet Explorer.
+if (navigator.appName && navigator.appName.indexOf("Microsoft") != -1 && navigator.userAgent.indexOf("Windows") != -1 && navigator.userAgent.indexOf("Windows 3.1") == -1) {
+	document.write('<script language=\"VBScript\"\>\n');
+	document.write('On Error Resume Next\n');
+	document.write('Sub Roobix_FSCommand(ByVal command, ByVal args)\n');
+	document.write('	Call Roobix_DoFSCommand(command, args)\n');
+	document.write('End Sub\n');
+	document.write('</script\>\n');
+}
+//-->
+</script>
+<!--url's used in the movie-->
+<!--text used in the movie-->
+<!--
+Copyright pspflashgaming 2007
+-->
+<form name="save" id="save" method="post" onsubmit="sav()">
+	<input name="cube" size="60" type="textfield" readonly="true" />
+</form>
+<div id="game">
+<script language="javascript">
+savegame="savedata="+document.save.cube.value;
+document.write(
+   '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"\n'+
+   ' codebase="http://macromedia.com/cabs/swflash.cab#version=6,0,0,0"\n'+
+   ' WIDTH="480" HEIGHT="272" id="Roobix">\n'+
+   ' <PARAM NAME=movie VALUE="Roobix.swf">\n'+
+   ' <PARAM NAME=FlashVars VALUE="'+savegame+'">\n'+
+   ' <PARAM NAME=quality VALUE=high>\n'+
+   ' <EMBED src="Roobix.swf"\n'+
+   '  FlashVars="'+savegame+'"\n'+ 
+   '  quality=high  WIDTH="480" HEIGHT="272" NAME="Roobix"\n'+
+   '  TYPE="application/x-shockwave-flash"\n'+
+   '  PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>\n'+
+   '</OBJECT>');
+</script>
+</div>
+
+
+
+
+</body>
+</html>
