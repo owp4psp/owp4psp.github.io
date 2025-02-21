@@ -25,3 +25,11 @@ Long term goals:
 Progress on 1: 0%
 1) Eventually make a LLE PSP emulator to test this and other XMB nonsense or if someone else gets
 around to it first (this one is more probable) then use theirs and test it on there.
+
+Web Portals
+iPod/iPhone https://owp4psp.github.io/ipsp/index.html
+Wii https://owp4psp.github.io/NewChaosWii/index.html
+Mac OS https://owp4psp.github.io/Mac OS X Leopard/index.html
+NDS https://owp4psp.github.io/DSP_Portal/index.html
+WinXP https://owp4psp.github.io/pspWxp/index.html
+WinVista https://owp4psp.github.io/pspWvista/index.html
