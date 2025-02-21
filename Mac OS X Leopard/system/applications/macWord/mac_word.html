@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/JavaScript">
+function compactword(){
+resize('menusize',480,23);
+resize('menuimg',480,0);
+document.getElementById('fdiv').style.top='23'
+MM_showHideLayers('comodiv','','show')
+closetool()
+}
+function undocompact(){
+resize('menusize',480,76);
+resize('menuimg',480,49);
+document.getElementById('fdiv').style.top='76'
+}
+function opentool(){
+resize('memopad',243,312)
+MM_showHideLayers('fdiv','','show')
+}
+function closetool(){
+resize('memopad',426,312)
+MM_showHideLayers('fdiv','','hide')
+memopad.save1()
+}
+</script>
+
+<script type="text/JavaScript">
+function resize(obj,w,h){
+if (document.getElementById || document.all) {
+SD = document.getElementById(obj).style || document.all[obj].style;
+}
+SD.width = w;
+SD.height = h;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+
+<title>Word 2008 - Mac</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(Images/bg.png);
+	background-repeat: repeat-y;
+}
+#menusize {
+	position:inline;
+	width:480px;
+	z-index:2;
+	background-image: url(Images/main_head.png);
+}
+#content {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:455px;
+	z-index:1;
+}
+#filling {
+	position:relative;
+	width:480px;
+	z-index:2;
+}
+#apDiv1 {
+	position:absolute;
+	left:510px;
+	top:39px;
+	width:185px;
+	height:141px;
+	z-index:2;
+}
+#comodiv {
+	position:absolute;
+	left:451px;
+	top:0px;
+	width:20px;
+	height:23px;
+	z-index:3;
+	visibility: hidden;
+}
+#viewdiv {
+	position:absolute;
+	left:0px;
+	top:500px;
+	width:96px;
+	height:33px;
+	z-index:4;
+}
+#fdiv {
+	position:absolute;
+	left:280px;
+	top:76px;
+	width:200px;
+	height:354px;
+	z-index:4;
+	background-image: url(Images/fpbg.png);
+	visibility: hidden;
+}
+</style></head>
+
+<body onload="MM_preloadImages('Images/compactover.png')">
+<div id="content">
+<div id="menusize">
+  <table width="480" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="9" height="23"></td>
+      <td width="14" valign="top"><img src="Images/red.png" width="14" height="23" border="0" usemap="#Map2MapMap" />
+        <map name="Map2MapMap" id="Map2MapMap">
+          <area shape="circle" coords="6,12,7" href="#" onclick="windowclosed.html" />
+        </map></td>
+      <td width="7"></td>
+      <td width="14"><img src="Images/amber.png" width="14" height="23" border="0" usemap="#Map2Map" />
+        <map name="Map2Map" id="Map2Map">
+          <area shape="circle" coords="7,12,7" href="#" />
+        </map></td>
+      <td width="7"></td>
+      <td width="14"><img src="Images/green.png" width="14" height="23" border="0" usemap="#Map2Map2" />
+        <map name="Map2Map2" id="Map2Map2">
+          <area shape="circle" coords="7,12,7" href="#" />
+        </map></td>
+      <td width="386"><div align="center"></div></td>
+      <td width="20" valign="top"><img src="Images/compact.png" name="comimg" width="20" height="23" border="0" usemap="#Map2" id="comimg" /></td>
+      <td width="9"></td>
+    </tr>
+    <tr>
+      <td colspan="9"><img src="Images/menubar.png" name="menuimg" width="480" border="0" usemap="#menuimgMap" id="menuimg" /></td>
+    </tr>
+  </table>
+</div>
+<div>
+<table width="478" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="23" height="27" background="Images/scbg.png"><img src="Images/sccorner.png" width="23" height="27" /></td>
+    <td background="Images/scbg.png">&nbsp;</td>
+    <td colspan="4" background="Images/scbg.png">&nbsp;</td>
+    <td width="15" background="Images/scrolltop.png">&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan="4" background="Images/scmid.png"></td>
+    <td width="7" background="Images/scshadc.png"></td>
+    <td height="7" colspan="3" background="Images/scshadh.png"></td>
+    <td height="7" background="Images/scshadh2.png"></td>
+    <td rowspan="4" valign="bottom" background="Images/scrollmid.png"><img src="Images/scrollbot.png" width="15" height="43" /></td>
+  </tr>
+  <tr>
+    <td height="312" background="Images/scshadv.png">&nbsp;</td>
+    <td height="312" colspan="2" bgcolor="#FFFFFF"><iframe id="memopad" name="memopad" src="word_store.html" width="426" height="312" scrolling="no" frameborder="0"></iframe></td>
+    <td width="1" bgcolor="#9F9F9F"></td>
+    <td width="6" bgcolor="#B6BEC7">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="0" background="Images/scshadv.png"></td>
+    <td height="0" colspan="2" bgcolor="#9F9F9F"></td>
+    <td width="1" bgcolor="#9F9F9F"></td>
+    <td width="6" bgcolor="#B6BEC7"></td>
+  </tr>
+  <tr>
+    <td height="7" background="Images/scshadv2.png"></td>
+    <td height="7" colspan="4" bgcolor="#B6BEC7"></td>
+    </tr>
+</table>
+<table width="478" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="96" rowspan="2"><img src="Images/viewbtn.png" width="96" height="33" /></td>
+    <td height="16" colspan="3" background="Images/btbg.png"><div align="right"><img src="Images/scrright.png" width="82" height="15" /><img src="Images/spacer.png" width="15" height="1" /></div></td>
+  </tr>
+  
+  <tr>
+    <td width="183" height="17" background="Images/vbotbg.png"></td>
+    <td width="185" background="Images/bottabbg.png"><div align="center"><img src="Images/tabs.png" width="159" height="17" border="0" usemap="#Map5" /></div></td>
+    <td width="14" background="Images/brimg.png"></td>
+  </tr>
+</table>
+</div></div>
+<div id="comodiv"><a href="#"><img src="Images/compact.png" name="comimgo" width="20" height="23" border="0" usemap="#comimgoMap" id="comimgo" />
+<map name="comimgoMap" id="comimgoMap">
+  <area shape="rect" coords="0,7,20,17" href="#" onclick="undocompact();MM_showHideLayers('comodiv','','hide');" onmouseover="MM_swapImage('comimgo','','Images/compactover.png',1);" onmouseout="MM_swapImgRestore()" />
+</map></a></div>
+
+<div id="fdiv">
+  <table width="200" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><img src="Images/phead.png" width="200" height="17" border="0" usemap="#Map3" /></td>
+    </tr>
+    <tr>
+      <td height="23"><img src="Images/spacer.png" width="1" height="1" /><img src="Images/text1.png" width="27" height="23" /><img src="Images/spacer2.png" width="1" height="23" /><img src="Images/addimg.png" width="27" height="23" /><img src="Images/spacer2.png" width="1" height="23" /></td>
+    </tr>
+    <tr>
+      <td height="28"><img src="Images/spacer.png" width="1" height="1" /><img src="Images/fontimg1.png" width="35" height="28" /><img src="Images/fontimg2.png" width="36" height="28" /><img src="Images/fontimg4.png" width="91" height="28" /><img src="Images/fontimg6.png" width="36" height="28" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<map name="Map" id="Map">
+<area shape="rect" coords="0,7,20,17" href="#" onclick="compactword();MM_showHideLayers('comodiv','','show')" onmouseover="MM_swapImage('comimg','','Images/compactover.png',1)" onmouseout="MM_swapImgRestore()"/>
+</map>
+<map name="Map5" id="Map5">
+  <area shape="rect" coords="81,0,156,15" href="#" onclick="compactword();memopad.location.href='credits.html';" />
+<area shape="rect" coords="3,0,78,15" href="#" onclick="memopad.location.href='word_store.html'"/>
+</map>
+
+<map name="menuimgMap" id="menuimgMap">
+  <area shape="rect" coords="8,5,42,48" href="#" />
+  <area shape="rect" coords="42,5,73,48" href="#" onclick="memopad.save1()" />
+  <area shape="rect" coords="73,5,107,48" href="#" onclick="opendoc()" />
+  <area shape="rect" coords="108,5,151,48" href="#" />
+  <area shape="rect" coords="151,5,200,48" href="#" />
+  <area shape="rect" coords="201,5,240,48" href="#" onclick="memopad.erase1()" />
+  <area shape="rect" coords="240,5,291,48" href="#" onclick="memopad.trashnotes()" />
+<area shape="rect" coords="375,5,428,48" href="#" onclick="memopad.edit1();opentool()" />
+<area shape="rect" coords="429,5,467,48" href="#" /></map>
+
+<map name="Map2" id="Map2">
+<area shape="rect" coords="0,7,20,17" href="#" onclick="compactword();" onmouseover="MM_swapImage('comimg','','Images/compactover.png',1)" onmouseout="MM_swapImgRestore()"/>
+</map>
+
+<map name="Map3" id="Map3">
+<area shape="circle" coords="11,8,6" href="#" onclick="closetool()" />
+</map></body>
+</html>

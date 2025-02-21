@@ -1,0 +1,18 @@
+	Bold
+	italics
+	Underline
+	Strike
+	Highlight
+	Size - large
+	Size - small
+	Align right
+	Align centre
+	Align left
+	Enter / Line Break
+	Horizontal Rule
+	Text Colour
+Pictures + preview
+tables
+notebook view
+9 pages per document
+e-mail document
