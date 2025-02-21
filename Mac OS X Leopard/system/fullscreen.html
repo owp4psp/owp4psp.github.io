@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Fullscreen</title>
+<script type="text/javascript">
+function hideDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){//if they are 'see' divs
+if (document.getElementById) // DOM3 = IE5, NS6
+divs[i].style.visibility="hidden";// show/hide
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'hidden';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'hidden';
+}
+}
+}
+
+function showDiv(pass) {
+var divs = document.getElementsByTagName('div');
+for(i=0;i<divs.length;i++){
+if(divs[i].id.match(pass)){
+if (document.getElementById)
+divs[i].style.visibility="visible";
+else
+if (document.layers) // Netscape 4
+document.layers[divs[i]].display = 'visible';
+else // IE 4
+document.all.hideShow.divs[i].visibility = 'visible';
+}
+}
+}
+</script>
+<script type="text/javascript">
+if($_GET['iframe']){
+document.getElementById("game").src=$_GET['iframe'];
+}
+</script>
+<style type="text/css">
+<!--
+#info {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:271px;
+	z-index:1;
+	background-color: #000000;
+}
+body,td,th {
+	color: #FFFFFF;
+}
+#fullscreen {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:271px;
+	z-index:2;
+	visibility: hidden;
+}
+#close {
+	position:absolute;
+	left:0px;
+	top:271px;
+	width:480px;
+	height:1px;
+	z-index:3;
+	background-color: #000000;
+}
+#loading {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:271px;
+	z-index:1;
+	background-color: #000000;
+	visibility: hidden;
+}
+-->
+</style>
+
+<script type="text/javascript">
+function loadDesktop(){
+	top.leopard.location='desktop.html';
+	window.setTimeout("top.leopard.hideDiv('bootOption')", 13000);
+	window.setTimeout("top.leopard.hideDiv('hideDesktop')", 13000);
+	window.setTimeout("top.hideDiv('fullscreen')", 14000);
+}
+</script>
+
+</head>
+
+<body>
+<div id="info" onClick="hideDiv('info'); showDiv('fullscreen');">
+  <table width="480" height="271" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center"><strong>This is fullscreen</strong><br>
+      Click on the bottom of the screen to close the game/application...<br>
+      <br>
+      <em>Click on the screen to begin...</em></td>
+    </tr>
+  </table>
+</div>
+
+<div id="fullscreen">
+<iframe src="" width="480" height="271" frameborder="0" scrolling="no" id="game" name="game"></iframe></div>
+
+<div id="close" onClick="game.location='windowclosed.html'; showDiv('loading'); loadDesktop(); showDiv('info'); hideDiv('fullscreen');"></div>
+
+<div id="loading">
+  <table width="480" height="271" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center"><strong>Loading Desktop</strong>
+        <br>
+        <em>Please wait...</em></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

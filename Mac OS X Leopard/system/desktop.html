@@ -1,0 +1,508 @@
+<html>
+<head>
+<title>Desktop</title>
+<script type="text/javascript" src="js/javascripts.js" name="javascripts"></script>
+<link href="images/style.css" rel="stylesheet" type="text/css" media="screen" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+#apDiv1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1px;
+	height:1px;
+	z-index:16;
+	visibility: hidden;
+}
+body,td,th {
+	font-family: Tahoma;
+	font-size: 10px;
+}
+.style3 {font-size: 18px}
+#apDiv2 {
+	position:absolute;
+	left:603px;
+	top:96px;
+	width:59px;
+	height:19px;
+	z-index:17;
+}
+#apDiv3 {
+	position:absolute;
+	left:603px;
+	top:96px;
+	width:59px;
+	height:19px;
+	z-index:17;
+}
+#apDiv4 {
+	position:absolute;
+	left:603px;
+	top:96px;
+	width:59px;
+	height:19px;
+	z-index:16;
+}
+#apDiv5 {	position:absolute;
+	left:603px;
+	top:96px;
+	width:59px;
+	height:19px;
+	z-index:17;
+}
+#dateTime {
+	position:absolute;
+	left:314px;
+	top:0px;
+	width:124px;
+	height:22px;
+	z-index:15;
+}
+-->
+</style>
+
+<div id="apDiv1"><iframe src="../user/settings/settings.html" width="1" height="1" frameborder="0" scrolling="auto" id="cCookies" name="cCookies"></iframe></div>
+
+<meta http-equiv="refresh" content="5;url=javascript:hideDiv('hideDesktop');">
+<script type="text/javascript">
+function start_iPhoto() {
+	frameWindow.frame.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/frame/iPhoto.html';
+}
+</script>
+<script type="text/javascript">
+// Preload Dock
+finder = new Image();
+finder.src = 'images/dock/finder_hover.png';
+
+dashboard = new Image();
+dashboard.src = 'images/dock/dashboard_hover.png';
+
+iChat = new Image();
+iChat.src = 'images/dock/iChat_hover.png';
+
+timeMachine = new Image();
+timeMachine.src = 'images/dock/timeMachine_hover.png';
+
+iCal = new Image();
+iCal.src = 'images/dock/iCal_hover.png';
+
+iPhoto = new Image();
+iPhoto.src = 'images/dock/iphoto_hover.png';
+
+safari = new Image();
+safari.src = 'images/dock/safari_hover.png';
+
+iTunes = new Image();
+iTunes.src = 'images/dock/itunes_hover.png';
+
+applications = new Image();
+applications.src = 'images/dock/applications_hover.png';
+
+preferences = new Image();
+preferences.src = 'images/dock/system_hover.png';
+
+trash = new Image();
+trash.src = 'images/dock/trashfull_hover.png';
+</script>
+</head>
+
+<body onLoad="dT(); yLoad();">
+<div id="BG"><img src="" id="wallpaper" name="wallpaper" width="480" height="272" onClick="hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON');" /></div>
+<div id="taskbar">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+</div>
+<div id="dock" style="text-align: center;">
+  <div style="padding-top: 36px;"><img src="images/dock/dock.png" width="100%" height="21"></div>
+  <div id="dock_2">
+  <table width="100%" height="57" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center" valign="middle" style="padding-top: 3px;">
+      <div id="dock_finderText" style="position:absolute; left:5px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">Finder</div><img src="images/dock/finder.png" name="dock_finder" width="39" height="45" border="0" id="dock_finder" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Mac HD'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/macHD.html'" onMouseOver="this.src='images/dock/finder_hover.png'; showDiv('dock_finderText');" onMouseOut="this.src='images/dock/finder.png'; hideDiv('dock_finderText');" /><div id="dock_dashboardText" style="position:absolute; left:33px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">Dashboard</div>
+      <img src="images/dock/dashboard.png" name="dock_dashboard" width="41" height="45" border="0" id="dock_dashboard" onClick=" hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); showDiv('dashboardfullscreen'); showDiv('bar'); showDiv('close'); showDiv('icons'); showDiv('menubutton');" onMouseOver="this.src='images/dock/dashboard_hover.png'; showDiv('dock_dashboardText');" onMouseOut="this.src='images/dock/dashboard.png'; hideDiv('dock_dashboardText');" /><div id="dock_iChatText" style="position:absolute; left:90px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">iChat</div>
+      <img src="images/dock/ichat.png" name="dock_iChat" width="44" height="45" border="0" id="dock_iChat" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='iChat'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/iChat/index.html'" onMouseOver="this.src='images/dock/iChat_hover.png'; showDiv('dock_iChatText');" onMouseOut="this.src='images/dock/iChat.png'; hideDiv('dock_iChatText');" /><div id="dock_timeMachineText" style="position:absolute; left:112px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">Time Machine</div>
+      <img src="images/dock/timeMachine.png" name="dock_timeMachine" width="41" height="45" border="0" id="dock_timeMachine" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Time Machine'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/timeMachine/index.html'" onMouseOver="this.src='images/dock/timeMachine_hover.png'; showDiv('dock_timeMachineText');" onMouseOut="this.src='images/dock/timeMachine.png'; hideDiv('dock_timeMachineText');" /><div id="dock_iCalText" style="position:absolute; left:178px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">iCal</div>
+      <img src="images/dock/iCal.png" name="dock_iCal" width="42" height="45" border="0" id="dock_iCal" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='iCal'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/iCal/index.html'" onMouseOver="this.src='images/dock/iCal_hover.png'; showDiv('dock_iCalText');" onMouseOut="this.src='images/dock/iCal.png'; hideDiv('dock_iCalText');" /><div id="dock_iPhotoText" style="position:absolute; left:215px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">iPhoto</div>
+      <img src="images/dock/iphoto.png" name="dock_iphoto" border="0" id="dock_iphoto" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='iPhoto'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/user.html'; window.setTimeout('start_iPhoto()', 2000)" onMouseOver="this.src='images/dock/iphoto_hover.png'; showDiv('dock_iPhotoText');" onMouseOut="this.src='images/dock/iphoto.png'; hideDiv('dock_iPhotoText');" /><div id="dock_safariText" style="position:absolute; left:258px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">Safari</div>
+      <img src="images/dock/safari.png" name="dock_safari" width="41" height="45" border="0" id="dock_safari" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Safari'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/safari/index.html';" onMouseOver="this.src='images/dock/safari_hover.png'; showDiv('dock_safariText');" onMouseOut="this.src='images/dock/safari.png'; hideDiv('dock_safariText');" /><div id="dock_iTunesText" style="position:absolute; left:299px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">iTunes</div>
+      <img src="images/dock/iTunes.png" name="dock_iTunes" width="45" height="45" border="0" id="dock_iTunes" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='iTunes'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/iTunes/index.html'" onMouseOver="this.src='images/dock/iTunes_hover.png'; showDiv('dock_iTunesText');" onMouseOut="this.src='images/dock/iTunes.png'; hideDiv('dock_iTunesText');" /><div id="dock_applicationsText" style="position:absolute; left:329px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">Applications</div>
+      <img src="images/dock/applications.png" name="dock_applications" width="41" height="45" border="0" id="dock_applications" onClick="" onMouseOut="this.src='images/dock/applications.png'; hideDiv('dock_applicationsText');" onMouseOver="this.src='images/dock/applications_hover.png'; showDiv('dock_applicationsText');" /><div id="dock_preferencesText" style="position:absolute; left:369px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">Preferences</div>
+      <img src="images/dock/system.png" name="dock_system" width="43" height="45" border="0" id="dock_system" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Preferences'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/preferences/index.html'" onMouseOver="this.src='images/dock/system_hover.png'; showDiv('dock_preferencesText');" onMouseOut="this.src='images/dock/system.png'; hideDiv('dock_preferencesText');" /><div id="dock_trashText" style="position:absolute; left:426px; top:-10px; width:auto; height:auto; padding:2px; background:url(images/dockText_hover.png); color:#FFFFFF; visibility: hidden;">Trash</div>
+      <img src="images/dock/trashfull.png" name="dock_trash" width="38" height="45" border="0" id="dock_trash" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Trash'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/trash/index.html'" onMouseOver="this.src='images/dock/trashfull_hover.png'; showDiv('dock_trashText');" onMouseOut="this.src='images/dock/trashfull.png'; hideDiv('dock_trashText');" /></td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+</div>
+<div id="stack">
+  <table width="45" height="104" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="26" valign="center" style="padding-top:0px"><div align="center"><img src="images/dock/stack/finder.png" width="72" height="28" hspace="1" border="0" onClick="hideDiv('stack'); showDiv('window'); hideDiv('appleMenu'); document.getElementById('name').src='images/window/name/finder.png'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/mac-hd.html';" onMouseOut="this.src='images/dock/stack/finder.png'" onMouseOver="this.src='images/dock/stack/finder.png'" /></div></td>
+    </tr>
+      <tr>
+      <td height="26" valign="center" style="padding-top:0px"><div align="center"><img src="images/dock/stack/word.png" width="72" height="26" hspace="1" border="0" onClick="frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/index.html'" onMouseOut="this.src='images/dock/stack/word.png'" onMouseOver="this.src='images/dock/stack/word.png'" /></div></td>
+    <tr>
+      <td valign="center" style="padding-top:0px"><div align="center"><img src="images/dock/stack/blank.png" name="stacks_close" width="35" height="35" hspace="1" border="0" id="stack_close" onClick="hideDiv('stack');" /></div></td>
+    </tr>
+  </table>
+</div>
+
+<div id="finderMenu_bg">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><img src="images/taskbar/menuBG.png" width="101" height="108"></td>
+    </tr>
+    <tr>
+      <td><img src="images/taskbar/menuBG_bottom.png" width="101" height="7"></td>
+    </tr>
+  </table>
+</div>
+
+<div id="helpMenu_bg">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><img src="images/taskbar/menuBG.png" width="101" height="44"></td>
+    </tr>
+    <tr>
+      <td><img src="images/taskbar/menuBG_bottom.png" width="101" height="7"></td>
+    </tr>
+  </table>
+</div>
+
+<div id="appleMenu_bg">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><img src="images/taskbar/appleMenu/menuBG.png" width="135" height="139"></td>
+    </tr>
+    <tr>
+      <td><img src="images/taskbar/appleMenu/menuBG_bottom.png" width="135" height="7"></td>
+    </tr>
+  </table>
+</div>
+<div id="specifications">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td valign="top"><img src="images/specifications/close.png" name="specifications-close" width="11" height="11" hspace="6" vspace="2" border="0" id="specifications-close" onClick="hideDiv('specifications');" onMouseOut="this.src='images/specifications/close.png'" onMouseOver="this.src='images/specifications/close_hover.png'" /></td>
+    </tr>
+    <tr>
+      <td height="104" align="center"><a href="#"></a></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/specifications/update-button.png" width="125" height="21" border="0" onClick="showDiv('window'); hideDiv('appleMenu'); hideDiv('specifications');  name.src='images/window/name/update.png'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/update/index.html';" /></td>
+    </tr>
+  </table>
+</div>
+<div id="windowTop">
+<table width="422" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="9" height="24" valign="top"></td>
+    <td width="21" valign="top"><img src="images/window/buttons/red.png" name="redButton" width="14" height="14" vspace="5" border="0" id="redButton" onClick="hideDiv('window'); hideDiv('win'); frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/windowclosed.html'; document.getElementById('windowName').innerHTML='&nbsp;'; hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON');" onMouseOut="this.src='images/window/buttons/red.png'" onMouseOver="this.src='images/window/buttons/red_hover.png'" /></td>
+    <td width="21" valign="top"><img src="images/window/buttons/yellow.png" name="yellowButton" width="14" height="14" vspace="5" border="0" id="yellowButton" onMouseOut="this.src='images/window/buttons/yellow.png'" onMouseOver="this.src='images/window/buttons/yellow_hover.png'" /></td>
+    <td width="15" valign="top"><img src="images/window/buttons/green.png" name="greenButton" width="14" height="14" vspace="5" border="0" id="greenButton" onMouseOut="this.src='images/window/buttons/green.png'" onMouseOver="this.src='images/window/buttons/green_hover.png'" /></td>
+    <td width="325" valign="middle" align="center" style="font-weight:bold; color:#404040;"><div style="position:absolute; left:68px; top:7px; width:285px;"><span id="windowName">&nbsp;</span></div></td>
+    <td width="28" valign="top"><img src="images/window/buttons/mini.png" name="miniButton" width="20" height="12" vspace="7" border="0" id="miniButton" onClick="showDiv('win'); hideDiv('windowMain');" onMouseOut="this.src='images/window/buttons/mini.png'" onMouseOver="this.src='images/window/buttons/mini_hover.png'" /></td>
+  </tr>
+  </table>
+</div>
+<div id="winLine"></div>
+<div id="windowMain">
+  <table width="422" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+      <td height="151" style="text-align:center; background:#404040"><div style="position:absolute; left:1px; top:1px; width:420px; height:150px; background:#FFFFFF; text-align:left;"><b><div style="font-size:18px; padding-left:2px;">404 Error!</div></b><br /><div style="padding-left:2px; padding-right:2px;">If you seeing this message, you have got an error to open an application or whatelse you are going to open. Contact the support or report this bug on our website.<br>
+        If you are on PC, this is ment to show up. To open things will only work on the Sony PSP.<br />
+      <br /><b>Website:</b> DolphinProjects.co.nr</div></div><iframe src="/PSP/COMMON/Mac OS X Leopard/system/windowclosed.html" id="frameWindow" name="frameWindow" width="420" height="151" frameborder="0" scrolling="no" style="margin:0px;"></iframe></td>
+    </tr>
+    <tr>
+      <td><img src="images/window/down-bar.png" width="422" height="25" border="0" /></td>
+    </tr>
+  </table></div>
+<div id="winMini"><img src="images/window/buttons/mini.png" name="maxiButton" width="20" height="12" border="0" id="maxiButton" onClick="showDiv('windowMain'); hideDiv('winLine'); hideDiv('winMini');" onMouseOut="this.src='images/window/buttons/mini.png'" onMouseOver="this.src='images/window/buttons/mini_hover.png'" /></div>
+
+
+
+<div id="desktopIconMacHD">
+  <table width="100%" height="45" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="35" align="center"><img src="images/desktop/icons/macHD.png" width="35" height="35" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Mac HD'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/macHD.html';"></td>
+    </tr>
+    <tr>
+      <td height="15" align="center" valign="top" onClick="frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/rename/macHD.html'; showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Rename';" style="padding-left: 2px; padding-top: 2px;"><div style="position:absolute; width:70px; height:25px; top:36px; left:0px; color:#FFFFFF;">
+        <center>
+          <span class="style5" id="desktopTextMacHD">Mac HD</span>
+        </center>
+      </div>
+      <span class="style5" id="desktopTextMacHD_shadow">Mac HD</span> </td>
+    </tr>
+  </table>
+</div>
+<div id="desktopIconUserHD">
+  <table width="100%" height="45" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="35" align="center"><img src="images/desktop/icons/macHD.png" width="35" height="35" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML=desktopTextUserHD.innerHTML; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/user.html';"></td>
+    </tr>
+    <tr>
+      <td height="15" valign="top" onClick="frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/rename/user.html'; showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Rename';"><div style="position:absolute; width:70px; height:25px; top:36px; left:0px; color:#FFFFFF; z-index:5;">
+        <center><span class="style5" id="desktopTextUserHD">User</span></center>
+      </div>
+      <div style="position:absolute; width:70px; height:25px; top:37px; left:1px; color:#000000; z-index:4;">
+      <center><span class="style5" id="desktopTextUserHD_shadow">User</span></center>
+      </div></td>
+    </tr>
+  </table>
+</div>
+<div id="desktopIconBootCamp">
+  <table width="100%" height="45" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="35" align="center"><img src="images/desktop/icons/bootCamp.png" width="35" height="35" onClick="window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/bootCamp/index.html'" onMouseOver="images/desktop/icons/select.png"></td>
+    </tr>
+    <tr>
+      <td height="15" align="center" valign="top" onClick="frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/rename/bootCamp.html'; showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Rename';" style="padding-left: 0px; padding-top: 2px;"><div style="position:absolute; width:70px; height:25px; top:36px; left:0px; color:#FFFFFF;">
+        <center>
+          <span class="style5" id="desktopTextBootCamp">Boot Camp</span>
+        </center>
+      </div>
+      <span class="style5" id="desktopTextBootCamp_shadow">Boot Camp</span></td>
+    </tr>
+  </table>
+</div>
+<div id="desktopIconUpdate">
+  <table width="100%" height="45" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="35" align="center"><img src="images/desktop/icons/update.png" width="35" height="35" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Software Update'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/update/index.html';"></td>
+    </tr>
+    <tr>
+      <td height="15" align="center" valign="top" onClick="frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/rename/update.html'; showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); document.getElementById('windowName').innerHTML='Rename';" style="padding-left: 2px; padding-top: 2px;"><div style="position:absolute; width:70px; height:25px; top:36px; left:0px; color:#FFFFFF;">
+        <center>
+          <span class="style5" id="desktopTextUpdate">Software Update</span>
+        </center>
+      </div>
+      <span class="style5" id="desktopTextUpdate_shadow">Software Update</span> </td>
+    </tr>
+  </table>
+</div>
+
+<div id="bootOption">
+<iframe src="windowclosed.html" width="480" height="272" frameborder="0" scrolling="no" id="frameBootOption" name="frameBootOption"></iframe></div>
+<div id="hideDesktop"></div>
+
+<div id="dashboardfullscreen">
+  <img src="applications/Dashboard/img/bg.png"></div>
+<div id="menubutton"><img src="images/dashboard/manage copy.png" width="70" height="20"></div>
+<div id="close"><img src="images/dashboard/X_close.png"; width="19" height="19"onClick="hideDiv('dashboardfullscreen'); hideDiv('dashbar'); hideDiv('close'); hideDiv('icons'); hideDiv('menubutton');"></div>
+<div id="dashbar">
+  <div style="width: 100%; height: 53px; background: url(images/dashboard/bar.PNG) bottom no-repeat; vertical-align: bottom; padding-bottom: 0px;"></div>
+<div id="icons" style="text-align: center;">
+	<div align="left">
+    <img src="images/dashboard/icons/blank.png">
+    <img src="images/dashboard/icons/address.png" name="icon_addressbook" width="33" height="33" hspace="5" vspace="10" border="0"  align="absmiddle" id="icon_addressbook">
+    <img src="images/dashboard/icons/calendar.png" name="icon_cal" width="33" height="33" hspace="5"  vspace="10" border="0" align="absmiddle" id="icon_cal">
+    <img src="images/dashboard/icons/calc.png" name="icon_addressbook" width="33" height="33" hspace="5" vspace="10" border="0"  align="absmiddle" id="icon_addressbook2">
+    <img src="images/dashboard/icons/internet.png" name="icon_addressbook" width="33" height="33" hspace="5" vspace="10" border="0"  align="absmiddle" id="icon_addressbook">
+    <img src="images/dashboard/icons/phone_bk.png" name="icon_addressbook" width="32" height="33" hspace="5" vspace="10" border="0"  align="absmiddle" id="icon_addressbook"> 
+    <img src="images/dashboard/icons/sticky.png" name="icon_addressbook" width="31" height="31" hspace="5" vspace="10" border="0"  align="absmiddle" id="icon_addressbook">
+    <img src="images/dashboard/icons/clock.png" name="icon_addressbook" width="33" height="33" hspace="5" vspace="10" border="0"  align="absmiddle" id="icon_addressbook"> </div>
+</div> 
+</div>
+
+<div id="appleButton" style="position:absolute; left:4px; top:0px; width:35px; height:22px; z-index:15;">
+  <div id="appleButton_OFF" style="position:absolute; width:35px; height:22px;">
+    <div style="position:absolute; width:35px; height:22px;"><img src="images/taskbar/buttons/apple-logo.png" width="35" height="22" onClick="showDiv('appleButton_ON'); showDiv('appleMenu_'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('finderButton_linkON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); hideDiv('helpButton_linkON');"></div>
+  </div>
+  <div id="appleButton_ON" style="position:absolute; width:35px; height:22px; visibility:hidden;">
+    <div style="position:absolute; width:35px; height:22px;"><img src="images/taskbar/buttons/apple-logo_hover.png" width="35" height="22" onClick="hideDiv('appleButton_ON'); hideDiv('appleMenu_');"></div>
+  </div>
+
+<div id="appleMenu_aboutMac" style="position:absolute; left:0px; top:25px; width:133px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="appleMenu_aboutMac.style.color='#FFFFFF'; appleMenu_aboutMac.style.background='url(images/hover.png)';" onMouseOut="appleMenu_aboutMac.style.color='#000000'; appleMenu_aboutMac.style.background='url()';" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); document.getElementById('windowName').innerHTML='About This Mac'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/window/frame/about.html';">
+    <div style="position:absolute; width:133px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">About This Mac</div>
+</div>
+
+<div id="appleMenu_update" style="position:absolute; left:0px; top:40px; width:133px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="appleMenu_update.style.color='#FFFFFF'; appleMenu_update.style.background='url(images/hover.png)';" onMouseOut="appleMenu_update.style.color='#000000'; appleMenu_update.style.background='url()';" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); document.getElementById('windowName').innerHTML='Software Update'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/update/index.html';">
+    <div style="position:absolute; width:133px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Software Update...</div>
+</div>
+
+<div id="appleMenu_line1" style="position:absolute; left:0px; top:57px; width:133px; height:1px; background:#999999; z-index:16; visibility: hidden;"></div>
+
+<div id="appleMenu_preferences" style="position:absolute; left:0px; top:60px; width:133px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="appleMenu_preferences.style.color='#FFFFFF'; appleMenu_preferences.style.background='url(images/hover.png)';" onMouseOut="appleMenu_preferences.style.color='#000000'; appleMenu_preferences.style.background='url()';" onClick="showDiv('window'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); document.getElementById('windowName').innerHTML='Preferences'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/preferences/index.html';">
+    <div style="position:absolute; width:133px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Preferences...</div>
+</div>
+
+<div id="appleMenu_dock" style="position:absolute; left:0px; top:75px; width:133px; height:15px; z-index:15; background:url(); visibility: hidden;" onMouseOver="appleMenu_dockText.style.color='#FFFFFF'; appleMenu_dock.style.background='url(images/hover.png)'; appleMenu_dockArrow.src='images/arrow_rightHover.png';" onMouseOut="appleMenu_dockText.style.color='#000000'; appleMenu_dock.style.background='url()'; appleMenu_dockArrow.src='images/arrow_right.png';">
+    <div style="position:absolute; width:133px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td id="appleMenu_dockText" style="color:#000000;" width="120">Dock</td>
+    <td width="13"><img src="images/arrow_right.png" width="7" height="8" id="appleMenu_dockArrow" name="appleMenu_dockArrow"></td>
+  </tr>
+</table></div>
+</div>
+
+<div id="appleMenu_line2" style="position:absolute; left:0px; top:92px; width:133px; height:1px; background:#999999; z-index:16; visibility: hidden;"></div>
+
+<div id="appleMenu_sleep" style="position:absolute; left:0px; top:95px; width:133px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="appleMenu_sleep.style.color='#FFFFFF'; appleMenu_sleep.style.background='url(images/hover.png)';" onMouseOut="appleMenu_sleep.style.color='#000000'; appleMenu_sleep.style.background='url()';">
+    <div style="position:absolute; width:133px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Sleep</div>
+</div>
+
+<div id="appleMenu_restart" style="position:absolute; left:0px; top:110px; width:133px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="appleMenu_restart.style.color='#FFFFFF'; appleMenu_restart.style.background='url(images/hover.png)';" onMouseOut="appleMenu_restart.style.color='#000000'; appleMenu_restart.style.background='url()';" onClick="cCookies.document.settings.submit(); top.window.location='/PSP/COMMON/Mac OS X Leopard/index.html';">
+    <div style="position:absolute; width:133px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Restart...</div>
+</div>
+
+<div id="appleMenu_shutdown" style="position:absolute; left:0px; top:125px; width:133px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="appleMenu_shutdown.style.color='#FFFFFF'; appleMenu_shutdown.style.background='url(images/hover.png)';" onMouseOut="appleMenu_shutdown.style.color='#000000'; appleMenu_shutdown.style.background='url()';">
+    <div style="position:absolute; width:133px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Shut Down...</div>
+</div>
+
+<div id="appleMenu_line3" style="position:absolute; left:0px; top:142px; width:133px; height:1px; background:#999999; z-index:16; visibility: hidden;"></div>
+
+<div id="appleMenu_logout" style="position:absolute; left:0px; top:145px; width:133px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="appleMenu_logout.style.color='#FFFFFF'; appleMenu_logout.style.background='url(images/hover.png)';" onMouseOut="appleMenu_logout.style.color='#000000'; appleMenu_logout.style.background='url()';" onClick="frameBootOption.window.location='/PSP/COMMON/Mac OS X Leopard/system/login.html'; showDiv('bootOption'); hideDiv('appleMenu_'); hideDiv('appleButton_ON');">
+    <div style="position:absolute; width:133px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Log Out <span id="logOut_userID" style="width:133px;">User</span>...</div>
+</div>
+</div>
+
+
+<div id="finderButton" style="position:absolute; left:44px; top:0px; width:56px; height:22px; z-index:15;">
+  <div id="finderButton_OFF" style="position:absolute; width:56px; height:22px;">
+    <div style="position:absolute; width:56px; height:22px;"><img src="images/invisible.png" width="56" height="22"></div>
+    <div id="finderButton_textBlack" style="position:absolute; width:56px; height:22px; padding-top:0px; padding-left:2px; font-size:18px; font-weight:bold; top:0px;">Finder</div>
+  </div>
+  <div id="finderButton_ON" style="position:absolute; width:56px; height:22px; visibility:hidden;">
+    <div style="position:absolute; width:56px; height:22px;"><img src="images/hover.png" width="56" height="22"></div>
+    <div id="finderButton_textWhite" style="position:absolute; width:56px; height:22px; padding-top:0px; padding-left:2px; color:#FFFFFF; font-size:18px; font-weight:bold; top:0px;">Finder</div>
+  </div>
+  <div id="finderButton_linkOFF" style="position:absolute; width:56px; height:22px;"><img src="images/invisible.png" width="56" height="22" onClick="showDiv('finderButton_ON'); showDiv('finderButton_linkON'); showDiv('finderMenu_'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('helpMenu_'); hideDiv('helpButton_ON'); hideDiv('helpButton_linkON');"></div>
+  <div id="finderButton_linkON" style="position:absolute; width:56px; height:22px; visibility:hidden;"><img src="images/invisible.png" width="56" height="22" onClick="hideDiv('finderButton_ON'); hideDiv('finderButton_linkON'); hideDiv('finderMenu_');"></div>
+</div>
+
+<div id="finderMenu_about" style="position:absolute; left:45px; top:25px; width:99px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="finderMenu_about.style.color='#FFFFFF'; finderMenu_about.style.background='url(images/hover.png)';" onMouseOut="finderMenu_about.style.color='#000000'; finderMenu_about.style.background='url()';">
+    <div style="position:absolute; width:99px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">About Finder</div>
+</div>
+
+<div id="finderMenu_line1" style="position:absolute; left:45px; top:42px; width:99px; height:1px; background:#999999; z-index:16; visibility: hidden;"></div>
+
+<div id="finderMenu_preferences" style="position:absolute; left:45px; top:45px; width:99px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="finderMenu_preferences.style.color='#FFFFFF'; finderMenu_preferences.style.background='url(images/hover.png)';" onMouseOut="finderMenu_preferences.style.color='#000000'; finderMenu_preferences.style.background='url()';">
+    <div style="position:absolute; width:99px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Preferences...</div>
+</div>
+
+<div id="finderMenu_line2" style="position:absolute; left:45px; top:62px; width:99px; height:1px; background:#999999; z-index:16; visibility: hidden;"></div>
+
+<div id="finderMenu_emptyTrash" style="position:absolute; left:45px; top:65px; width:99px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="finderMenu_emptyTrash.style.color='#FFFFFF'; finderMenu_emptyTrash.style.background='url(images/hover.png)';" onMouseOut="finderMenu_emptyTrash.style.color='#000000'; finderMenu_emptyTrash.style.background='url()';" onClick="showDiv('window'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('finderButton_linkON'); document.getElementById('windowName').innerHTML='Trash'; frameWindow.window.location='/PSP/COMMON/Mac OS X Leopard/system/applications/trash/index.html';">
+    <div style="position:absolute; width:99px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Empty Trash...</div>
+</div>
+
+<div id="finderMenu_line2" style="position:absolute; left:45px; top:82px; width:99px; height:1px; background:#999999; z-index:16; visibility: hidden;"></div>
+
+<div id="finderMenu_hideFinder" style="position:absolute; left:45px; top:85px; width:99px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="finderMenu_hideFinder.style.color='#FFFFFF'; finderMenu_hideFinder.style.background='url(images/hover.png)';" onMouseOut="finderMenu_hideFinder.style.color='#000000'; finderMenu_hideFinder.style.background='url()';">
+    <div style="position:absolute; width:99px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Hide Finder</div>
+</div>
+
+<div id="finderMenu_hideOthers" style="position:absolute; left:45px; top:99px; width:99px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="finderMenu_hideOthers.style.color='#FFFFFF'; finderMenu_hideOthers.style.background='url(images/hover.png)';" onMouseOut="finderMenu_hideOthers.style.color='#000000'; finderMenu_hideOthers.style.background='url()';">
+    <div style="position:absolute; width:99px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Hide Others</div>
+</div>
+
+<div id="finderMenu_showAll" style="position:absolute; left:45px; top:114px; width:99px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="finderMenu_showAll.style.color='#FFFFFF'; finderMenu_showAll.style.background='url(images/hover.png)';" onMouseOut="finderMenu_showAll.style.color='#000000'; finderMenu_showAll.style.background='url()';">
+    <div style="position:absolute; width:99px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Show All</div>
+</div>
+
+
+<div style="position:absolute; top:0px; padding-left:5px; left:101px; z-index:15;"><span class="style3">File</span></div>
+
+<div style="position:absolute; top:0px; left:139px; height:20px; z-index:15;"><span class="style3">View</span></div>
+
+
+<div id="helpButton" style="position:absolute; left:181px; top:0px; width:38px; height:22px; z-index:15;">
+  <div id="helpButton_OFF" style="position:absolute; width:38px; height:22px;">
+    <div style="position:absolute; width:38px; height:22px;"><img src="images/invisible.png" width="38" height="22"></div>
+    <div id="helpButton_textBlack" style="position:absolute; width:38px; height:22px; padding-top:0px; padding-left:2px; font-size:18px; top:0px;">Help</div>
+  </div>
+  <div id="helpButton_ON" style="position:absolute; width:38px; height:22px; visibility:hidden;">
+    <div style="position:absolute; width:38px; height:22px;"><img src="images/hover.png" width="38" height="22"></div>
+    <div id="helpButton_textWhite" style="position:absolute; width:38px; height:22px; padding-top:0px; padding-left:2px; color:#FFFFFF; font-size:18px; top:0px;">Help</div>
+  </div>
+  <div id="helpButton_linkOFF" style="position:absolute; width:38px; height:22px;"><img src="images/invisible.png" width="38" height="22" onClick="showDiv('helpButton_ON'); showDiv('helpButton_linkON'); showDiv('helpMenu_'); hideDiv('appleMenu_'); hideDiv('appleButton_ON'); hideDiv('finderMenu_'); hideDiv('finderButton_ON'); hideDiv('finderButton_linkON');"></div>
+  <div id="helpButton_linkON" style="position:absolute; width:38px; height:22px; visibility:hidden;"><img src="images/invisible.png" width="38" height="22" onClick="hideDiv('helpButton_ON'); hideDiv('helpButton_linkON'); hideDiv('helpMenu_');"></div>
+</div>
+
+<div id="helpMenu_search" style="position:absolute; left:182px; top:25px; width:99px; height:20px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="helpMenu_search.style.color='#FFFFFF'; helpMenu_search.style.background='url(images/hover.png)';" onMouseOut="helpMenu_search.style.color='#000000'; helpMenu_search.style.background='url()';">
+  <div style="position:absolute; width:57px; height:15px; padding-top:4px; padding-left:40px; top:-2px; z-index:15;"><input type="text" style="width:57px; height:14px;"></div>
+	<div style="position:absolute; width:99px; height:15px; padding-top:4px; padding-left:2px; top:-1px;">Search</div>
+</div>
+
+<div id="helpMenu_line1" style="position:absolute; left:182px; top:47px; width:99px; height:1px; background:#999999; z-index:16; visibility: hidden;"></div>
+
+<div id="helpMenu_macHelp" style="position:absolute; left:182px; top:50px; width:99px; height:15px; z-index:15; visibility: hidden; color:#000000; background:url();" onMouseOver="helpMenu_macHelp.style.color='#FFFFFF'; helpMenu_macHelp.style.background='url(images/hover.png)';" onMouseOut="helpMenu_macHelp.style.color='#000000'; helpMenu_macHelp.style.background='url()';">
+  <div style="position:absolute; width:99px; height:15px; padding-top:2px; padding-left:2px; top:-1px;">Mac Help</div>
+</div>
+
+<div id="soundIcon">
+<div id="soundIcon_ON"><img src="images/taskbar/buttons/sound_on.png" width="17" height="17" border="0" onClick="showDiv('soundIcon_OFF'); hideDiv('soundIcon_ON');" /></div>
+<div id="soundIcon_OFF"><img src="images/taskbar/buttons/sound_off.png" width="17" height="17" border="0" onClick="hideDiv('soundIcon_OFF'); showDiv('soundIcon_ON');" /></div>
+</div>
+
+<div id="networkIcon" style="visibility:hidden;">
+<div id="networkIcon_OFF" style="visibility:hidden;"><img src="images/taskbar/buttons/network_off.png" width="17" height="17" border="0" onClick="hideDiv('networkIcon_OFF'); showDiv('networkIcon_ON');" /></div>
+<div id="networkIcon_ON" style="visibility:hidden;"><img src="images/taskbar/buttons/network_on.png" width="17" height="17" border="0" onClick="showDiv('networkIcon_OFF'); hideDiv('networkIcon_ON');" /></div>
+</div>
+
+<div id="dateTime">
+<script language="JavaScript" type="text/javascript">
+function initArray() {
+for(i=0;i<initArray.arguments.length; i++)
+this[i] = initArray.arguments[i];
+}
+var isnMonths=new initArray("JANUARY","FEBRUARY","MARCH",
+"APRIL","MAY","JUNE",
+"JULY","AUGUST","SEPTEMBER",
+"OCTOBER","NOVEMBER","DECEMBER");
+var isnDays= new initArray("Sun","Mon","Tue","Wed",
+"Thu","Fri","Sat","Sun");
+today=new Date();
+hrs=today.getHours();
+min=today.getMinutes();
+sec=today.getSeconds();
+clckh=""+((hrs>12)?hrs-12:hrs);
+clckm=((min<10)?"0":"")+min;
+clck=(hrs>=12)?"PM":"AM";
+
+var stnr="";
+var ns="0123456789";
+var a="";
+
+function getFullYear(d) { // d is a date object
+yr = d.getYear();
+if (yr < 1000)
+yr+=1900;
+return yr;
+}
+</script>
+<div style="text-align:right;"><font style="font-size: 18px;"><script>document.write(""+isnDays[today.getDay()]+"");</script>
+</font> <span style="font-size:18px;" id="tP">??? 00:00 ??</span></div>
+<script type="text/javascript">
+function tS(){ x=new Date(); x.setTime(x.getTime()); return x; } 
+function lZ(x){ return (x>9)?x:'0'+x; } 
+function tH(x){ if(x==0){ x=12; } return (x>12)?x-=12:x; } 
+function dT(){ window.status=''+eval(oT)+''; document.getElementById('tP').innerHTML=eval(oT); setTimeout('dT()',1000); } 
+function aP(x){ return (x>11)?' PM':' AM'; } 
+var oT="tH(tS().getHours())+':'+lZ(tS().getMinutes())+aP(tS().getHours())";
+</script>
+</div>
+
+<div id="spotlightButton" style="position:absolute; left:441px; top:0px; width:35px; height:22px; z-index:15;">
+  <div id="spotlightButton_OFF" style="position:absolute; width:35px; height:22px;">
+    <div style="position:absolute; width:35px; height:22px;"><img src="images/taskbar/buttons/spotLight.png" width="35" height="22" onClick="showDiv('spotlightButton_ON'); showDiv('spotlightMenu_');"></div>
+  </div>
+  <div id="spotlightButton_ON" style="position:absolute; width:35px; height:22px; visibility:hidden;">
+    <div style="position:absolute; width:35px; height:22px;"><img src="images/taskbar/buttons/spotlight_hover.png" width="35" height="22" onClick="hideDiv('spotlightButton_ON'); hideDiv('spotlightMenu_');"></div>
+  </div>
+
+  <div id="spotlightMenu_search" style="position:absolute; left:-116px; top:22px; width:151px; height:21px; z-index:15; visibility: hidden; color:#000000; background:url(images/taskbar/spotlight/border.png); padding-left:1px;"><img src="images/hover.png" width="150" height="20" />
+	<div style="position:absolute; width:57px; height:15px; padding-top:4px; padding-left:0px; left:71px; top:-2px;"><input type="text" style="width:78px; height:14px;"></div>
+	<div style="position:absolute; width:50px; height:15px; padding-top:4px; padding-left:2px; top:0px; left:20px; color:#FFFFFF;">Spotlight</div>
+  </div>
+  <div id="spotlight"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+<!--
+body {
+	background-image: url();
+}
+#wallpaper {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:272px;
+	z-index:1;
+	background-image: url(../user/pictures/wallpaper/space.png);
+}
+#login-screen {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:272px;
+	z-index:2;
+}
+#create {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:272px;
+	z-index:3;
+	background-image: url(images/login/create.png);
+}
+#apDiv3 {	position:absolute;
+	left:4px;
+	top:7px;
+	width:156px;
+	height:91px;
+	z-index:4;
+	visibility: hidden;
+}
+#login {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:480px;
+	height:272px;
+	z-index:5;
+	background-image: url(images/login/login.png);
+}
+#apDiv1 {
+	position:absolute;
+	left:180px;
+	top:23px;
+	width:221px;
+	height:83px;
+	z-index:6;
+	visibility: hidden;
+}
+-->
+</style>
+<script type="text/javascript">
+function loadDetails(){
+	window.setTimeout('getDetails();', 0100);
+}
+
+function getDetails(){
+	if(document.rememberForm.rememberUsername.value == ""){
+		document.getElementById('remember').checked = false;
+	}
+	
+	else{
+		document.loginform.enterusername.value = document.getElementById('rememberUsername').value;
+		document.loginform.enterpassword.value = document.getElementById('rememberPassword').value;
+		document.getElementById('remember').checked = true;
+	}
+}
+
+function login(){
+	if(document.getElementById('remember').checked == true){
+		document.rememberForm.rememberUsername.value = document.getElementById('enterusername').value;
+		document.rememberForm.rememberPassword.value = document.getElementById('enterpassword').value;
+		document.rememberForm.submit();
+		login2();
+	}
+	
+	if(document.getElementById('remember').checked == false){
+		document.rememberForm.rememberUsername.value = '';
+		document.rememberForm.rememberPassword.value = '';
+		document.rememberForm.submit();
+		login2();
+	}
+}
+
+function login2(){
+	if(document.loginform.enterusername.value == parent.cCookies.document.settings.sourceName.value){
+		login3();
+	}
+	
+	else{
+		alert('Invalid name or password, please try again!')
+	}
+}
+
+function login3(){
+	if(document.loginform.enterpassword.value == parent.cCookies.document.settings.sourcePassword.value){
+		parent.hideDiv('bootOption');
+		window.location = 'windowClosed.html';
+	}
+	
+	else{
+		alert('Invalid name or password, please try again!')
+	}
+}
+</script>
+</head>
+
+<body onLoad="loadDetails();">
+<div id="apDiv1">
+  <form id="rememberForm" name="rememberForm" method="post" action="">
+  <input name="rememberUsername" type="text" id="rememberUsername" />
+  <br />
+  <input name="rememberPassword" type="text" id="rememberPassword" />
+  </form>
+</div>
+<div id="BG"><img src="../user/pictures/wallpaper/space.jpg" id="wallpaper" name="wallpaper" width="480" height="272" /></div><form id="loginform" name="loginform" method="post" action="">
+<div id="login">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="119" colspan="3">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="3" align="right"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="45%" align="right" valign="middle" style="padding-right:5px;">Name:</td>
+          <td width="55%" height="23"><input type="text" name="enterusername" id="enterusername" /></td>
+        </tr>
+        <tr>
+          <td align="right" valign="middle" style="padding-right:5px;">Password:</td>
+          <td height="15"><input type="password" name="enterpassword" id="enterpassword" /></td>
+        </tr>
+        <tr>
+          <td align="right" valign="middle" style="padding-right:5px;">Remember me?</td>
+          <td height="15"><input name="remember" type="checkbox" id="remember" style="width:15px; height:15px;" /></td>
+        </tr>
+      </table></td>
+      </tr>
+    
+    <tr>
+      <td width="151" height="90" colspan="3" valign="top" style="padding-left:328px; padding-top:17px;"><a href="#" onClick="login();"><img src="images/login/login-button.png" width="45" height="54" border="0" /></a></td>
+      </tr>
+  </table>
+</div>
+</form>
+</body>
+</html>
