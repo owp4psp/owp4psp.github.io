@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>Setup Wizard</title>
+<script language="javascript" type="text/javascript">
+function ChangeSettingsUser(){
+	if(top.top.icookies.document.getElementById('bg2').value==''){
+	top.top.icookies.document.settings.bg2.value='wallpapers/Beach Tree.jpg';
+	top.top.icookies.document.settings.submit();
+	}
+	if(top.top.icookies.document.getElementById('bg3').value==''){
+	top.top.icookies.document.settings.bg3.value='wallpapers/Beach Tree.jpg';
+	top.top.icookies.document.settings.submit();
+	}
+	if(top.top.icookies.document.getElementById('winThemeDir2').value==''){
+	top.top.icookies.document.settings.winThemeDir2.value='../images/window/window.png';
+	top.top.icookies.document.settings.submit();
+	}
+	if(top.top.icookies.document.getElementById('winThemeDir3').value=''){
+	top.top.icookies.document.settings.winThemeDir3.value='../window/window.png';
+	top.top.icookies.document.settings.submit();
+	}
+}
+</script>
+</head>
+
+
+<body style="direction: ltr; background-color: rgb(0, 0, 0);" lang="en-US">
+
+<p align="left"></p>
+
+<p align="left"><br>
+
+</p>
+
+<p><font color="#ffffff"> </font></p>
+
+<br>
+
+<br>
+
+.
+<p></p>
+
+<table background="../../../images/setup.jpg" style="visibility: visible; z-index: 28; position: absolute; top: 0px; left: 0px; width: 479px; height: 272px;" border="0" cellpadding="4" cellspacing="3">
+
+  <col width="146"> <tbody>
+
+    <tr>
+
+      <td style="vertical-align: center; width: 120px; height: 157px;">
+      <p><font color="#ffffff" size="2">Here you can create additional users for use with pspWvista!</font></p>
+      </td>
+
+      <td colspan="1" rowspan="2" width="250">
+
+
+
+
+
+      <div style="" id="user2" visibility="visible" align=""><font color="#ffffff" size="3">Second User</font>
+        <input name="usermake1" id="usermake1" onClick="top.top.icookies.document.getElementById('un2').value='User 2';window.location='user2/setup.html';ChangeSettingsUser();" value="Create/Edit" style="width: 80px;" align="right" type="button"><input style="width: 60px;" name="disable" id="disable" onClick="top.top.icookies.document.getElementById('un2').value='';window.location='user2/setup.html';" value="Disable"  align="right" type="button"></div>
+
+      <div   name="user3">
+        <font color="#ffffff" size="3">Third User</font>        
+          <input style="width: 80px;" name="usermake2" id="usermake2" onClick="top.top.icookies.document.getElementById('un3').value='User 3';window.location='user3/setup.html';ChangeSettingsUser();" value="Create/Edit"  align="right" type="button"><input style="width: 60px;" name="disable2" id="disable2" onClick="top.top.icookies.document.getElementById('un3').value='';window.location='user3/setup.html';" value="Disable"  align="right" type="button"></div>
+ <div   name="Guest"><font color="#ffffff" size="3">Use guest account</font>
+  <input style="width: 60px;" name="guest" id="guest" onClick="top.top.icookies.document.getElementById('guest').value='enabled';ChangeSettingsUser();window.location='index.html';" value="Enable"  align="right" type="button"><input style="width: 60px;" name="disableguest" id="disableguest" onClick="top.top.icookies.document.getElementById('guest').value='';alert('pspWvista will need to be restarted for changes to take effect.');window.location='index.html';" value="Disable"  align="right" type="button"></div>
+   
+
+      <p><input style="width: 80px;" name="disable4" id="disable4" onClick="top.top.icookies.document.getElementById('un3').value=' ';top.top.icookies.document.getElementById('un2').value='';top.top.icookies.document.getElementById('guest').value='';top.top.icookies.document.getElementById('un').value='';window.location='index.htm';" value="Disable All"  align="right" type="button"></p></td>
+
+    </tr>
+
+    <tr>
+
+      <td>    <p><input style="width: 80px;" name="disable4" id="disable4" onClick="window.location='index.htm';" value="Back"  align="right" type="button"></p></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>

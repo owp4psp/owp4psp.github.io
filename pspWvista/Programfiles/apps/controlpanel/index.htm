@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<script language="javascript" type="text">
+function boot(){
+if(top.top.icookies.document.getElementById('user').value=='1'){
+ window.location="index.html";
+	}
+	
+if(top.top.icookies.document.getElementById('user').value=='2'){
+  window.location="user2/index.htm";
+	}
+	
+if(top.top.icookies.document.getElementById('user').value=='3'){
+ window.location="user3/index.htm";
+	}
+	
+if(top.top.icookies.document.getElementById('user').value=='4'){
+	alert('Guest cannot use the control panel');
+	}
+}
+</script>
+<body eftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="boot()">
+
+</html>

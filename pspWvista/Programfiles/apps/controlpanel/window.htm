@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head> 
+  <title>Login Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css">
+<!--
+#lColor {
+	position:absolute;
+	left:397px;
+	top:130px;
+	width:100px;
+	height:78px;
+	z-index:1;
+	background-color: #FFFFFF;
+	visibility: hidden;
+}
+-->
+  </style>
+  <script language="JavaScript" type="text/javascript">
+
+
+function ChangeSettings(){
+  if(top.icookies.document.getElementById('themeDir').value=='desktop-b.htm'){
+top.icookies.document.settings.winThemeDir.value='../images/basic/window/window.png';
+alert('Areo cannot be enabled for Basic theme');
+	}else{
+top.top.icookies.document.settings.winThemeDir.value=document.getElementById('File').value;
+top.top.icookies.document.settings.submit();
+parent.ApplySettings();
+}
+}
+  </script>
+</head>
+
+
+<body leftmargin="0" topmargin="0" onLoad="GetSettings();" bgcolor="#FFFFFF" marginheight="0" marginwidth="0">
+
+<table  style="position: absolute; top: 0px; left: 0px; width: 260px; height: 248px;" >
+
+
+<tr>
+<td><img src="side.jpg" height="243"/></td>
+</tr>
+</table>
+ 
+<table style="position: absolute; top: -5px; left: 136px; width: 284px; height: 253px;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+   <tbody>
+
+    <tr>
+
+      <td style="text-align: center;" colspan="3" rowspan="1"><font size="+2">Window Theme</font></td>
+</tr>
+    <tr>
+
+
+      <td width="68" align="right"><br>      </td>
+      <td colspan="3" rowspan="1">&nbsp; Preview:<br>
+ &nbsp; &nbsp;<img alt="" name="imgPreview" id="imgPreview" height="35" width="50"></td>
+
+ </tr>
+ <tr>
+
+
+
+      <td align="center" ><img src="../../../images/window/window_p.png" onClick="imgPreview.src='../../../images/window/window.png';document.getElementById('File').value=imgPreview.src;" name="log"  align="middle" id="log" style="border: 0px solid ; top: 161px; left: 236px; width: 20px; height: 20px;"></td>
+
+      <td width="131" align="center" onClick="imgPreview.src='../../../images/window/window_red.png';document.getElementById('File').value=imgPreview.src;';"><img src="../../../images/window/window_red_p.png" alt="" name="loga"  align="middle" id="loga" style="border: 0px solid ; top: 161px; left: 236px; width: 20px; height: 20px;"></td>
+
+      <td width="68" align="center" onClick="imgPreview.src='../../../images/window/window_orange.png';document.getElementById('File').value=imgPreview.src;"><img src="../../../images/window/window_orange_p.png" alt="" name="logb" align="middle" id="logb" style="border: 0px solid ; top: 161px; left: 236px; width: 20px; height: 20px;"></td>
+</tr>
+<tr>
+      <td align="center" onClick="imgPreview.src='../../../images/window/window_black.png';document.getElementById('File').value=imgPreview.src;"><img src="../../../images/window/window_black_p.png" alt="" name="logc" id="logc" style="border: 0px solid ; top: 161px; left: 236px; width: 20px; height: 20px;"></td>
+
+     <td align="center" onClick="imgPreview.src='../../../images/window/window_blue.png';document.getElementById('File').value=imgPreview.src;"><img src="../../../images/window/window_blue_p.png" alt="" name="logc" id="logc" style="border: 0px solid ; top: 161px; left: 236px; width: 20px; height: 20px;"></td>
+
+     <td align="center" onClick="imgPreview.src='../../../images/window/window_green.png';document.getElementById('File').value=imgPreview.src;"><img src="../../../images/window/window_green_p.png" alt="" name="logd" id="logd" style="border: 0px solid ; top: 161px; left: 236px; width: 20px; height: 20px;"></td>
+     
+
+ 
+   </tr>
+
+
+     <tr>
+
+      <td colspan="4" rowspan="1"><input name="File" id="File" onChange="imgPreview.src=File.value;" value="" type="file"><br>
+&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+<td>
+
+</td>
+<td>
+<p align="center">
+  <input name="OK" id="OK2" onClick="ChangeSettings();location='personalize.html';" value="OK" style="width: 60px;" type="button">
+  <input name="Cancel" id="Cancel3" onClick="location='personalize.html';" value="Cancel" style="width: 60px;" type="button">
+</p>
+</td>
+</tr>
+  </tbody>
+</table>
+<tr>
+
+      
+
+
+  </tbody>
+</table>
+
+
+
+
+<script language="javascript" type="text/javascript">
+	if(top.document.icookies.document.getElementById('chkul').value=="true"){
+		chkULImage.checked=true;
+	}else{
+		chkULImage.checked=false;
+	}
+	File.value=top.document.icookies.document.getElementById('ul').value;
+	imgPreview.src=File.value;
+	if(top.document.icookies.document.getElementById('loginshow').value=="true"){
+		chkShow.checked=true;
+	}else{
+		chkShow.checked=false;
+	}
+	if(top.document.icookies.document.getElementById('chkwlan').value=="true"){
+		chkwlanPOP.checked=true;
+	}else{
+		chkwlanPOP.checked=false;
+	}			
+	if(top.document.icookies.document.getElementById('chkcenter').value=="true"){
+		chkcenterOpen.checked=true;
+	}else{
+		chkcenterOpen.checked=false;
+	}			</script>
+</body>
+</html>

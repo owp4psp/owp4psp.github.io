@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>System Page</title>
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+.style2 {
+	font-size: 18pt;
+	color: #FFFFFF;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<script language="javascript" type="text/javascript">
+setTimeout("system();",3000);	
+function system(){
+	if(icookies.document.getElementById('themeDir').value==''){
+		themeimage.src="../../../images/theme.jpg";
+	}else{
+			themeimage.src="../"+icookies.document.getElementById('themeDir').value+"/boot.gif";
+		}
+}
+</script>
+</head>
+
+<body>
+<script language="javascript" type="text/javascript" src="../../../system/script.js"></script>
+<iframe src="../../../system/cookies.htm" width="1" height="1" id="icookies" name="icookies" scrolling="yes" frameborder="0" style="visibility:hidden;"></iframe>
+<div style="position:absolute; top:0; left:0;">
+<table width="470" border="0">
+  <tr>
+
+    <td width="140"><img src="side.jpg" width="140" height="284" /></td>
+    <td width="267" align="left" valign="top"><img src="sysinfo.jpg" width="470" height="272" /></td>
+
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+  </tr>
+</table>
+
+
+</div>
+</body>
+</html>
